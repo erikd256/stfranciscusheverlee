@@ -55,7 +55,7 @@ export const Header = ({ data }) => {
   return (
     <>
       <div className="flex overflow-x-hidden items-center justify-between bg-liturgischekleur border-b-4 border-basiskleur"><img src="/assets/Kerk_Logo.jpg" className={`h-[250px]  border-r-4 border-basiskleur`}/><span className="lg:text-3xl sm:text-lg absolute left-[200px] top-[20px]">Sint Franciscusparochie</span><span className="absolute left-[200px] top-[60px] text-lg">Heverlee - Kessel-lo - Leuven</span><span className="absolute top-[120px] left-[200px]"><p>Tiensesteenweg 190, 3001 Heverlee</p><p>tel. 016/25 04 59</p><p>franciscusheverlee@gmail.com</p></span></div>
-      <Container className={`overflow-x-hidden flex items-center justify-between z-40 sticky top-0 bg-vierdekleur p-0 text-basiskleur w-full border-solid border-b-4 border-basiskleur flex-1 mr-2 py-[3px]`}>
+      <Container className={`overflow-x-hidden flex items-center justify-between z-40 sticky top-0 bg-vierdekleur p-0 text-basiskleur w-full border-solid border-b-4 border-basiskleur flex-1 mr-2 py-[2px]`}>
       <span className="text-center block border border-basiskleur rounded py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/">Start</a></span>
       </Container>
     </>
