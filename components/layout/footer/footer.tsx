@@ -117,7 +117,7 @@ export const Footer = ({ data, icon, rawData }) => {
             )}
           </div>
           <span className={`w-full text-center`}>&#169; erikd256 - {(new Date().getFullYear())}</span>
-
+          <p className={`w-full`}><img src="https://vercelbadge.vercel.app/api/erikd256/stfranciscusheverlee?style=for-the-badge"/></p>
         </div>
         <div
           className={`absolute h-1 bg-gradient-to-r from-transparent ${
