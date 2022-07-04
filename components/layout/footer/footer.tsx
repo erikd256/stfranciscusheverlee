@@ -43,6 +43,7 @@ export const Footer = ({ data, icon, rawData }) => {
       : footerColor.default;
 
   return (
+    <>
     <footer className={`bg-gradient-to-br ${footerColorCss}`}>
       <Container className="relative" size="small">
         <div className="flex justify-between items-center gap-6 flex-wrap">
@@ -60,21 +61,15 @@ export const Footer = ({ data, icon, rawData }) => {
             </a>
           </Link>
           <div className="flex gap-4">
-            {data.social && data.social.facebook && (
               <a
                 className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
                 href={data.social.facebook}
                 target="_blank"
               >
                 <FaFacebookF
-                  className={`${socialIconClasses} ${
-                    socialIconColorClasses[
-                      data.color === "primary" ? "primary" : theme.color
-                    ]
-                  }`}
+                  className={`${socialIconClasses} basiskleur`}
                 />
               </a>
-            )}
             {data.social && data.social.twitter && (
               <a
                 className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
@@ -121,7 +116,8 @@ export const Footer = ({ data, icon, rawData }) => {
               </a>
             )}
           </div>
-          <RawRenderer parentColor={data.color} rawData={rawData} />
+          <span className={`w-full text-center`}>&#169; erikd256 - {(new Date().getFullYear())}</span>
+
         </div>
         <div
           className={`absolute h-1 bg-gradient-to-r from-transparent ${
@@ -130,5 +126,6 @@ export const Footer = ({ data, icon, rawData }) => {
         ></div>
       </Container>
     </footer>
+    </>
   );
 };

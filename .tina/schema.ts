@@ -249,6 +249,10 @@ const schema = defineSchema({
                   label: "Yellow",
                   value: "yellow",
                 },
+                {
+                  label: "Franciscusbruin",
+                  value: "basiskleur",
+                },
              ],
             },
             {
