@@ -30,7 +30,7 @@
     }
   },
   "theme": {
-    "color": "blue",
+    "color": "teal",
     "font": "sans",
     "icon": "boxicon",
     "darkMode": "light"
