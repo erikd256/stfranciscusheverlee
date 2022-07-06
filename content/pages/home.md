@@ -13,7 +13,7 @@ blocks:
 
     image:
       src: >-
-        https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1656787147/cld-sample-4.jpg
+        https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1657131061/KHadEenDroom_buhk8i.jpg
     _template: hero
   - body: >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas
