@@ -1,50 +1,25 @@
 ---
 blocks:
-  - headline: Welcome to the Tina Starter
+  - tagline: ''
+    headline: Lorem ipsum
     text: >
-      This project is set up to show you the basics of working with Tina. You're
-      looking at the landing page, which pulls content from
-      content/pages/home.md, components from components/blocks, and puts them
-      all together in pages/\[filename].tsx, all based on a schema defined in
-      .tina/schema.ts.
-    actions:
-      - label: Get Started
-        type: button
-        icon: true
-        link: /posts
-      - label: Read Blog
-        type: link
-        icon: false
-        link: /posts
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas
+      vehicula diam nec imperdiet. Suspendisse potenti. Vestibulum sollicitudin
+      egestas elementum. Curabitur consequat, odio sit amet egestas ornare,
+      lorem nisi convallis ex, ut venenatis erat ante eget eros. Aenean
+      malesuada sed ex non dignissim. Morbi auctor, nisi at gravida vulputate,
+      tortor nibh mattis sem, a ultricies metus magna sed nunc. Vestibulum ut
+      orci nec mauris auctor efficitur id a ante. Aliquam semper at erat et
+      hendrerit. Fusce eu nisl elementum, feugiat augue non, tempus nisl.
+      Praesent pharetra metus ac consequat volutpat. Phasellus eu dui et nulla
+      placerat condimentum vitae ac nisl. Ut commodo enim id condimentum tempus.
+      Maecenas dolor ex, ultrices vitae lorem eget, fermentum pulvinar ex.
+      Mauris sagittis laoreet vestibulum. Duis eu lectus vel diam facilisis
+      lobortis. Proin hendrerit tortor vitae arcu posuere, in mollis libero
+      scelerisque.
     image:
       src: >-
-        https://res.cloudinary.com/forestry-demo/image/upload/v1628102029/tina-cloud-starter/tina-illustration.WebP
-      alt: Tina
-    color: default
+        https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1656787147/cld-sample-4.jpg
     _template: hero
-  - items:
-      - icon:
-          color: red
-          style: float
-          name: code
-        title: Amazing Feature
-        text: >-
-          Aliquam blandit felis rhoncus, eleifend ipsum in, condimentum nibh.
-          Praesent ac faucibus risus, eu lacinia enim.
-      - icon:
-          color: primary
-          style: float
-          name: like
-        title: This Is a Feature
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.
-      - icon:
-          color: green
-          style: float
-          name: palette
-        title: Configurable Theme
-        text: >-
-          Edit global theme configuration with Tina. Change your theme's primary
-          color, font, or icon set.
-    color: tint
-    _template: features
 ---
+
