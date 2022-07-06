@@ -1,9 +1,10 @@
 ---
 blocks:
   - body: |
-      telefoon
+      telefoon&#x20;
 
       adres
+    color: ''
     _template: content
 ---
 
