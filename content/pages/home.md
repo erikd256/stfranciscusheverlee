@@ -14,7 +14,9 @@ blocks:
     _template: content
   - quote: |
       'k Had een heerlijk visioen in mijn dromen
+
       Alleluia! Ik moet het U zingen.
+
       Want ik droomde van hemelse dingen:
       van een tafel gedekt voor een feest,
       van een tafel gedekt als in dromen.
