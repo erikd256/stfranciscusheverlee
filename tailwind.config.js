@@ -107,6 +107,7 @@ module.exports = {
       fontFamily: {
         nunito: ["Nunito", ...defaultTheme.fontFamily.sans],
         lato: ["Lato", ...defaultTheme.fontFamily.sans],
+        "404": ['Splash'],
       },
       typography: (theme) => ({
         DEFAULT: {
