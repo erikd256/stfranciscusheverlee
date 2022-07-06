@@ -54,8 +54,8 @@ export const Header = ({ data }) => {
 
   return (
     <>
-      <div className="flex overflow-x-hidden items-center justify-between bg-liturgischekleur border-b-4 border-basiskleur"><img src="/assets/Kerk_Logo.jpg" className={`h-[250px]  border-r-4 border-basiskleur`}/><span className="lg:text-3xl sm:text-xl absolute left-[200px] top-[20px]">Sint Franciscusparochie</span><span className="absolute left-[200px] top-[60px] lg:text-lg sm:text-xs md:text-xs">Heverlee - Kessel-lo - Leuven</span><span className="absolute top-[120px] left-[200px] sm:text-xs md:text-xs"><p>Tiensesteenweg 190, 3001 Heverlee</p><p>tel. 016/25 04 59</p><p>franciscusheverlee@gmail.com</p></span></div>
-      <div className={`overflow-x-hidden flex items-center justify-between z-40 bg-vierdekleur p-0 text-basiskleur w-full border-solid border-b-4 border-basiskleur flex-1 mr-2 p-[15px] sticky top-0`}>
+      <div className="flex overflow-x-hidden items-center justify-between bg-liturgischekleur border-b-4 border-basiskleur"><img src="/assets/Kerk_Logo.jpg" className={`h-[250px]  border-r-4 border-basiskleur`}/><span className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl absolute left-[200px] top-[20px]">Sint Franciscusparochie</span><span className="absolute left-[200px] top-[60px] sm:text-md md:text-lg lg:text-xl xl:text-2xl">Heverlee - Kessel-lo - Leuven</span><span className="absolute top-[120px] left-[200px] sm:text-sm md:text-md lg:text-lg xl:text-xl"><p>Tiensesteenweg 190, 3001 Heverlee</p><p>tel. 016/25 04 59</p><p>franciscusheverlee@gmail.com</p></span></div>
+      <div className={`overflow-x-hidden flex items-center justify-between z-40 bg-vierdekleur text-basiskleur w-full border-solid border-b-4 border-basiskleur flex-1 mr-2 p-[15px] sticky top-0`}>
       <span className="text-center block border border-basiskleur rounded py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/">Start</a></span>
       </div>
     </>
