@@ -30,9 +30,9 @@
     }
   },
   "theme": {
-    "color": "blue",
+    "color": "basiskleur",
     "font": "sans",
     "icon": "boxicon",
-    "darkMode": "system"
+    "darkMode": "light"
   }
 }
