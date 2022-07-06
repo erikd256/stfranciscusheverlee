@@ -1,8 +1,16 @@
 ---
 blocks:
   - tagline: ''
-    headline: Lorem ipsum
-    text: "## \_Welkom!\n\nWe staan graag voor u ter beschikking en willen met u de droom van een rijk van vrede, liefde en rechtvaardigheid in de geest van Jezus helpen verwezenlijken.\n\nDie droom drukte pastoor Mauritz Andries zaliger in een mooi gedicht als volgt uit:\n\n"
+    headline: Welkom!
+    text: >+
+      We staan graag voor u ter beschikking en willen met u de droom van een
+      rijk van vrede, liefde en rechtvaardigheid in de geest van Jezus helpen
+      verwezenlijken.
+
+
+      Die droom drukte pastoor Mauritz Andries zaliger in een mooi gedicht als
+      volgt uit:
+
     image:
       src: >-
         https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1656787147/cld-sample-4.jpg
