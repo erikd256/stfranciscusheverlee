@@ -30,7 +30,7 @@
     }
   },
   "theme": {
-    "color": "basiskleur",
+    "color": "blue",
     "font": "sans",
     "icon": "boxicon",
     "darkMode": "light"
