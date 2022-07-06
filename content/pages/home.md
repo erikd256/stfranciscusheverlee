@@ -19,5 +19,26 @@ blocks:
 
       ![](https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1657131061/KHadEenDroom\_buhk8i.jpg)
     _template: content
+  - quote: |
+      'k Had een heerlijk visioen in mijn dromen
+      Alleluia! Ik moet het U zingen.
+      Want ik droomde van hemelse dingen:
+      van een tafel gedekt voor een feest,
+      van een tafel gedekt als in dromen.
+      Alleluia en ieder mag eten,
+      alle honger en haat zijn vergeten
+      aan de tafel van Gods bruiloftsfeest!
+
+      Ik had een heerlijk visioen in mijn dromen 
+      Alleluia! Ik moet het U zingen.
+      Want ik droomde van hemelse dingen:
+      Van een tafel gedekt in Gods huis.
+      Van een huis opgesmukt als in dromen.
+      Alleluia, hier klinken gezangen.
+      Hier verdwijnt het onrustig verlangen en zegt God met een lach:
+      Welkom thuis!
+    author: Mauritz Andries
+    color: primary
+    _template: testimonial
 ---
 
