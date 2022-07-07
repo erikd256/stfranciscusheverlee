@@ -12,7 +12,7 @@ blocks:
         questiontitle: >-
           Ik bespreek mijn vraag graag telefonisch en ben bereikbaar op het
           nummer:
-        placeholder: lorem ipsum
+        placeholder: ''
       - type: Checkbox
         questiontitle: Ik ben akkoord met de privacy....
         questionrequired: true
