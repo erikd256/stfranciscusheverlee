@@ -2,8 +2,8 @@
 blocks:
   - items:
       - icon:
-          color: 'default'
-          style: float
+          color: ''
+          style: circle
           name: ''
         title: Doop
         text: >-
@@ -39,7 +39,7 @@ blocks:
 
           Welkom in onze gemeenschap!
       - icon:
-          color: 'default'
+          color: ''
           style: float
           name: ''
         title: Eerste communie
@@ -59,7 +59,7 @@ blocks:
           volgen. In de geloofsgemeenschap Sint-Franciscus verzorgen de ouders,
           in samenspraak met een verantwoordelijke, deze voorbereiding.
       - icon:
-          color: 'default'
+          color: ''
           style: float
           name: ''
         title: Vormsel
@@ -95,7 +95,7 @@ blocks:
           Vandaar onze oproep: laat uw kinderen alleen deelnemen aan de
           vormselcatechese indien zij en ook u daar zelf achter kunnen staan.
       - icon:
-          color: 'default'
+          color: ''
           style: float
           name: ''
         title: Huwelijk
@@ -180,7 +180,7 @@ blocks:
           De nodige voorbereidingen zijn zoals een gewoon huwelijk en staan
           hierboven beschreven.
       - icon:
-          color: 'default'
+          color: ''
           style: float
           name: ''
         title: Uitvaart
@@ -188,7 +188,7 @@ blocks:
           This is where you might talk about the feature, if this wasn't just
           filler text.
       - icon:
-          color: 'default'
+          color: ''
           style: float
           name: ''
         title: Ziekenzalving
