@@ -60,6 +60,18 @@ export const formBlockSchema: TinaTemplate = {
   },
   fields: [
     {
+      type: "string",
+      label: "Formuliertitel",
+      name: "title",
+      ui: { defaultValue: "Formuliertitel" },
+    },
+    {
+          type: "string",
+          label: "Formulier ID - Formspree",
+          name: "formspreeid",
+          ui: { defaultValue: "12avaddaf345678" },
+    },
+    {
       type: "object",
       label: "Vragen",
       name: "items",
