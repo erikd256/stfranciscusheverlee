@@ -179,6 +179,14 @@ blocks:
 
           De nodige voorbereidingen zijn zoals een gewoon huwelijk en staan
           hierboven beschreven.
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Uitvaart
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
     _template: features
 ---
 
