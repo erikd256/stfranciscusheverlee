@@ -71,7 +71,6 @@ fragment PageParts on Page {
         src
         alt
       }
-      color
     }
     ... on PageBlocksFeatures {
       items {
@@ -85,16 +84,21 @@ fragment PageParts on Page {
         title
         text
       }
-      color
     }
     ... on PageBlocksContent {
       body
-      color
     }
     ... on PageBlocksTestimonial {
       quote
       author
-      color
+    }
+    ... on PageBlocksForm {
+      items {
+        __typename
+        type
+        questiontitle
+        placeholder
+      }
     }
   }
 }

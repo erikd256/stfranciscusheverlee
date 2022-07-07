@@ -8,19 +8,9 @@ import type { TinaTemplate } from "tinacms";
 
 export const Hero = ({ data, parentField }) => {
   const theme = useTheme();
-  const headlineColorClasses = {
-    blue: "from-blue-400 to-blue-600",
-    teal: "from-teal-400 to-teal-600",
-    green: "from-green-400 to-green-600",
-    red: "from-red-400 to-red-600",
-    pink: "from-pink-400 to-pink-600",
-    purple: "from-purple-400 to-purple-600",
-    orange: "from-orange-300 to-orange-600",
-    yellow: "from-yellow-400 to-yellow-600",
-  };
 
   return (
-    <Section color={data.color}>
+    <Section className="bg-vijfdekleur">
       <Container
         size="large"
         className="grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-8 items-center justify-center"
@@ -38,14 +28,10 @@ export const Hero = ({ data, parentField }) => {
           {data.headline && (
             <h3
               data-tinafield={`${parentField}.headline`}
-              className={`w-full relative	mb-10 text-5xl font-extrabold tracking-normal leading-tight title-font`}
+              className={`w-full relative	mb-10 text-5xl font-extrabold tracking-normal leading-tight title-font text-basiskleur`}
             >
               <span
-                className={`bg-clip-text text-transparent bg-gradient-to-r  ${
-                  data.color === "primary"
-                    ? `from-white to-gray-100`
-                    : headlineColorClasses[theme.color]
-                }`}
+                className={`bg-clip-text text-basiskleur`}
               >
                 {data.headline}
               </span>
@@ -54,9 +40,7 @@ export const Hero = ({ data, parentField }) => {
           {data.text && (
             <div
               data-tinafield={`${parentField}.text`}
-              className={`prose prose-lg mx-auto lg:mx-0 mb-10 ${
-                data.color === "primary" ? `prose-primary` : `dark:prose-dark`
-              }`}
+              className={`text-basiskleur prose-lg mx-auto lg:mx-0 mb-10`}
             >
               <TinaMarkdown content={data.text} />
             </div>
@@ -65,7 +49,6 @@ export const Hero = ({ data, parentField }) => {
             <Actions
               parentField={`${parentField}.actions`}
               className="justify-center lg:justify-start py-2"
-              parentColor={data.color}
               actions={data.actions}
             />
           )}
@@ -169,16 +152,6 @@ export const heroBlockSchema: TinaTemplate = {
           label: "Alt Text",
           type: "string",
         },
-      ],
-    },
-    {
-      type: "string",
-      label: "Color",
-      name: "color",
-      options: [
-        { label: "Default", value: "default" },
-        { label: "Tint", value: "tint" },
-        { label: "Primary", value: "primary" },
       ],
     },
   ],

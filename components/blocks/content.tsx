@@ -6,11 +6,9 @@ import type { TinaTemplate } from "tinacms";
 
 export const Content = ({ data, parentField = "" }) => {
   return (
-    <Section color={data.color}>
+    <Section className="bg-vijfdekleur">
       <Container
-        className={`max-w-4xl prose prose-lg ${
-          data.color === "primary" ? `prose-primary` : `dark:prose-dark`
-        }`}
+        className={`prose-lg text-basiskleur bg-vijfdekleur w-full`}
         data-tinafield={`${parentField}.body`}
         size="large"
       >
@@ -34,16 +32,6 @@ export const contentBlockSchema: TinaTemplate = {
       type: "rich-text",
       label: "Body",
       name: "body",
-    },
-    {
-      type: "string",
-      label: "Color",
-      name: "color",
-      options: [
-        { label: "Default", value: "default" },
-        { label: "Tint", value: "tint" },
-        { label: "Primary", value: "primary" },
-      ],
     },
   ],
 };
