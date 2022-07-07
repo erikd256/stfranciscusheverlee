@@ -9,8 +9,6 @@ export const Question = ({ data, tinaField }) => {
   return (
     <>
       <label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur w-full">{data.questiontitle}</label>
-      <input type={data.type} style={ data.type=="textarea" ? { display:'none'} : {display : 'block'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur w-full" required={data.questionrequired}/>
-      <textarea style={ data.type=="textarea" ? { display:'block'} : {display : 'none'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur w-full" required={data.questionrequired}></textarea>
     </>
   );
 };
@@ -23,7 +21,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-4xl">{data.formtitle}</p>
-        <form acceptCharset="utf-8" action={`https://formspree.io/f/`} className="w-4/6 border-2 border-basiskleur self-center p-[15px]" method="post">
+        <form acceptCharset="utf-8" action={`https://formspree.io/f/`} className="relative w-4/6 border-2 border-basiskleur place-self-center p-[15px] left-1/6" method="post">
         <fieldset>
         {data.items &&
           data.items.map(function (block, i) {
@@ -47,6 +45,7 @@ const defaultQuestion = {
   questiontitle: "Label van de vraag",
   type: "text",
   placeholder: "lorem ipsum",
+  questionid: "oneword"
 };
 
 export const formBlockSchema: TinaTemplate = {
