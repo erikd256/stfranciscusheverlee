@@ -250,8 +250,20 @@ blocks:
           name: ''
         title: Eerste communie
         text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
+          Beste ouders, 
+
+          Uw kind wordt volgend jaar 8 en kan in 2022 zijn/haar Eerste Communie
+          vieren.
+
+          De voorbereiding op de Eerste Communie is geen schoolactiviteit, maar
+          een gebeuren binnen een dragende geloofsgemeenschap. U kan uw kind dus
+          best inschrijven in de geloofsgemeenschap waar u woont of waar u
+          deelneemt aan vieringen en/of activiteiten.
+
+          Uw kind inschrijven betekent dat u zich betrokken voelt bij het
+          gebeuren en de voorbereiding op de Eerste Communie van nabij wil
+          volgen. In de geloofsgemeenschap Sint-Franciscus verzorgen de ouders,
+          in samenspraak met een verantwoordelijke, deze voorbereiding.
       - icon:
           color: ''
           style: float
