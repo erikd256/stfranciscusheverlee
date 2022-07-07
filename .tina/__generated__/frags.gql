@@ -97,6 +97,7 @@ fragment PageParts on Page {
         __typename
         type
         questiontitle
+        questionrequired
         placeholder
       }
     }

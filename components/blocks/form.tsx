@@ -9,8 +9,8 @@ export const Question = ({ data, tinaField }) => {
   return (
     <>
       <label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur">{data.questiontitle}</label>
-      <input type={data.type} style={ data.type=="textarea" ? { display:'none'} : {display : 'block'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur"/>
-      <textarea style={ data.type=="textarea" ? { display:'block'} : {display : 'none'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur"></textarea>
+      <input type={data.type} style={ data.type=="textarea" ? { display:'none'} : {display : 'block'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur" required={data.questionrequired}/>
+      <textarea style={ data.type=="textarea" ? { display:'block'} : {display : 'none'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur" required={data.questionrequired}></textarea>
     </>
   );
 };
@@ -97,6 +97,11 @@ export const formBlockSchema: TinaTemplate = {
           type: "string",
           label: "Label",
           name: "questiontitle",
+        },
+        {
+          type: "boolean",
+          label: "Verplichte vraag",
+          name: "questionrequired",
         },
         {
           type: "string",

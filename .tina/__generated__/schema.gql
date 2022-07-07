@@ -231,6 +231,7 @@ type PageBlocksTestimonial {
 type PageBlocksFormItems {
   type: String
   questiontitle: String
+  questionrequired: Boolean
   placeholder: String
 }
 
@@ -384,6 +385,7 @@ input PageBlocksTestimonialMutation {
 input PageBlocksFormItemsMutation {
   type: String
   questiontitle: String
+  questionrequired: Boolean
   placeholder: String
 }
 
