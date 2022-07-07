@@ -8,9 +8,9 @@ import { iconSchema } from "../util/icon";
 export const Question = ({ data, tinaField }) => {
   return (
     <>
-      <label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur">{data.questiontitle}</label>
-      <input type={data.type} style={ data.type=="textarea" ? { display:'none'} : {display : 'block'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur" required={data.questionrequired}/>
-      <textarea style={ data.type=="textarea" ? { display:'block'} : {display : 'none'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur" required={data.questionrequired}></textarea>
+      <label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur w-full">{data.questiontitle}</label>
+      <input type={data.type} style={ data.type=="textarea" ? { display:'none'} : {display : 'block'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur w-full" required={data.questionrequired}/>
+      <textarea style={ data.type=="textarea" ? { display:'block'} : {display : 'none'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur w-full" required={data.questionrequired}></textarea>
     </>
   );
 };
@@ -23,7 +23,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-4xl">{data.formtitle}</p>
-        <form acceptCharset="utf-8" action={`https://formspree.io/f/`} method="post">
+        <form acceptCharset="utf-8" action={`https://formspree.io/f/`} className="w-4/6 border-2 border-basiskleur self-center p-[15px]" method="post">
         <fieldset>
         {data.items &&
           data.items.map(function (block, i) {
@@ -35,7 +35,7 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur"/>
+          <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
           </fieldset>
           </form>
       </Container>
@@ -59,16 +59,6 @@ export const formBlockSchema: TinaTemplate = {
     },
   },
   fields: [
-    {
-      type: "string",
-      label: "Titel",
-      name: "formtitle",
-    },
-    {
-      type: "string",
-      label: "Formspree-ID",
-      name: "formid",
-    },
     {
       type: "object",
       label: "Vragen",
