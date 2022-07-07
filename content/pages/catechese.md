@@ -94,6 +94,91 @@ blocks:
 
           Vandaar onze oproep: laat uw kinderen alleen deelnemen aan de
           vormselcatechese indien zij en ook u daar zelf achter kunnen staan.
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Huwelijk
+        text: >-
+          1.     Kerkelijk huwelijk
+
+
+
+          Proficiat, u hebt ervoor gekozen elkaar het ja-woord te geven en dat
+          moet gevierd worden.
+
+           
+
+          Onze parochiegemeenschap gaat bij deze gelegenheid graag met u op weg
+          .
+
+           
+
+          Verloofden melden zich liefst zes maanden voor hun huwelijk op het
+          parochiesecretariaat op 016 250 459.  
+
+           
+
+          In 1 à 2 beenkomsten volgt er een persoonlijk gesprek over de zin van
+          een christelijk huwelijk en over de vormgeving van de huwelijksviering
+          (desgewenst aan de hand van een samen te stellen huwelijksboekje).
+
+           
+
+          Tijdens de viering kan er beroep gedaan worden op muzikanten van onze
+          gemeenschap: een organist/pianist.
+
+
+          -         
+
+
+          -     Wensen jullie andere muzikanten (zang of instrument) dan dienen
+          jullie daar zelf voor te  zorgen.
+
+
+          Dit alles is niet standaard voorzien in de prijs maar kan geregeld
+          worden indien jullie dit wensen.
+
+           
+
+          De bijdrage voor een huwelijksviering is in het bisdom
+          Mechelen-Brussel bepaald op 275 EUR. De afrekening van dit bedrag
+          wordt geregeld voor de huwelijksviering via het parochiesecretariaat,
+          Tiensesteenweg 190, 3001 Heverlee of kan overgeschreven worden op het
+          rekeningnummer BE27 7343 4406 5473 van de VPW Leuven, afdeling
+          Sint-Franciscus.   
+
+           
+
+          Hebt u in uw familie een eigen priester? Geen probleem, neem dan
+          contact op met de parochie voor de praktische afspraken te maken.
+
+           
+
+          Veel succes bij de voorbereidingen van deze prachtige dag!
+
+           
+
+          2. Belofteviering
+
+
+
+          Is er ook iets mogelijk voor mensen die eigenlijk niet voor de kerk
+          kunnen trouwen?
+
+
+          Natuurlijk, wij willen samen vieren met en rond twee mensen die elkaar
+          gevonden hebben en met elkaar door het leven willen gaan.
+
+
+          Daarvoor bieden wij een alternatieve viering aan (gebedsviering of
+          eucharistie) die geen huwelijk is. In onze parochie heet deze viering
+          een ‘belofteviering’.  In deze viering beloven jullie elkaar
+          genegenheid en trouw.
+
+
+          De nodige voorbereidingen zijn zoals een gewoon huwelijk en staan
+          hierboven beschreven.
     _template: features
 ---
 
