@@ -29,15 +29,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                     <Hero data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
-              case "PageBlocksFeatures":
-                return (
-                  <div
-                    data-tinafield={`blocks.${i}`}
-                    key={i + block.__typename}
-                  >
-                    <Features data={block} parentField={`blocks.${i}`} />
-                  </div>
-                );
+                case "PageBlocksFeatures":
+                  return (
+                    <div
+                      data-tinafield={`blocks.${i}`}
+                      key={i + block.__typename}
+                    >
+                      <Features data={block} parentField={`blocks.${i}`} />
+                    </div>
+                  );
               case "PageBlocksTestimonial":
                 return (
                   <div
