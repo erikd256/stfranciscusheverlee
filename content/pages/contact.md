@@ -5,7 +5,7 @@ blocks:
         questiontitle: 'Ik heb volgende vraag:'
         placeholder: ''
       - type: Mailaddres
-        questiontitle: mailadres waarop we u kunnen bereiken
+        questiontitle: Vul het mailadres hier in zodat we u kunnen bereiken
         questionrequired: true
         placeholder: lorem ipsum
     _template: form
