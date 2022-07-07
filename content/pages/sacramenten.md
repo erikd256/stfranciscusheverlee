@@ -6,7 +6,7 @@ blocks:
   - items:
       - icon:
           color: 'default'
-          style: circle
+          style: float
           name: ''
         title: Doop
         text: >-
