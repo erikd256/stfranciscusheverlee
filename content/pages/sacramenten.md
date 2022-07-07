@@ -1,13 +1,14 @@
 ---
 blocks:
   - body: >
-      ![](https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1657218894/pexels-lisa-2721581_mbfus5.jpg)
+      ![](https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1657218894/pexels-lisa-2721581\_mbfus5.jpg
+      "")
     _template: content
   - items:
       - icon:
-          color: 'default'
+          color: default
           style: float
-          name: ''
+          name: user
         title: Doop
         text: >-
           Proficiat!
@@ -42,7 +43,7 @@ blocks:
 
           Welkom in onze gemeenschap!
       - icon:
-          color: 'default'
+          color: default
           style: float
           name: ''
         title: Eerste communie
@@ -62,7 +63,7 @@ blocks:
           volgen. In de geloofsgemeenschap Sint-Franciscus verzorgen de ouders,
           in samenspraak met een verantwoordelijke, deze voorbereiding.
       - icon:
-          color: 'default'
+          color: default
           style: float
           name: ''
         title: Vormsel
@@ -98,7 +99,7 @@ blocks:
           Vandaar onze oproep: laat uw kinderen alleen deelnemen aan de
           vormselcatechese indien zij en ook u daar zelf achter kunnen staan.
       - icon:
-          color: 'default'
+          color: default
           style: float
           name: ''
         title: Huwelijk
@@ -183,7 +184,7 @@ blocks:
           De nodige voorbereidingen zijn zoals een gewoon huwelijk en staan
           hierboven beschreven.
       - icon:
-          color: 'default'
+          color: default
           style: float
           name: ''
         title: Uitvaart
@@ -191,7 +192,7 @@ blocks:
           This is where you might talk about the feature, if this wasn't just
           filler text.
       - icon:
-          color: 'default'
+          color: default
           style: float
           name: ''
         title: Ziekenzalving
