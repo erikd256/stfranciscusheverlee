@@ -148,7 +148,7 @@ export const Icon = ({
         (iconColor === theme.color || iconColor === "primary")
           ? "white"
           : iconColor
-      ].regular;
+      ];
     return (
       <IconSVG
         data-tinafield={tinaField}
