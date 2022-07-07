@@ -17,11 +17,11 @@ export const Form = ({ data, parentField }) => {
   return (
     <Section>
       <Container
-        className={`flex flex-wrap gap-x-10 gap-y-8 text-left bg-vijfdekleur text-basiskleur`}
+        className={`flex flex-wrap gap-x-10 gap-y-8 text-left bg-vijfdekleur text-basiskleur items-center`}
         size="large"
       >
         <p className="text-4xl">{data.formtitle}</p>
-        <form acceptCharset="utf-8" action={`https://formspree.io/f/`} className="relative w-4/6 border-2 border-basiskleur place-self-center p-[15px] left-1/6" method="post">
+        <form acceptCharset="utf-8" action={`https://formspree.io/f/`} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="post">
         <fieldset>
         {data.items &&
           data.items.map(function (block, i) {
