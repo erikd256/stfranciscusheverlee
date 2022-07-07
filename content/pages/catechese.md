@@ -1,60 +1,5 @@
 ---
 blocks:
-  - items:
-      - icon:
-          color: ''
-          style: float
-          name: ''
-        title: Doop
-        text: >-
-          Proficiat!
-
-          U bent de fiere ouder van een kind dat wil opgenomen worden in onze
-          gemeenschap (kinderdoop).
-
-          U bent een volwassene en beslist nu van te willen opgenomen worden in
-          onze levende gemeenschap (volwassen doop) . 
-
-
-          Graag willen wij met jullie/u op weg gaan naar deze dag.
-
-
-          Tijdens deze doopviering zal u of uw kind opgenomen worden in onze
-          gemeenschap en zal zijn of haar naam worden geschreven in de palm van
-          Gods hand.
-
-
-          Gelieve tijdig contact op te nemen met het parochiesecretariaat op
-          (016) 250 459 of rechtstreeks met de pastoraal werker:
-          Lieven.Dries@telenet.be
-
-           
-
-          De doopviering wordt altijd voorafgegaan door een doopgesprek. Daarin
-          zal niet alleen de viering aan bod komen maar wordt ook de zin en
-          betekenis van het doopsel besproken.
-
-          De datum van de doopviering wordt afgesproken met de voorganger. 
-
-
-          Welkom in onze gemeenschap!
-      - icon:
-          color: ''
-          style: float
-          name: ''
-        title: Eerste communie
-        text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
-      - icon:
-          color: ''
-          style: float
-          name: ''
-        title: Vormsel
-        text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
-    _template: features
   - body: >
       AANVRAAGFORMULIER VORMSEL 22 mei 2022
 
@@ -261,5 +206,65 @@ blocks:
 
       Op vraag kan een kopie van deze verklaring meegegeven worden.
     _template: content
+  - items:
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Doop
+        text: >-
+          Proficiat!
+
+          U bent de fiere ouder van een kind dat wil opgenomen worden in onze
+          gemeenschap (kinderdoop).
+
+          U bent een volwassene en beslist nu van te willen opgenomen worden in
+          onze levende gemeenschap (volwassen doop) . 
+
+
+          Graag willen wij met jullie/u op weg gaan naar deze dag.
+
+
+          Tijdens deze doopviering zal u of uw kind opgenomen worden in onze
+          gemeenschap en zal zijn of haar naam worden geschreven in de palm van
+          Gods hand.
+
+
+          Gelieve tijdig contact op te nemen met het parochiesecretariaat op
+          (016) 250 459 of rechtstreeks met de pastoraal werker:
+          Lieven.Dries@telenet.be
+
+           
+
+          De doopviering wordt altijd voorafgegaan door een doopgesprek. Daarin
+          zal niet alleen de viering aan bod komen maar wordt ook de zin en
+          betekenis van het doopsel besproken.
+
+          De datum van de doopviering wordt afgesproken met de voorganger. 
+
+
+          Welkom in onze gemeenschap!
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Eerste communie
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Vormsel
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+    _template: features
+  - items:
+      - type: text
+        questiontitle: Label van de vraag
+        placeholder: lorem ipsum
+    _template: form
 ---
 
