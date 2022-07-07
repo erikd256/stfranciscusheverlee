@@ -8,7 +8,7 @@ import { iconSchema } from "../util/icon";
 export const Question = ({ data, tinaField }) => {
   return (
     <>
-      <label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-vijfdekleur">{data.questiontitle}</label>
+      <label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur">{data.questiontitle}</label>
       <input type={data.type} style={ data.type=="textarea" ? { display:'none'} : {display : 'block'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur"/>
       <textarea style={ data.type=="textarea" ? { display:'block'} : {display : 'none'} } placeholder={data.placeholder} className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur"></textarea>
     </>
@@ -19,7 +19,7 @@ export const Form = ({ data, parentField }) => {
   return (
     <Section>
       <Container
-        className={`flex flex-wrap gap-x-10 gap-y-8 text-left bg-liturgischekleur text-basiskleur`}
+        className={`flex flex-wrap gap-x-10 gap-y-8 text-left bg-vijfdekleur text-basiskleur`}
         size="large"
       >
         <p className="text-4xl">{data.title}</p>
@@ -35,7 +35,7 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-vijfdekleur"/>
+          <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur"/>
           </fieldset>
           </form>
       </Container>
