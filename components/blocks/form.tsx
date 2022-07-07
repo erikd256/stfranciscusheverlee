@@ -22,7 +22,7 @@ export const Form = ({ data, parentField }) => {
         className={`flex flex-wrap gap-x-10 gap-y-8 text-left bg-vijfdekleur text-basiskleur`}
         size="large"
       >
-        <p className="text-4xl"></p>
+        <p className="text-4xl">{data.formtitle}</p>
         <form acceptCharset="utf-8" action={`https://formspree.io/f/`} method="post">
         <fieldset>
         {data.items &&
@@ -59,6 +59,16 @@ export const formBlockSchema: TinaTemplate = {
     },
   },
   fields: [
+    {
+      type: "string",
+      label: "Titel",
+      name: "formtitle",
+    },
+    {
+      type: "string",
+      label: "Formspree-ID",
+      name: "formid",
+    },
     {
       type: "object",
       label: "Vragen",
