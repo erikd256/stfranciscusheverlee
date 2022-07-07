@@ -1,5 +1,3 @@
-
-
 import { Actions } from "../util/actions";
 import { Section } from "../util/section";
 import { Container } from "../util/container";
@@ -110,16 +108,6 @@ export const featureBlockSchema: TinaTemplate = {
             component: "textarea",
           },
         },
-      ],
-    },
-    {
-      type: "string",
-      label: "Color",
-      name: "color",
-      options: [
-        { label: "Default", value: "default" },
-        { label: "Tint", value: "tint" },
-        { label: "Primary", value: "primary" },
       ],
     },
   ],
