@@ -187,6 +187,17 @@ blocks:
         text: >-
           This is where you might talk about the feature, if this wasn't just
           filler text.
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Ziekenzalving
+        text: >-
+          Wie ernstig ziek is kan de ziekenzalving ontvangen; ze is een steun om
+          het ziek-zijn moedig en christelijk te doorleven.
+
+
+          Hiervoor neemt men contact met het parochiesecretariaat.
     _template: features
 ---
 
