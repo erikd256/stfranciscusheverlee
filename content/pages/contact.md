@@ -7,7 +7,7 @@ blocks:
       - type: Mailaddres
         questiontitle: Vul het mailadres hier in zodat we u kunnen bereiken
         questionrequired: true
-        placeholder: lorem ipsum
+        placeholder: ''
       - type: text
         questiontitle: >-
           Ik bespreek mijn vraag graag telefonisch en ben bereikbaar op het
