@@ -1,6 +1,9 @@
 ---
 blocks:
   - items:
+      - type: text
+        questiontitle: 'Ik heb volgende vraag:'
+        placeholder: ''
       - type: Mailaddres
         questiontitle: mailadres waarop we u kunnen bereiken
         questionrequired: true
