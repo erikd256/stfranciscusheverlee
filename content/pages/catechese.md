@@ -1,6 +1,32 @@
 ---
 blocks:
-  - body: >+
+  - items:
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Doopsel
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          color: ''
+          style: float
+          name: ''
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+    _template: features
+  - body: >
       AANVRAAGFORMULIER VORMSEL 22 mei 2022
 
 
@@ -205,9 +231,6 @@ blocks:
 
 
       Op vraag kan een kopie van deze verklaring meegegeven worden.
-
-
-
     _template: content
 ---
 
