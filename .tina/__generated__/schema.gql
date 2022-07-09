@@ -215,17 +215,9 @@ type PageBlocksFeaturesItems {
   text: String
 }
 
-type PageBlocksFeaturesActions {
-  label: String
-  type: String
-  icon: Boolean
-  link: String
-}
-
 type PageBlocksFeatures {
   items: [PageBlocksFeaturesItems]
   color: String
-  actions: [PageBlocksFeaturesActions]
 }
 
 type PageBlocksContent {
@@ -378,17 +370,9 @@ input PageBlocksFeaturesItemsMutation {
   text: String
 }
 
-input PageBlocksFeaturesActionsMutation {
-  label: String
-  type: String
-  icon: Boolean
-  link: String
-}
-
 input PageBlocksFeaturesMutation {
   items: [PageBlocksFeaturesItemsMutation]
   color: String
-  actions: [PageBlocksFeaturesActionsMutation]
 }
 
 input PageBlocksContentMutation {

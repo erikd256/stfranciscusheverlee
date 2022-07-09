@@ -85,13 +85,6 @@ fragment PageParts on Page {
         text
       }
       color
-      actions {
-        __typename
-        label
-        type
-        icon
-        link
-      }
     }
     ... on PageBlocksContent {
       body
