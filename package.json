@@ -22,9 +22,7 @@
     "postcss": "^8.3.11",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^10.1.0",
-    "tailwindcss": "^2.2.19"
-  },
-  "dependencies": {
+    "tailwindcss": "^2.2.19",
     "@headlessui/react": "^1.4.1",
     "@tailwindcss/typography": "^0.4.1",
     "@tinacms/auth": "^0.50.2",
