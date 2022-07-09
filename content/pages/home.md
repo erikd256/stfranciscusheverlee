@@ -12,7 +12,7 @@ blocks:
       Die droom drukte pastoor Mauritz Andries zaliger in een mooi gedicht als
       volgt uit:
     _template: content
-  - quote: |
+  - quote: |-
       'k Had een heerlijk visioen in mijn dromen
       Alleluia! Ik moet het U zingen.
       Want ik droomde van hemelse dingen:
@@ -21,7 +21,6 @@ blocks:
       Alleluia en ieder mag eten,
       alle honger en haat zijn vergeten
       aan de tafel van Gods bruiloftsfeest!
-
       Ik had een heerlijk visioen in mijn dromen 
       Alleluia! Ik moet het U zingen.
       Want ik droomde van hemelse dingen:
@@ -31,7 +30,6 @@ blocks:
       Hier verdwijnt het onrustig verlangen en zegt God met een lach:
       Welkom thuis!
     author: Mauritz Andries
-    color: primary
     _template: testimonial
 ---
 
