@@ -21,6 +21,7 @@ blocks:
       Alleluia en ieder mag eten,
       alle honger en haat zijn vergeten
       aan de tafel van Gods bruiloftsfeest!
+
       Ik had een heerlijk visioen in mijn dromen 
       Alleluia! Ik moet het U zingen.
       Want ik droomde van hemelse dingen:
