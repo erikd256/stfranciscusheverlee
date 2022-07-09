@@ -1,8 +1,6 @@
 ---
 blocks:
-  - body: >
-      ![](https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1657218894/pexels-lisa-2721581\_mbfus5.jpg
-      "")
+  - body: ''
     _template: content
   - items:
       - icon:
