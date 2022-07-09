@@ -108,6 +108,56 @@ export const featureBlockSchema: TinaTemplate = {
             component: "textarea",
           },
         },
+        {
+          label: "Actions",
+          name: "actions",
+          type: "object",
+          list: true,
+          ui: {
+            defaultItem: {
+              label: "Action Label",
+              type: "button",
+              icon: true,
+              link: "/",
+            },
+          },
+          fields: [
+            {
+              label: "Label",
+              name: "label",
+              type: "string",
+            },
+            {
+              label: "Type",
+              name: "type",
+              type: "string",
+              options: [
+                { label: "Button", value: "button" },
+                { label: "Link", value: "link" },
+              ],
+            },
+            {
+              label: "Icon",
+              name: "icon",
+              type: "boolean",
+            },
+            {
+              label: "Link",
+              name: "link",
+              type: "string",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "string",
+      label: "Color",
+      name: "color",
+      options: [
+        { label: "Default", value: "default" },
+        { label: "Tint", value: "tint" },
+        { label: "Primary", value: "primary" },
       ],
     },
   ],

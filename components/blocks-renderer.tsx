@@ -30,14 +30,14 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                   </div>
                 );
                 case "PageBlocksFeatures":
-                  return (
-                    <div
-                      data-tinafield={`blocks.${i}`}
-                      key={i + block.__typename}
-                    >
-                      <Features data={block} parentField={`blocks.${i}`} />
-                    </div>
-                  );
+                return (
+                  <div
+                    data-tinafield={`blocks.${i}`}
+                    key={i + block.__typename}
+                  >
+                    <Features data={block} parentField={`blocks.${i}`} />
+                  </div>
+                );
               case "PageBlocksTestimonial":
                 return (
                   <div
