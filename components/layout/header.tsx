@@ -42,8 +42,10 @@ export const Header = ({ data }) => {
             Vieringen
       </div>
       <span className="hidden mo:block text-center border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle2}>Organisatie</a></span>
-      <div style={{display: popup2?"block":"none"}} className="p-2 absolute top-[50px] m-0">
-            Organisatie
+      <div style={{display: popup4?"block":"none"}} className="p-2">
+      <span className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_adressen">Adressen en parochiezalen</a></span>
+        <span className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_videos">Organisatie parochie</a></span>
+        <span className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_audios">Agenda parochiaal centrum</a></span>
       </div>
       <span className="hidden mo:block text-center border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle3}>Multimedia</a></span>
       <div style={{display: popup3?"block":"none"}}>
