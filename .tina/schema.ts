@@ -14,7 +14,7 @@ const schema = defineSchema({
             mediaRoot: "uploads"
           },
      }
-  }
+  },
   collections: [
     {
       label: "Blog Posts",
