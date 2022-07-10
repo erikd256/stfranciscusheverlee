@@ -6,7 +6,7 @@ blocks:
     formspreetitle: Contacteer ons!
     items:
       - type: textarea
-        questiontitle: 'Mijn vraag:'
+        questiontitle: Mijn vraag
         questionrequired: true
         placeholder: ''
       - type: Mailaddres
