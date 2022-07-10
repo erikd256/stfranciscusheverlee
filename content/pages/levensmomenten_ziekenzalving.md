@@ -1,8 +1,16 @@
 ---
 blocks:
   - tagline: Here's some text above the other text
-    headline: This Big Text is Totally Awesome
-    text: ''
+    headline: Ziekenzalving
+    text: >+
+      ### Wie ernstig ziek is kan de ziekenzalving ontvangen; ze is een steun om
+      het ziek-zijn moedig en christelijk te doorleven.
+
+
+      Hiervoor neemt men contact met het parochiesecretariaat.
+
+
+
     actions:
       - label: Samana
         type: button
