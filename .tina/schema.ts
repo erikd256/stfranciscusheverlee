@@ -7,14 +7,14 @@ import { formBlockSchema } from "../components/blocks/form";
 import { iconSchema } from "../components/util/icon";
 
 const schema = defineSchema({
-  config: {
-    media: {
-       loadCustomStore: async () => {
-         const pack = await import("next-tinacms-cloudinary");
-         return pack.TinaCloudCloudinaryMediaStore;
-       },
-    }
- },
+   config: {
+     media: {
+        tina: {
+            publicFolder: "public",
+            mediaRoot: "uploads"
+          },
+     }
+  }
   collections: [
     {
       label: "Blog Posts",
