@@ -17,7 +17,7 @@ blocks:
         questiontitle: Mijn telefoonnummer (niet verplicht!)
         placeholder: ''
       - type: Checkbox
-        questiontitle: Ik ben akkoord met de privacy....
+        questiontitle: Ik ben akkoord met de privacyovereenkomst
         questionrequired: true
         placeholder: lorem ipsum
     _template: form
