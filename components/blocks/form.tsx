@@ -20,9 +20,9 @@ export const Form = ({ data, parentField }) => {
         className={`flex flex-wrap gap-x-10 gap-y-8 text-left bg-vijfdekleur text-basiskleur items-center`}
         size="large"
       >
-        <p className="text-4xl">{data.formtitle}</p>
-        <form acceptCharset="utf-8" action={`https://formspree.io/f/`} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="post">
+        <form acceptCharset="utf-8" action={`https://formspree.io/f/${data.formspreeid}`} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="post">
         <fieldset>
+        <p className="text-2xl">{data.formspreetitle}</p>
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -58,6 +58,16 @@ export const formBlockSchema: TinaTemplate = {
     },
   },
   fields: [
+    {
+      type: "string",
+      label: "FormulierID",
+      name: "formspreeid",
+    },
+    {
+      type: "string",
+      label: "Formulier titel",
+      name: "formspreetitle",
+    },
     {
       type: "object",
       label: "Vragen",

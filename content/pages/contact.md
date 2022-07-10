@@ -2,7 +2,9 @@
 blocks:
   - body: "**Tiensesteenweg 190, 3001 Heverlee**\n\n**Telefoon secretariaat:\_+32 16 25 04 59**\n\nE-mail:\_[franciscusheverlee@gmail.com](mailto:franciscusheverlee@gmail.com)\n"
     _template: content
-  - items:
+  - formspreeid: test
+    formspreetitle: titel van het formulier
+    items:
       - type: textarea
         questiontitle: 'Ik heb volgende vraag:'
         questionrequired: true
@@ -22,3 +24,4 @@ blocks:
         placeholder: lorem ipsum
     _template: form
 ---
+

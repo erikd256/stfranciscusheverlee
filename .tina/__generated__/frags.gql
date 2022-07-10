@@ -94,6 +94,8 @@ fragment PageParts on Page {
       author
     }
     ... on PageBlocksForm {
+      formspreeid
+      formspreetitle
       items {
         __typename
         type

@@ -237,6 +237,8 @@ type PageBlocksFormItems {
 }
 
 type PageBlocksForm {
+  formspreeid: String
+  formspreetitle: String
   items: [PageBlocksFormItems]
 }
 
@@ -392,6 +394,8 @@ input PageBlocksFormItemsMutation {
 }
 
 input PageBlocksFormMutation {
+  formspreeid: String
+  formspreetitle: String
   items: [PageBlocksFormItemsMutation]
 }
 
