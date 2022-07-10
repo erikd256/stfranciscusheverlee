@@ -120,6 +120,11 @@ export const formBlockSchema: TinaTemplate = {
           label: "Placeholder",
           name: "placeholder",
         },
+        {
+          type: "string",
+          label: "Vraag ID",
+          name: "questionid",
+        },
       ],
     },
     
