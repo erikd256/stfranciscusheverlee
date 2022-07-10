@@ -8,7 +8,9 @@ import { iconSchema } from "../util/icon";
 export const Question = ({ data, tinaField }) => {
   return (
     <>
-      <label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur w-full">{data.questiontitle}</label>
+      <p style={{display: data.type=="checkbox" ? "none":"block"}}><label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur">{data.questiontitle}</label></p>
+      <input type={data.type} className="my-[10px] w-full border-basiskleur border-[2px]" style={{display: data.type=="textarea" ? "none":"block"}}/>
+      <textarea className="my-[10px] w-full border-basiskleur border-[2px]" style={{display: data.type=="textarea" ? "block":"none"}}></textarea>
     </>
   );
 };
@@ -22,7 +24,7 @@ export const Form = ({ data, parentField }) => {
       >
         <form acceptCharset="utf-8" action={`https://formspree.io/f/${data.formspreeid}`} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="post">
         <fieldset>
-        <p className="text-2xl">{data.formspreetitle}</p>
+        <p className="text-2xl my-[10px]">{data.formspreetitle}</p>
         {data.items &&
           data.items.map(function (block, i) {
             return (
