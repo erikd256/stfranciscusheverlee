@@ -233,6 +233,7 @@ type PageBlocksFormItems {
   type: String
   questiontitle: String
   questionrequired: Boolean
+  questionid: String
   placeholder: String
 }
 
@@ -390,6 +391,7 @@ input PageBlocksFormItemsMutation {
   type: String
   questiontitle: String
   questionrequired: Boolean
+  questionid: String
   placeholder: String
 }
 
