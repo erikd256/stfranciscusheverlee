@@ -8,7 +8,7 @@ import { iconSchema } from "../util/icon";
 export const Question = ({ data, tinaField }) => {
   return (
     <>
-      <p style={{display: data.type=="checkbox" ? "none":"block"}}><label className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur">{data.questiontitle}</label></p>
+      <p style={{display: data.type=="checkbox" ? "none":"block"}} className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur container mx-auto"><label className="w-4/6" >{data.questiontitle} <span style={{display: data.questionrequired==true ? "block":"none"}} className="text-red-500 inline-block"> *</span></label></p>
       <input type={data.type} className="my-[10px] w-full border-basiskleur border-[2px]" style={{display: data.type=="textarea" ? "none":"block"}}/>
       <textarea className="my-[10px] w-full border-basiskleur border-[2px]" style={{display: data.type=="textarea" ? "block":"none"}}></textarea>
     </>
@@ -19,7 +19,7 @@ export const Form = ({ data, parentField }) => {
   return (
     <Section>
       <Container
-        className={`flex flex-wrap gap-x-10 gap-y-8 text-left bg-vijfdekleur text-basiskleur items-center`}
+        className={`bg-vijfdekleur text-basiskleur`}
         size="large"
       >
         <form acceptCharset="utf-8" action={`https://formspree.io/f/${data.formspreeid}`} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="post">
@@ -37,6 +37,7 @@ export const Form = ({ data, parentField }) => {
           })}
           <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
           </fieldset>
+          <span className="text-red-500">* Verplicht</span>
           </form>
       </Container>
     </Section>
@@ -62,7 +63,7 @@ export const formBlockSchema: TinaTemplate = {
   fields: [
     {
       type: "string",
-      label: "FormulierID",
+      label: "FormulierID - formspree",
       name: "formspreeid",
     },
     {
@@ -87,20 +88,20 @@ export const formBlockSchema: TinaTemplate = {
           name: "type",
           options: [
             {
-              value: 'Checkbox',
-              label: 'checkbox',
+              value: 'checkbox',
+              label: 'Checkbox',
             },
             {
-              value: 'Mailaddres',
-              label: 'email',
+              value: 'email',
+              label: 'Mailadres',
             },
             {
               value: "text",
-              label: "text"
+              label: "Text"
             },
             {
               value: "textarea",
-              label: "textvak"
+              label: "Textvak"
             }
           ],
         },
