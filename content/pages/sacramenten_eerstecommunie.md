@@ -9,6 +9,9 @@ blocks:
         icon: true
         link: >-
           https://www.kerknet.be/sites/default/files/20220516%20Initiatiesacramenten%20bijgewerkt%20formulier.pdf
+    image:
+      src: >-
+        https://assets.tina.io/fe0d2fdd-76d5-4873-b6c7-c4abdafd8901/supper-gc56ceda01_1920.jpg
     _template: hero
 ---
 
