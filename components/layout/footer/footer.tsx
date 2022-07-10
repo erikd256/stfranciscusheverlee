@@ -11,7 +11,7 @@ export const Footer = ({ data, icon, rawData }) => {
       <Container className="relative" size="small">
         <div className="flex justify-between text-liturgischekleur gap-6 flex-wrap">
           <p>&copy; <a href="https://github.com/erikd256" target="_blank">erikd256</a> - {(new Date().getFullYear())}</p>
-          <p className={``}><img className="" src="https://vercelbadge.vercel.app/api/erikd256/stfranciscusheverlee"/></p>
+          <p className={``}><img className="" src="https://api.netlify.com/api/v1/badges/3285a598-6868-475d-9db9-541cb240d34e/deploy-status"/></p>
           <span>
           <a className="mx-[0px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" target="_blank" href="https://www.facebook.com/pg/Franciscusgemeenschapheverlee"><FaFacebookF className={`${socialIconClasses}` }/></a>  
           <a className="mx-[4px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" target="_blank" href="https://www.youtube.com/channel/UC-7wzVLv2W3oUQtQcPpvCig"><FaYoutube className={`${socialIconClasses}` }/></a>
