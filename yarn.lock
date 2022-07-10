@@ -1950,7 +1950,7 @@
     lodash.merge "^4.6.2"
     lodash.uniq "^4.5.0"
 
-"@tinacms/auth@^0.50.2":
+"@tinacms/auth@^0.50.3":
   version "0.50.3"
   resolved "https://registry.yarnpkg.com/@tinacms/auth/-/auth-0.50.3.tgz#92d7b5a055fb37528ab72e3a9bb0d89b7fa766dd"
   integrity sha512-vucKZyi2Wj83tGU3VBd/mwlgbmgTXclps6/slOPyEzJUH0Sl31vmXs3ATCG0jeIpp4Tu6IBVCVPlmvGcNpE9OQ==
@@ -7040,7 +7040,7 @@ next-svgr@^0.0.2:
   dependencies:
     "@svgr/webpack" "^4.3.0"
 
-next-tinacms-cloudinary@^3.5.23:
+next-tinacms-cloudinary@^3.5.29:
   version "3.5.29"
   resolved "https://registry.yarnpkg.com/next-tinacms-cloudinary/-/next-tinacms-cloudinary-3.5.29.tgz#25ced0b3653c400f5d179168fc4b076027191e65"
   integrity sha512-Ul+t02DDDaJ90dFScqcrwXbNxunwHco4MHMuF6ffCK4Y8O7+ClVUAESRkotzxMp92hxHPthEKWK3VICF/JQJVA==
