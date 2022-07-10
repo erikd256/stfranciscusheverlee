@@ -22,7 +22,7 @@ export const Form = ({ data, parentField }) => {
         className={`bg-vijfdekleur text-basiskleur`}
         size="large"
       >
-        <form acceptCharset="utf-8" action={`https://formspree.io/f/${data.formspreeid}`} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="post">
+        <form acceptCharset="utf-8" action={data.formspreeid} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="post">
         <fieldset>
         <p className="text-2xl my-[10px]">{data.formspreetitle}</p>
         {data.items &&
@@ -63,7 +63,7 @@ export const formBlockSchema: TinaTemplate = {
   fields: [
     {
       type: "string",
-      label: "FormulierID - formspree",
+      label: "Formulier - Formspree Endpoint",
       name: "formspreeid",
     },
     {
