@@ -11,8 +11,5 @@ blocks:
         icon: true
         link: 'https://www.kerknet.be/organisatie/trouwen-voor-de-kerk'
     _template: hero
-  - body: |
-      ## \*\*
-    _template: content
 ---
 
