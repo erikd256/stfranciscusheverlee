@@ -1,5 +1,19 @@
 ---
 blocks:
+  - tagline: Here's some text above the other text
+    headline: This Big Text is Totally Awesome
+    text: >
+      # Welkom!
+
+
+      We staan graag voor u ter beschikking en willen met u de droom van een
+      rijk van vrede, liefde en rechtvaardigheid in de geest van Jezus helpen
+      verwezenlijken.&#x20;
+
+
+      Die droom drukte pastoor Mauritz Andries zaliger in een mooi gedicht als
+      volgt uit:
+    _template: hero
   - body: >
       # Welkom!
 
