@@ -1,6 +1,6 @@
 ---
 blocks:
-  - formspreeid: test
+  - formspreeid: 'https://formspree.io/f/myyoqnnk'
     formspreetitle: Contacteer ons!
     items:
       - type: textarea
