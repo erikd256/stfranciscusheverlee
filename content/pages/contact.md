@@ -10,7 +10,7 @@ blocks:
         questionrequired: true
         placeholder: ''
       - type: Mailaddres
-        questiontitle: Vul het mailadres hier in zodat we u kunnen bereiken
+        questiontitle: Mijn mailadres
         questionrequired: true
         placeholder: ''
       - type: text
