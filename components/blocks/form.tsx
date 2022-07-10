@@ -37,7 +37,7 @@ export const Form = ({ data, parentField }) => {
           })}
           <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
           </fieldset>
-          <span className="text-red-500">* Verplicht</span>
+          <span className="text-red-500">* Verplicht veld</span>
           </form>
       </Container>
     </Section>
