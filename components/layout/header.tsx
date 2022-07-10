@@ -55,7 +55,7 @@ export const Header = ({ data }) => {
         <span className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_videos">Videos</a></span>
         <span className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_audios">Audios</a></span>
       </div>
-      <span className="hidden mo:block text-center  border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle4}>Sacramenten</a></span>
+      <span className="hidden mo:block text-center  border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle4}>Levensmomenten</a></span>
       <div style={{display: popup4?"block":"none"}} className="p-2">
         <span className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/sacramenten_doop">Doopsel</a></span>
         <span className="hidden mo:block text-center border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/sacramenten_eerstecommunie">Eerste Communie</a></span>
