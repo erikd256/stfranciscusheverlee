@@ -14,9 +14,7 @@ blocks:
         questionrequired: true
         placeholder: ''
       - type: text
-        questiontitle: >-
-          Ik bespreek mijn vraag graag telefonisch en ben bereikbaar op het
-          nummer:
+        questiontitle: Mijn telefoonnummer (niet verplicht!)
         placeholder: ''
       - type: Checkbox
         questiontitle: Ik ben akkoord met de privacy....
