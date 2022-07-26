@@ -11,8 +11,7 @@ blocks:
         icon: true
         link: 'https://www.kerknet.be/organisatie/trouwen-voor-de-kerk'
     image:
-      src: >-
-        https://assets.tina.io/fe0d2fdd-76d5-4873-b6c7-c4abdafd8901/rings-g75169a3f1_1920.png
+      src: /uploads/rings-g75169a3f1_1920.png
     _template: hero
 ---
 
