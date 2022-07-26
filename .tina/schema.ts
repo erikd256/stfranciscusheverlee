@@ -351,6 +351,14 @@ const schema = defineSchema({
       ],
     },
   ],
+  config: {
+    media: {
+       tina: {
+           publicFolder: "public",
+           mediaRoot: "uploads"
+         },
+    }
+ }
 });
 
 const branch = "main";
