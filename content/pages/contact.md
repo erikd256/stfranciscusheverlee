@@ -1,27 +1,27 @@
 ---
 blocks:
   - formspreeid: 'https://formspree.io/f/myyoqnnk'
-    formspreetitle: Contacteer ons!
+    formspreetitle: Contact
     items:
       - type: textarea
         questiontitle: Mijn vraag
         questionrequired: true
+        questionid: message
         placeholder: ''
-        questionid: "message"
       - type: Mailaddres
         questiontitle: Mijn mailadres
         questionrequired: true
+        questionid: mail
         placeholder: ''
-        questionid: "mail"
       - type: text
         questiontitle: Mijn telefoonnummer (niet verplicht!)
+        questionid: phone
         placeholder: ''
-        questionid: "phone"
       - type: Checkbox
         questiontitle: Ik ben akkoord met de privacyovereenkomst
         questionrequired: true
+        questionid: privacy
         placeholder: lorem ipsum
-        questionid: "privacy"
     _template: form
 ---
 
