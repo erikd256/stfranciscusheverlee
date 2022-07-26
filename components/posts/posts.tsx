@@ -44,6 +44,10 @@ export const Posts = ({ data }) => {
               <div className="prose-lg w-full max-w-none mb-5 text-basiskleur">
                 <TinaMarkdown content={post._values.excerpt} />
               </div>
+              <img
+              src={post?.author?.heroImg}
+              className="mb-14 block h-auto max-w-4xl lg:max-w-6xl mx-auto"
+              />
               <div className="flex items-center -mb-2">
                 <div className="flex-shrink-0 mr-2">
                   <img
