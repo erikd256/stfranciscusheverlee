@@ -3,8 +3,8 @@ blocks:
   - body: |
       ![](/uploads/kerkenleven.jpg)
     _template: content
-  - tagline: Weeknieuws
-    headline: Kerk & leven
+  - tagline: ''
+    headline: weeknieuws
     text: ''
     actions:
       - label: kerkenleven.be
