@@ -41,7 +41,7 @@ export const Posts = ({ data }) => {
                   <BsArrowRight className="inline-block h-8 -mt-1 ml-1 w-auto opacity-70" />
                 </span>
               </h3>
-              <div className="prose dark:prose-dark prose-lg w-full max-w-none mb-5 text-basiskleur">
+              <div className="prose-lg w-full max-w-none mb-5 text-basiskleur">
                 <TinaMarkdown content={post._values.excerpt} />
               </div>
               <div className="flex items-center -mb-2">
