@@ -32,7 +32,7 @@ export const Posts = ({ data }) => {
               className="group block px-8 py-10 mb-8 last:mb-0 bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-100 dark:bg-gray-700 dark:from-gray-800 dark:to-gray-700 rounded-md shadow-sm transition-all duration-150 ease-out hover:shadow-md hover:to-gray-50 dark:hover:to-gray-600"
             >
               <h3
-                className={`text-gray-900 dark:text-white text-3xl font-semibold title-font mb-5 transition-all duration-150 ease-out ${
+                className={`text-basiskleur dark:text-white text-3xl font-semibold title-font mb-5 transition-all duration-150 ease-out ${
                   titleColorClasses[theme.color]
                 }`}
               >
@@ -52,13 +52,13 @@ export const Posts = ({ data }) => {
                     alt={post?.author?.name}
                   />
                 </div>
-                <p className="text-sm font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white">
+                <p className="text-sm font-medium text-liturgischekleur group-hover:text-liturgischekleur dark:text-liturgischekleur dark:group-hover:text-white">
                   {post?.author?.name}
                 </p>
-                <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
+                <span className="font-bold text-liturgischekleur dark:text-liturgischekleur mx-2">
                   —
                 </span>
-                <p className="text-sm text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150">
+                <p className="text-sm text-gray-400 group-hover:text-liturgischekleur dark:text-liturgischekleur dark:group-hover:text-gray-150">
                   {post.date}
                 </p>
               </div>
