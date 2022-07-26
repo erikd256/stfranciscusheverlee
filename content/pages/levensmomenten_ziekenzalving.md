@@ -16,8 +16,7 @@ blocks:
         icon: true
         link: 'https://www.samana.be/'
     image:
-      src: >-
-        https://assets.tina.io/fe0d2fdd-76d5-4873-b6c7-c4abdafd8901/hands-ga43664968_1920.jpg
+      src: /uploads/ziekenzalving.jpg
     _template: hero
 ---
 
