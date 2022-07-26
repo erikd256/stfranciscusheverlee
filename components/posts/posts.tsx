@@ -32,7 +32,7 @@ export const Posts = ({ data }) => {
               className="group block px-8 py-10 mb-8 last:mb-0 bg-liturgischekleur"
             >
               <h3
-                className={`text-basiskleur dark:text-white text-3xl font-semibold title-font mb-5 transition-all duration-150 ease-out ${
+                className={`text-basiskleur dark:text-basiskleur text-3xl font-semibold title-font mb-5 transition-all duration-150 ease-out ${
                   titleColorClasses[theme.color]
                 }`}
               >
@@ -41,7 +41,7 @@ export const Posts = ({ data }) => {
                   <BsArrowRight className="inline-block h-8 -mt-1 ml-1 w-auto opacity-70" />
                 </span>
               </h3>
-              <div className="prose dark:prose-dark prose-lg w-full max-w-none mb-5">
+              <div className="prose dark:prose-dark prose-lg w-full max-w-none mb-5 text-basiskleur">
                 <TinaMarkdown content={post._values.excerpt} />
               </div>
               <div className="flex items-center -mb-2">
@@ -53,12 +53,12 @@ export const Posts = ({ data }) => {
                   />
                 </div>
                 <p className="text-sm font-medium text-basiskleur group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-white">
-                  {post?.author?.name}
+                  {post?.author?.name}gray-400
                 </p>
                 <span className="font-bold text-basiskleur dark:text-basiskleur mx-2">
                   —
                 </span>
-                <p className="text-sm text-gray-400 group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-gray-150">
+                <p className="text-sm text-basiskleur group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-gray-150">
                   {post.date}
                 </p>
               </div>
