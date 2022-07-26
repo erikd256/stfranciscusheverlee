@@ -7,7 +7,13 @@ import { formBlockSchema } from "../components/blocks/form";
 import { iconSchema } from "../components/util/icon";
 
 const schema = defineSchema({
-  collections: [
+  media: {
+    tina: {
+        publicFolder: "public",
+        mediaRoot: "uploads"
+      },
+  },
+ collections: [
     {
       label: "Blog Posts",
       name: "post",
