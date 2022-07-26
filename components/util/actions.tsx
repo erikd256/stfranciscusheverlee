@@ -52,7 +52,7 @@ export const Actions = ({
     orange:
       "text-orange-600 dark:text-orange-400 hover:text-orange-400 dark:hover:text-orange-200",
     yellow:
-      "text-yellow-600 dark:text-yellow-400 hover:text-yellow-400 dark:hover:text-yellow-200",
+      "text-liturgischekleur dark:liturgischekleur hover:text-liturgischekleur dark:hover:text-liturgischekleur",
   };
 
   return (
