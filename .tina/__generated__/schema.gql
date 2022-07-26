@@ -229,7 +229,21 @@ type PageBlocksTestimonial {
   author: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial
+type PageBlocksFormItems {
+  type: String
+  questiontitle: String
+  questionrequired: Boolean
+  questionid: String
+  placeholder: String
+}
+
+type PageBlocksForm {
+  formspreeid: String
+  formspreetitle: String
+  items: [PageBlocksFormItems]
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -373,11 +387,26 @@ input PageBlocksTestimonialMutation {
   author: String
 }
 
+input PageBlocksFormItemsMutation {
+  type: String
+  questiontitle: String
+  questionrequired: Boolean
+  questionid: String
+  placeholder: String
+}
+
+input PageBlocksFormMutation {
+  formspreeid: String
+  formspreetitle: String
+  items: [PageBlocksFormItemsMutation]
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   features: PageBlocksFeaturesMutation
   content: PageBlocksContentMutation
   testimonial: PageBlocksTestimonialMutation
+  form: PageBlocksFormMutation
 }
 
 input PageMutation {

@@ -93,5 +93,17 @@ fragment PageParts on Page {
       quote
       author
     }
+    ... on PageBlocksForm {
+      formspreeid
+      formspreetitle
+      items {
+        __typename
+        type
+        questiontitle
+        questionrequired
+        questionid
+        placeholder
+      }
+    }
   }
 }
