@@ -53,7 +53,7 @@ export const Posts = ({ data }) => {
                   />
                 </div>
                 <p className="text-sm font-medium text-basiskleur group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-white">
-                  {post?.author?.name}gray-400
+                  {post?.author?.name}
                 </p>
                 <span className="font-bold text-basiskleur dark:text-basiskleur mx-2">
                   —
