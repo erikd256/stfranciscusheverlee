@@ -3,11 +3,10 @@ import { contentBlockSchema } from "../components/blocks/content";
 import { featureBlockSchema } from "../components/blocks/features";
 import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
-import { formBlockSchema } from "../components/blocks/form";
 import { iconSchema } from "../components/util/icon";
 
 const schema = defineSchema({
- collections: [
+  collections: [
     {
       label: "Blog Posts",
       name: "post",
@@ -250,11 +249,7 @@ const schema = defineSchema({
                   label: "Yellow",
                   value: "yellow",
                 },
-                {
-                  label: "Franciscusbruin",
-                  value: "basiskleur",
-                },
-             ],
+              ],
             },
             {
               type: "string",
@@ -349,18 +344,11 @@ const schema = defineSchema({
             featureBlockSchema,
             contentBlockSchema,
             testimonialBlockSchema,
-            formBlockSchema,
           ],
         },
       ],
     },
   ],
-  media: {
-    tina: {
-        publicFolder: "public",
-        mediaRoot: "uploads"
-      },
-  }
 });
 
 const branch = "main";
@@ -372,11 +360,16 @@ const apiURL =
 export const tinaConfig = defineConfig({
   apiURL,
   schema,
+  mediaStore: async () => {
+    const pack = await import("next-tinacms-cloudinary");
+    return pack.TinaCloudCloudinaryMediaStore;
+  },
   cmsCallback: (cms) => {
     /**
      * Enables experimental branch switcher
      */
     cms.flags.set("branch-switcher", true);
+
     /**
      * When `tina-admin` is enabled, this plugin configures contextual editing for collections
      */
