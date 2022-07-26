@@ -29,8 +29,13 @@ export const Posts = ({ data }) => {
           >
             <a
               key={post.id}
-              className="group block px-8 py-10 mb-8 last:mb-0 bg-liturgischekleur"
+              className="group block  mb-8 last:mb-0 bg-liturgischekleur rounded-xl"
             >
+              <img
+              src={post._values.heroImg}
+              className="relative w-full mb-[10px] rounded-t-xl"
+              />
+              <div className="px-8 py-10">
               <h3
                 className={`text-basiskleur dark:text-basiskleur text-3xl font-semibold title-font mb-5 transition-all duration-150 ease-out ${
                   titleColorClasses[theme.color]
@@ -43,10 +48,6 @@ export const Posts = ({ data }) => {
               </h3>
               <div className="prose-lg w-full max-w-none mb-5 text-basiskleur">
                 <TinaMarkdown content={post._values.excerpt} />
-                <img
-              src={post._values.heroImg}
-              className="absolute h-full r-0"
-              />
               </div>
               <div className="flex items-center -mb-2">
                 <div className="flex-shrink-0 mr-2">
@@ -65,6 +66,7 @@ export const Posts = ({ data }) => {
                 <p className="text-sm text-basiskleur group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-gray-150">
                   {post.date}
                 </p>
+              </div>
               </div>
             </a>
           </Link>
