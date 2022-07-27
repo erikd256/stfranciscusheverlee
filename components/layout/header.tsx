@@ -83,7 +83,7 @@ export const Header = ({ data }) => {
       <button className="block mo:hidden text-center border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-5/6"><a onClick={menuExpand}>&#9776; Menu</a></button>
       </div>
       <div className="fixed w-full h-full z-50 bg-vierdekleur text-basiskleur border-solid border-b-4 border-basiskleur flex-1 mr-2 p-[15px] top-0 text-center overflow-y-auto" style={{display: menuExpanded?"block":"none"}}>
-      <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={menuExpand}>Sluiten</a></button>
+      <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={menuExpand}>&#x2715; Sluiten</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/">Start</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle1}>Vieringen</a></button>
       <div style={{display: popup1?"block":"none"}} className="p-2 w-full">
