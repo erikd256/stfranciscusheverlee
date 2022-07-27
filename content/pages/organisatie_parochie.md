@@ -38,6 +38,7 @@ blocks:
           exclusief bevoegd.
 
           contact: Tony Janssens (voorzitter)
+    color: ''
     _template: features
   - tagline: Here's some text above the other text
     headline: This Big Text is Totally Awesome
