@@ -116,6 +116,7 @@ export const Header = ({ data }) => {
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/kerkenleven">Kerk & Leven</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact">Contact</a></button>
     </div>
+    <a href="/donaties" className="fixed p-[15px] bg-red-700 text-white bottom-0 z-[4000] left-0 inline-flex">Doneren</a>
     </>
   );
 };
