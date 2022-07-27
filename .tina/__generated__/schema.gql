@@ -246,6 +246,7 @@ type PageBlocksForm {
 type PageBlocksBanner {
   bannerURL: String
   bannertext: String
+  vervaldatum: String
 }
 
 union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner
@@ -409,6 +410,7 @@ input PageBlocksFormMutation {
 input PageBlocksBannerMutation {
   bannerURL: String
   bannertext: String
+  vervaldatum: String
 }
 
 input PageBlocksMutation {

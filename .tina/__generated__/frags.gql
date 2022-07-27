@@ -108,6 +108,7 @@ fragment PageParts on Page {
     ... on PageBlocksBanner {
       bannerURL
       bannertext
+      vervaldatum
     }
   }
 }

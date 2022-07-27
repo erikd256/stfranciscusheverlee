@@ -1,5 +1,7 @@
 ---
 blocks:
+  - vervaldatum: '2022-08-04T22:00:00.000Z'
+    _template: banner
   - tagline: >-
       We staan graag voor u ter beschikking en willen met u de droom van een
       rijk van vrede, liefde en rechtvaardigheid in de geest van Jezus helpen
