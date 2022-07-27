@@ -3,12 +3,16 @@ blocks:
   - items:
       - icon:
           color: ''
-          style: float
-          name: ''
+          style: ''
+          name: chat
         title: PAROCHIETEAM
-        text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
+        text: |-
+          Lieven Dries (Pastoraal werker), 
+          Thierry Van Craenem (voorzitter), 
+          Veronika Dallmeier,
+          Gaston Eysermans,
+          Marion Van Wouwe,
+          Denise Meeus
       - icon:
           color: ''
           style: float
