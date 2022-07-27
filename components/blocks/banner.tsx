@@ -10,7 +10,7 @@ export const Banner = ({ data, parentField }) => {
   function hideBanner(){
     setHideBanner(!bannerHidden);
   }
-  var now = moment();
+  const now = moment();
   function checkDate(){
     if (now.isAfter(moment(data.vervaldatum))) {
       setHideBanner(!bannerHidden);
