@@ -1,12 +1,12 @@
 ---
 blocks:
   - tagline: >-
-      door de zalving een zieke persoon weer kracht geven om het leven met
-      hernieuwde moed aan te vatten
+      Door de zalving ervaart een zieke persoon weer kracht om het leven met
+      hernieuwde moed aan te vatten.
     headline: Ziekenzalving
     text: >
-      ### Wie ernstig ziek is kan de ziekenzalving ontvangen; ze is een steun om
-      het ziek-zijn moedig en christelijk te doorleven.
+      ### Wie ernstig ziek is kan de ziekenzalving ontvangen. Ze is een steun om
+      het ziek zijn moedig en christelijk te doorleven.
 
 
       Hiervoor neemt men contact met het parochiesecretariaat.
