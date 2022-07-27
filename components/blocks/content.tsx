@@ -6,7 +6,7 @@ import type { TinaTemplate } from "tinacms";
 
 export const Content = ({ data, parentField = "" }) => {
   return (
-    <Section className="bg-vijfdekleur">
+    <Section className="bg-vijfdekleur w-full">
       <Container
         className={`prose-lg text-basiskleur bg-vijfdekleur w-full`}
         data-tinafield={`${parentField}.body`}
