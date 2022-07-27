@@ -19,7 +19,7 @@ export const Banner = ({ data, parentField }) => {
       checkDate();
     }, []);
   return (
-   <div style={{display: bannerHidden?"none":"block"}} className="bg-teal-400 fixed bottom-[0px] z-[3999] w-full h-[50px] text-black text-center"><a className="w-full h-full text-center pl-[100px] leading-[50px]" href="">{data.bannertext}</a><a className="absolute right-0 text-black h-full leading-[50px] text-xl pr-[15px]" onClick={hideBanner}>&#x2715;</a></div>
+   <div style={{display: bannerHidden?"none":"block"}} className="bg-teal-400 underline fixed bottom-[0px] z-[3999] w-full h-[50px] text-black text-center"><a className="w-full h-full text-center pl-[100px] leading-[50px]" href={data.bannerURL}>{data.bannertext}</a><a className="absolute right-0 text-black h-full leading-[50px] text-xl pr-[15px]" onClick={hideBanner}>&#x2715;</a></div>
   );
 };
 
