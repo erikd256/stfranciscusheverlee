@@ -14,6 +14,8 @@ blocks:
 
       Die droom drukte pastoor Mauritz Andries zaliger in een mooi gedicht als
       volgt uit:
+    image:
+      src: /uploads/MauritzAndries-removebg-preview.png
     _template: hero
   - body: >
       # Welkom!
