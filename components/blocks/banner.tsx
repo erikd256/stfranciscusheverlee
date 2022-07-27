@@ -31,5 +31,10 @@ export const bannerBlockSchema: TinaTemplate = {
       label: "Banner tekst",
       name: "bannertext",
     },
+    {
+      type: "datetime",
+      label: "Banner vervaldatum",
+      name: "vervaldatum",
+    },
   ],
 };
