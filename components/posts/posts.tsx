@@ -29,13 +29,13 @@ export const Posts = ({ data }) => {
           >
             <a
               key={post.id}
-              className="group block  mb-8 last:mb-0 bg-liturgischekleur rounded-xl"
+              className="relative group block grid mb-8 last:mb-0 bg-liturgischekleur rounded-xl"
             >
               <img
               src={post._values.heroImg}
-              className="relative w-full mb-[10px] rounded-t-xl"
+              className="absolute h-full max-w-[25%] object-cover rounded-r-xl shadow-sm place-self-end bottom-0"
               />
-              <div className="px-8 py-10">
+              <div className="static px-8 mr-0 py-10 w-4/6">
               <h3
                 className={`text-basiskleur dark:text-basiskleur text-3xl font-semibold title-font mb-5 transition-all duration-150 ease-out ${
                   titleColorClasses[theme.color]
