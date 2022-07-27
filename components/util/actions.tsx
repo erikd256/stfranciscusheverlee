@@ -56,7 +56,7 @@ export const Actions = ({
   };
 
   return (
-    <div className={`flex flex-wrap items-center max-w-[80%] gap-y-4 gap-x-6 ${className}`}>
+    <div className={`w-full flex flex-wrap items-center gap-y-4 gap-x-6 ${className}`}>
       {actions &&
         actions.map(function (action, index) {
           let element = null;
@@ -65,7 +65,7 @@ export const Actions = ({
               <Link key={index} href={action.link ? action.link : "/"}>
                 <button
                   data-tinafield={`${parentField}.${index}`}
-                  className={`z-10 relative flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out  rounded transform focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 whitespace-nowrap bg-basiskleur text-liturgischekleur`}
+                  className={`z-10 relative max-w-[80%] flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out  rounded transform focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 whitespace-nowrap bg-basiskleur text-liturgischekleur`}
                 >
                   {action.label}
                   {action.icon && (
@@ -82,7 +82,7 @@ export const Actions = ({
               <Link key={index} href={action.link ? action.link : "/"} passHref>
                 <a
                   data-tinafield={`${parentField}.${index}`}
-                  className={`group inline-flex items-center font-semibold text-lg transition duration-150 ease-out text-basiskleur`}
+                  className={`group inline-flex max-w-[80%] items-center font-semibold text-lg transition duration-150 ease-out text-basiskleur`}
                   style={{
                     textShadow: `0 3px 7px rgba(var(--color-rgb-blue-400),0.2)`,
                   }}
