@@ -29,11 +29,15 @@ blocks:
       - icon:
           color: ''
           style: float
-          name: ''
+          name: aperture
         title: KERKRAAD
         text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
+          De kerkraad is belast met het beheer van de goederen en het behoud van
+          het patrimonium. Voor het onderhoud van het kerkgebouw en het
+          verzekeren van de eredienst en de waardigheid ervan is de kerkraad
+          exclusief bevoegd.
+
+          contact: Tony Janssens (voorzitter)
     _template: features
   - tagline: Here's some text above the other text
     headline: This Big Text is Totally Awesome
