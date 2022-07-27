@@ -7,9 +7,9 @@ export const Footer = ({ data, icon, rawData }) => {
   const socialIconClasses = "h-7 w-auto";
   return (
     <>
-    <footer className={`bg-basiskleur`}>
+    <footer className={`bg-basiskleur pb-[75px]`}>
       <Container className="relative" size="small">
-        <div className="flex justify-between text-liturgischekleur gap-6 flex-wrap">
+        <div className="flex justify-between text-liturgischekleur gap-6 flex-wrap ">
           <p>&copy; <a href="https://github.com/erikd256" target="_blank">erikd256</a> - {(new Date().getFullYear())}</p>
           <p className={``}><img className="" src="https://vercelbadge.vercel.app/api/erikd256/stfranciscusheverlee?style=flat"/></p>
           <span>

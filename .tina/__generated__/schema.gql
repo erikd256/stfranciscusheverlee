@@ -243,7 +243,12 @@ type PageBlocksForm {
   items: [PageBlocksFormItems]
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm
+type PageBlocksBanner {
+  bannerURL: String
+  bannertext: String
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -401,12 +406,18 @@ input PageBlocksFormMutation {
   items: [PageBlocksFormItemsMutation]
 }
 
+input PageBlocksBannerMutation {
+  bannerURL: String
+  bannertext: String
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   features: PageBlocksFeaturesMutation
   content: PageBlocksContentMutation
   testimonial: PageBlocksTestimonialMutation
   form: PageBlocksFormMutation
+  banner: PageBlocksBannerMutation
 }
 
 input PageMutation {

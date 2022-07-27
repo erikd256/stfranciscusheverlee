@@ -105,5 +105,9 @@ fragment PageParts on Page {
         placeholder
       }
     }
+    ... on PageBlocksBanner {
+      bannerURL
+      bannertext
+    }
   }
 }
