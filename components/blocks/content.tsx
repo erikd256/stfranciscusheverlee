@@ -8,7 +8,7 @@ export const Content = ({ data, parentField = "" }) => {
   return (
     <Section className="bg-vijfdekleur w-full">
       <Container
-        className={`prose-lg text-basiskleur bg-vijfdekleur w-full`}
+        className={`prose-lg text-basiskleur bg-vijfdekleur w-full text-justify`}
         data-tinafield={`${parentField}.body`}
         size="large"
       >
