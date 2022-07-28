@@ -5,9 +5,12 @@ import { Helmet } from 'react-helmet'
 export const Head = ({ data }) => { 
   return (
     <Helmet>
-          <title>{`${data.title} @ Sint-Franciscusparochie Heverlee"`}</title>
+          <title>{`${data.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={data.pagekeywords}/>
           <meta name="description" content={data.pagedesc}/>
+          {data.pagehidden == true &&
+            <meta name="robots" content="noindex" />
+          }
     </Helmet>
       
     );
@@ -33,7 +36,7 @@ export const headBlockSchema: TinaTemplate = {
     },
     {
       type: "string",
-      label: "Pagina Kernwoorden",
+      label: "Pagina Kernwoorden (kommagescheiden)",
       name: "pagekeywords",
     },
     {

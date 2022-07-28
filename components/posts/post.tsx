@@ -18,6 +18,7 @@ import { useTheme } from "../layout";
 import format from "date-fns/format";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
+import { Helmet } from 'react-helmet'
 
 const components: Components<{
   BlockQuote: {
@@ -26,12 +27,6 @@ const components: Components<{
   };
   DateTime: {
     format?: string;
-  };
-  NewsletterSignup: {
-    placeholder: string;
-    buttonText: string;
-    children: TinaMarkdownContent;
-    disclaimer?: TinaMarkdownContent;
   };
 }> = {
   BlockQuote: (props: {
@@ -63,44 +58,6 @@ const components: Components<{
         return <span>{dt.toLocaleDateString()}</span>;
     }
   },
-  NewsletterSignup: (props) => {
-    return (
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <div className="">
-            <TinaMarkdown content={props.children} />
-          </div>
-          <div className="mt-8 ">
-            <form className="sm:flex">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email-address"
-                type="email"
-                autoComplete="email"
-                required
-                className="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-teal-500 focus:border-teal-500 sm:max-w-xs rounded-md"
-                placeholder={props.placeholder}
-              />
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-                >
-                  {props.buttonText}
-                </button>
-              </div>
-            </form>
-            <div className="mt-3 text-sm text-gray-500">
-              {props.disclaimer && <TinaMarkdown content={props.disclaimer} />}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  },
 };
 
 export const Post = (props) => {
@@ -127,7 +84,11 @@ export const Post = (props) => {
 
   return (
     <>
-    <title>{props.title} @ Sint-Franciscusparochie Heverlee</title>
+    <Helmet>
+          <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
+          <meta name="keywords" content={props.keywords}/>
+          <meta name="description" content={props.desc}/>
+    </Helmet>
     <Section className="flex-1">
       <Container className={`flex-1 max-w-4xl pb-2`} size="large">
         <h2
