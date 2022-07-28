@@ -126,6 +126,8 @@ export const Post = (props) => {
   }
 
   return (
+    <>
+    <title>{props.title} @ Sint-Franciscusparochie Heverlee</title>
     <Section className="flex-1">
       <Container className={`flex-1 max-w-4xl pb-2`} size="large">
         <h2
@@ -181,5 +183,6 @@ export const Post = (props) => {
         </div>
       </Container>
     </Section>
+    </>
   );
 };
