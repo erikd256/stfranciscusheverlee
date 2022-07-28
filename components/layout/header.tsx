@@ -38,6 +38,7 @@ export const Header = ({ data }) => {
 
   return (
     <>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       <div className="flex overflow-x-hidden items-center justify-between bg-liturgischekleur border-b-4 border-basiskleur">
         <img src="/assets/Kerk_Logo.jpg" className={`lg:h-[250px] xl:h-[250px] md:h-[200px] sm:h-[200px] xs:h-[200px] border-r-4 border-basiskleur`}/>
         <span className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl absolute lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] xs:left-[160px] top-[20px] font-bold">Sint Franciscusparochie</span>
@@ -86,37 +87,37 @@ export const Header = ({ data }) => {
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={menuExpand}>&#x2715; Sluiten</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/">Start</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle1}>Vieringen</a></button>
-      <div style={{display: popup1?"block":"none"}} className="p-2 w-full">
-        <button className="text-center  w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/vieringen_liturgie">Liturgie</a></button>
-        <button className="text-center  w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/vieringen_dhj">Doorheen het jaar</a></button>
-        <button className="text-center  w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/vieringen_familievieringen">Familievieringen</a></button>
+      <div style={{display: popup1?"block":"none"}} className="text-center p-2 w-full">
+        <button className="text-center  w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/vieringen_liturgie">Liturgie</a></button>
+        <button className="text-center  w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/vieringen_dhj">Doorheen het jaar</a></button>
+        <button className="text-center  w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/vieringen_familievieringen">Familievieringen</a></button>
       </div>
       <button className="text-center w-5/6 mt-[15px] border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle2}>Organisatie</a></button>
-      <div style={{display: popup2?"block":"none"}} className="p-2 w-full">
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_vereniginen">Verenigingen</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochie">Organisatie parochie</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochiaalcentrum">Agenda parochiaal centrum</a></button>
+      <div style={{display: popup2?"block":"none"}} className="text-center p-2 w-full">
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_vereniginen">Verenigingen</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochie">Organisatie parochie</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochiaalcentrum">Agenda parochiaal centrum</a></button>
       </div>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle3}>Multimedia</a></button>
-      <div style={{display: popup3?"block":"none"}} className="p-2 w-full">
-        <button className="text-center  w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_fotos">Fotoalbums</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_videos">Videos</a></button>
-        <button className="text-center  w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_audios">Audios</a></button>
+      <div style={{display: popup3?"block":"none"}} className="text-center p-2 w-full">
+        <button className="text-center  w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_fotos">Fotoalbums</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_videos">Videos</a></button>
+        <button className="text-center  w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/multimedia_audios">Audios</a></button>
       </div>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle4}>Levensmomenten</a></button>
-      <div style={{display: popup4?"block":"none"}} className="p-2 w-full">
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_doop">Doopsel</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_eerstecommunie">Eerste Communie</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_vormsel">Vormsel</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_huwelijk">Huwelijk</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_ziekenzalving">Ziekenzalving</a></button>
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_uitvaart">Uitvaart</a></button>
+      <div style={{display: popup4?"block":"none"}} className="text-center p-2 w-full">
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_doop">Doopsel</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_eerstecommunie">Eerste Communie</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_vormsel">Vormsel</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_huwelijk">Huwelijk</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_ziekenzalving">Ziekenzalving</a></button>
+        <button className="text-center w-4/6 border border-basiskleur rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/levensmomenten_uitvaart">Uitvaart</a></button>
       </div>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/posts">Weeknieuws</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/kerkenleven">Kerk & Leven</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact">Contact</a></button>
     </div>
-    <a href="/donaties" className="fixed p-[15px] w-[100px] text-center bg-red-700 text-white bottom-0 z-[4000] left-0 inline-flex h-[50px]">Doneren</a>
+    <a href="/donaties" className="fixed p-[15px] w-[60px] rounded-t-full rounded-br-full text-center bg-red-700 text-white bold bottom-0 z-[4000] left-0 inline-flex h-[50px]"><span className="material-symbols-outlined">volunteer_activism</span></a>
     </>
   );
 };

@@ -59,7 +59,7 @@ export const Hero = ({ data, parentField }) => {
             className="row-start-1 flex justify-center"
           >
             <img
-              className="w-full max-w-xs lg:max-w-none h-auto"
+              className="max-w-full"
               alt={data.image.alt}
               src={data.image.src}
             />
