@@ -1,7 +1,7 @@
 ---
 blocks:
   - bannerURL: 'http://franciscusfrando.be'
-    bannertext: Hier kan je de oude website terugvinden!
+    bannertext: Oude website!
     vervaldatum: '2022-07-31T22:00:00.000Z'
     _template: banner
   - tagline: >-
