@@ -58,7 +58,7 @@ export const Header = ({ data }) => {
       </div>
       <button className="hidden mo:block text-center border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle2}>Organisatie</a></button>
       <div style={{display: popup2?"block":"none"}} className="p-2">
-        <button className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_adressen">Adressen en parochiezalen</a></button>
+        <button className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_verenigingen">Vereniginen</a></button>
         <button className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochie">Organisatie parochie</a></button>
         <button className="hidden mo:block text-center border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochiaalcentrum">Agenda parochiaal centrum</a></button>
       </div>
@@ -93,7 +93,7 @@ export const Header = ({ data }) => {
       </div>
       <button className="text-center w-5/6 mt-[15px] border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle2}>Organisatie</a></button>
       <div style={{display: popup2?"block":"none"}} className="p-2 w-full">
-        <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_adressen">Adressen en parochiezalen</a></button>
+        <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_vereniginen">Verenigingen</a></button>
         <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochie">Organisatie parochie</a></button>
         <button className="text-center w-5/6 border border-basiskleur rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/organisatie_parochiaalcentrum">Agenda parochiaal centrum</a></button>
       </div>
