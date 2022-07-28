@@ -3,11 +3,12 @@ import React from "react";
 import { Helmet } from 'react-helmet'
 
 export const Head = ({ data }) => { 
+  var pageTitle = data.title + " @ Sint-Franciscusparochie Heverlee";
   return (
     <Helmet>
           <meta name="keywords" content={data.pagekeywords}/>
           <meta name="description" content={data.pagedesc}/>
-          <title>{data.title}</title>
+          <title>{pageTitle}</title>
     </Helmet>
     );
 };
