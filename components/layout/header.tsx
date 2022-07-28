@@ -117,7 +117,7 @@ export const Header = ({ data }) => {
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/kerkenleven">Kerk & Leven</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact">Contact</a></button>
     </div>
-    <a href="/donaties" className="fixed p-[15px] w-[65px] rounded-full text-center bg-red-700 text-white bold bottom-[10px] z-[4000] left-[2.5%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">volunteer_activism</span></a>
+    <a href="/donaties" className="fixed p-[15px] w-[70px] rounded-full text-center bg-red-700 text-white bold bottom-[10px] z-[4000] left-[2.4%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">volunteer_activism</span></a>
     </>
   );
 };
