@@ -133,9 +133,7 @@ export const Post = (props) => {
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
           <span
-            className={`bg-clip-text text-transparent bg-gradient-to-r ${
-              titleColorClasses[theme.color]
-            }`}
+            className={`text-vierdekleur`}
           >
             {props.title}
           </span>
@@ -153,17 +151,17 @@ export const Post = (props) => {
                   alt={props.author.name}
                 />
               </div>
-              <p className="text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white">
+              <p className="text-base font-medium text-liturgischekleur">
                 {props.author.name}
               </p>
-              <span className="font-bold text-gray-200 dark:text-gray-500 mx-2">
+              <span className="font-bold text-liturgischekleur mx-2">
                 —
               </span>
             </>
           )}
           <p
             data-tinafield="date"
-            className="text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150"
+            className="font-bold text-liturgischekleur "
           >
             {formattedDate}
           </p>
@@ -178,7 +176,7 @@ export const Post = (props) => {
         </div>
       )}
       <Container className={`flex-1 max-w-4xl pt-4`} size="large">
-        <div className="prose dark:prose-dark  w-full max-w-none">
+        <div className="prose dark:prose-dark w-full max-w-none text-justify text-basiskleur">
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
