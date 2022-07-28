@@ -5,6 +5,7 @@ import { heroBlockSchema } from "../components/blocks/hero";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { bannerBlockSchema } from "../components/blocks/banner";
 import { formBlockSchema } from "../components/blocks/form";
+import { headBlockSchema } from "../components/blocks/head";
 import { iconSchema } from "../components/util/icon";
 
 const schema = defineSchema({
@@ -348,6 +349,7 @@ const schema = defineSchema({
             testimonialBlockSchema,
             formBlockSchema,
             bannerBlockSchema,
+            headBlockSchema,
           ],
         },
       ],

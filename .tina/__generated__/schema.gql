@@ -225,7 +225,7 @@ type PageBlocksContent {
 }
 
 type PageBlocksTestimonial {
-  quote: String
+  quote: JSON
   author: String
 }
 
@@ -249,7 +249,14 @@ type PageBlocksBanner {
   vervaldatum: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner
+type PageBlocksHead {
+  title: String
+  pagedesc: String
+  pagekeywords: String
+  pagehidden: Boolean
+}
+
+union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner | PageBlocksHead
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -389,7 +396,7 @@ input PageBlocksContentMutation {
 }
 
 input PageBlocksTestimonialMutation {
-  quote: String
+  quote: JSON
   author: String
 }
 
@@ -413,6 +420,13 @@ input PageBlocksBannerMutation {
   vervaldatum: String
 }
 
+input PageBlocksHeadMutation {
+  title: String
+  pagedesc: String
+  pagekeywords: String
+  pagehidden: Boolean
+}
+
 input PageBlocksMutation {
   hero: PageBlocksHeroMutation
   features: PageBlocksFeaturesMutation
@@ -420,6 +434,7 @@ input PageBlocksMutation {
   testimonial: PageBlocksTestimonialMutation
   form: PageBlocksFormMutation
   banner: PageBlocksBannerMutation
+  head: PageBlocksHeadMutation
 }
 
 input PageMutation {

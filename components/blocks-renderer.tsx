@@ -3,6 +3,7 @@ import type { Page } from "../.tina/__generated__/types";
 import { Content } from "./blocks/content";
 import { Features } from "./blocks/features";
 import { Banner } from "./blocks/banner";
+import { Head } from "./blocks/head";
 import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
 import {Form} from "./blocks/form";
@@ -65,6 +66,10 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                   >
                     <Banner data={block} parentField={`blocks.${i}`} />
                   </div>
+                );
+                case "PageBlocksHead":
+                return (
+                    <Head data={block} />
                 );
               default:
                 return null;
