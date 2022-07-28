@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { BsArrowRight } from "react-icons/bs";
 import { useTheme } from "../layout";
-import { Helmet } from 'react-helmet'
+import Head from 'next/head';
 
 export const Posts = ({ data }) => {
   const theme = useTheme();
@@ -73,11 +73,11 @@ export const Posts = ({ data }) => {
           </Link>
         );
       })}
-      <Helmet>
+      <Head>
         <title>Weeknieuws @ Sint-Franciscusparochie Heverlee</title>
         <meta name="keywords" content="weeknieuws,parochienieuws,weekblad,kerkenleven"/>
         <meta name="description" content="Het wekelijks nieuws uit onze parochie, in een handig overzicht."/>
-      </Helmet>
+      </Head>
     </>
   );
 };
