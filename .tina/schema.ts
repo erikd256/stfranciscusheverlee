@@ -21,6 +21,16 @@ const schema = defineSchema({
           name: "title",
         },
         {
+          type: "string",
+          label: "Samenvatting",
+          name: "desc",
+        },
+        {
+          type: "string",
+          label: "Kernwoorden (kommagescheiden)",
+          name: "keywords",
+        },
+        {
           type: "image",
           name: "heroImg",
           label: "Hero Image",

@@ -87,6 +87,8 @@ union PostAuthor = Author
 
 type Post implements Node & Document {
   title: String
+  desc: String
+  keywords: String
   heroImg: String
   excerpt: JSON
   author: PostAuthor
@@ -293,6 +295,8 @@ input DocumentMutation {
 
 input PostMutation {
   title: String
+  desc: String
+  keywords: String
   heroImg: String
   excerpt: JSON
   author: String

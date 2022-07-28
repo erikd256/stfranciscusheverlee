@@ -1,5 +1,7 @@
 fragment PostParts on Post {
   title
+  desc
+  keywords
   heroImg
   excerpt
   author {
