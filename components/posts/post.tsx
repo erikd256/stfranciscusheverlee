@@ -138,12 +138,12 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-    </Section>
-    <Helmet>
+      <Helmet>
           <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={props.keywords}/>
           <meta name="description" content={props.desc}/>
-    </Helmet>
+      </Helmet>
+    </Section>
     </>
   );
 };
