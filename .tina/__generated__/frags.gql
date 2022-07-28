@@ -110,10 +110,5 @@ fragment PageParts on Page {
       bannertext
       vervaldatum
     }
-    ... on PageBlocksHead {
-      title
-      pagedesc
-      pagekeywords
-    }
   }
 }

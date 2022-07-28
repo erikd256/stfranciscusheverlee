@@ -22,11 +22,5 @@ blocks:
     image:
       src: /uploads/MauritzAndries-removebg-preview.png
     _template: hero
-  - title: Start
-    pagedesc: Dit is de webpagina van de Sint-Franciscusparochie te Heverlee.
-    pagekeywords: >-
-      startpage,franciscusparochie,heverlee,sintfranciscusparochie,franciscusparochie
-      heverlee
-    _template: head
 ---
 
