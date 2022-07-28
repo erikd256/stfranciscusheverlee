@@ -18,7 +18,7 @@ import { useTheme } from "../layout";
 import format from "date-fns/format";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
-import { Helmet } from 'react-helmet'
+import Head from 'next/head';
 
 const components: Components<{
   BlockQuote: {
@@ -138,11 +138,11 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <head>
+      <Head>
           <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={props.keywords}/>
           <meta name="description" content={props.desc}/>
-      </head>
+      </Head>
     </Section>
     </>
   );
