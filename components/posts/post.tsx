@@ -84,11 +84,6 @@ export const Post = (props) => {
 
   return (
     <>
-    <Helmet>
-          <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
-          <meta name="keywords" content={props.keywords}/>
-          <meta name="description" content={props.desc}/>
-    </Helmet>
     <Section className="flex-1">
       <Container className={`flex-1 max-w-4xl pb-2`} size="large">
         <h2
@@ -144,6 +139,11 @@ export const Post = (props) => {
         </div>
       </Container>
     </Section>
+    <Helmet>
+          <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
+          <meta name="keywords" content={props.keywords}/>
+          <meta name="description" content={props.desc}/>
+    </Helmet>
     </>
   );
 };

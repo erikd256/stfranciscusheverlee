@@ -21,9 +21,9 @@ export const Posts = ({ data }) => {
   return (
     <>
       <Helmet>
-          <title>Weeknieuws @ Sint-Franciscusparochie Heverlee</title>
-          <meta name="keywords" content="weeknieuws,parochienieuws,weekblad,kerkenleven"/>
-          <meta name="description" content="Het wekelijks nieuws uit onze parochie, in een handig overzicht."/>
+        <title>Weeknieuws @ Sint-Franciscusparochie Heverlee</title>
+        <meta name="keywords" content="weeknieuws,parochienieuws,weekblad,kerkenleven"/>
+        <meta name="description" content="Het wekelijks nieuws uit onze parochie, in een handig overzicht."/>
       </Helmet>
       {data.map((postData) => {
         const post = postData.node;

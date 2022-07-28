@@ -8,11 +8,7 @@ export const Head = ({ data }) => {
           <title>{`${data.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={data.pagekeywords}/>
           <meta name="description" content={data.pagedesc}/>
-          {data.pagehidden == true &&
-            <meta name="robots" content="noindex" />
-          }
     </Helmet>
-      
     );
 };
 
@@ -27,7 +23,7 @@ export const headBlockSchema: TinaTemplate = {
     {
       type: "string",
       label: "Paginatitel",
-      name: "title",
+      name: "pagetitle",
     },
     {
       type: "string",
@@ -38,11 +34,6 @@ export const headBlockSchema: TinaTemplate = {
       type: "string",
       label: "Pagina Kernwoorden (kommagescheiden)",
       name: "pagekeywords",
-    },
-    {
-      type: "boolean",
-      label: "Verberg de pagina in zoekresultaten?",
-      name: "pagehidden",
     },
   ],
 };
