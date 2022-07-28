@@ -19,6 +19,7 @@ export const Posts = ({ data }) => {
 
   return (
     <>
+      <title>Weeknieuws @ Sint-Franciscusparochie Heverlee</title>
       {data.map((postData) => {
         const post = postData.node;
         return (
