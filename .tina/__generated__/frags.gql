@@ -114,7 +114,6 @@ fragment PageParts on Page {
       title
       pagedesc
       pagekeywords
-      pagehidden
     }
   }
 }

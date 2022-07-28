@@ -5,9 +5,9 @@ import { Helmet } from 'react-helmet'
 export const Head = ({ data }) => { 
   return (
     <Helmet>
-          <title>{`${data.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={data.pagekeywords}/>
           <meta name="description" content={data.pagedesc}/>
+          <title>{data.title}</title>
     </Helmet>
     );
 };

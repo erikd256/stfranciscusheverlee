@@ -253,7 +253,6 @@ type PageBlocksHead {
   title: String
   pagedesc: String
   pagekeywords: String
-  pagehidden: Boolean
 }
 
 union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner | PageBlocksHead
@@ -424,7 +423,6 @@ input PageBlocksHeadMutation {
   title: String
   pagedesc: String
   pagekeywords: String
-  pagehidden: Boolean
 }
 
 input PageBlocksMutation {
