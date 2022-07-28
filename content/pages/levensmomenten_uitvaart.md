@@ -2,9 +2,9 @@
 blocks:
   - tagline: Iemand is u onlangs ontvallen en u kiest voor een Christelijke uitvaart.
     headline: 'Uitvaart '
-    text: "**In onze parochiegemeenschap proberen wij de uitvaarten zo goed mogelijk te verzorgen in onderling overleg met de familie.**\n\n**Hopelijk kan u zo in alle rust afscheid nemen van uw dierbare. **\n\nAarzel niet om met ons contact op te nemen indien u vragen heeft. U kan terecht\_op het secretariaat 016 250459 of bij Lieven Dries, 0479 53 96 58, pastoraal werker van de gemeenschap.\n\nOnder de links kan u al een beetje het basisprincipe vinden van onze werking.\n"
+    text: "**In onze parochiegemeenschap proberen wij de uitvaarten zo goed mogelijk te verzorgen in onderling overleg met de familie.**\n\n\\*\\*Hopelijk kan u zo in alle rust afscheid nemen van uw dierbare. \\*\\*\n\nAarzel niet om met ons contact op te nemen indien u vragen heeft. U kan terecht\_op het secretariaat 016 250459 of bij Lieven Dries, 0479 53 96 58, pastoraal werker van de gemeenschap.\n\nOnder de links kan u al een beetje het basisprincipe vinden van onze werking.\n"
     actions:
-      - label: informatie op kerknet
+      - label: Informatie op kerknet
         type: button
         icon: true
         link: >-
