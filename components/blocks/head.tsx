@@ -23,7 +23,7 @@ export const headBlockSchema: TinaTemplate = {
     {
       type: "string",
       label: "Paginatitel",
-      name: "pagetitle",
+      name: "title",
     },
     {
       type: "string",
