@@ -1,5 +1,11 @@
 ---
 blocks:
+  - title: Start
+    pagedesc: Dit is de webpagina van de Sint-Franciscusparochie te Heverlee.
+    pagekeywords: >-
+      startpage,franciscusparochie,heverlee,sintfranciscusparochie,franciscusparochie
+      heverlee
+    _template: head
   - bannerURL: 'http://franciscusfrando.be'
     bannertext: Oude website!
     vervaldatum: '2022-07-31T22:00:00.000Z'
