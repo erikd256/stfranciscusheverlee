@@ -93,13 +93,6 @@ fragment PageParts on Page {
       }
       color
     }
-    ... on PageBlocksContent {
-      body
-    }
-    ... on PageBlocksTestimonial {
-      quote
-      author
-    }
     ... on PageBlocksForm {
       formspreeid
       formspreetitle
@@ -118,9 +111,22 @@ fragment PageParts on Page {
       vervaldatum
     }
     ... on PageBlocksImage {
-      alt
       fileRef
+      imageTitle
+      alt
       description
+    }
+    ... on PageBlocksVideo {
+      videoURL
+      description
+      title
+    }
+    ... on PageBlocksContent {
+      body
+    }
+    ... on PageBlocksTestimonial {
+      quote
+      author
     }
   }
 }

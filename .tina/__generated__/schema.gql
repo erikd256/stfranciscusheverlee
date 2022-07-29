@@ -228,15 +228,6 @@ type PageBlocksFeatures {
   color: String
 }
 
-type PageBlocksContent {
-  body: JSON
-}
-
-type PageBlocksTestimonial {
-  quote: JSON
-  author: String
-}
-
 type PageBlocksFormItems {
   type: String
   questiontitle: String
@@ -258,12 +249,28 @@ type PageBlocksBanner {
 }
 
 type PageBlocksImage {
-  alt: String
   fileRef: String
+  imageTitle: String
+  alt: String
   description: String
 }
 
-union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner | PageBlocksImage
+type PageBlocksVideo {
+  videoURL: String
+  description: String
+  title: String
+}
+
+type PageBlocksContent {
+  body: JSON
+}
+
+type PageBlocksTestimonial {
+  quote: JSON
+  author: String
+}
+
+union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksForm | PageBlocksBanner | PageBlocksImage | PageBlocksVideo | PageBlocksContent | PageBlocksTestimonial
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -406,15 +413,6 @@ input PageBlocksFeaturesMutation {
   color: String
 }
 
-input PageBlocksContentMutation {
-  body: JSON
-}
-
-input PageBlocksTestimonialMutation {
-  quote: JSON
-  author: String
-}
-
 input PageBlocksFormItemsMutation {
   type: String
   questiontitle: String
@@ -436,20 +434,37 @@ input PageBlocksBannerMutation {
 }
 
 input PageBlocksImageMutation {
-  alt: String
   fileRef: String
+  imageTitle: String
+  alt: String
   description: String
+}
+
+input PageBlocksVideoMutation {
+  videoURL: String
+  description: String
+  title: String
+}
+
+input PageBlocksContentMutation {
+  body: JSON
+}
+
+input PageBlocksTestimonialMutation {
+  quote: JSON
+  author: String
 }
 
 input PageBlocksMutation {
   header: PageBlocksHeaderMutation
   hero: PageBlocksHeroMutation
   features: PageBlocksFeaturesMutation
-  content: PageBlocksContentMutation
-  testimonial: PageBlocksTestimonialMutation
   form: PageBlocksFormMutation
   banner: PageBlocksBannerMutation
   image: PageBlocksImageMutation
+  video: PageBlocksVideoMutation
+  content: PageBlocksContentMutation
+  testimonial: PageBlocksTestimonialMutation
 }
 
 input PageMutation {

@@ -8,7 +8,7 @@ import { bannerBlockSchema } from "../components/blocks/banner";
 import { formBlockSchema } from "../components/blocks/form";
 import { iconSchema } from "../components/util/icon";
 import { headerBlockSchema } from "../components/blocks/header";
-
+import {videoBlockSchema} from "../components/blocks/video";
 const schema = defineSchema({
   collections: [
     {
@@ -357,11 +357,12 @@ const schema = defineSchema({
             headerBlockSchema,
             heroBlockSchema,
             featureBlockSchema,
-            contentBlockSchema,
-            testimonialBlockSchema,
             formBlockSchema,
             bannerBlockSchema,
             imageBlockSchema,
+            videoBlockSchema,
+            contentBlockSchema,
+            testimonialBlockSchema,
           ],
         },
       ],

@@ -8,6 +8,8 @@ import { Testimonial } from "./blocks/testimonial";
 import { Image } from "./blocks/image";
 import {Form} from "./blocks/form";
 import { Header } from "./blocks/header";
+import { Video } from "./blocks/video";
+
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
     <>
@@ -79,6 +81,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                     key={i + block.__typename}
                   >
                     <Image data={block} parentField={`blocks.${i}`} />
+                  </div>
+                );
+                case "PageBlocksVideo":
+                return (
+                  <div
+                    data-tinafield={`blocks.${i}`}
+                    key={i + block.__typename}
+                  >
+                    <Video data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
               default:
