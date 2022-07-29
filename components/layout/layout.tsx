@@ -10,7 +10,6 @@ export const Layout = ({ rawData = {}, data = layoutData, children }) => {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>Sint Franciscusparochie Heverlee</title>
       </Head>
       <Theme data={data?.theme}>
         <div
