@@ -90,7 +90,7 @@ export const Post = (props) => {
           <meta name="description" content={props.desc}/>
     </Head>
     <Section className="flex-1">
-      <Container className={`flex-1 max-w-4xl pb-2`} size="large">
+      <Container className={`flex-1 max-w-full pb-2`} size="large">
         <h2
           data-tinafield="title"
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
@@ -134,7 +134,7 @@ export const Post = (props) => {
         <div data-tinafield="heroImg" className="">
           <img
             src={props.heroImg}
-            className="mb-14 block h-auto max-w-4xl lg:max-w-6xl mx-auto"
+            className="mb-14 block h-auto max-w-full mx-auto"
           />
         </div>
       )}
