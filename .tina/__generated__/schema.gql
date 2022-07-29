@@ -257,7 +257,13 @@ type PageBlocksBanner {
   vervaldatum: String
 }
 
-union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner
+type PageBlocksImage {
+  alt: String
+  fileRef: String
+  description: String
+}
+
+union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner | PageBlocksImage
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -429,6 +435,12 @@ input PageBlocksBannerMutation {
   vervaldatum: String
 }
 
+input PageBlocksImageMutation {
+  alt: String
+  fileRef: String
+  description: String
+}
+
 input PageBlocksMutation {
   header: PageBlocksHeaderMutation
   hero: PageBlocksHeroMutation
@@ -437,6 +449,7 @@ input PageBlocksMutation {
   testimonial: PageBlocksTestimonialMutation
   form: PageBlocksFormMutation
   banner: PageBlocksBannerMutation
+  image: PageBlocksImageMutation
 }
 
 input PageMutation {

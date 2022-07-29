@@ -117,5 +117,10 @@ fragment PageParts on Page {
       bannertext
       vervaldatum
     }
+    ... on PageBlocksImage {
+      alt
+      fileRef
+      description
+    }
   }
 }

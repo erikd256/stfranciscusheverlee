@@ -5,6 +5,7 @@ import { Features } from "./blocks/features";
 import { Banner } from "./blocks/banner";
 import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
+import { Image } from "./blocks/image";
 import {Form} from "./blocks/form";
 import { Header } from "./blocks/header";
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
@@ -70,6 +71,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                 case "PageBlocksHeader":
                 return (
                     <Header data={block} />
+                );
+                case "PageBlocksImage":
+                return (
+                  <div
+                    data-tinafield={`blocks.${i}`}
+                    key={i + block.__typename}
+                  >
+                    <Image data={block} parentField={`blocks.${i}`} />
+                  </div>
                 );
               default:
                 return null;

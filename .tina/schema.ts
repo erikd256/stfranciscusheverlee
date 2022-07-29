@@ -2,6 +2,7 @@ import { defineSchema, defineConfig } from "tinacms";
 import { contentBlockSchema } from "../components/blocks/content";
 import { featureBlockSchema } from "../components/blocks/features";
 import { heroBlockSchema } from "../components/blocks/hero";
+import { imageBlockSchema } from "../components/blocks/image";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { bannerBlockSchema } from "../components/blocks/banner";
 import { formBlockSchema } from "../components/blocks/form";
@@ -360,6 +361,7 @@ const schema = defineSchema({
             testimonialBlockSchema,
             formBlockSchema,
             bannerBlockSchema,
+            imageBlockSchema,
           ],
         },
       ],
