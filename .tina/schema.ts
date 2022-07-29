@@ -9,7 +9,6 @@ import { formBlockSchema } from "../components/blocks/form";
 import { iconSchema } from "../components/util/icon";
 import { headerBlockSchema } from "../components/blocks/header";
 import {videoBlockSchema} from "../components/blocks/video";
-import {linkBlockSchema} from "../components/blocks/links";
 
 const schema = defineSchema({
   collections: [
