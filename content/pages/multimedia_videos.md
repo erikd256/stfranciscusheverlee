@@ -1,0 +1,5 @@
+---
+blocks:
+  - _template: video
+---
+
