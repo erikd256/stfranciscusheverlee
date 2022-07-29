@@ -17,7 +17,7 @@ export const Cookies = () => {
   
   return(
     <>
-      <div style={{display: cookieAccepted?"none":"block"}} className="fixed w-[80%] text-center left-[10%] top-[10%] bg-basiskleur p-[20px] rounded-lg text-liturgischekleur min-h-[20px] z-[5000]">
+      <div style={{display: cookieAccepted?"none":"block"}} className="fixed w-[80%] text-center left-[10%] h-[80%] top-[10%] bg-basiskleur p-[20px] rounded-lg text-liturgischekleur min-h-[20px] z-[5000]">
         <h1 className="px-[20px] text-vierdekleur text-xl text-justify">Jouw privacy is belangrijk!</h1>
         <div className="my-[10px] px-[20px] text-justify mb-[70px]">
           Wij vinden het net zoals de <a className="underline" href="https://www.fsf.org/about/" target="_blank">fsf</a> zeer belangrijk en respectvol naar jouw als gebruiker toe dat jouw rechten als softwareconsument niet ingeperkt mogen worden. Vanuit die filosofie hebben we gekozen om voor jullie deze pagina opensource en trackingvrij te maken.
