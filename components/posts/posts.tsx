@@ -34,9 +34,9 @@ export const Posts = ({ data }) => {
             >
               <img
               src={post._values.heroImg}
-              className="absolute h-full max-w-[25%] object-cover rounded-r-xl shadow-sm place-self-end bottom-0"
+              className="md:absolute md:h-full md:max-w-[25%] w-full h-auto object-cover rounded-xl md:rounded-r-xl shadow-sm place-self-end bottom-0"
               />
-              <div className="static px-8 mr-0 py-10 w-4/6">
+              <div className="static px-8 mr-0 py-10 md:w-4/6">
               <h3
                 className={`text-basiskleur dark:text-basiskleur text-3xl font-semibold title-font mb-5 transition-all duration-150 ease-out ${
                   titleColorClasses[theme.color]
