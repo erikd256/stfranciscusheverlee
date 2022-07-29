@@ -1,5 +1,8 @@
 ---
 blocks:
+  - body: |
+      # **2021 - 22**
+    _template: content
   - videoURL: EF1eLusTAH0
     description: >-
       Aswoensdagviering voor de pastorale zone KesseLinde vanuit de
