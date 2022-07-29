@@ -1,8 +1,7 @@
 ---
 blocks:
-  - _template: image
-  - tagline: Here's some text above the other text
-    headline: This Big Text is Totally Awesome
+  - tagline: impressies vanuit onze parochie
+    headline: Hier vinden jullie links naar diverse fotoalbums
     text: ''
     actions:
       - label: slotviering werkjaar 2022
