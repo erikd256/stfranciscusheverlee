@@ -8,7 +8,7 @@ export const Header = ({ data }) => {
           <title>{`${data.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={data.pagekeywords}/>
           <meta name="description" content={data.pagedesc}/>
-          {data.pagehidden == true &&
+          {data.hidden == true &&
             <meta name="robots" content="noindex" />
           }
     </Head>
@@ -41,7 +41,7 @@ export const headerBlockSchema: TinaTemplate = {
     {
       type: "boolean",
       label: "Verberg pagina uit de zoekresultaten?",
-      name: "pagehidden",
+      name: "hidden",
     },
   ],
 };
