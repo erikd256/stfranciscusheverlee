@@ -3,10 +3,10 @@ import React from "react";
 
 export const Cookies = () => {
   const [cookieAccepted, setCookieAccepted] = React.useState(false);
-  React.useEffect(() => {if(window){
+  React.useEffect(() => {
     if(window.sessionStorage.getItem("cookieAccepted") == "true"){
       setCookieAccepted(!cookieAccepted);
-    }
+    
   }}, []);
   function cookieAccept(){
     setCookieAccepted(!cookieAccepted);
