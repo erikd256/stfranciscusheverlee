@@ -6,7 +6,7 @@ export const Cookies = () => {
   React.useEffect(() => {if(window){
     if(window.sessionStorage.getItem("cookieAccepted") == "true"){
       setCookieAccepted(!cookieAccepted);
-    };
+    }
   }}, []);
   function cookieAccept(){
     setCookieAccepted(!cookieAccepted);
