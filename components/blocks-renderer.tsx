@@ -9,8 +9,6 @@ import { Image } from "./blocks/image";
 import {Form} from "./blocks/form";
 import { Header } from "./blocks/header";
 import { Video } from "./blocks/video";
-import { Href } from "./blocks/links";
-
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
