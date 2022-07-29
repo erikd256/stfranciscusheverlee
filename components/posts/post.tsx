@@ -96,7 +96,7 @@ export const Post = (props) => {
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
           <span
-            className={`text-vierdekleur`}
+            className={`text-vierdekleur break-words`}
           >
             {props.title}
           </span>
