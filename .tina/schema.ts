@@ -6,6 +6,7 @@ import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { bannerBlockSchema } from "../components/blocks/banner";
 import { formBlockSchema } from "../components/blocks/form";
 import { iconSchema } from "../components/util/icon";
+import { headerBlockSchema } from "../components/blocks/header";
 
 const schema = defineSchema({
   collections: [
@@ -352,6 +353,7 @@ const schema = defineSchema({
             visualSelector: true,
           },
           templates: [
+            headerBlockSchema,
             heroBlockSchema,
             featureBlockSchema,
             contentBlockSchema,

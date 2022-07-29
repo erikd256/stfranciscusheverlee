@@ -185,6 +185,12 @@ type AuthorConnection implements Connection {
   edges: [AuthorConnectionEdges]
 }
 
+type PageBlocksHeader {
+  title: String
+  pagedesc: String
+  pagekeywords: String
+}
+
 type PageBlocksHeroActions {
   label: String
   type: String
@@ -251,7 +257,7 @@ type PageBlocksBanner {
   vervaldatum: String
 }
 
-union PageBlocks = PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner
+union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksContent | PageBlocksTestimonial | PageBlocksForm | PageBlocksBanner
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -351,6 +357,12 @@ input AuthorMutation {
   avatar: String
 }
 
+input PageBlocksHeaderMutation {
+  title: String
+  pagedesc: String
+  pagekeywords: String
+}
+
 input PageBlocksHeroActionsMutation {
   label: String
   type: String
@@ -418,6 +430,7 @@ input PageBlocksBannerMutation {
 }
 
 input PageBlocksMutation {
+  header: PageBlocksHeaderMutation
   hero: PageBlocksHeroMutation
   features: PageBlocksFeaturesMutation
   content: PageBlocksContentMutation

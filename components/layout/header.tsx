@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from 'react-helmet'
 
 export const Header = ({ data }) => {
   // If we're on an admin path, other links should also link to their admin paths

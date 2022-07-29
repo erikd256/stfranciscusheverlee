@@ -57,6 +57,11 @@ fragment AuthorParts on Author {
 fragment PageParts on Page {
   blocks {
     __typename
+    ... on PageBlocksHeader {
+      title
+      pagedesc
+      pagekeywords
+    }
     ... on PageBlocksHero {
       tagline
       headline

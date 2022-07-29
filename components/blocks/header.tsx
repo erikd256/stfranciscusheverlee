@@ -1,0 +1,47 @@
+import type { TinaTemplate } from "tinacms";
+import React from "react";
+import Head from 'next/head';
+
+export const Header = ({ data }) => { 
+  return (
+    <Head>
+          <title>{`${data.title} @ Sint-Franciscusparochie Heverlee`}</title>
+          <meta name="keywords" content={data.pagekeywords}/>
+          <meta name="description" content={data.pagedesc}/>
+          {data.pagehidden == true &&
+            <meta name="robots" content="noindex" />
+          }
+    </Head>
+    );
+};
+
+
+export const headerBlockSchema: TinaTemplate = {
+  name: "header",
+  label: "Header",
+  ui: {
+    previewSrc: "/blocks/features.png",
+  },
+  fields: [
+    {
+      type: "string",
+      label: "Paginatitel",
+      name: "title",
+    },
+    {
+      type: "string",
+      label: "Pagina-omschrijving",
+      name: "pagedesc",
+    },
+    {
+      type: "string",
+      label: "Pagina Kernwoorden (kommagescheiden)",
+      name: "pagekeywords",
+    },
+    {
+      type: "boolean",
+      label: "Verberg pagina uit de zoekresultaten?",
+      name: "pagehidden",
+    },
+  ],
+};

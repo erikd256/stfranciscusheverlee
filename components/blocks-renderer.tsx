@@ -6,6 +6,7 @@ import { Banner } from "./blocks/banner";
 import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
 import {Form} from "./blocks/form";
+import { Header } from "./blocks/header";
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
     <>
@@ -65,6 +66,10 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                   >
                     <Banner data={block} parentField={`blocks.${i}`} />
                   </div>
+                );
+                case "PageBlocksHeader":
+                return (
+                    <Header data={block} />
                 );
               default:
                 return null;
