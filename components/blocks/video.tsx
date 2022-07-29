@@ -12,7 +12,7 @@ export const Video = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         size="large"
       >
-          <iframe src={`https://youtube.com/embed/${data.videoURL}`} className="relative left-[12.5%] self-center w-3/4 h-[400px]"></iframe>
+          <iframe src={`https://www.youtube-nocookie.com/embed/${data.videoURL}`} className="relative left-[12.5%] self-center w-3/4 h-[400px]"></iframe>
       </Container>
     </Section>
   );
