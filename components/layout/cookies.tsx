@@ -1,10 +1,20 @@
+import set from "date-fns/esm/fp/set/index.js";
 import React from "react";
 
 export const Cookies = () => {
   const [cookieAccepted, setCookieAccepted] = React.useState(false);
+  React.useEffect(() => {if(window){
+    if(window.sessionStorage.getItem("cookieAccepted") == "true"){
+      setCookieAccepted(!cookieAccepted);
+    };
+  }}, []);
   function cookieAccept(){
     setCookieAccepted(!cookieAccepted);
+    if(window){
+      window.sessionStorage.setItem("cookieAccepted", "true");
+    }
   }
+  
   return(
     <>
       <div style={{display: cookieAccepted?"none":"block"}} className="fixed w-[80%] text-center left-[10%] top-[10%] bg-basiskleur p-[20px] rounded-lg text-liturgischekleur min-h-[20px] z-[5000]">
