@@ -12,7 +12,6 @@ export const Header = ({ data }) => {
     );
 };
 
-
 export const headerBlockSchema: TinaTemplate = {
   name: "header",
   label: "Header",
