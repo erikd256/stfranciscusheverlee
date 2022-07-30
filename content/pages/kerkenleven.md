@@ -4,9 +4,6 @@ blocks:
     imageTitle: ''
     alt: ''
     _template: image
-  - body: |
-      ![](/uploads/kerkenleven.jpg "")
-    _template: content
   - tagline: ''
     headline: weeknieuws
     text: ''
