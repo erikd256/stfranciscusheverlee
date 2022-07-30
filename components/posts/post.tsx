@@ -134,7 +134,7 @@ export const Post = (props) => {
         <div data-tinafield="heroImg" className="">
           <img
             src={props.heroImg}
-            className="mb-14 block h-auto max-w-full mx-auto"
+            className="mb-14 block h-auto w-full mx-[0px]"
           />
         </div>
       )}
