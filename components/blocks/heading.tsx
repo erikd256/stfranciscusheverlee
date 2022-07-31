@@ -11,7 +11,7 @@ export const Heading = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         size="large"
       >
-       <span className={data.textsize}>{data.titleText}</span>
+       <span className={`${data.textsize} text-bold`}>{data.titleText}</span>
       </Container>
     </Section>
   );
@@ -33,7 +33,7 @@ export const headingBlockSchema: TinaTemplate = {
       type: "string",
       label: "Textgrootte",
       name: "textsize",
-      options: ["text-sm", "text-md", "lg", "text-xl", "text-2xl", "text-4xl"],
+      options: ["text-sm", "text-md", "text-lg", "text-xl", "text-2xl", "text-4xl"],
     },
   ],
 };
