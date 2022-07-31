@@ -249,7 +249,7 @@ type PageBlocksBanner {
 }
 
 type PageBlocksHeading {
-  text: String
+  titleText: String
   textsize: String
 }
 
@@ -439,7 +439,7 @@ input PageBlocksBannerMutation {
 }
 
 input PageBlocksHeadingMutation {
-  text: String
+  titleText: String
   textsize: String
 }
 

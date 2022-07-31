@@ -111,7 +111,7 @@ fragment PageParts on Page {
       vervaldatum
     }
     ... on PageBlocksHeading {
-      text
+      titleText
       textsize
     }
     ... on PageBlocksImage {
