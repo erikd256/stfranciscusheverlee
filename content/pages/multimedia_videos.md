@@ -5,7 +5,7 @@ blocks:
     _template: content
   - videoURL: Tj6Xl8S4JV4
     description: Zondag 5 juni 2022 in de Sint-Franciscusparochie te Heverlee
-    title: 60jarig priesterjubileum Pater Jozef Valkeners
+    title: 60-jarig priesterjubileum Pater Jozef Valkeners
     _template: video
   - body: |
       # **2020 - 21**
