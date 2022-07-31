@@ -12,7 +12,9 @@ export const Video = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         size="large"
       >
-          <iframe src={`https://www.youtube-nocookie.com/embed/${data.videoURL}`} className="relative left-[12.5%] self-center w-3/4 h-[400px]"></iframe>
+          <div className="relative w-4/6 left-[12.5%] pt-[10px] text-justify border-b-2 border-liturgischekleur text-xl">{data.title}</div>
+          <iframe src={`https://www.youtube-nocookie.com/embed/${data.videoURL}`} className="relative left-[12.5%] self-center my-[10px] w-4/6 h-[400px]"></iframe>
+          <div className="relative left-[12.5%] w-4/6 pb-[10px] text-justify border-b-2 border-liturgischekleur">{data.description}</div>
       </Container>
     </Section>
   );

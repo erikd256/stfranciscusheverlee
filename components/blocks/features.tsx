@@ -4,6 +4,7 @@ import { Container } from "../util/container";
 import { Icon } from "../util/icon";
 import type { TinaTemplate } from "tinacms";
 import { iconSchema } from "../util/icon";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export const Feature = ({ featuresColor, data, tinaField }) => {
   return (
@@ -30,9 +31,9 @@ export const Feature = ({ featuresColor, data, tinaField }) => {
       {data.text && (
         <p
           data-tinafield={`${tinaField}.text`}
-          className="text-base opacity-80 leading-relaxed"
+          className="leading-relaxed prose-lg"
         >
-          {data.text}
+           <TinaMarkdown content={data.text}/>
         </p>
       )}
       {data.actions && (
@@ -106,12 +107,9 @@ export const featureBlockSchema: TinaTemplate = {
           name: "title",
         },
         {
-          type: "string",
+          type: "rich-text",
           label: "Text",
           name: "text",
-          ui: {
-            component: "textarea",
-          },
         },
       ]
     },
