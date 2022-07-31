@@ -220,7 +220,7 @@ type PageBlocksFeaturesItemsIcon {
 type PageBlocksFeaturesItems {
   icon: PageBlocksFeaturesItemsIcon
   title: String
-  text: String
+  text: JSON
 }
 
 type PageBlocksFeatures {
@@ -248,6 +248,11 @@ type PageBlocksBanner {
   vervaldatum: String
 }
 
+type PageBlocksHeading {
+  text: String
+  textsize: String
+}
+
 type PageBlocksImage {
   fileRef: String
   imageTitle: String
@@ -270,7 +275,7 @@ type PageBlocksTestimonial {
   author: String
 }
 
-union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksForm | PageBlocksBanner | PageBlocksImage | PageBlocksVideo | PageBlocksContent | PageBlocksTestimonial
+union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksForm | PageBlocksBanner | PageBlocksHeading | PageBlocksImage | PageBlocksVideo | PageBlocksContent | PageBlocksTestimonial
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -405,7 +410,7 @@ input PageBlocksFeaturesItemsIconMutation {
 input PageBlocksFeaturesItemsMutation {
   icon: PageBlocksFeaturesItemsIconMutation
   title: String
-  text: String
+  text: JSON
 }
 
 input PageBlocksFeaturesMutation {
@@ -431,6 +436,11 @@ input PageBlocksBannerMutation {
   bannerURL: String
   bannertext: String
   vervaldatum: String
+}
+
+input PageBlocksHeadingMutation {
+  text: String
+  textsize: String
 }
 
 input PageBlocksImageMutation {
@@ -461,6 +471,7 @@ input PageBlocksMutation {
   features: PageBlocksFeaturesMutation
   form: PageBlocksFormMutation
   banner: PageBlocksBannerMutation
+  heading: PageBlocksHeadingMutation
   image: PageBlocksImageMutation
   video: PageBlocksVideoMutation
   content: PageBlocksContentMutation

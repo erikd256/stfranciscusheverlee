@@ -31,8 +31,9 @@ export const headingBlockSchema: TinaTemplate = {
     },
     {
       type: "string",
-      label: "Titel",
-      name: "text",
+      label: "Textgrootte",
+      name: "textsize",
+      options: ["text-sm", "text-md", "lg", "text-xl", "text-2xl", "text-4xl"],
     },
   ],
 };

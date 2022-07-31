@@ -110,6 +110,10 @@ fragment PageParts on Page {
       bannertext
       vervaldatum
     }
+    ... on PageBlocksHeading {
+      text
+      textsize
+    }
     ... on PageBlocksImage {
       fileRef
       imageTitle
