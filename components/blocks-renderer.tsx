@@ -10,6 +10,7 @@ import {Form} from "./blocks/form";
 import { Header } from "./blocks/header";
 import { Video } from "./blocks/video";
 import { Heading } from "./blocks/heading";
+import { Audio } from "./blocks/audio";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
@@ -100,6 +101,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                     key={i + block.__typename}
                   >
                     <Heading data={block} parentField={`blocks.${i}`} />
+                  </div>
+                );
+                case "PageBlocksAudio":
+                return (
+                  <div
+                    data-tinafield={`blocks.${i}`}
+                    key={i + block.__typename}
+                  >
+                    <Audio data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
               default:

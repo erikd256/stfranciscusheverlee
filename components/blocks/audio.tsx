@@ -2,9 +2,11 @@ import React from "react";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
+import Head from 'next/head';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
-export const Video = ({ data, parentField = "" }) => {
+export const Audio = ({ data, parentField = "" }) => {
+  console.log(data.audioURL)
   return (
     <Section className="bg-vijfdekleur w-full">
       <Container
@@ -12,25 +14,25 @@ export const Video = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         size="large"
       >
-          <div className="relative w-4/6 left-[12.5%] pt-[10px] text-justify border-b-2 border-liturgischekleur text-xl">{data.title}</div>
-          <iframe src={`https://www.youtube-nocookie.com/embed/${data.videoURL}`} className="relative left-[12.5%] self-center my-[10px] w-4/6 h-[400px]"></iframe>
-          <div className="relative left-[12.5%] w-4/6 pb-[10px] prose-lg text-justify border-b-2 border-liturgischekleur"><TinaMarkdown content={data.description} /></div>
+          <div className="relative w-4/6 left-[12.5%] text-justify border-b-2 border-liturgischekleur text-2xl">{data.title}</div>
+        <audio src={data.audioURL} preload="auto" controls controlsList="nodownload" className="relative w-4/6 left-[12.5%]"></audio>
+        <div className="relative left-[12.5%] w-4/6 pb-[10px] prose-lg text-justify border-t-2 border-liturgischekleur"><TinaMarkdown content={data.description} /></div>
       </Container>
     </Section>
   );
 };
 
-export const videoBlockSchema: TinaTemplate = {
-  name: "video",
-  label: "YouTube Video",
+export const audioBlockSchema: TinaTemplate = {
+  name: "audio",
+  label: "Audioplayer",
   ui: {
     previewSrc: "/blocks/content.png",
   },
   fields: [
     {
       type: "string",
-      label: "Video-ID (YouTube)",
-      name: "videoURL",
+      label: "Audio URL",
+      name: "audioURL",
     },
     {
       type: "rich-text",

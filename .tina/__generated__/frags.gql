@@ -125,6 +125,11 @@ fragment PageParts on Page {
       description
       title
     }
+    ... on PageBlocksAudio {
+      audioURL
+      description
+      title
+    }
     ... on PageBlocksContent {
       body
     }

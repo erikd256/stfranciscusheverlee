@@ -10,6 +10,7 @@ import { iconSchema } from "../components/util/icon";
 import { headerBlockSchema } from "../components/blocks/header";
 import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
+import { audioBlockSchema } from "../components/blocks/audio";
 
 const schema = defineSchema({
   collections: [
@@ -364,6 +365,7 @@ const schema = defineSchema({
             headingBlockSchema,
             imageBlockSchema,
             videoBlockSchema,
+            audioBlockSchema,
             contentBlockSchema,
             testimonialBlockSchema,
           ],

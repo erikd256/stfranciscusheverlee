@@ -266,6 +266,12 @@ type PageBlocksVideo {
   title: String
 }
 
+type PageBlocksAudio {
+  audioURL: String
+  description: String
+  title: String
+}
+
 type PageBlocksContent {
   body: JSON
 }
@@ -275,7 +281,7 @@ type PageBlocksTestimonial {
   author: String
 }
 
-union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksForm | PageBlocksBanner | PageBlocksHeading | PageBlocksImage | PageBlocksVideo | PageBlocksContent | PageBlocksTestimonial
+union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksForm | PageBlocksBanner | PageBlocksHeading | PageBlocksImage | PageBlocksVideo | PageBlocksAudio | PageBlocksContent | PageBlocksTestimonial
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -456,6 +462,12 @@ input PageBlocksVideoMutation {
   title: String
 }
 
+input PageBlocksAudioMutation {
+  audioURL: String
+  description: String
+  title: String
+}
+
 input PageBlocksContentMutation {
   body: JSON
 }
@@ -474,6 +486,7 @@ input PageBlocksMutation {
   heading: PageBlocksHeadingMutation
   image: PageBlocksImageMutation
   video: PageBlocksVideoMutation
+  audio: PageBlocksAudioMutation
   content: PageBlocksContentMutation
   testimonial: PageBlocksTestimonialMutation
 }
