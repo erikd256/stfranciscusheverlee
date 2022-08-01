@@ -25,13 +25,6 @@ export const Footer = ({ data, icon, rawData }) => {
             <a href="/sitemap">Sitemap</a>
           </p>
         </div>
-        <p className={`w-full grid text-center text-liturgischekleur grid-cols-1 gap-4 place-items-center`}>
-            <br></br>
-            <br></br>
-            <img className="m-[5px]" src="https://img.shields.io/github/deployments/erikd256/stfranciscusheverlee/production?style=for-the-badge&label=vercel"/>
-            <img className="m-[5px]" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge&label=laatste wijziging"/>
-            <img className="m-[5px]" src="https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge&label=Licentie"/>
-        </p>
       </Container>
     </footer>
     </>
