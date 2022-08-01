@@ -262,13 +262,13 @@ type PageBlocksImage {
 
 type PageBlocksVideo {
   videoURL: String
-  description: String
+  videodescription: JSON
   title: String
 }
 
 type PageBlocksAudio {
   audioURL: String
-  description: String
+  audiodescription: JSON
   title: String
 }
 
@@ -458,13 +458,13 @@ input PageBlocksImageMutation {
 
 input PageBlocksVideoMutation {
   videoURL: String
-  description: String
+  videodescription: JSON
   title: String
 }
 
 input PageBlocksAudioMutation {
   audioURL: String
-  description: String
+  audiodescription: JSON
   title: String
 }
 

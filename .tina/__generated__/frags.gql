@@ -122,12 +122,12 @@ fragment PageParts on Page {
     }
     ... on PageBlocksVideo {
       videoURL
-      description
+      videodescription
       title
     }
     ... on PageBlocksAudio {
       audioURL
-      description
+      audiodescription
       title
     }
     ... on PageBlocksContent {

@@ -16,7 +16,7 @@ export const Audio = ({ data, parentField = "" }) => {
       >
           <div className="relative w-4/6 left-[12.5%] text-justify border-b-2 border-liturgischekleur text-2xl">{data.title}</div>
         <audio src={data.audioURL} preload="auto" controls controlsList="nodownload" className="relative w-4/6 left-[12.5%]"></audio>
-        <div className="relative left-[12.5%] w-4/6 pb-[10px] prose-lg text-justify border-t-2 border-liturgischekleur"><TinaMarkdown content={data.audioDescription} /></div>
+        <div className="relative left-[12.5%] w-4/6 pb-[10px] prose-lg text-justify border-t-2 border-liturgischekleur"><TinaMarkdown content={data.audiodescription} /></div>
       </Container>
     </Section>
   );
@@ -37,7 +37,7 @@ export const audioBlockSchema: TinaTemplate = {
     {
       type: "rich-text",
       label: "Beschrijving",
-      name: "audioDescription",
+      name: "audiodescription",
     },
     {
       type: "string",
