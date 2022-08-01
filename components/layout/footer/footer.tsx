@@ -12,9 +12,9 @@ export const Footer = ({ data, icon, rawData }) => {
         <div className="flex justify-between text-liturgischekleur gap-6 flex-wrap ">
           <p>&copy; <a href="https://github.com/erikd256" target="_blank">erikd256</a> - {(new Date().getFullYear())}</p>
           <p className={``}>
-            <img className="m-[10px]" src="https://img.shields.io/github/deployments/erikd256/stfranciscusheverlee/production?style=for-the-badge"/>
-            <img className="m-[10px]" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge"/>
-            <img className="m-[10px]" src="https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge"/>
+            <img className="m-[10px]" src="https://img.shields.io/github/deployments/erikd256/stfranciscusheverlee/production?style=for-the-badge&label=vercel"/>
+            <img className="m-[10px]" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge&label=laatste wijziging"/>
+            <img className="m-[10px]" src="https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge&label=licensie"/>
             <img className="m-[10px]" src="https://img.shields.io/scrutinizer/quality/g/erikd256/stfranciscusheverlee?style=for-the-badge"/>
           </p>
           <span>
