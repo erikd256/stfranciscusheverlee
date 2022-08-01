@@ -14,7 +14,7 @@ export const Footer = ({ data, icon, rawData }) => {
           <p className={``}>
             <img className="m-[10px]" src="https://img.shields.io/github/deployments/erikd256/stfranciscusheverlee/production?style=for-the-badge&label=vercel"/>
             <img className="m-[10px]" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge&label=laatste wijziging"/>
-            <img className="m-[10px]" src="https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge&label=licensie"/>
+            <img className="m-[10px]" src="https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge&label=Licentie"/>
           </p>
           <span>
           <a className="mx-[0px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" target="_blank" href="https://www.facebook.com/pg/Franciscusgemeenschapheverlee"><FaFacebookF className={`${socialIconClasses}` }/></a>  
