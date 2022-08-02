@@ -23,6 +23,8 @@ export const Footer = ({ data, icon, rawData }) => {
             <a href="/contact">Contact</a>
             <br></br>
             <a href="/sitemap">Sitemap</a>
+            <br></br>
+            <a href="https://status.stfranciscus-heverlee.org/">Status</a>
           </p>
         </div>
       </Container>
