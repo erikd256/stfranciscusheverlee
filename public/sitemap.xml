@@ -1,94 +1,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://stfranciscus-heverlee.org/posts</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/about</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/contact</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/donaties</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org</loc>
-    <changefreq>hourly</changefreq>
+    <loc>https://stfranciscus-heverlee.org/</loc>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/kerkenleven</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/levensmomenten_doop</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/levensmomenten_eerstecommunie</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/levensmomenten_huwelijk</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/levensmomenten_uitvaart</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/levensmomenten_vormsel</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/levensmomenten_ziekenzalving</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/multimedia_audios</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/multimedia_fotos</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/multimedia_videos</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/organisatie_parochiaalcentrum</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/organisatie_parochie</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/organisatie_verenigingen</loc>
-    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/privacy</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/sitemap</loc>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/vieringen_dhj</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/vieringen_familievieringen</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/vieringen_liturgie</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/post/hemelvaart</loc>
-    <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/post/priesterjubileumpaterjozef</loc>
-    <changefreq>hourly</changefreq>
   </url>
 </urlset>

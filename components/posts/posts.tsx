@@ -4,6 +4,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { BsArrowRight } from "react-icons/bs";
 import { useTheme } from "../layout";
 import Head from 'next/head';
+import format from "date-fns/format";
 
 export const Posts = ({ data }) => {
   const theme = useTheme();
@@ -65,7 +66,7 @@ export const Posts = ({ data }) => {
                   —
                 </span>
                 <p className="text-sm text-basiskleur group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-gray-150">
-                  {post.date}
+                  {format(new Date(post._values.date), "MMM dd, yyyy")}
                 </p>
               </div>
               </div>
