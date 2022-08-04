@@ -22,6 +22,8 @@ export const Footer = ({ data, icon, rawData }) => {
             <br></br>
             <a href="/contact">Contact</a>
             <br></br>
+            <a href="/about">Over</a>
+            <br></br>
             <a href="/sitemap">Sitemap</a>
             <br></br>
             <a href="https://status.stfranciscus-heverlee.org/">Status</a>
