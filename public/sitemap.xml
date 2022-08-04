@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sitemapindex xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+              <loc>https://stfranciscus-heverlee.org/</loc>
+              <priority>1.0</priority>
+    </url>
+    <sitemap>
+      <loc>https://stfranciscus-heverlee.org/sitemap.pages.xml</loc>
+      <lastmod>2022</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://stfranciscus-heverlee.org/sitemap.posts.xml</loc>
+      <lastmod>2022</lastmod>
+   </sitemap>
+</sitemapindex>
