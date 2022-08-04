@@ -392,10 +392,6 @@ const apiURL =
 export const tinaConfig = defineConfig({
   apiURL,
   schema,
-  mediaStore: async () => {
-    const pack = await import("next-tinacms-cloudinary");
-    return pack.TinaCloudCloudinaryMediaStore;
-  },
   cmsCallback: (cms) => {
     /**
      * Enables experimental branch switcher
