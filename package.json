@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "tinacms server:start -c \"next dev\"",
-    "build": "tinacms server:start -c \"next build\"",
+    "build": "tinacms server:start -c \"next build && next-sitemap\"",
     "start": "tinacms server:start -c \"next start\"",
     "export": "npm run build && next export",
-    "lint": "eslint . --ext .ts,.tsx",
-    "postbuild": "next-sitemap"
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "devDependencies": {
     "@tinacms/cli": "^0.60.21",
