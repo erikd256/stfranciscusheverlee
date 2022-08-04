@@ -7,7 +7,6 @@ function addPage(page) {
 
   return `  <url>
     <loc>${`https://stfranciscus-heverlee.org${route}`}</loc>
-    <changefreq>hourly</changefreq>
   </url>`
 }
 
