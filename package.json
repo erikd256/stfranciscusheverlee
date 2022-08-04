@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tinacms server:start -c \"next dev\"",
-    "build": "tinacms server:start -c \"next build && next-sitemap\"",
+    "build": "tinacms server:start -c \"next build\"",
     "start": "tinacms server:start -c \"next start\"",
     "export": "npm run build && next export",
     "lint": "eslint . --ext .ts,.tsx"
@@ -32,7 +32,6 @@
     "date-fns": "^2.23.0",
     "moment": "^2.29.4",
     "next": "^12.0.4",
-    "next-sitemap": "^3.1.16",
     "next-svgr": "^0.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
