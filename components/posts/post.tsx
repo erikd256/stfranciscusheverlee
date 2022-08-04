@@ -146,4 +146,4 @@ export const Post = (props) => {
     </Section>
     </>
   );
-};
+}
