@@ -1,3 +1,4 @@
+/* tslint:disable:no-empty */ 
 import fs from "fs";
 
 const Sitemap = () => {};
