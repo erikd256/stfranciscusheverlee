@@ -2,7 +2,7 @@ const fs = require('fs')
 const globby = require('globby')
 
 function addPage(page) {
-  const path = page.replace('pages', '').replace('content/', '').replace('.js', '').replace('posts', '/post').replace('.mdx', '').replace('.md', '').replace('/post.tsx', 'posts').replace('/home', '')
+  const path = page.replace('pages', '').replace('content/', '').replace('.js', '').replace('posts', '/post').replace('.mdx', '').replace('.md', '').replace('/post.tsx', 'posts').replace('/home', '/')
   const route = path === '/index' ? '' : path
 
   return `  <url>
