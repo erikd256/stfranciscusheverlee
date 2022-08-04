@@ -7,7 +7,8 @@
     "build": "tinacms server:start -c \"next build\"",
     "start": "tinacms server:start -c \"next start\"",
     "export": "npm run build && next export",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "postbuild": "next-sitemap"
   },
   "devDependencies": {
     "@tinacms/cli": "^0.60.21",
@@ -32,6 +33,7 @@
     "date-fns": "^2.23.0",
     "moment": "^2.29.4",
     "next": "^12.0.4",
+    "next-sitemap": "^3.1.16",
     "next-svgr": "^0.0.2",
     "next-tinacms-cloudinary": "^3.5.23",
     "react": "^17.0.2",
