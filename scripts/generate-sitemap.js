@@ -1,5 +1,5 @@
-const fs = require('fs');
-const {globby} = require('globby');
+import fs from 'fs'
+import globby from 'globby'
 function addPage(page) {
   const path = page.replace('pages', '').replace('.js', '').replace('.mdx', '')
   const route = path === '/index' ? '' : path
