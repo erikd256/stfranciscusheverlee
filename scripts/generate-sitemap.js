@@ -1,4 +1,4 @@
-const fs = require('fs');
+import * as fs from 'fs';
 import {globby} from 'globby';
 function addPage(page) {
   const path = page.replace('pages', '').replace('.js', '').replace('.mdx', '')
