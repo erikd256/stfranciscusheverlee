@@ -1,7 +1,8 @@
-/* tslint:disable:no-empty */ 
 import fs from "fs";
 
-const Sitemap = () => {};
+const Sitemap = () => {
+  // returns sitemap
+};
 
 export const getServerSideProps = ({ res }) => {
 const baseUrl = "https://stfranciscus-heverlee.org";
