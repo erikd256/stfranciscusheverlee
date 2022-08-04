@@ -2,8 +2,8 @@
 
 <sitemapindex xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-              <loc>https://stfranciscus-heverlee.org/</loc>
-              <priority>1.0</priority>
+        <loc>https://stfranciscus-heverlee.org/</loc>
+        <priority>1.0</priority>
     </url>
     <sitemap>
       <loc>https://stfranciscus-heverlee.org/sitemap.pages.xml</loc>
