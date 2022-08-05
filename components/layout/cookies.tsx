@@ -2,9 +2,9 @@ import set from "date-fns/esm/fp/set/index.js";
 import React from "react";
 
 export const Cookies = () => {
-  const [cookieAccepted, setCookieAccepted] = React.useState(false);
+  const [cookieAccepted, setCookieAccepted] = React.useState(true);
   React.useEffect(() => {
-    if(window.sessionStorage.getItem("cookieAccepted") == "true"){
+    if(window.sessionStorage.getItem("cookieAccepted") !== "true"){
       setCookieAccepted(!cookieAccepted);
   }}, []);
   function cookieAccept(){
