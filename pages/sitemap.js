@@ -8,6 +8,7 @@ export default function Sitemap() {
   async function parseSitemap(){
     axios.get("/sitemap.xml").then(
       function (response) {
+        //return urls here
       }
     );
    }
