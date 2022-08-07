@@ -44,6 +44,7 @@
     "styled-jsx": "^3.2.5",
     "tinacms": "^0.68.8",
     "typescript": "^4.5.2",
+    "xml-js": "^1.6.11",
     "xml2js": "^0.4.23"
   },
   "resolutions": {

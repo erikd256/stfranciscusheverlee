@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import { Layout } from "../components/layout";
 import axios from 'axios';
+const convert = require('xml-js');
 
 export default function Sitemap() {
-  var XMLResult;
-    axios.get("/sitemap.xml")
+   axios.get("/sitemap.xml")
    .then(function (response) {
-       document.getElementById("results").innerText = response.data;
+       var JSONresponse = convert.xml2json(response.data, {compact: true, spaces: 4});
+       document.getElementById("results").innerText = JSONresponse;
    });  
    return (
     <Layout>
