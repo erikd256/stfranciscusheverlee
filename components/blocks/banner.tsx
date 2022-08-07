@@ -1,9 +1,6 @@
-import { Section } from "../util/section";
-import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
 import React from "react";
 import moment from 'moment';
-import useEffect from "react";
 
 export const Banner = ({ data, parentField }) => {
   const [bannerHidden, setHideBanner] = React.useState(true);
