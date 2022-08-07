@@ -12,14 +12,14 @@ export const Banner = ({ data, parentField }) => {
   }
   const now = moment();
   function checkDate(){
-    if (now.isSameOrBefore(moment(data.vervaldatum))) {
+    if (now.isBefore(moment(data.vervaldatum))) {
       setHideBanner(!bannerHidden);
     }}
     React.useEffect(() => {
       checkDate();
     }, []);
   return (
-   <div style={{display: bannerHidden?"none":"block"}} className="bg-teal-400 rounded-full fixed bottom-[10px] z-[3999] w-[95%] h-[50px] left-[2.5%] text-black text-center"><a className="w-full underline h-full text-center leading-[50px]" href={data.bannerURL}>{data.bannertext}</a><a className="absolute right-[10px] text-black h-full leading-[50px] text-xl pr-[15px]" onClick={hideBanner}>&#x2715;</a></div>
+   <div style={{display: bannerHidden?"none":"block"}} className="bg-teal-400 rounded-full fixed bottom-[10px] z-[3999] w-[95%] h-[50px] left-[2.4%] text-black text-center"><a className="w-full underline h-full text-center leading-[50px]" href={data.bannerURL}>{data.bannertext}</a><a className="absolute right-[10px] text-black h-full leading-[50px] text-xl pr-[15px]" onClick={hideBanner}>&#x2715;</a></div>
   );
 };
 
