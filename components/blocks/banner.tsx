@@ -6,13 +6,13 @@ import moment from 'moment';
 import useEffect from "react";
 
 export const Banner = ({ data, parentField }) => {
-  const [bannerHidden, setHideBanner] = React.useState(false);
+  const [bannerHidden, setHideBanner] = React.useState(true);
   function hideBanner(){
     setHideBanner(!bannerHidden);
   }
   const now = moment();
   function checkDate(){
-    if (now.isAfter(moment(data.vervaldatum))) {
+    if (now.isSameOrBefore(moment(data.vervaldatum))) {
       setHideBanner(!bannerHidden);
     }}
     React.useEffect(() => {
