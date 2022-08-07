@@ -1,10 +1,7 @@
 import Head from 'next/head';
 import { Layout } from "../components/layout";
-const links = require('sitemap-links');
 
 export default function Sitemap() {
-  links('https://stfranciscus-heverlee.org/sitemap.xml')
-  .then(urls => document.getElementById("results").innerText = urls);
    return (
     <Layout>
       <Head>
