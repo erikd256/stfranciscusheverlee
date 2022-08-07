@@ -5,7 +5,7 @@ import { Layout } from "../components/layout";
 export default function Sitemap() {
   var XMLResult;
   async function parseSitemap(){
-    axios.get("/sitemap.xml").then(
+    await axios.get("/sitemap.xml").then(
       function (response) {
         //return urls here
       }
