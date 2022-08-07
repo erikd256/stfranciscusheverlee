@@ -1,16 +1,13 @@
-import {axios} from 'axios';
 import Head from 'next/head';
 import { Layout } from "../components/layout";
+import axios from 'axios';
 
 export default function Sitemap() {
   var XMLResult;
-  async function parseSitemap(){
-    await axios.get("/sitemap.xml").then(
-      function (response) {
-        //return urls here
-      }
-    );
-   }
+    axios.get("/sitemap.xml")
+   .then(function (response) {
+       document.getElementById("results").innerText = response.data;
+   });  
    return (
     <Layout>
       <Head>
@@ -19,8 +16,7 @@ export default function Sitemap() {
       <div className="w-full bg-vijfdekleur text-basiskleur min-h-[20px] p-[25px]">
         <span className="text-xl">Sitemap</span>
         <br></br>
-        <button onClick={parseSitemap}>Parse Sitemap</button>
-        <span></span>
+        <span id="results"></span>
       </div>
     </Layout>
   );
