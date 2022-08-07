@@ -1,14 +1,10 @@
 import Head from 'next/head';
 import { Layout } from "../components/layout";
-import axios from 'axios';
-const convert = require('xml-js');
+const links = require('sitemap-links');
 
 export default function Sitemap() {
-   axios.get("/sitemap.xml")
-   .then(function (response) {
-       var JSONresponse = convert.xml2json(response.data, {compact: true, spaces: 4});
-       document.getElementById("results").innerText = JSONresponse;
-   });  
+  links('https://stfranciscus-heverlee.org/sitemap.xml')
+  .then(urls => document.getElementById("results").innerText = urls);
    return (
     <Layout>
       <Head>
