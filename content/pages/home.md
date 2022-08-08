@@ -1,6 +1,6 @@
 ---
 blocks:
-  - bannertext: parochiefeest 2 oktober
+  - bannertext: Parochiefeest 2 oktober!
     vervaldatum: '2022-08-09T22:00:00.000Z'
     _template: banner
   - title: Start
