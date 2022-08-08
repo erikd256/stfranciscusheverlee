@@ -10,7 +10,7 @@ export const Question = ({ data, tinaField }) => {
     <>
       <p style={{display: data.type=="checkbox" ? "none":"block"}} className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur container mx-auto"><label className="w-4/6" >{data.questiontitle} <span style={{display: data.questionrequired==true ? "block":"none"}} className="text-red-500 inline-block"> *</span></label></p>
       <input type={data.type} name={data.questionid} className="my-[10px] w-full border-basiskleur border-[2px]" style={{display: data.type=="textarea" ? "none":"block"}}/>
-      <textarea  name={data.questionid} className="my-[10px] w-full border-basiskleur border-[2px]" style={{display: data.type=="textarea" ? "block":"none"}}></textarea>
+      <textarea  name={data.questionid} className="my-[10px] w-full border-basiskleur border-[2px]" rows={5} style={{display: data.type=="textarea" ? "block":"none"}}></textarea>
     </>
   );
 };
