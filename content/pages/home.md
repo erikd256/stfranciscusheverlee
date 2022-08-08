@@ -6,10 +6,6 @@ blocks:
   - title: Start
     pagedesc: ''
     _template: header
-  - bannerURL: 'http://franciscusfrando.be'
-    bannertext: Oude website!
-    vervaldatum: '2022-07-31T22:00:00.000Z'
-    _template: banner
   - tagline: >-
       We staan graag voor u ter beschikking en willen met u de droom van een
       rijk van vrede, liefde en rechtvaardigheid in de geest van Jezus helpen
