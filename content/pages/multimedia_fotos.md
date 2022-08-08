@@ -4,6 +4,11 @@ blocks:
     headline: Hier vinden jullie links naar diverse fotoalbums
     text: ''
     actions:
+      - label: uitvaart Marcel Doms
+        type: button
+        icon: true
+        link: >-
+          https://photos.google.com/share/AF1QipNy71jtQuRnEYsudYZV3OJZH7fgk5kPjhON2sqRgg2bseIVpwMTbOIO2pgJM0MNdQ?key=OGx0SzZaaFhyTmFXdzFkbGtEaVZBdWV6ZlJSU3RR
       - label: slotviering werkjaar 2022
         type: button
         icon: true
