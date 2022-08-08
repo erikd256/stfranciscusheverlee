@@ -45,7 +45,7 @@ export const Header = ({ data }) => {
         <span className="absolute xs:left-[160px] lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] top-[60px] sm:text-md md:text-lg lg:text-xl xl:text-2xl font-bold">Heverlee - Kessel-lo - Leuven</span>
         <span className="absolute top-[100px] xs:left-[160px] lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] sm:text-sm md:text-md lg:text-lg xl:text-xl">
           <p className="font-bold">Federatie Kesselinde</p><p>Tiensesteenweg 190, 3001 Heverlee</p>
-          <p>tel. secretariaat +32 16 25 04 59</p>
+          <p>tel. secretariaat +32 492 31 92 15</p>
           <p>franciscusheverlee@gmail.com</p>
         </span>
       </div>
