@@ -1,11 +1,11 @@
 ---
 blocks:
-  - videoURL: TATdeQS9QPQ
-    title: Uitvaart Marcel Doms 10 juni 2022
-    _template: video
   - body: |
       # **2021 - 22**
     _template: content
+  - videoURL: TATdeQS9QPQ
+    title: Uitvaart Marcel Doms 10 juni 2022
+    _template: video
   - videoURL: Tj6Xl8S4JV4
     videodescription: ''
     title: 60-jarig priesterjubileum Pater Jozef Valkeners
