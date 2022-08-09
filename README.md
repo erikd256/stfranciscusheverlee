@@ -1,5 +1,5 @@
-            <img className="m-[10px]" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge"/>
-            <img className="m-[10px]" src="https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge"/>
+<img className="m-[10px]" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge"/>
+<img className="m-[10px]" src="https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge"/>
 
 # St. Franciscusparochie Heverlee - Website
 
