@@ -26,5 +26,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: erikd256/stfranciscusheverlee:latest
+          tags: stfranciscusheverlee/stfranciscusheverlee:latest
           platforms: linux/arm64
