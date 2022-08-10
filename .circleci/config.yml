@@ -19,7 +19,7 @@ jobs:
         - checkout
         - setup_remote_docker:
         version: 19.0.13
-        - run: 
+        - run:
             name: Publish Docker Image to Docker Hub
             command: |
               echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
