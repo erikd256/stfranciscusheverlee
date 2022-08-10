@@ -15,11 +15,10 @@ executors:
 jobs:
     publishLatestToHub: 
       executor: docker-publisher
- 
       steps: 
         - checkout
         - setup_remote_docker
-        - version: 19.03.13
+            version: 19.03.13
         - run: 
             name: Publish Docker Image to Docker Hub
             command: |
