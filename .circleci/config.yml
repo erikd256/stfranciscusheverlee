@@ -15,8 +15,9 @@ executors:
 jobs:
     publishLatestToHub: 
       executor: docker-publisher
-      steps: 
+      steps:
         - checkout
+        
         - setup_remote_docker:
         version: 19.0.13
         - run:
