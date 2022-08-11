@@ -10,8 +10,9 @@ blocks:
 
 
       Voor vragen over privacy over over onze vernieuwde website, stuur graag
-      een email naar respectievelijk privacy@stfrancicus-heverlee.org of naar
-      webservices@stfranciscus-heverlee.org
+      een email naar respectievelijk
+      [privacy@stfrancicus-heverlee.org](mailto:privacy@stfrancicus-heverlee.org)
+      of naar webservices@stfranciscus-heverlee.org
     _template: hero
   - formspreeid: 'https://formspree.io/f/myyoqnnk'
     formspreetitle: Contact
