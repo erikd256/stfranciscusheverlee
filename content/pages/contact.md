@@ -12,7 +12,8 @@ blocks:
       Voor algemene of specifieke vragen over de parochiewerking, contacteer ons
       parochiesecretariaat via email, op
       [franciscusheverlee@gmail.com](mailto:franciscusheverlee@gmail.com), via
-      telefoon op [+32 492 31 92 15](tel:0032492319215).
+      telefoon op [+32 492 31 92 15](tel:0032492319215). Als je wilt kan je
+      natuurlijk ook altijd het contactformulier beneden gebruiken.
 
 
       Voor vragen over privacy over over onze vernieuwde website, stuur graag
