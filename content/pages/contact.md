@@ -1,5 +1,11 @@
 ---
 blocks:
+  - title: Contact
+    pagedesc: >-
+      Contacteer ons asap als je een vraag of aarzeling hebt. Hier vind je alle
+      belangrijke contactgegevens
+    pagekeywords: 'contact,email,privacy,parochiesecretariaat'
+    _template: header
   - tagline: Aarzel niet om ons iets te sturen...
     headline: We helpen je graag verder!
     text: >
@@ -9,8 +15,8 @@ blocks:
       telefoon op [+32 492 31 92 15](tel:0032492319215).
 
 
-      Voor vragen over privacy of over onze vernieuwde website, stuur graag een
-      email naar respectievelijk
+      Voor vragen over privacy over over onze vernieuwde website, stuur graag
+      een email naar respectievelijk
       [privacy@stfrancicus-heverlee.org](mailto:privacy@stfrancicus-heverlee.org)
       of naar
       [webservices@stfranciscus-heverlee.org](mailto:webservices@stfranciscus-heverlee.org).
