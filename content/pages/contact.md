@@ -22,8 +22,8 @@ blocks:
       of naar
       [webservices@stfranciscus-heverlee.org](mailto:webservices@stfranciscus-heverlee.org).
     _template: hero
-  - formspreeid: 'https://formspree.io/f/myyoqnnk'
-    formspreetitle: Contact
+  - airformEmail: webservices@stfranciscus-heverlee.org
+    airformTitle: Contacteer ons
     items:
       - type: textarea
         questiontitle: Mijn vraag
