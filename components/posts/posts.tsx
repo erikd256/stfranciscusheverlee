@@ -31,7 +31,7 @@ export const Posts = ({ data }) => {
           >
             <a
               key={post.id}
-              className="relative group block grid mb-8 last:mb-0 bg-liturgischekleur rounded-xl"
+              className="relative group block grid mb-8 last:mb-0 bg-liturgischekleur rounded-xl no-underline"
             >
               <img
               src={post._values.heroImg}
