@@ -4,6 +4,7 @@ import { Container } from "../util/container";
 import { Icon } from "../util/icon";
 import type { TinaTemplate } from "tinacms";
 import { iconSchema } from "../util/icon";
+import Airform from 'react-airform'
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -22,9 +23,9 @@ export const Form = ({ data, parentField }) => {
         className={`bg-vijfdekleur text-basiskleur`}
         size="large"
       >
-        <form acceptCharset="utf-8" action={data.formspreeid} className="relative w-full border-2 border-basiskleur place-self-center p-[15px]" method="POST">
+        <Airform email={data.airformEmail}>
         <fieldset>
-        <p className="text-2xl my-[10px]">{data.formspreetitle}</p>
+        <p className="text-2xl my-[10px]">{data.airformTitle}</p>
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -38,7 +39,7 @@ export const Form = ({ data, parentField }) => {
           <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
           </fieldset>
           <span className="text-red-500">* Verplicht veld</span>
-          </form>
+          </Airform>
       </Container>
     </Section>
   );
@@ -63,13 +64,13 @@ export const formBlockSchema: TinaTemplate = {
   fields: [
     {
       type: "string",
-      label: "Formulier - Formspree Endpoint",
-      name: "formspreeid",
+      label: "Emailadres voor antwoorden",
+      name: "airformEmail",
     },
     {
       type: "string",
       label: "Formulier titel",
-      name: "formspreetitle",
+      name: "airformTitle",
     },
     {
       type: "object",

@@ -94,8 +94,8 @@ fragment PageParts on Page {
       color
     }
     ... on PageBlocksForm {
-      formspreeid
-      formspreetitle
+      airformEmail
+      airformTitle
       items {
         __typename
         type
