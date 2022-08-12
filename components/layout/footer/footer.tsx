@@ -18,15 +18,15 @@ export const Footer = ({ data, icon, rawData }) => {
             <a className="mx-[4px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" target="_blank" href="https://github.com/erikd256/stfranciscusheverlee"><FaGithub className={`${socialIconClasses}` }/></a>
           </span>
           <p>
-            <a href="/privacy">Privacy</a>
+            <a href="/privacy" className="no-underline">Privacy</a>
             <br></br>
-            <a href="/contact">Contact</a>
+            <a href="/contact" className="no-underline">Contact</a>
             <br></br>
-            <a href="/about">Over</a>
+            <a href="/about" className="no-underline">Over</a>
             <br></br>
-            <a href="/sitemap">Sitemap</a>
+            <a href="/sitemap" className="no-underline">Sitemap</a>
             <br></br>
-            <a href="https://status.stfranciscus-heverlee.org/">Status</a>
+            <a href="https://status.stfranciscus-heverlee.org/" className="no-underline">Status</a>
           </p>
         </div>
       </Container>

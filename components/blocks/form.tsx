@@ -8,9 +8,9 @@ import { iconSchema } from "../util/icon";
 export const Question = ({ data, tinaField }) => {
   return (
     <>
-      <p style={{display: data.type=="checkbox" ? "none":"block"}} className="p-[4px] my-[15px] rounded-[0px] border-b-[2px] border-basiskleur bg-liturgischekleur container mx-auto"><label className="w-4/6" >{data.questiontitle} <span style={{display: data.questionrequired==true ? "block":"none"}} className="text-red-500 inline-block"> *</span></label></p>
-      <input type={data.type} name={data.questionid} className="my-[10px] w-full border-basiskleur border-[2px]" style={{display: data.type=="textarea" ? "none":"block"}}/>
-      <textarea  name={data.questionid} className="my-[10px] w-full border-basiskleur border-[2px]" rows={5} style={{display: data.type=="textarea" ? "block":"none"}}></textarea>
+      <b>{data.questiontitle} <span className="text-red-500" style={{display: data.questionrequired ? "inline-block":"none"}}>*</span></b>
+      <input type={data.type} name={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} style={{display: data.type=="textarea" ? "none":"block"}}/>
+      <textarea name={data.questionid} className={`my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} rows={7} style={{display: data.type=="textarea" ? "block":"none"}}></textarea>
     </>
   );
 };
@@ -22,9 +22,9 @@ export const Form = ({ data, parentField }) => {
         className={`bg-vijfdekleur text-basiskleur`}
         size="large"
       >
-        <form action={`https://airform.io/${data.airformEmail}`} method="post">
-        <fieldset>
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
+        <form action={`https://airform.io/${data.airformEmail}`} method="post">
+        <fieldset className="text-left">
         {data.items &&
           data.items.map(function (block, i) {
             return (

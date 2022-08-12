@@ -124,9 +124,6 @@ module.exports = {
               borderRadius: "3px",
               margin: "-0.25rem 1px",
             },
-            "code::before": {
-              content: '""',
-            },
             "code::after": {
               content: '""',
             },
@@ -169,7 +166,7 @@ module.exports = {
             '[class~="lead"]': { color: theme("colors.gray.400") },
             a: { color: theme("colors.gray.100") },
             strong: { color: theme("colors.gray.100") },
-            "ul > li::before": { backgroundColor: theme("colors.gray.700") },
+            "ul > li::before": { backgroundColor: theme("colors.basiskleur") },
             hr: { borderColor: theme("colors.gray.800") },
             blockquote: {
               color: theme("colors.gray.100"),
