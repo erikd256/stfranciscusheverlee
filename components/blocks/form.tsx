@@ -4,7 +4,6 @@ import { Container } from "../util/container";
 import { Icon } from "../util/icon";
 import type { TinaTemplate } from "tinacms";
 import { iconSchema } from "../util/icon";
-import Airform from 'react-airform'
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -23,7 +22,7 @@ export const Form = ({ data, parentField }) => {
         className={`bg-vijfdekleur text-basiskleur`}
         size="large"
       >
-        <Airform email={data.airformEmail}>
+        <form action={`https://airform.io/${data.airformEmail}`} method="post">
         <fieldset>
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
         {data.items &&
@@ -39,7 +38,7 @@ export const Form = ({ data, parentField }) => {
           <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
           </fieldset>
           <span className="text-red-500">* Verplicht veld</span>
-          </Airform>
+          </form>
       </Container>
     </Section>
   );
