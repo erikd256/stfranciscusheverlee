@@ -3,7 +3,9 @@ import { Container } from "../util/container";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import ReactPlayer from 'react-player'
+import { default as _ReactPlayer } from 'react-player/lazy';
+import { ReactPlayerProps } from "react-player/types/lib";
+const ReactPlayer = _ReactPlayer as unknown as React.FC<ReactPlayerProps>;
 
 export const Video = ({ data, parentField = "" }) => {
   return (
