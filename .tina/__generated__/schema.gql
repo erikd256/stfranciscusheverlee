@@ -263,6 +263,7 @@ type PageBlocksImage {
 type PageBlocksVideo {
   videoURL: String
   videodescription: JSON
+  coverImage: String
   title: String
 }
 
@@ -459,6 +460,7 @@ input PageBlocksImageMutation {
 input PageBlocksVideoMutation {
   videoURL: String
   videodescription: JSON
+  coverImage: String
   title: String
 }
 

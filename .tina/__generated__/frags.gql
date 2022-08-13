@@ -123,6 +123,7 @@ fragment PageParts on Page {
     ... on PageBlocksVideo {
       videoURL
       videodescription
+      coverImage
       title
     }
     ... on PageBlocksAudio {
