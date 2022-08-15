@@ -62,9 +62,6 @@ export const testimonialBlockSchema: TinaTemplate = {
   fields: [
     {
       type: "rich-text",
-      ui: {
-        component: "textarea",
-      },
       label: "Quote",
       name: "quote",
     },
