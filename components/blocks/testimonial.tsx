@@ -21,7 +21,7 @@ export const Testimonial = ({ data, parentField = "" }) => {
               data-tinafield={`${parentField}.quote`}
               className="relative opacity-95"
             >
-              <TinaMarkdown content={data.quote} />
+              {data.quote}
             </p>
             <span
               className={`block opacity-15 text-8xl absolute inset-y-1/2 transform translate-y-3	-right-4 leading-4 -z-1 text-basiskleur`}
