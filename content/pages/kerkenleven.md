@@ -1,7 +1,7 @@
 ---
 blocks:
   - tagline: ''
-    headline: weeknieuws
+    headline: Kerk & Leven
     text: ''
     actions:
       - label: kerkenleven.be
