@@ -14,7 +14,11 @@ export default function About(){
 
   return(
     <Layout>
-      <Head>Over @ Sint-Franciscusparochie Heverlee</Head>
+      <Head>
+        <title>Over @ Sint-Franciscusparochie Heverlee</title>
+        <meta name='keywords' content='about,sintfranciscusparochie,heverlee'/>
+        <meta name='description' content='De "Over ons" pagina van de Sint-Franciscusparochie Heverlee'/>
+      </Head>
       <ReactMarkdown className="left-[12.5%] w-4/6 relative p-[20px] whitespace-pre-wrap" remarkPlugins={[gfm]}>{readmedata.data}</ReactMarkdown>
     </Layout>
   )
