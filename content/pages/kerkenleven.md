@@ -11,7 +11,7 @@ blocks:
         icon: true
         link: 'https://www.kerkenleven.be/'
     image:
-      src: ''
+      src: /uploads/kerkenleven.jpg
     _template: hero
 ---
 
