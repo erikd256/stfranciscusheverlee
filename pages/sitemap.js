@@ -11,7 +11,7 @@ export default function Sitemap() {
       <Head>
         <title>Sitemap @ Sint-Franciscusparochie Heverlee</title>
       </Head>
-      <div className="w-full bg-vijfdekleur text-basiskleur min-h-[20px] p-[25px]">
+      <div className="w-3/4 left-[12.5%] relative bg-vijfdekleur text-basiskleur min-h-[20px] p-[25px]">
         <span className="text-xl">Sitemap</span>
         <br></br>
         <span>{SitemapLinks.length}</span>
