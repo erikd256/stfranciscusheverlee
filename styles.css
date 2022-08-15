@@ -18,7 +18,7 @@
     @apply text-base font-bold md:text-lg;
   }
   body {
-    @apply text-sm md:text-base;
+    @apply text-sm text-basiskleur md:text-base;
   }
 }
 
