@@ -15,7 +15,7 @@ export default function About(){
   return(
     <Layout>
       <Head>Over @ Sint-Franciscusparochie Heverlee</Head>
-      <ReactMarkdown className="w-[4/6]" remarkPlugins={[gfm]}>{readmedata.data}</ReactMarkdown>
+      <ReactMarkdown className="left-[12.5%] w-4/6 relative" remarkPlugins={[gfm]}>{readmedata.data}</ReactMarkdown>
     </Layout>
   )
 }
