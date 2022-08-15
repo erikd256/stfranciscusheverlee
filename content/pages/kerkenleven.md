@@ -1,8 +1,7 @@
 ---
 blocks:
-  - body: |
-      ![](/uploads/kerkenleven.jpg "")
-    _template: content
+  - fileRef: /uploads/2232-1.jpg
+    _template: image
   - tagline: ''
     headline: weeknieuws
     text: ''
@@ -12,7 +11,7 @@ blocks:
         icon: true
         link: 'https://www.kerkenleven.be/'
     image:
-      src: /uploads/2232-1.jpg
+      src: ''
     _template: hero
 ---
 
