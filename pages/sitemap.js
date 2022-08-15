@@ -4,7 +4,7 @@ import axios from 'axios';
 import * as xmljs from "xml-js";
 
 export default function Sitemap() {
-    const result = null; 
+    const result = "placeholder text"; 
     axios.get(`https://www.stfranciscus-heverlee.org/sitemap.xml`)
       .then(res => {
         const XMLresponse = res.data;
