@@ -1,8 +1,5 @@
 ![LICENSE BADGE](https://img.shields.io/github/license/erikd256/stfranciscusheverlee?style=for-the-badge)
 
-# St. Franciscusparochie Heverlee - Website
+# St. Franciscusparochie Heverlee
 
-Dit is de vernieuwde website van de Sint Franciscusparochie te Heverlee.
-
-Deze broncode is gebaseerd op de [TinaCMS Cloud Starter](https://github.com/tinacms/tina-cloud-starter) en zo hebben we besloten om ook onze website te licenseren onder de Apache 2.0 licensie. 
-
+Dit is de vernieuwde website van de St. Franciscusparochie te Heverlee, mogelijk gemaakt door [@erikd256](https://github.com/erikd256)
