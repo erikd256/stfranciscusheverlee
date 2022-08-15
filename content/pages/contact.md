@@ -6,7 +6,7 @@ blocks:
       belangrijke contactgegevens
     pagekeywords: 'contact,email,privacy,parochiesecretariaat'
     _template: header
-  - tagline: Aarzel niet om ons iets te sturen...
+  - tagline: Aarzel niet om jouw vraag te stellen...
     headline: We helpen je graag verder!
     text: >
       Voor algemene of specifieke vragen over de parochiewerking, contacteer ons
