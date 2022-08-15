@@ -11,8 +11,8 @@ export const Image = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         size="large"
       >
-        <div className="w-4/6 pt-[10px] text-justify border-b-2 border-liturgischekleur text-xl">{data.imageTitle}</div>
-        <img src={data.fileRef} alt={data.alt} className="w-4/6" />
+        <div className="w-4/6 relative pt-[10px] text-justify border-b-2 border-liturgischekleur text-xl">{data.imageTitle}</div>
+        <img src={data.fileRef} alt={data.alt} className="w-4/6 relative left-[12.5%]" />
         <div className="w-4/6 pb-[10px] text-justify border-b-2 border-liturgischekleur">{data.description}</div>
       </Container>
     </Section>
