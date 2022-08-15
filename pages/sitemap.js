@@ -4,7 +4,7 @@ import GetSitemapLinks from "get-sitemap-links";
 
 export default function Sitemap() {
   const SitemapLinks = GetSitemapLinks(
-    "/sitemap.xml"
+    "https://stfranciscus-heverlee.org/sitemap.xml"
   );
    return (
     <Layout>
@@ -14,6 +14,7 @@ export default function Sitemap() {
       <div className="w-full bg-vijfdekleur text-basiskleur min-h-[20px] p-[25px]">
         <span className="text-xl">Sitemap</span>
         <br></br>
+        <span>{SitemapLinks.length}</span>
       </div>
     </Layout>
   );
