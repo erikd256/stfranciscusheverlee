@@ -4,7 +4,7 @@ import GetSitemapLinks from "get-sitemap-links";
 
 export default function Sitemap() {
   const SitemapLinks = GetSitemapLinks(
-    "https://stfranciscus-heverlee.org/sitemap.xml"
+    "https://www.stfranciscus-heverlee.org/sitemap.xml"
   );
    return (
     <Layout>

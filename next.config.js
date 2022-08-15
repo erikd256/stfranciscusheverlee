@@ -14,16 +14,4 @@ module.exports = withSvgr({
       },
     ];
   },
-  async headers() {
-    return [
-      {
-        // matching all API routes
-        source: "/sitemap.xml",
-        headers: [
-          { key: "Access-Control-Allow-Origin", value: "*" },
-          { key: "Access-Control-Allow-Methods", value: "GET" }
-        ]
-      }
-    ]
-  }
 });
