@@ -22,7 +22,7 @@ export const Footer = ({ data, icon, rawData }) => {
             <br></br>
             <a href="/contact" className="no-underline">Contact</a>
             <br></br>
-            <a href="/about" className="no-underline">Over</a>
+            <a href="/about" className="no-underline">Over ons</a>
             <br></br>
             <a href="/sitemap" className="no-underline">Sitemap</a>
             <br></br>

@@ -15,7 +15,7 @@ export default function About(){
   return(
     <Layout>
       <Head>
-        <title>Over @ Sint-Franciscusparochie Heverlee</title>
+        <title>Over ons @ Sint-Franciscusparochie Heverlee</title>
         <meta name='keywords' content='about,sintfranciscusparochie,heverlee'/>
         <meta name='description' content='De "Over ons" pagina van de Sint-Franciscusparochie Heverlee'/>
       </Head>
