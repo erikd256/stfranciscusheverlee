@@ -28,14 +28,16 @@ blocks:
 
       ![](/uploads/week34_4.jpg)
     _template: content
-  - fileRef: /uploads/2232-1.jpg
-    imageTitle: week ___
-    _template: image
-  - fileRef: /uploads/2232-2.jpg
-    _template: image
-  - fileRef: /uploads/2232-3.jpg
-    _template: image
-  - fileRef: /uploads/2232-4.jpg
-    _template: image
+  - body: |
+      ### week \_\_ 26 juni 2022
+
+      ![](/uploads/2232-1.jpg)
+
+      ![](/uploads/2232-2.jpg)
+
+      ![](/uploads/2232-3.jpg)
+
+      ![](/uploads/2232-4.jpg)
+    _template: content
 ---
 
