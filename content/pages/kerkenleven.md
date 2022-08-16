@@ -24,5 +24,7 @@ blocks:
     _template: image
   - fileRef: /uploads/2232-3.jpg
     _template: image
+  - fileRef: /uploads/2232-4.jpg
+    _template: image
 ---
 
