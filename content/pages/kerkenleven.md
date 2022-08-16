@@ -9,6 +9,8 @@ blocks:
   - fileRef: /uploads/2232-1.jpg
     imageTitle: week ___
     _template: image
+  - fileRef: /uploads/2232-2.jpg
+    _template: image
   - tagline: ''
     headline: Kerk & Leven
     text: ''
