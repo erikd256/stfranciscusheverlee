@@ -14,7 +14,7 @@ blocks:
   - titleText: weeknieuws werkjaar 2022 - 23
     textsize: text-4xl
     _template: heading
-  - titleText: weeknieuws jaar 2021 - 22
+  - titleText: ' werkjaar 2021 - 22'
     textsize: text-4xl
     _template: heading
   - body: |
