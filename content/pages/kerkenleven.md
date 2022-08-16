@@ -11,7 +11,7 @@ blocks:
     image:
       src: /uploads/kerkenleven.jpg
     _template: hero
-  - titleText: weeknieuws werkjaar 2022 - 23
+  - titleText: werkjaar 2022 - 23
     textsize: text-4xl
     _template: heading
   - titleText: ' werkjaar 2021 - 22'
