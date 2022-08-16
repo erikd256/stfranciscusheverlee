@@ -4,7 +4,10 @@ blocks:
     vervaldatum: '2022-08-09T22:00:00.000Z'
     _template: banner
   - title: Start
-    pagedesc: ''
+    pagedesc: >-
+      De enige echte Webpagina van de Sint Franciscusparochie Heverlee. Wij
+      bieden je hier alle nieuwigheden en informaties uit onze gemeenschap aan.
+    pagekeywords: 'Start,Franciscusparochie,Heverlee,Sint,Franciscus'
     _template: header
   - tagline: >-
       We staan graag voor u ter beschikking en willen met u de droom van een
