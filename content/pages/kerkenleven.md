@@ -6,6 +6,9 @@ blocks:
   - titleText: weeknieuws jaar 2021 - 22
     textsize: text-4xl
     _template: heading
+  - fileRef: /uploads/2232-1.jpg
+    imageTitle: week ___
+    _template: image
   - tagline: ''
     headline: Kerk & Leven
     text: ''
