@@ -119,7 +119,8 @@ export const Header = ({ data }) => {
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact" className="no-underline">Contact</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/links" className="no-underline">Links</a></button>
     </div>
-    <a href="/donaties" className="fixed p-[15px] w-[70px] no-underline rounded-full text-center bg-red-700 text-white bold bottom-[10px] z-[4000] left-[2.4%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">volunteer_activism</span></a>
+    <a href="/donaties" className="fixed p-[15px] w-[70px] no-underline rounded-full text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">volunteer_activism</span></a>
+    <a href="/posts" className="fixed p-[15px] w-[100px] pl-[45px] no-underline rounded-r-full text-center bg-green-700 text-white bold bottom-[10px] z-[4000] left-[4%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">auto_stories</span></a>
     </>
   );
 };
