@@ -375,12 +375,12 @@ const schema = defineSchema({
   ],
   config: {
     media: {
-       tina: {
-           publicFolder: "public",
-           mediaRoot: "uploads"
-         },
+      loadCustomStore: async () => {
+        const pack = await import("next-tinacms-cloudinary");
+        return pack.TinaCloudCloudinaryMediaStore;
+      },
     }
- }
+  }
 });
 
 const branch = "main";
