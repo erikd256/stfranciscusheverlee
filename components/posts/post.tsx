@@ -89,18 +89,6 @@ export const Post = (props) => {
           <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={props.keywords}/>
           <meta name="description" content={props.desc}/>
-          <script
-  dangerouslySetInnerHTML={{
-    __html: `
-    const remark_config = {
-      host: 'https://remark42.stfranciscus-heverlee.org',
-      site_id: 'remark42.stfranciscus-heverlee.org',
-      show_rss_subscription: 'true',
-    };
-    window.remark_config = remark_config;
-          !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
-  }}
-></script>
     </Head>
     <Section className="flex-1">
       <Container className={`flex-1 max-w-full pb-2`} size="large">
@@ -157,6 +145,18 @@ export const Post = (props) => {
         </div>
       </Container>
       <div id={`remark42`}>{''}</div>
+      <script
+  dangerouslySetInnerHTML={{
+    __html: `
+    const remark_config = {
+      host: 'https://remark42.stfranciscus-heverlee.org',
+      site_id: 'remark42.stfranciscus-heverlee.org',
+      show_rss_subscription: 'true',
+    };
+    window.remark_config = remark_config;
+          !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
+  }}
+></script>
     </Section>
     </>
   );
