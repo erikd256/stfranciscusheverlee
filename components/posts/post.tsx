@@ -145,18 +145,17 @@ export const Post = (props) => {
         </div>
       </Container>
       <div id="remark42"></div>
-      <Script
+      <script
   dangerouslySetInnerHTML={{
     __html: `
     const remark_config = {
       host: 'https://remark42.stfranciscus-heverlee.org',
-      site_id: 'remark42.stfranciscus-heverlee.org',
-      show_rss_subscription: 'true',
+      site_id: 'remark42.stfranciscusheverlee',
     };
     window.remark_config = remark_config;
-    !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
+          !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
   }}
-></Script>
+></script>
     </Section>
     </>
   );
