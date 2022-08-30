@@ -89,8 +89,8 @@ export const Post = (props) => {
           <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={props.keywords}/>
           <meta name="description" content={props.desc}/>
-          <script data-isso="https://isso.stfranciscus-heverlee.org/"
-        src="https://isso.stfranciscus-heverlee.org/js/embed.min.js"></script>
+          <script data-isso="http://isso.stfranciscus-heverlee.org/"
+        src="http://isso.stfranciscus-heverlee.org/js/embed.min.js"></script>
     </Head>
     <Section className="flex-1">
       <Container className={`flex-1 max-w-full pb-2`} size="large">
