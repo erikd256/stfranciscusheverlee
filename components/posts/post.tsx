@@ -144,8 +144,8 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <div id="remark42"></div>
-      <Script
+      <div id="remark42">{''}</div>
+          <Script
   dangerouslySetInnerHTML={{
     __html: `
     var remark_config = {
