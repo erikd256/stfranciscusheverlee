@@ -979,7 +979,7 @@ export const PagePartsFragmentDoc = gql`
 export const PageQueryDocument = gql`
     query PageQuery {
   ...LayoutQueryFragment
-  postConnection(sort: "date") {
+  postConnection {
     edges {
       node {
         id
