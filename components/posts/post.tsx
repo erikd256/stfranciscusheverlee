@@ -145,11 +145,12 @@ export const Post = (props) => {
         </div>
       </Container>
       <ReactCusdis
+        lang="nl-nl"
         attrs={{
-          host: 'https://cusdis.stfranciscus-heverlee.org',
           appId: 'stfranciscusheverlee',
-          pageId: 'stfranciscusheverlee-blogposts',
-        }}
+          host: 'https://cusdis.stfranciscus-heverlee.org',
+          pageId: props.title
+        }} 
       />
     </Section>
     </>
