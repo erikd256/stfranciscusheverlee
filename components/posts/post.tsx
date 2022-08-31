@@ -89,8 +89,6 @@ export const Post = (props) => {
           <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
           <meta name="keywords" content={props.keywords}/>
           <meta name="description" content={props.desc}/>
-          <script data-isso="http://isso.stfranciscus-heverlee.org/"
-        src="http://isso.stfranciscus-heverlee.org/js/embed.min.js"></script>
     </Head>
     <Section className="flex-1">
       <Container className={`flex-1 max-w-full pb-2`} size="large">
@@ -146,9 +144,6 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-    <section className="w-5/6" id="isso-thread">
-      <noscript>Javascript needs to be activated to view comments.</noscript>
-    </section>
     </Section>
     </>
   );
