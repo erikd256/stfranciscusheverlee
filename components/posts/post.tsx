@@ -146,7 +146,7 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-    <section id="isso-thread">
+    <section className="w-5/6" id="isso-thread">
       <noscript>Javascript needs to be activated to view comments.</noscript>
     </section>
     </Section>
