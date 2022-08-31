@@ -145,7 +145,6 @@ export const Post = (props) => {
         </div>
       </Container>
       <ReactCusdis
-        lang="nl-nl"
         attrs={{
           appId: 'stfranciscusheverlee',
           host: 'https://cusdis.stfranciscus-heverlee.org',
