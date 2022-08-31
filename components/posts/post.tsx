@@ -19,7 +19,7 @@ import format from "date-fns/format";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
 import Head from 'next/head';
-import Script from 'next/script';
+import { ReactCusdis } from 'react-cusdis';
 
 const components: Components<{
   BlockQuote: {
@@ -144,6 +144,13 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
+      <ReactCusdis
+        attrs={{
+          host: 'https://cusdis.stfranciscus-heverlee.org',
+          appId: 'stfranciscusheverlee',
+          pageId: 'stfranciscusheverlee-blogposts',
+        }}
+      />
     </Section>
     </>
   );
