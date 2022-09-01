@@ -156,7 +156,7 @@ export const Post = (props) => {
       emitMetadata="0"
       inputPosition="top"
       theme="dark"
-      lang="en"
+      lang="nl"
       loading="lazy"
         />
       </div>
