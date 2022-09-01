@@ -19,8 +19,10 @@ import format from "date-fns/format";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
 import Head from 'next/head';
-import { ReactCusdis } from 'react-cusdis';
-
+import { Discuzz } from '@discuzz/discuzz'
+import LocaleProviderEn from '@discuzz/locale-en'
+import AuthFirebase from '@discuzz/auth-firebase'
+import DataFirestore from '@discuzz/data-firestore'
 const components: Components<{
   BlockQuote: {
     children: TinaMarkdownContent;
@@ -144,13 +146,23 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <ReactCusdis
-        attrs={{
-          appId: 'stfranciscusheverlee',
-          host: 'https://cusdis.stfranciscus-heverlee.org',
-          pageId: props.title
-        }} 
-      />
+      <Discuzz
+      url={global.location && global.location.href}
+      service={{
+        auth: AuthFirebase,
+        data: DataFirestore,
+        config: {
+          apiKey: "AIzaSyDyg4XJ_gq9TrlMKnn0PRRv8M4mNhd3-is",
+          authDomain: "stfranciscusheverlee.firebaseapp.com",
+          projectId: "stfranciscusheverlee",
+          storageBucket: "stfranciscusheverlee.appspot.com",
+          messagingSenderId: "849438471910",
+          appId: "1:849438471910:web:e5252a27285fdc41c5ed27"
+        }
+      }}
+      auths={['google', 'apple', 'facebook', 'github', 'twitter', 'microsoft', 'yahoo']}
+      locale={LocaleProviderEn}
+    />
     </Section>
     </>
   );
