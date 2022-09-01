@@ -160,7 +160,7 @@ export const Post = (props) => {
           appId: "1:849438471910:web:e5252a27285fdc41c5ed27"
         }
       }}
-      auths={['google', 'apple', 'facebook', 'github', 'twitter', 'microsoft', 'yahoo']}
+      auths={['google']}
       locale={LocaleProviderEn}
     />
     </Section>
