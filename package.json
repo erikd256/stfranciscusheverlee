@@ -29,6 +29,7 @@
     "@discuzz/data-firestore": "^1.11.18",
     "@discuzz/discuzz": "^1.11.18",
     "@discuzz/locale-en": "^1.11.18",
+    "@giscus/react": "^2.2.0",
     "@headlessui/react": "^1.4.1",
     "@tailwindcss/typography": "^0.4.1",
     "@tinacms/auth": "^0.50.3",

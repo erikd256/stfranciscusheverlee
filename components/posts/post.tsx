@@ -19,6 +19,7 @@ import format from "date-fns/format";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
 import Head from 'next/head';
+import Giscus from '@giscus/react';
 
 const components: Components<{
   BlockQuote: {
@@ -143,21 +144,22 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <script src="https://giscus.app/client.js"
-        data-repo="erikd256/stfranciscusheverlee"
-        data-repo-id="R_kgDOHmfHCA"
-        data-category="Show and tell"
-        data-category-id="DIC_kwDOHmfHCM4CRKx0"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="dark"
-        data-lang="nl"
-        crossOrigin="anonymous"
-        async>
-      </script>
+      <div className="w-2/3 bg-black p-[15px] rounded-xl relative left-[16.6666665%]">
+      <Giscus
+      repo="erikd256/stfranciscusheverlee"
+      repoId="R_kgDOHmfHCA"
+      category="Show and tell"
+      categoryId="DIC_kwDOHmfHCM4CRKx0"
+      mapping="specific"
+      term="Welcome to @giscus/react component!"
+      reactionsEnabled="1"
+      emitMetadata="0"
+      inputPosition="top"
+      theme="dark"
+      lang="en"
+      loading="lazy"
+        />
+      </div>
     </Section>
     </>
   );
