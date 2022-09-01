@@ -35,5 +35,5 @@ export const Section = ({ children, color = "", className = "" }) => {
     >
       {children}
     </section>
-  );
-};
+  )
+}
