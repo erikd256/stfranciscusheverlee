@@ -148,8 +148,8 @@ export const Post = (props) => {
       <Giscus
       repo="erikd256/stfranciscusheverlee"
       repoId="R_kgDOHmfHCA"
-      category="Show and tell"
-      categoryId="DIC_kwDOHmfHCM4CRKx0"
+      category="Comments"
+      categoryId="DIC_kwDOHmfHCM4CRKzV"
       mapping="specific"
       term="Weeknieuws Commentaren"
       reactionsEnabled="1"
