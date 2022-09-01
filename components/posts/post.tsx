@@ -20,7 +20,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
 import Head from 'next/head';
 import { Discuzz } from '@discuzz/discuzz'
-import LocaleProviderNl from '@discuzz/locale-en'
+import LocaleProviderEn from '@discuzz/locale-en'
 import AuthFirebase from '@discuzz/auth-firebase'
 import DataFirestore from '@discuzz/data-firestore'
 const components: Components<{
@@ -160,8 +160,8 @@ export const Post = (props) => {
           appId: "1:849438471910:web:e5252a27285fdc41c5ed27"
         }
       }}
-      auths={['google']}
-      locale={LocaleProviderNl}
+      auths={['google','apple']}
+      locale={LocaleProviderEn}
     />
     </Section>
     </>
