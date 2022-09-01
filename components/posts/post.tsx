@@ -144,7 +144,7 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <div className="w-2/3 bg-black p-[15px] rounded-xl relative left-[16.6666665%]">
+      <div className="w-2/3 bg-ghblack p-[15px] rounded-xl relative left-[16.6666665%]">
       <Giscus
       repo="erikd256/stfranciscusheverlee"
       repoId="R_kgDOHmfHCA"
@@ -155,7 +155,7 @@ export const Post = (props) => {
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition="top"
-      theme="dark"
+      theme="dark_dimmed"
       lang="nl"
       loading="lazy"
         />
