@@ -151,7 +151,7 @@ export const Post = (props) => {
       category="Show and tell"
       categoryId="DIC_kwDOHmfHCM4CRKx0"
       mapping="specific"
-      term="Welcome to @giscus/react component!"
+      term="Weeknieuws Commentaren"
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition="top"
