@@ -1,10 +1,10 @@
 ---
 blocks:
   - tagline: Here's some text above the other text
-    headline: This Big Text is Totally Awesome
+    headline: links
     text: ''
     actions:
-      - label: pastorale zone Kesselinde
+      - label: pastorale zone KesseLinde
         type: button
         icon: true
         link: 'https://www.kerknet.be/organisatie/pastorale-zone-kessel-lo'
