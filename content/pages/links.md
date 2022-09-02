@@ -4,7 +4,7 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
-      - label: okra
+      - label: OKRA
         type: button
         icon: true
         link: 'https://www.okra.be/'
