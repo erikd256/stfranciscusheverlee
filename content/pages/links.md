@@ -4,6 +4,10 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
+      - label: Chiro Don Bosco Kessel-Lo
+        type: button
+        icon: true
+        link: 'http://chirodonboscokessello.be/prod-public/'
       - label: Chiro Hekeko
         type: button
         icon: true
