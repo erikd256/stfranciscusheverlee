@@ -4,6 +4,11 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
+      - label: Samana
+        type: button
+        icon: true
+        link: >-
+          https://www.samana.be/afdelingen/afdeling/heverlee-sint-franciscus-298/
       - label: OKRA
         type: button
         icon: true
