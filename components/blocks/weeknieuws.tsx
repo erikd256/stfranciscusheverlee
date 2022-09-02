@@ -19,7 +19,7 @@ export const Weeknieuws = ({ data, parentField = "" }) => {
       <button onClick={handleClick} className="underline">{data.LinkTitle}</button>
       {isShown && (
         <>
-          <div className="fixed w-3/4 h-3/4 z-[500] left-[12.5%] top-[12.5%] bg-vijfdekleur rounded-xl">
+          <div className="fixed w-3/4 h-3/4 z-[500] p-0 left-[12.5%] top-[12.5%] bg-vijfdekleur rounded-xl">
             <button onClick={handleClick} className="absolute text-vierdekleur right-[10px] h-[20px] w-[20px] top-[40px]">&#x2715;</button>
             <iframe src={data.file} className="w-full h-full rounded-xl m-0"></iframe>
           </div>
