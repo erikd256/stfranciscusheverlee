@@ -4,6 +4,10 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
+      - label: Chiro Hekeko
+        type: button
+        icon: true
+        link: 'https://www.chirohekeko.be/'
       - label: Jeugdhuis De ZoeNK
         type: button
         icon: true
