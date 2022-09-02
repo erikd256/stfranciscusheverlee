@@ -11,6 +11,7 @@ import { headerBlockSchema } from "../components/blocks/header";
 import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
+import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
 
 const schema = defineSchema({
   collections: [
@@ -360,6 +361,7 @@ const schema = defineSchema({
             headerBlockSchema,
             heroBlockSchema,
             featureBlockSchema,
+            weeknieuwsBlockSchema,
             formBlockSchema,
             bannerBlockSchema,
             headingBlockSchema,

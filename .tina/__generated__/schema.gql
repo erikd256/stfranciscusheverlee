@@ -228,6 +228,11 @@ type PageBlocksFeatures {
   color: String
 }
 
+type PageBlocksWeeknieuws {
+  LinkTitle: String
+  file: String
+}
+
 type PageBlocksFormItems {
   type: String
   questiontitle: String
@@ -282,7 +287,7 @@ type PageBlocksTestimonial {
   author: String
 }
 
-union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksForm | PageBlocksBanner | PageBlocksHeading | PageBlocksImage | PageBlocksVideo | PageBlocksAudio | PageBlocksContent | PageBlocksTestimonial
+union PageBlocks = PageBlocksHeader | PageBlocksHero | PageBlocksFeatures | PageBlocksWeeknieuws | PageBlocksForm | PageBlocksBanner | PageBlocksHeading | PageBlocksImage | PageBlocksVideo | PageBlocksAudio | PageBlocksContent | PageBlocksTestimonial
 
 type Page implements Node & Document {
   blocks: [PageBlocks]
@@ -425,6 +430,11 @@ input PageBlocksFeaturesMutation {
   color: String
 }
 
+input PageBlocksWeeknieuwsMutation {
+  LinkTitle: String
+  file: String
+}
+
 input PageBlocksFormItemsMutation {
   type: String
   questiontitle: String
@@ -483,6 +493,7 @@ input PageBlocksMutation {
   header: PageBlocksHeaderMutation
   hero: PageBlocksHeroMutation
   features: PageBlocksFeaturesMutation
+  weeknieuws: PageBlocksWeeknieuwsMutation
   form: PageBlocksFormMutation
   banner: PageBlocksBannerMutation
   heading: PageBlocksHeadingMutation
