@@ -11,7 +11,7 @@ export const Footer = ({ data, icon, rawData }) => {
       <Container className="relative" size="small">
         <div className="grid w-full text-liturgischekleur gap-6 grid-cols-1 place-items-center">
           <img src="/icon.svg" width="50px"/>
-          <p>&copy; <a href="https://github.com/erikd256" target="_blank">erikd256</a> ° 2022 - {(new Date().getFullYear())}</p>
+          <p>&copy; <a href="https://github.com/erikd256" target="_blank">erikd256</a> 2022 - {(new Date().getFullYear())}</p>
           <span>
             <a className="mx-[0px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" target="_blank" href="https://www.facebook.com/pg/Franciscusgemeenschapheverlee"><FaFacebookF className={`${socialIconClasses}` }/></a>  
             <a className="mx-[4px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" target="_blank" href="https://www.youtube.com/channel/UC-7wzVLv2W3oUQtQcPpvCig"><FaYoutube className={`${socialIconClasses}` }/></a>
