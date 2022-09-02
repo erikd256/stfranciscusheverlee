@@ -20,8 +20,8 @@ export const Weeknieuws = ({ data, parentField = "" }) => {
       {isShown && (
         <>
           <div className="fixed w-3/4 h-3/4 z-[500] left-[12.5%] top-[12.5%] bg-vijfdekleur rounded-xl">
-            <button onClick={handleClick} className="absolute text-basiskleur right-[10px] h-[20px] w-[20px] top-[10px]">&#x2715;</button>
-            <iframe src={data.file} className="w-full h-full rounded-xl"></iframe>
+            <button onClick={handleClick} className="absolute text-vierdekleur right-[10px] h-[20px] w-[20px] top-[40px]">&#x2715;</button>
+            <iframe src={data.file} className="w-full h-full rounded-xl m-0"></iframe>
           </div>
           <div className="opacity-90 fixed bg-basiskleur z-[499] left-[0px] w-full h-full top-[0px]"></div>
         </>
