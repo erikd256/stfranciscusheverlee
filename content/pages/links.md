@@ -4,6 +4,10 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
+      - label: BuurTTeater
+        type: button
+        icon: true
+        link: 'https://www.facebook.com/Buurtteater-1838429996231996/'
       - label: Chiro Don Bosco Kessel-Lo
         type: button
         icon: true
