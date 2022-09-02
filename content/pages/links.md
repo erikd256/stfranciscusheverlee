@@ -4,6 +4,10 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
+      - label: Don Bosco gemeenschap
+        type: button
+        icon: true
+        link: 'http://ademtocht.be/'
       - label: basisschool De Ark
         type: button
         icon: true
