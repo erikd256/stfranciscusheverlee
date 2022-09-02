@@ -4,6 +4,10 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
+      - label: pastorale zone Kesselinde
+        type: button
+        icon: true
+        link: 'https://www.kerknet.be/organisatie/pastorale-zone-kessel-lo'
       - label: Don Bosco gemeenschap
         type: button
         icon: true
