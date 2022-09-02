@@ -4,6 +4,10 @@ blocks:
     headline: This Big Text is Totally Awesome
     text: ''
     actions:
+      - label: basisschool De Ark
+        type: button
+        icon: true
+        link: 'https://www.ark123.be/'
       - label: Samana
         type: button
         icon: true
