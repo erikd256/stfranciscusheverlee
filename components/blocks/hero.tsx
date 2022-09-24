@@ -40,7 +40,7 @@ export const Hero = ({ data, parentField }) => {
           {data.text && (
             <div
               data-tinafield={`${parentField}.text`}
-              className={`text-basiskleur prose-lg mx-auto lg:mx-0 mb-10 text-justify`}
+              className={`text-basiskleur prose-lg mx-auto lg:mx-0 mb-10 md:text-justify`}
             >
               <TinaMarkdown content={data.text} />
             </div>
