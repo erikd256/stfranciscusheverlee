@@ -39,7 +39,7 @@ export const Header = ({ data }) => {
   return (
     <>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-      <div className="flex overflow-x-hidden items-center justify-between bg-liturgischekleur border-b-4 border-basiskleur">
+      <div className="flex overflow-x-hidden items-center justify-between bg-liturgischekleur border-b-4 border-basiskleur z-[5000]">
         <img src="/assets/Kerk_Logo.jpg" className={`lg:h-[250px] xl:h-[250px] md:h-[200px] sm:h-[200px] xs:h-[200px] xs:border-r-4 border-basiskleur`}/>
         <span className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl absolute lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] xs:left-[160px] top-[20px] hidden font-bold xs:block">Sint Franciscusparochie</span>
         <span className="absolute xs:left-[160px] lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] top-[60px] sm:text-md md:text-lg lg:text-xl xl:text-2xl hidden font-bold xs:block">Heverlee - Kessel-lo - Leuven</span>
@@ -59,7 +59,7 @@ export const Header = ({ data }) => {
           <p>franciscusheverlee@gmail.com</p>
         </span>
       </div>
-      <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center z-40 bg-vierdekleur text-basiskleur w-full border-solid border-b-4 border-basiskleur flex-1 mr-2 p-[15px] sticky top-0`}>
+      <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center z-[5000] bg-vierdekleur text-basiskleur w-full border-solid border-b-4 border-basiskleur flex-1 mr-2 p-[15px] sticky top-0`}>
       <button className="hidden mo:block text-center border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/" className="no-underline">Start</a></button>
       <button className="hidden mo:block text-center border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle1} className="no-underline">Vieringen</a></button>
       <div style={{display: popup1?"block":"none"}}>
@@ -129,8 +129,6 @@ export const Header = ({ data }) => {
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact" className="no-underline">Contact</a></button>
       <button className="text-center mt-[15px] w-5/6 border border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/links" className="no-underline">Links</a></button>
     </div>
-    <a href="/donaties" className="fixed p-[15px] w-[70px] no-underline rounded-full text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">volunteer_activism</span></a>
-    <a href="/posts" className="fixed p-[15px] w-[70px] md:w-[100px] md:pl-[45px] no-underline rounded-full md:rounded-r-full text-center bg-pink-300 text-black bold bottom-[10px] z-[4000] right-[4%] md:left-[3.5%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">auto_stories</span></a>
-    </>
+    <a href="/donaties" className="fixed p-[15px] w-[70px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">volunteer_activism</span></a>    </>
   );
 };
