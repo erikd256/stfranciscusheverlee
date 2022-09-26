@@ -7,6 +7,8 @@ blocks:
   - titleText: ' werkjaar 2021 - 22'
     textsize: text-4xl
     _template: heading
+  - LinkTitle: week 33
+    _template: weeknieuws
   - body: |
       ### week 34 - 24 augustus 2022
 
