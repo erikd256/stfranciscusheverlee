@@ -12,8 +12,8 @@ export const Audio = ({ data, parentField = "" }) => {
         data-tinafield={`${parentField}.body`}
         size="large"
       >
-          <div className="relative w-4/6 left-[12.5%] text-justify border-b-2 border-liturgischekleur text-2xl">{data.title}</div>
-        <audio src={data.audioURL} preload="auto" controls controlsList="nodownload" className="relative w-4/6 left-[12.5%]"></audio>
+        <div className="relative w-4/6 left-[12.5%] text-justify border-b-2 border-liturgischekleur text-2xl">{data.title}</div>
+          <audio src={data.audioURL} preload="auto" controls controlsList="nodownload" className="relative w-4/6 left-[12.5%]"></audio>
         <div className="relative left-[12.5%] w-4/6 pb-[10px] prose-lg text-justify border-t-2 border-liturgischekleur"><TinaMarkdown content={data.audiodescription} /></div>
       </Container>
     </Section>
