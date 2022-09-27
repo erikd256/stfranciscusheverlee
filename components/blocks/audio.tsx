@@ -2,9 +2,7 @@ import React from "react";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
-import Head from 'next/head';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-
 export const Audio = ({ data, parentField = "" }) => {
   console.log(data.audioURL)
   return (
