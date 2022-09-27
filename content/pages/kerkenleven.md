@@ -4,6 +4,8 @@ blocks:
     textsize: text-4xl
     _template: heading
   - _template: weeknieuws
+  - LinkTitle: week 39
+    _template: weeknieuws
   - titleText: ' werkjaar 2021 - 22'
     textsize: text-4xl
     _template: heading
