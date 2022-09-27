@@ -8,6 +8,8 @@ blocks:
     textsize: text-4xl
     _template: heading
   - LinkTitle: week 33
+    file: >-
+      https://drive.google.com/file/d/1r5wO1K2hIYsaNaUA6jQxnL3EUO6C0y8k/view?usp=sharing
     _template: weeknieuws
   - body: |
       ### week 34 - 24 augustus 2022
