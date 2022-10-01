@@ -1,14 +1,9 @@
 ---
 blocks:
-  - title: Contact
-    pagedesc: >-
-      Contacteer ons asap als je een vraag of aarzeling hebt. Hier vind je alle
-      belangrijke contactgegevens
-    pagekeywords: 'contact,email,privacy,parochiesecretariaat'
-    _template: header
-  - tagline: Aarzel niet om jouw vraag te stellen...
-    headline: We helpen je graag verder!
-    text: >
+  - body: >
+      # **We helpen je graag verder!**
+
+
       Voor algemene of specifieke vragen over de parochiewerking, contacteer ons
       parochiesecretariaat via email, op
       [franciscusheverlee@gmail.com](mailto:franciscusheverlee@gmail.com) of 
@@ -21,7 +16,13 @@ blocks:
       [privacy@stfrancicus-heverlee.org](mailto:privacy@stfrancicus-heverlee.org)
       of naar
       [webservices@stfranciscus-heverlee.org](mailto:webservices@stfranciscus-heverlee.org).
-    _template: hero
+    _template: content
+  - title: Contact
+    pagedesc: >-
+      Contacteer ons asap als je een vraag of aarzeling hebt. Hier vind je alle
+      belangrijke contactgegevens
+    pagekeywords: 'contact,email,privacy,parochiesecretariaat'
+    _template: header
   - airformEmail: webservices@stfranciscus-heverlee.org
     airformTitle: Contacteer ons
     items:
