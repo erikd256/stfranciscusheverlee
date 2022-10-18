@@ -1,0 +1,146 @@
+fragment PostParts on Post {
+  title
+  desc
+  keywords
+  heroImg
+  excerpt
+  author {
+    ... on Document {
+      id
+    }
+  }
+  date
+  _body
+}
+
+fragment GlobalParts on Global {
+  header {
+    __typename
+    icon {
+      __typename
+      color
+      style
+      name
+    }
+    color
+    nav {
+      __typename
+      href
+      label
+    }
+  }
+  footer {
+    __typename
+    color
+    social {
+      __typename
+      facebook
+      twitter
+      instagram
+      github
+    }
+  }
+  theme {
+    __typename
+    color
+    font
+    icon
+    darkMode
+  }
+}
+
+fragment AuthorParts on Author {
+  name
+  avatar
+}
+
+fragment PageParts on Page {
+  blocks {
+    __typename
+    ... on PageBlocksHeader {
+      title
+      pagedesc
+      pagekeywords
+    }
+    ... on PageBlocksHero {
+      tagline
+      headline
+      text
+      actions {
+        __typename
+        label
+        type
+        icon
+        link
+      }
+      image {
+        __typename
+        src
+        alt
+      }
+    }
+    ... on PageBlocksFeatures {
+      items {
+        __typename
+        icon {
+          __typename
+          color
+          style
+          name
+        }
+        title
+        text
+      }
+      color
+    }
+    ... on PageBlocksWeeknieuws {
+      LinkTitle
+      file
+    }
+    ... on PageBlocksForm {
+      airformEmail
+      airformTitle
+      items {
+        __typename
+        type
+        questiontitle
+        questionrequired
+        questionid
+        placeholder
+      }
+    }
+    ... on PageBlocksBanner {
+      bannerURL
+      bannertext
+      vervaldatum
+    }
+    ... on PageBlocksHeading {
+      titleText
+      textsize
+    }
+    ... on PageBlocksImage {
+      fileRef
+      imageTitle
+      alt
+      description
+    }
+    ... on PageBlocksVideo {
+      videoURL
+      videodescription
+      coverImage
+      title
+    }
+    ... on PageBlocksAudio {
+      audioURL
+      audiodescription
+      title
+    }
+    ... on PageBlocksContent {
+      body
+    }
+    ... on PageBlocksTestimonial {
+      quote
+      author
+    }
+  }
+}
