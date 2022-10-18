@@ -15,16 +15,24 @@ query post($relativePath: String!) {
   }
 }
 
-query postConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+query postConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PostFilter) {
   postConnection(
     before: $before
     after: $after
     first: $first
     last: $last
     sort: $sort
+    filter: $filter
   ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
     totalCount
     edges {
+      cursor
       node {
         ... on Document {
           _sys {
@@ -60,16 +68,24 @@ query global($relativePath: String!) {
   }
 }
 
-query globalConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+query globalConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: GlobalFilter) {
   globalConnection(
     before: $before
     after: $after
     first: $first
     last: $last
     sort: $sort
+    filter: $filter
   ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
     totalCount
     edges {
+      cursor
       node {
         ... on Document {
           _sys {
@@ -105,16 +121,24 @@ query author($relativePath: String!) {
   }
 }
 
-query authorConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+query authorConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: AuthorFilter) {
   authorConnection(
     before: $before
     after: $after
     first: $first
     last: $last
     sort: $sort
+    filter: $filter
   ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
     totalCount
     edges {
+      cursor
       node {
         ... on Document {
           _sys {
@@ -150,16 +174,24 @@ query page($relativePath: String!) {
   }
 }
 
-query pageConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+query pageConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PageFilter) {
   pageConnection(
     before: $before
     after: $after
     first: $first
     last: $last
     sort: $sort
+    filter: $filter
   ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
     totalCount
     edges {
+      cursor
       node {
         ... on Document {
           _sys {
