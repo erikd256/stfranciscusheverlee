@@ -32,7 +32,7 @@
     "@giscus/react": "^2.2.0",
     "@headlessui/react": "^1.4.1",
     "@tailwindcss/typography": "^0.4.1",
-    "@tinacms/auth": "^0.50.3",
+    "@tinacms/auth": "^0.50.5",
     "@types/react-helmet": "^6.1.5",
     "axios": "^0.27.2",
     "date-fns": "^2.29.2",
