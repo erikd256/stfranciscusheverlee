@@ -1251,7 +1251,7 @@ export const PagePartsFragmentDoc = gql`
 }
     `;
 export const PageQueryDocument = gql`
-    query PageQuery {
+    query pageQuery {
   ...LayoutQueryFragment
   postConnection(sort: "date", last: 100) {
     edges {
@@ -1273,7 +1273,7 @@ export const PageQueryDocument = gql`
     ${LayoutQueryFragmentFragmentDoc}
 ${AuthorPartsFragmentDoc}`;
 export const ContentQueryDocument = gql`
-    query ContentQuery($relativePath: String!) {
+    query contentQuery($relativePath: String!) {
   ...LayoutQueryFragment
   page(relativePath: $relativePath) {
     ...PageParts
@@ -1282,7 +1282,7 @@ export const ContentQueryDocument = gql`
     ${LayoutQueryFragmentFragmentDoc}
 ${PagePartsFragmentDoc}`;
 export const BlogPostQueryDocument = gql`
-    query BlogPostQuery($relativePath: String!) {
+    query blogPostQuery($relativePath: String!) {
   ...LayoutQueryFragment
   post(relativePath: $relativePath) {
     ...PostParts
@@ -1519,13 +1519,13 @@ export const PageConnectionDocument = gql`
 export type Requester<C= {}> = <R, V>(doc: DocumentNode, vars?: V, options?: C) => Promise<R>
   export function getSdk<C>(requester: Requester<C>) {
     return {
-      PageQuery(variables?: PageQueryQueryVariables, options?: C): Promise<{data: PageQueryQuery, variables: PageQueryQueryVariables, query: string}> {
+      pageQuery(variables?: PageQueryQueryVariables, options?: C): Promise<{data: PageQueryQuery, variables: PageQueryQueryVariables, query: string}> {
         return requester<{data: PageQueryQuery, variables: PageQueryQueryVariables, query: string}, PageQueryQueryVariables>(PageQueryDocument, variables, options);
       },
-    ContentQuery(variables: ContentQueryQueryVariables, options?: C): Promise<{data: ContentQueryQuery, variables: ContentQueryQueryVariables, query: string}> {
+    contentQuery(variables: ContentQueryQueryVariables, options?: C): Promise<{data: ContentQueryQuery, variables: ContentQueryQueryVariables, query: string}> {
         return requester<{data: ContentQueryQuery, variables: ContentQueryQueryVariables, query: string}, ContentQueryQueryVariables>(ContentQueryDocument, variables, options);
       },
-    BlogPostQuery(variables: BlogPostQueryQueryVariables, options?: C): Promise<{data: BlogPostQueryQuery, variables: BlogPostQueryQueryVariables, query: string}> {
+    blogPostQuery(variables: BlogPostQueryQueryVariables, options?: C): Promise<{data: BlogPostQueryQuery, variables: BlogPostQueryQueryVariables, query: string}> {
         return requester<{data: BlogPostQueryQuery, variables: BlogPostQueryQueryVariables, query: string}, BlogPostQueryQueryVariables>(BlogPostQueryDocument, variables, options);
       },
     post(variables: PostQueryVariables, options?: C): Promise<{data: PostQuery, variables: PostQueryVariables, query: string}> {
