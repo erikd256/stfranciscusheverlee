@@ -32,6 +32,11 @@ const schema = defineSchema({
       name: "post",
       path: "content/posts",
       format: "mdx",
+      ui: {
+        router: ({ document }) => {
+          return `/post/${document._sys.filename}`;
+        },
+      },
       fields: [
         {
           type: "string",
@@ -360,6 +365,17 @@ const schema = defineSchema({
       label: "Pages",
       name: "page",
       path: "content/pages",
+      ui: {
+        router: ({ document }) => {
+          if (document._sys.filename === "home") {
+            return `/`;
+          }
+          if (document._sys.filename === "about") {
+            return `/about`;
+          }
+          return undefined;
+        },
+      },
       fields: [
         {
           type: "object",
