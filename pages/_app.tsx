@@ -8,5 +8,3 @@ const App = ({ Component, pageProps }) => {
     </TinaProvider>
   );
 };
-
-export default App;
