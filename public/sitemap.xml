@@ -7,6 +7,24 @@
     <loc>https://stfranciscus-heverlee.org/sitemap</loc>
   </url>
   <url>
+    <loc>https://stfranciscus-heverlee.org/levensmomenten/[filename].tsx</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/multimedia/[filename].tsx</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/organisatie/[filename].tsx</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/vieringen/[filename].tsx</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/post/hemelvaart</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/post/priesterjubileumpaterjozef</loc>
+  </url>
+  <url>
     <loc>https://stfranciscus-heverlee.org/about</loc>
   </url>
   <url>
@@ -22,60 +40,54 @@
     <loc>https://stfranciscus-heverlee.org/kerkenleven</loc>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org/levensmomenten_doop</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/levensmomenten_eerstecommunie</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/levensmomenten_huwelijk</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/levensmomenten_uitvaart</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/levensmomenten_vormsel</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/levensmomenten_ziekenzalving</loc>
-  </url>
-  <url>
     <loc>https://stfranciscus-heverlee.org/links</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/multimedia_audios</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/multimedia_fotos</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/multimedia_videos</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/organisatie_parochiaalcentrum</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/organisatie_parochie</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/organisatie_verenigingen</loc>
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/privacy</loc>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org/vieringen_dhj</loc>
+    <loc>https://stfranciscus-heverlee.org/levensmomenten/doop</loc>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org/vieringen_familievieringen</loc>
+    <loc>https://stfranciscus-heverlee.org/levensmomenten/eerstecommunie</loc>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org/vieringen_liturgie</loc>
+    <loc>https://stfranciscus-heverlee.org/levensmomenten/huwelijk</loc>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org/post/hemelvaart</loc>
+    <loc>https://stfranciscus-heverlee.org/levensmomenten/uitvaart</loc>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org/post/priesterjubileumpaterjozef</loc>
+    <loc>https://stfranciscus-heverlee.org/levensmomenten/vormsel</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/levensmomenten/ziekenzalving</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/multimedia/audios</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/multimedia/fotos</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/multimedia/videos</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/vieringen/dhj</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/vieringen/familievieringen</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/vieringen/liturgie</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/organisatie/parochiaalcentrum</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/organisatie/parochie</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/organisatie/verenigingen</loc>
   </url>
 </urlset>
