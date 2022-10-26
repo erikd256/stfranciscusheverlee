@@ -6,7 +6,7 @@ blocks:
           style: float
           name: ''
         title: ''
-        text: >-
+        text: >
           This is where you might talk about the feature, if this wasn't just
           filler text.
       - icon:
@@ -20,9 +20,10 @@ blocks:
           style: float
           name: ''
         title: Here's Another Feature
-        text: >-
+        text: >
           This is where you might talk about the feature, if this wasn't just
           filler text.
+    color: default
     _template: features
 ---
 
