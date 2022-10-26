@@ -20,7 +20,7 @@ export default function HomePage(
 
 export const getStaticProps = async ({ params }) => {
   const tinaProps = await client.queries.contentQuery({
-    relativePath: `vieringen/${params.filename}.md`,
+    relativePath: `${params.filename}.md`,
   });
   return {
     props: {
