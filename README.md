@@ -2,4 +2,4 @@
 
 # St. Franciscusparochie Heverlee
 
-Dit is de vernieuwde website van de St. Franciscusparochie te Heverlee, mogelijk gemaakt door [@erikd256](https://github.com/erikd256) en [@tinacms](https://github.com/tinacms) 
+Dit is de vernieuwde website van de St. Franciscusparochie te Heverlee, mogelijk gemaakt door [@erikd256](https://github.com/erikd256)

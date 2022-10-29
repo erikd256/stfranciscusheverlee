@@ -23,7 +23,7 @@ export const Cookies = () => {
           <p>-</p>
           <p>Wat betekent dit?</p>
           <ul className="list-disc px-[25px]">
-            <li>Wij gebruiken geen cookies. We gebruiken Matomo (een privacyvriendelijke analytics software om te bekijken hoe onze website gebruikt wordt en om constant de kwaliteit te verbeteren.)</li>
+            <li>Wij gebruiken geen cookies, analytics of een andere soort trackers</li>
             <li>Wij kunnen jullie de hoogste kwaliteit leveren gebaseerd op alleen opensource en privacy-vriendelijke tools zoals bv. NextJS en TinaCMS</li>
             <li>Jullie kunnen de volledige broncode van deze website inzien in ons <a href="https://github.com/erikd256/stfranciscusheverlee" target="_blank" className="underline">repository</a></li>
           </ul>

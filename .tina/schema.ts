@@ -12,31 +12,14 @@ import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
 import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
-import { client } from "./__generated__/client";
 
 const schema = defineSchema({
-  config: {
-    branch: "main",
-    clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-    token: process.env.TINATOKEN,
-    media: {
-      loadCustomStore: async () => {
-        const pack = await import("next-tinacms-cloudinary");
-        return pack.TinaCloudCloudinaryMediaStore;
-      },
-    }
-  },
   collections: [
     {
       label: "Blog Posts",
       name: "post",
       path: "content/posts",
       format: "mdx",
-      ui: {
-        router: ({ document }) => {
-          return `/post/${document._sys.filename}`;
-        },
-      },
       fields: [
         {
           type: "string",
@@ -365,17 +348,6 @@ const schema = defineSchema({
       label: "Pages",
       name: "page",
       path: "content/pages",
-      ui: {
-        router: ({ document }) => {
-          if (document._sys.filename === "home") {
-            return `/`;
-          }
-          if (document._sys.filename === "about") {
-            return `/about`;
-          }
-          return undefined;
-        },
-      },
       fields: [
         {
           type: "object",
@@ -402,12 +374,25 @@ const schema = defineSchema({
         },
       ],
     },
-  ],  
+  ],
+  config: {
+    media: {
+      loadCustomStore: async () => {
+        const pack = await import("next-tinacms-cloudinary");
+        return pack.TinaCloudCloudinaryMediaStore;
+      },
+    }
+  }
 });
 
+const branch = "main";
+const apiURL =
+  process.env.NODE_ENV == "development"
+    ? "http://localhost:4001/graphql"
+    : `https://content.tinajs.io/content/${process.env.NEXT_PUBLIC_TINA_CLIENT_ID}/github/${branch}`;
 
 export const tinaConfig = defineConfig({
-  client,
+  apiURL,
   schema,
   cmsCallback: (cms) => {
     /**
