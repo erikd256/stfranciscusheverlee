@@ -1,4 +1,4 @@
-import { defineSchema, defineConfig } from "tinacms";
+import { defineStaticConfig } from "tinacms";
 import { contentBlockSchema } from "../components/blocks/content";
 import { featureBlockSchema } from "../components/blocks/features";
 import { heroBlockSchema } from "../components/blocks/hero";
@@ -14,24 +14,32 @@ import { audioBlockSchema } from "../components/blocks/audio";
 import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
 import { client } from "./__generated__/client";
 
-const schema = defineSchema({
-  config: {
-            branch: "main",
-            clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-            token: process.env.TINATOKEN,
-            media: {
-              loadCustomStore: async () => {
-                const pack = await import("next-tinacms-cloudinary");
-                return pack.TinaCloudCloudinaryMediaStore;
-              },
-            }
+const config = defineStaticConfig({
+  branch: "main",
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
+  token: process.env.TINATOKEN!,
+  media: {
+    loadCustomStore: async () => {
+      const pack = await import("next-tinacms-cloudinary");
+      return pack.TinaCloudCloudinaryMediaStore;
+    },
   },
+build: {
+  publicFolder: "public", // The public asset folder for your framework
+  outputFolder: "admin", // within the public folder
+},
+schema: {
   collections: [
     {
       label: "Blog Posts",
       name: "post",
       path: "content/posts",
       format: "mdx",
+      ui: {
+        router: ({ document }) => {
+          return `/post/${document._sys.filename}`;
+        },
+      },
       fields: [
         {
           type: "string",
@@ -149,6 +157,9 @@ const schema = defineSchema({
       name: "global",
       path: "content/global",
       format: "json",
+      ui: {
+        global: true,
+      },
       fields: [
         {
           type: "object",
@@ -343,6 +354,17 @@ const schema = defineSchema({
       name: "author",
       path: "content/authors",
       format: "md",
+      ui: {
+        router: ({ document }) => {
+          if (document._sys.filename === "home") {
+            return `/`;
+          }
+          if (document._sys.filename === "about") {
+            return `/about`;
+          }
+          return undefined;
+        },
+      },
       fields: [
         {
           type: "string",
@@ -387,48 +409,6 @@ const schema = defineSchema({
       ],
     },
   ],
-});
+}});
 
-export const tinaConfig = defineConfig({
-  client,
-  schema,
-  cmsCallback: (cms) => {
-    /**
-     * Enables experimental branch switcher
-     */
-    cms.flags.set("branch-switcher", true);
-
-    /**
-     * When `tina-admin` is enabled, this plugin configures contextual editing for collections
-     */
-    import("tinacms").then(({ RouteMappingPlugin }) => {
-      const RouteMapping = new RouteMappingPlugin((collection, document) => {
-        if (["author", "global"].includes(collection.name)) {
-          return undefined;
-        }
-        if (["page"].includes(collection.name)) {
-          if (document._sys.filename === "home") {
-            return `/`;
-          }
-          if (document._sys.filename === "about") {
-            return `/about`;
-          }
-          return undefined;
-        }
-        return `/${collection.name}/${document._sys.filename}`;
-      });
-      cms.plugins.add(RouteMapping);
-    });
-
-    return cms;
-  },
-  formifyCallback: ({ formConfig, createForm, createGlobalForm }) => {
-    if (formConfig.id === "content/global/index.json") {
-      return createGlobalForm(formConfig);
-    }
-
-    return createForm(formConfig);
-  },
-});
-
-export default schema;
+export default config;
