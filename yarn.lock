@@ -2921,10 +2921,10 @@
     webfontloader "1.6.28"
     xstate "4.32.1"
 
-"@tinacms/auth@^0.50.3":
-  version "0.50.3"
-  resolved "https://registry.yarnpkg.com/@tinacms/auth/-/auth-0.50.3.tgz#92d7b5a055fb37528ab72e3a9bb0d89b7fa766dd"
-  integrity sha512-vucKZyi2Wj83tGU3VBd/mwlgbmgTXclps6/slOPyEzJUH0Sl31vmXs3ATCG0jeIpp4Tu6IBVCVPlmvGcNpE9OQ==
+"@tinacms/auth@^0.50.5":
+  version "0.50.5"
+  resolved "https://registry.yarnpkg.com/@tinacms/auth/-/auth-0.50.5.tgz#50950c8c5384dd6cdab4bcadd061815642c736fb"
+  integrity sha512-cXOLV3crifB4+qNO3XNWqpNOYjLwrfa1VVGbRYA67AvRrOrfS7qai0JhMjHzFbTlJW3Fdm46POlepOEStjn5mw==
 
 "@tinacms/cli@^0.62.1":
   version "0.62.1"
