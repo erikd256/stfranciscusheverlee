@@ -1,9 +1,6 @@
 const withSvgr = require("next-svgr");
 module.exports = withSvgr({
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      require('./scripts/generate-sitemap')
-    }
+  webpack: (config) => {
     return config
   },
   async rewrites() {
