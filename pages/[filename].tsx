@@ -1,5 +1,5 @@
 import { Blocks } from "../components/blocks-renderer";
-import { ExperimentalGetTinaClient } from "../.tina/__generated__/types";
+import { client } from '../.tina/__generated__/client';
 import { useTina } from "tinacms/dist/edit-state";
 import { Layout } from "../components/layout";
 
@@ -19,8 +19,7 @@ export default function HomePage(
 }
 
 export const getStaticProps = async ({ params }) => {
-  const client = ExperimentalGetTinaClient();
-  const tinaProps = await client.ContentQuery({
+´  const tinaProps = await client.ContentQuery({
     relativePath: `${params.filename}.md`,
   });
   return {
@@ -33,7 +32,6 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths = async () => {
-  const client = ExperimentalGetTinaClient();
   const pagesListData = await client.pageConnection();
   return {
     paths: pagesListData.data.pageConnection.edges.map((page) => ({
