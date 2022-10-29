@@ -1,27 +1,18 @@
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-.env
-.env.local
-.idea
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.kate-swp
+package-lock.json
+/locales
+npm-debug.log
+/data
+/public/uploads
+/public/apos-minified
+/data/temp/uploadfs
+node_modules
+# This folder is created on the fly and contains symlinks updated at startup (we'll come up with a Windows solution that actually copies things)
+/public/modules
+# Don't commit build files
+/apos-build
+/public/apos-frontend
+/modules/asset/ui/public/site.js
+# Don't commit masters generated on the fly at startup, these import all the rest
+/public/css/master-*.less
+.jshintrc
+node_modules
