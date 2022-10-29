@@ -12,7 +12,6 @@ import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
 import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
-import { client } from "./__generated__/client";
 
 const config = defineStaticConfig({
   branch: "main",
@@ -354,17 +353,6 @@ schema: {
       name: "author",
       path: "content/authors",
       format: "md",
-      ui: {
-        router: ({ document }) => {
-          if (document._sys.filename === "home") {
-            return `/`;
-          }
-          if (document._sys.filename === "about") {
-            return `/about`;
-          }
-          return undefined;
-        },
-      },
       fields: [
         {
           type: "string",
@@ -382,6 +370,18 @@ schema: {
       label: "Pages",
       name: "page",
       path: "content/pages",
+      ui: {
+        router: ({ document }) => {
+          if (document._sys.filename === "home") {
+            return `/`;
+          }
+          if (document._sys.filename === "about") {
+            return `/about`;
+          }
+          return undefined;
+        },
+      },
+      format: "md",
       fields: [
         {
           type: "object",
