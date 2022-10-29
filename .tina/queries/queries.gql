@@ -18,7 +18,7 @@ query pageQuery {
   }
 }
 
-query contentQuery($relativePath: String!) {
+query contentQuery($relativePath: String!, first: -1) {
   ...LayoutQueryFragment
   page(relativePath: $relativePath) {
     ...PageParts
