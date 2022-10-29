@@ -31,6 +31,7 @@
     "@discuzz/locale-en": "^1.11.18",
     "@giscus/react": "^2.2.0",
     "@headlessui/react": "^1.4.1",
+    "@socialgouv/matomo-next": "^1.4.0",
     "@tailwindcss/typography": "^0.4.1",
     "@tinacms/auth": "^0.50.3",
     "@types/react-helmet": "^6.1.5",

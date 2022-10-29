@@ -2737,6 +2737,11 @@
   resolved "https://registry.yarnpkg.com/@sambego/storybook-styles/-/storybook-styles-1.0.0.tgz#4f840ee26dd0b25dcb803a75caa42e16071dcaae"
   integrity sha512-n0SqZwDewUDRaStEcoNMiYy9qovaLVStsh4Gb2dc2LLiG3IIK0UXdeR1N7puVuRihJq/192uOyGPCjZ/NAteuA==
 
+"@socialgouv/matomo-next@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@socialgouv/matomo-next/-/matomo-next-1.4.0.tgz#9c428b542671542686b56f4ebdca1aa0896af628"
+  integrity sha512-S+kNX7dwo/cL0VE7GWY8Gnf3t7aeXD4CzallRz9IEttjHJDJI2S8xOrcyaGimYpInr3nDNo+WqeYrafKUdsn1g==
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.2.0.tgz#dadcb6218503532d6884b210e7f3c502caaa44b1"
