@@ -25,6 +25,7 @@ blocks:
     _template: header
   - airformEmail: forms@stfranciscus-heverlee.org
     airformTitle: Contacteer ons
+    netlifyID: contact
     items:
       - type: textarea
         questiontitle: Mijn vraag
