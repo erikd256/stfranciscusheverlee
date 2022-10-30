@@ -37,7 +37,7 @@ blocks:
         questionid: mail
         placeholder: ''
       - type: text
-        questiontitle: Mijn telefoonnummer (niet verplicht!)
+        questiontitle: Mijn telefoonnummer
         questionid: phone
         placeholder: ''
     _template: form
