@@ -23,7 +23,7 @@ blocks:
       belangrijke contactgegevens
     pagekeywords: 'contact,email,privacy,parochiesecretariaat'
     _template: header
-  - airformTitle: Contacteer ons
+  - airformTitle: Contact
     items:
       - type: textarea
         questiontitle: Mijn vraag
