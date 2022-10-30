@@ -21,7 +21,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form action="/form-submitted" method="POST" data-netlify="true" className="text-lg">
+        <form name={data.NetlifyId} action="/form-submitted" method="POST" data-netlify="true" className="text-lg">
         {data.items &&
           data.items.map(function (block, i) {
             return (
