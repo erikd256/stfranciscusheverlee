@@ -20,7 +20,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.NetlifyId} method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form name={data.NetlifyId} method="POST" action="/form-submitted/" data-netlify="true" data-netlify-recaptcha="true">
         {data.items &&
           data.items.map(function (block, i) {
             return (
