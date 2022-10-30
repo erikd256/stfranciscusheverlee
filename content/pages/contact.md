@@ -36,7 +36,7 @@ blocks:
         questionrequired: true
         questionid: mail
         placeholder: ''
-      - type: text
+      - type: tel
         questiontitle: Mijn telefoonnummer
         questionid: phone
         placeholder: ''
