@@ -31,13 +31,13 @@ blocks:
         questionrequired: true
         questionid: message
         placeholder: ''
-      - type: Mailaddres
+      - type: email
         questiontitle: Mijn mailadres
         questionrequired: true
         questionid: mail
         placeholder: ''
       - type: text
-        questiontitle: Mijn telefoonnummer (niet verplicht!)
+        questiontitle: Mijn telefoonnummer
         questionid: phone
         placeholder: ''
     _template: form
