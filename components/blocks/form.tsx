@@ -23,7 +23,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form action={`https://airform.io/${data.airformEmail}`} method="post">
+        <form name={data.airformTitle} method="POST" data-netlify="true">
         <fieldset className="text-left">
         {data.items &&
           data.items.map(function (block, i) {
@@ -61,11 +61,6 @@ export const formBlockSchema: TinaTemplate = {
     },
   },
   fields: [
-    {
-      type: "string",
-      label: "Emailadres voor antwoorden",
-      name: "airformEmail",
-    },
     {
       type: "string",
       label: "Formulier titel",
