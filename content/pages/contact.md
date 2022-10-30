@@ -24,6 +24,7 @@ blocks:
     pagekeywords: 'contact,email,privacy,parochiesecretariaat'
     _template: header
   - airformTitle: Contact
+    airformEmail: erikd256@duck.com
     items:
       - type: textarea
         questiontitle: Mijn vraag
