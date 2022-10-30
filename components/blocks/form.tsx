@@ -4,6 +4,7 @@ import { Container } from "../util/container";
 import { Icon } from "../util/icon";
 import type { TinaTemplate } from "tinacms";
 import { iconSchema } from "../util/icon";
+import Head from "next/head";
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -18,12 +19,15 @@ export const Question = ({ data, tinaField }) => {
 export const Form = ({ data, parentField }) => {
   return (
     <Section>
+      <Head>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      </Head>
       <Container
         className={`bg-vijfdekleur text-basiskleur`}
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.airformTitle} method="POST" data-netlify="true">
+        <form name={data.airformTitle} method="POST" data-netlify="true" netlify action="/form-submitted">
         <fieldset className="text-left">
         {data.items &&
           data.items.map(function (block, i) {
@@ -38,6 +42,7 @@ export const Form = ({ data, parentField }) => {
           <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
           </fieldset>
           <span className="text-red-500">* Verplicht veld</span>
+          <div className="g-recaptcha" data-sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz"></div>
           </form>
       </Container>
     </Section>
