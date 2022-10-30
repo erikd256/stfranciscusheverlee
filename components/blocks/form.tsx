@@ -21,7 +21,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.NetlifyId} method="POST" action={`https://airform.io/${data.NetlifyId}`} className="text-lg">
+        <form name={data.NetlifyId} method="POST" action={data.NetlifyId} className="text-lg">
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -66,7 +66,7 @@ export const formBlockSchema: TinaTemplate = {
     },
     {
       type: "string",
-      label: "Emailadres voor antwoorden",
+      label: "Form Endpoint",
       name: "NetlifyId",
     },
     {
