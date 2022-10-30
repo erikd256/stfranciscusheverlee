@@ -1,7 +1,7 @@
 import { Section } from "../util/section";
 import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
-import HCaptcha from '@hcaptcha/react-hcaptcha';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -33,7 +33,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <input type="hidden" name="form-name" value={data.NetlifyId} />
-          <HCaptcha sitekey="69b5bf6b-2b66-43b3-ac20-d15727344397"/>
+          <ReCAPTCHA sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz"/>
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
