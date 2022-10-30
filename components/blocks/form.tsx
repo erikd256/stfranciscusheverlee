@@ -68,13 +68,13 @@ export const formBlockSchema: TinaTemplate = {
   fields: [
     {
       type: "string",
-      label: "Formulier titel",
-      name: "airformTitle",
+      label: "Netlify Formulier ID (zonder spaties)",
+      name: "netlifyName",
     },
     {
       type: "string",
-      label: "Netlify Formulier ID (zonder spaties)",
-      name: "netlifyName",
+      label: "Formulier titel",
+      name: "airformTitle",
     },
     {
       type: "object",
