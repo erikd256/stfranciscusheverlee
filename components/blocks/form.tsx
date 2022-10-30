@@ -27,7 +27,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.airformTitle} data-netlify="true" method="post" >
+        <form name={data.airformTitle} method="POST" data-netlify="true">
         <fieldset className="text-left">
         {data.items &&
           data.items.map(function (block, i) {
@@ -40,7 +40,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <div className="g-recaptcha" data-sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz"></div>
-          <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
+          <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           </fieldset>
           <span className="text-red-500">* Verplicht veld</span>
           </form>
