@@ -11,29 +11,30 @@ blocks:
     textsize: text-4xl
     _template: heading
   - LinkTitle: week 33
-    file: 'https://drive.google.com/file/d/1r5wO1K2hIYsaNaUA6jQxnL3EUO6C0y8k/'
+    file: >-
+      https://res.cloudinary.com/stfranciscusheverlee/image/upload/w_75,h_75,c_fill,q_auto/v1667158495/Frando22-33_yjeno3.pdf
     _template: weeknieuws
   - body: |
       ### week 34 - 24 augustus 2022
 
-      ![](/uploads/week34_1.jpg "")
+      ![](/uploads/week34_1.jpg)
 
-      ![](/uploads/week34_2.jpg "")
+      ![](/uploads/week34_2.jpg)
 
-      ![](/uploads/week34_3.jpg "")
+      ![](/uploads/week34_3.jpg)
 
-      ![](/uploads/week34_4.jpg "")
+      ![](/uploads/week34_4.jpg)
     _template: content
   - body: |
       ### week \_\_ 26 juni 2022
 
-      ![](/uploads/2232-1.jpg "")
+      ![](/uploads/2232-1.jpg)
 
-      ![](/uploads/2232-2.jpg "")
+      ![](/uploads/2232-2.jpg)
 
-      ![](/uploads/2232-3.jpg "")
+      ![](/uploads/2232-3.jpg)
 
-      ![](/uploads/2232-4.jpg "")
+      ![](/uploads/2232-4.jpg)
     _template: content
 ---
 
