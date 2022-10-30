@@ -31,7 +31,7 @@ blocks:
         questionrequired: true
         questionid: message
         placeholder: ''
-      - type: Mailaddres
+      - type: email
         questiontitle: Mijn mailadres
         questionrequired: true
         questionid: mail
