@@ -39,10 +39,10 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
+          <div className="g-recaptcha" data-sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz"></div>
           <input type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full"/>
           </fieldset>
           <span className="text-red-500">* Verplicht veld</span>
-          <div className="g-recaptcha" data-sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz"></div>
           </form>
       </Container>
     </Section>
