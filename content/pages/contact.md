@@ -24,7 +24,6 @@ blocks:
     pagekeywords: 'contact,email,privacy,parochiesecretariaat'
     _template: header
   - airformTitle: Contact
-    airformEmail: forms@stfranciscus-heverlee.org
     items:
       - type: textarea
         questiontitle: Mijn vraag
