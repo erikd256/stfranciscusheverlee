@@ -1,7 +1,6 @@
 import { Section } from "../util/section";
 import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
-import ReCAPTCHA from "react-google-recaptcha";
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -21,7 +20,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.NetlifyId} method="POST" data-netlify="true" action="/form-submitted" className="text-lg">
+        <form name={data.NetlifyId} method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/form-submitted" netlify-honeypot="bot-field" className="text-lg">
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -33,7 +32,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <input type="hidden" name="form-name" value={data.NetlifyId} />
-          <ReCAPTCHA sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz" theme="dark"/>
+          <div data-netlify-recaptcha="true"></div>
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
