@@ -33,7 +33,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <input type="hidden" name="form-name" value={data.NetlifyId} />
-          <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY}/>
+          <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} theme="dark"/>
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
