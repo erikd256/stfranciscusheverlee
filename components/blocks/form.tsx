@@ -35,6 +35,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <div data-netlify-recaptcha="true"></div>
+          <input type="hidden" name="form-name" value={data.NetlifyId} />
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           <span className="text-red-500">* Verplicht veld</span>
           </form>
