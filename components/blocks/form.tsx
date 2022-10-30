@@ -4,6 +4,8 @@ import { Container } from "../util/container";
 import { Icon } from "../util/icon";
 import type { TinaTemplate } from "tinacms";
 import { iconSchema } from "../util/icon";
+import Head from "next/head";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -23,7 +25,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.NetlifyId} method="POST" data-netlify-recaptcha="true" action="/form-submitted" data-netlify="true" className="text-md">
+        <form name={data.NetlifyId} method="POST" data-netlify="true" className="text-lg">
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -34,8 +36,8 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <div data-netlify-recaptcha="true"></div>
           <input type="hidden" name="form-name" value={data.NetlifyId} />
+          <ReCAPTCHA sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz" />          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           <span className="text-red-500">* Verplicht veld</span>
           </form>
