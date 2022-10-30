@@ -7,7 +7,7 @@ export const Question = ({ data, tinaField }) => {
   return (
     <>
       {data.questiontitle} <span className="text-red-500" style={{display: data.questionrequired ? "inline-block":"none"}}>*</span>
-      <input type={data.type} name={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.type==="textarea" || data.type==="checkbox"? false:data.questionrequired} style={{display: data.type==="textarea"||data.type==="checkbox" ? "none":"block"}}/>
+      <input type={data.type} name={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.type==="textarea"? false:data.questionrequired} style={{display: data.type==="textarea"? "none":"block"}}/>
       <textarea name={data.questionid} className={`my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} rows={7} style={{display: data.type==="textarea" ? "block":"none"}} required={data.type==="textarea" ? data.questionrequired:false}></textarea>
     </>
   );
