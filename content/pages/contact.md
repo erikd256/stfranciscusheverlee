@@ -23,9 +23,7 @@ blocks:
       belangrijke contactgegevens
     pagekeywords: 'contact,email,privacy,parochiesecretariaat'
     _template: header
-  - airformEmail: forms@stfranciscus-heverlee.org
-    airformTitle: Contacteer ons
-    netlifyName: contact
+  - airformTitle: Contacteer ons
     items:
       - type: textarea
         questiontitle: Mijn vraag
