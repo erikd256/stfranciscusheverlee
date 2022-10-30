@@ -99,6 +99,14 @@ export const formBlockSchema: TinaTemplate = {
               label: "Text"
             },
             {
+              value: "tel",
+              label: "Telefoonnummer"
+            },
+            {
+              value: "file",
+              label: "Bestand"
+            },
+            {
               value: "textarea",
               label: "Textvak"
             }
