@@ -6,8 +6,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 export const Question = ({ data, tinaField }) => {
   return (
     <>
-      <b>{data.questiontitle} <span className="text-red-500" style={{display: data.questionrequired ? "inline-block":"none"}}>*</span></b>
-      <input type={data.type} name={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.type==="textarea" ? false:data.questionrequired} style={{display: data.type==="textarea" ? "none":"block"}}/>
+      {data.questiontitle} <span className="text-red-500" style={{display: data.questionrequired ? "inline-block":"none"}}>*</span>
+      <input type={data.type} name={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.type==="textarea" || data.type==="checkbox"? false:data.questionrequired} style={{display: data.type==="textarea"||data.type==="checkbox" ? "none":"block"}}/>
       <textarea name={data.questionid} className={`my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} rows={7} style={{display: data.type==="textarea" ? "block":"none"}} required={data.type==="textarea" ? data.questionrequired:false}></textarea>
     </>
   );
@@ -21,7 +21,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.NetlifyId} method="POST" data-netlify="true" className="text-lg">
+        <form name={data.NetlifyId} method="POST" action={`https://airform.io/${data.NetlifyId}`} className="text-lg">
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -32,10 +32,9 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <input type="hidden" name="form-name" value={data.NetlifyId} />
           <ReCAPTCHA sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz" />          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
-          <span className="text-red-500">* Verplicht veld</span>
+          <span className="text-red-500 text-sm">* Verplicht veld</span>
           </form>
       </Container>
     </Section>
@@ -66,7 +65,7 @@ export const formBlockSchema: TinaTemplate = {
     },
     {
       type: "string",
-      label: "Formulier ID (geen spaties)",
+      label: "Emailadres voor antwoorden",
       name: "NetlifyId",
     },
     {
