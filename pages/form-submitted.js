@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Layout } from "../components/layout";
 
-export default function Sitemap() {
+export default function FormSubmitted() {
    return (
     <Layout className="overflow-x-hidden">
       <Head>
