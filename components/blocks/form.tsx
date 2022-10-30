@@ -16,11 +16,11 @@ export const Form = ({ data, parentField }) => {
   return (
     <Section>
       <Container
-        className={`bg-vijfdekleur text-basiskleur`}
+        className={`bg-vijfdekleur text-basiskleur text-lg`}
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.NetlifyId} method="POST" data-netlify="true" className="text-lg">
+        <form name={data.NetlifyId} method="POST" data-netlify="true" data-netlify-recaptcha="true">
         {data.items &&
           data.items.map(function (block, i) {
             return (
