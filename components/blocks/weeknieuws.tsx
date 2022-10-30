@@ -46,8 +46,8 @@ export const weeknieuwsBlockSchema: TinaTemplate = {
       name: "LinkTitle",
     },
     {
-      type: "string",
-      label: "Link naar PDF-Bestand",
+      type: "image",
+      label: "PDF-Bestand",
       name: "file",
     },
   ],

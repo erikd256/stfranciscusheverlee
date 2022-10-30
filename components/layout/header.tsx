@@ -32,8 +32,8 @@ export const Header = ({ data }) => {
   function toggle4(){
     setPopup1(false);
     setPopup2(false);
-    setPopup3(!popup4);
-    setPopup4(false);
+    setPopup3(false);
+    setPopup4(!popup4);
   }
   function menuExpand(){
     setMenuExpanded(!menuExpanded);
