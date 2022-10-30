@@ -23,7 +23,7 @@ blocks:
       belangrijke contactgegevens
     pagekeywords: 'contact,email,privacy,parochiesecretariaat'
     _template: header
-  - airformTitle: Contact
+  - airformTitle: Contacteer ons
     airformEmail: forms@stfranciscus-heverlee.org
     items:
       - type: textarea
@@ -40,11 +40,6 @@ blocks:
         questiontitle: Mijn telefoonnummer (niet verplicht!)
         questionid: phone
         placeholder: ''
-      - type: Checkbox
-        questiontitle: Ik ben akkoord met de privacyovereenkomst
-        questionrequired: true
-        questionid: privacy
-        placeholder: lorem ipsum
     _template: form
 ---
 
