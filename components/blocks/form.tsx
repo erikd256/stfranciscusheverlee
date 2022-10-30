@@ -1,6 +1,7 @@
 import { Section } from "../util/section";
 import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
+import ReCAPTCHA from "react-google-recaptcha"
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -20,7 +21,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form name={data.NetlifyId} method="POST" action="/form-submitted/" data-netlify="true" data-netlify-recaptcha="true">
+        <form method="POST" action="/form-submitted/" data-netlify="true">
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -32,7 +33,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <input type="hidden" name="form-name" value={data.NetlifyId} />
-          <div data-netlify-recaptcha="true"></div>
+          <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY}/>
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
