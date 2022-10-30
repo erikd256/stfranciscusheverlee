@@ -20,9 +20,6 @@ export const Question = ({ data, tinaField }) => {
 export const Form = ({ data, parentField }) => {
   return (
     <Section>
-      <Head>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-      </Head>
       <Container
         className={`bg-vijfdekleur text-basiskleur`}
         size="large"
