@@ -37,7 +37,7 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <ReCAPTCHA sitekey={process.env.NEXT_RECAPTCHA_SITE_KEY} />          
+          <ReCAPTCHA sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz" />          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           </fieldset>
           <span className="text-red-500">* Verplicht veld</span>
