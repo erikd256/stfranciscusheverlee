@@ -5,6 +5,7 @@ import { Icon } from "../util/icon";
 import type { TinaTemplate } from "tinacms";
 import { iconSchema } from "../util/icon";
 import Head from "next/head";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -39,7 +40,7 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <div className="g-recaptcha" data-sitekey="6LfKUsYiAAAAAE3CN8lLY6Kv1uPGzcdTUZbzYurz"></div>
+          <ReCAPTCHA sitekey={process.env.NEXT_RECAPTCHA_SITE_KEY} />          
           <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
           </fieldset>
           <span className="text-red-500">* Verplicht veld</span>
