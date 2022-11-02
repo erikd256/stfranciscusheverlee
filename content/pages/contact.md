@@ -24,7 +24,7 @@ blocks:
     pagekeywords: 'contact,email,privacy,parochiesecretariaat'
     _template: header
   - airformTitle: Contacteer ons
-    NetlifyId: contact
+    NetlifyId: forms@stfranciscus-heverlee.org
     items:
       - type: textarea
         questiontitle: Mijn vraag
