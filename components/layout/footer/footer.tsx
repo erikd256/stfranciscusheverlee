@@ -29,7 +29,7 @@ export const Footer = ({ data, icon, rawData }) => {
             <a href="https://status.stfranciscus-heverlee.org/" className="no-underline">Status</a>
             <br></br>
           </p>
-          <img src="https://api.netlify.com/api/v1/badges/07bfb4d1-48fb-48ec-938e-db3d4fdd981f/deploy-status"/>
+          <img src="https://img.shields.io/github/deployments/erikd256/stfranciscusheverlee/production?label=laatste%20update&style=flat-square"/>
 
         </div>
       </Container>
