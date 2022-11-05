@@ -10,12 +10,6 @@
     <loc>https://stfranciscus-heverlee.org/sitemap</loc>
   </url>
   <url>
-    <loc>https://stfranciscus-heverlee.org/post/hemelvaart</loc>
-  </url>
-  <url>
-    <loc>https://stfranciscus-heverlee.org/post/priesterjubileumpaterjozef</loc>
-  </url>
-  <url>
     <loc>https://stfranciscus-heverlee.org/about</loc>
   </url>
   <url>
@@ -80,5 +74,11 @@
   </url>
   <url>
     <loc>https://stfranciscus-heverlee.org/ziekenzalving</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/post/hemelvaart</loc>
+  </url>
+  <url>
+    <loc>https://stfranciscus-heverlee.org/post/priesterjubileumpaterjozef</loc>
   </url>
 </urlset>
