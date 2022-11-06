@@ -6,7 +6,7 @@ blocks:
     _template: banner
   - title: Start
     pagedesc: >-
-      De enige echte Webpagina van de Sint Franciscusparochie Heverlee. Wij
+      De vernieuwde webpagina van de Sint Franciscusparochie Heverlee. Wij
       bieden je hier alle nieuwigheden en informaties uit onze gemeenschap aan.
     pagekeywords: 'Start,Franciscusparochie,Heverlee,Sint,Franciscus'
     _template: header
