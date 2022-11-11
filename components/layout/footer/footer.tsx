@@ -33,14 +33,19 @@ export const Footer = ({ data, icon, rawData }) => {
           </p>
           <img src="https://vercelbadge.vercel.app/api/erikd256/stfranciscusheverlee"/>
         </div>
-        <div className="grid mo:absolute mo:top-[150px] mo:w-1/4 w-full mo:mt-[0px] mt-[50px] text-sm text-liturgischekleur grid-cols-1 place-items-left text-center">
+        <div className="grid mo:left-[50px] mo:absolute mo:top-[150px] mo:w-1/4 w-full mo:mt-[0px] mt-[50px] text-sm text-liturgischekleur grid-cols-1 place-items-left text-center">
         <span className="text-md">Sint Franciscusparochie</span><br></br>
         <span className="text-xs">Heverlee - Kessel-lo - Leuven<br></br>Federatie Kesselinde<br></br></span>
         <hr className="border-liturgischekleur my-[10px]"></hr>
         Tiensesteenweg 190, 3001 Heverlee<br></br>
         tel. secretariaat +32 492 31 92 15<br></br>
         franciscusheverlee@gmail.com
-      
+        </div>
+        <div className="grid mo:right-[50px] mo:absolute mo:top-[150px] mo:w-1/4 w-full mo:mt-[0px] mt-[50px] text-sm text-liturgischekleur grid-cols-1 place-items-left text-center hidden mo:block">
+        <div className="bg-liturgischekleur w-full text-basiskleur py-[4px] rounded-t-xl">
+          Meest recent
+        </div>
+        <div className="w-full h-[200px] bg-vijfdekleur"></div>
         </div>
       </Container>
     </footer>
