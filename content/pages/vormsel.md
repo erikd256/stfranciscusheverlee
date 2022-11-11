@@ -1,5 +1,7 @@
 ---
 blocks:
+  - title: Vormsel
+    _template: header
   - tagline: >-
       Uw kind wordt volgend jaar 12 en zit dan in het laatste jaar lager
       onderwijs. Hiermee sluit het een periode van zijn leven af en staat het
