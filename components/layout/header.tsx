@@ -66,16 +66,6 @@ export const Header = ({ data }) => {
           <p>franciscusheverlee@gmail.com</p>
         </span>
       </div>
-      <div className="block xs:hidden overflow-x-hidden min-h-[100px] py-[20px] text-center bg-liturgischekleur w-full sticky z-[5000]">
-        <span className="font-bold text-xl">Sint Franciscusparochie</span><br></br>
-        <span className="font-bold text-sm">Heverlee - Kessel-lo - Leuven</span><br></br>
-        <span className="">
-          <hr className="my-[15px] border-basiskleur bg-basiskleur"></hr>
-          <p className="font-bold">Federatie Kesselinde</p><p>Tiensesteenweg 190, 3001 Heverlee</p>
-          <p>tel. secretariaat +32 492 31 92 15</p>
-          <p>franciscusheverlee@gmail.com</p>
-        </span>
-      </div>
       <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
       <button className="hidden mo:block text-center border border-2 border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/" className="no-underline">Start</a></button>
       <button className="hidden mo:block text-center border border-2 border-basiskleur rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle1} className="no-underline">Vieringen</a></button>
