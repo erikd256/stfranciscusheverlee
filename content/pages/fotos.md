@@ -1,5 +1,7 @@
 ---
 blocks:
+  - title: Fotoalbums
+    _template: header
   - tagline: impressies vanuit onze parochie
     headline: Hier vinden jullie links naar diverse fotoalbums
     text: ''
