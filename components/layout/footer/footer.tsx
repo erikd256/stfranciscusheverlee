@@ -29,7 +29,7 @@ export const Footer = ({ data, icon, rawData }) => {
             <a href="https://status.stfranciscus-heverlee.org/" className="no-underline">Status</a>
             <br></br>
           </p>
-          <img src="https://vercel-badge-nine.vercel.app/api/erikd256/stfranciscusheverlee"/>
+          <img src="https://vercelbadge.vercel.app/api/erikd256/stfranciscusheverlee"/>
 
         </div>
       </Container>
