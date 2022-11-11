@@ -1,5 +1,7 @@
 ---
 blocks:
+  - title: Kerk & Leven
+    _template: header
   - titleText: werkjaar 2022 - 23
     textsize: text-4xl
     _template: heading
