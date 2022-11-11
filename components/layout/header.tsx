@@ -53,18 +53,8 @@ export const Header = ({ data }) => {
   return (
     <>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-      <div className="overflow-x-hidden flex items-center text-xl font-weight-700 bg-liturgischekleur p-[15px]">
+      <div className="overflow-x-hidden flex items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
         <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title"></span>
-      </div>
-      <div className="flex hidden overflow-x-hidden items-center justify-between bg-liturgischekleur border-2 border-basiskleur z-[5000]">
-        <img src="/assets/Kerk_Logo.jpg" className={`lg:h-[250px] xl:h-[250px] md:h-[200px] sm:h-[200px] xs:h-[200px] xs:border-r-4 border-basiskleur`}/>
-        <span className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl absolute lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] xs:left-[160px] top-[20px] hidden font-bold xs:block">Sint Franciscusparochie</span>
-        <span className="absolute xs:left-[160px] lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] top-[60px] sm:text-md md:text-lg lg:text-xl xl:text-2xl hidden font-bold xs:block">Heverlee - Kessel-lo - Leuven</span>
-        <span className="absolute top-[100px] xs:left-[160px] lg:left-[200px] xl:left-[200px] md:left-[160px] sm:left-[160px] sm:text-sm md:text-md lg:text-lg xl:text-xl hidden xs:block">
-          <p className="font-bold">Federatie Kesselinde</p><p>Tiensesteenweg 190, 3001 Heverlee</p>
-          <p>tel. secretariaat +32 492 31 92 15</p>
-          <p>franciscusheverlee@gmail.com</p>
-        </span>
       </div>
       <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
       <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/" className="no-underline">Start</a></button>
