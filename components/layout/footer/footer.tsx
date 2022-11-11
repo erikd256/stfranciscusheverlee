@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebookF, FaGithub, FaYoutube } from "react-icons/fa";
 import { Container } from "../../util/container";
 
-export const Footer = ({ data, icon, rawData, postsData }) => {
+export const Footer = ({ data, icon, rawData}) => {
   const socialIconClasses = "h-7 w-auto";
   return (
     <>
