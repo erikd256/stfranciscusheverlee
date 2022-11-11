@@ -47,12 +47,14 @@ export const Header = ({ data }) => {
       setPrefix("/admin");
     }
   });
-
+  React.useEffect(() => {
+    document.getElementById("title").innerText = document.title;
+  });
   return (
     <>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       <div className="overflow-x-hidden flex items-center text-xl font-weight-700 bg-liturgischekleur p-[15px]">
-        <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/>Sint Franciscusparochie Heverlee
+        <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title"></span>
       </div>
       <div className="flex hidden overflow-x-hidden items-center justify-between bg-liturgischekleur border-2 border-basiskleur z-[5000]">
         <img src="/assets/Kerk_Logo.jpg" className={`lg:h-[250px] xl:h-[250px] md:h-[200px] sm:h-[200px] xs:h-[200px] xs:border-r-4 border-basiskleur`}/>
