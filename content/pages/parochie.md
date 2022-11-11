@@ -1,6 +1,6 @@
 ---
 blocks:
-  - title: Organisatie v.d. parochie
+  - title: Organisatie v.d. Parochie
     _template: header
   - items:
       - icon:
