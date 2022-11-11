@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaGithub, FaYoutube } from "react-icons/fa";
 import { Container } from "../../util/container";
-
+import { client } from '../../../.tina/__generated__/client'
 
 export const Footer = ({ data, icon, rawData }) => {
   const socialIconClasses = "h-7 w-auto";
@@ -45,7 +45,8 @@ export const Footer = ({ data, icon, rawData }) => {
         <div className="bg-liturgischekleur w-full text-basiskleur py-[4px] rounded-t-xl">
           Meest recent
         </div>
-        <div className="w-full h-[200px] bg-vijfdekleur"></div>
+        <div className="w-full h-[200px] bg-vijfdekleur">
+        </div>
         </div>
       </Container>
     </footer>
