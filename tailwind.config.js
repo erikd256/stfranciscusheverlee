@@ -22,7 +22,7 @@ module.exports = {
       derdekleur: '#DFCC74',
       vierdekleur: '#51A3A3',
       vijfdekleur: '#E2E0CB',
-      ghblack: '#1c2128',
+      ghblack: '#262626',
       gray: {
         50: "#F6F6F8",
         100: "#EDECF1",
