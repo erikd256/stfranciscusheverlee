@@ -11,11 +11,7 @@ export const Weeknieuws = ({ data, parentField = "" }) => {
   };
   return (
     <>
-     <Section className="bg-vijfdekleur w-full">
-      <Container
-        className={`prose-lg text-basiskleur bg-vijfdekleur w-full`}
-        size="large"
-      >
+    <div className="max-w-7xl mx-auto px-6 sm:px-8">
       <button onClick={handleClick} className="underline">{data.LinkTitle}</button>
       {isShown && (
         <>
@@ -26,9 +22,8 @@ export const Weeknieuws = ({ data, parentField = "" }) => {
           <div className="opacity-90 fixed bg-basiskleur z-[499] left-[0px] w-full h-full top-[0px]"></div>
         </>
       )}
-      </Container>
-    </Section>
-    </>
+      </div>
+      </>
   );
 };
 
