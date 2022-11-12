@@ -156,7 +156,7 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <div className="w-2/3 bg-ghblack p-[15px] rounded-xl relative left-[16.6666665%]">
+      <div className="mo:w-2/3 w-[90%] bg-ghblack p-[15px] rounded-xl relative mo:left-[16.6666665%] left-[5%]">
       <div id="remark42">{''}</div>
       </div>
     </Section>
