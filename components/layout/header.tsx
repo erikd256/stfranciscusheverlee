@@ -56,17 +56,6 @@ export const Header = ({ data }) => {
       <Head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="icon" href="/favicon.ico"/>
-        <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          const remark_config = {
-            host: 'https://remark42.stfranciscus-heverlee.org',
-            site_id: 'stfranciscus-heverlee.org',
-            theme: 'dark',
-          };
-          window.remark_config = remark_config;
-                !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
-        }}></script>
       </Head>
       <div className="overflow-x-hidden flex items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
         <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title"></span>
