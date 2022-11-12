@@ -75,9 +75,9 @@ export const Posts = ({ data }) => {
         );
       })}
       <Head>
-        <title>Weeknieuws @ Sint-Franciscusparochie Heverlee</title>
-        <meta name="keywords" content="weeknieuws,parochienieuws,weekblad,kerkenleven"/>
-        <meta name="description" content="Het wekelijks nieuws uit onze parochie, in een handig overzicht."/>
+        <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>
+        <meta name="keywords" content="nieuws,parochienieuws"/>
+        <meta name="description" content="Het nieuws uit onze parochie, in een handig overzicht."/>
       </Head>
     </>
   );

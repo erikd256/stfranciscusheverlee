@@ -1,6 +1,6 @@
 ---
 blocks:
-  - title: Kerk & Leven
+  - title: Parochieblad
     _template: header
   - titleText: werkjaar 2022 - 23
     textsize: text-4xl
