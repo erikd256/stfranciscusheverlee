@@ -91,13 +91,14 @@ export const Post = (props) => {
           <meta name="description" content={props.desc}/>
     </Head>
     <Section className="flex-1">
+      <span className="absolute left-[10px] top-[10px] p-[5px] bg-basiskleur text-vijfdekleur rounded-md text-sm"><a href="/posts">Nieuws</a> / {props.title}</span>
       <Container className={`flex-1 max-w-full pb-2`} size="large">
         <h2
           data-tinafield="title"
           className={`w-full relative	mb-8 text-6xl font-extrabold tracking-normal text-center title-font`}
         >
           <span
-            className={`text-vierdekleur break-words`}
+            className={`text-basiskleur break-words`}
           >
             {props.title}
           </span>
@@ -145,20 +146,7 @@ export const Post = (props) => {
         </div>
       </Container>
       <div className="w-2/3 bg-ghblack p-[15px] rounded-xl relative left-[16.6666665%]">
-      <Giscus
-      repo="erikd256/stfranciscusheverlee"
-      repoId="R_kgDOHmfHCA"
-      category="Comments"
-      categoryId="DIC_kwDOHmfHCM4CRKzV"
-      mapping="specific"
-      term="Weeknieuws Commentaren"
-      reactionsEnabled="1"
-      emitMetadata="0"
-      inputPosition="top"
-      theme="dark_dimmed"
-      lang="nl"
-      loading="lazy"
-        />
+      <div id="remark42">{''}</div>
       </div>
     </Section>
     </>
