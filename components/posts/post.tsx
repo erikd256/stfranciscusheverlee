@@ -94,7 +94,7 @@ export const Post = (props) => {
           __html: `
           const remark_config = {
             host: 'https://remark42.stfranciscus-heverlee.org',
-            site_id: 'remark42.stfranciscus-heverlee.org',
+            site_id: 'stfranciscus-heverlee.org',
             theme: 'dark',
           };
           window.remark_config = remark_config;
