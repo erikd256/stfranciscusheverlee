@@ -57,12 +57,12 @@ export const Header = ({ data }) => {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <div className="overflow-x-hidden flex items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
+      <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
         <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title"></span>
-        <form method="get" className="smo:absolute smo:right-[50px] text-sm" action="https://www.google.com/search">
-          <input name="q" className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl inline" placeholder="Zoek op deze website"/>
+        <form method="get" className="smo:absolute smo:right-[50px] text-sm clear-both" action="https://www.google.com/search">
+          <input name="q" className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left" placeholder="Zoek op deze website"/>
           <input name="q" value="site:www.stfranciscus-heverlee.org" type="hidden"/>
-          <button type="submit" className="leading-[30px] h-[30px] border-2 smo:w-[40px] inline smo:absolute smo:right-[-38px] border-basiskleur rounded-r-xl"><span className="material-symbols-outlined">search</span></button>
+          <button type="submit" className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl"><span className="material-symbols-outlined">search</span></button>
         </form>
       </div>
       <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
