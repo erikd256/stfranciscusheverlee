@@ -60,7 +60,7 @@ export const Header = ({ data }) => {
       <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
         <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title"></span>
         <form method="get" className="smo:absolute smo:right-[50px] text-sm clear-both" action="https://www.google.com/search">
-          <input name="q" className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left" placeholder="Zoek op deze website"/>
+          <input name="q" className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left placeholder-basiskleur" placeholder="Zoeken"/>
           <input name="q" value="site:www.stfranciscus-heverlee.org" type="hidden"/>
           <button type="submit" className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl"><span className="material-symbols-outlined">search</span></button>
         </form>
