@@ -1,4 +1,5 @@
 ---
+title: Vormsel
 blocks:
   - tagline: >-
       Uw kind wordt volgend jaar 12 en zit dan in het laatste jaar lager

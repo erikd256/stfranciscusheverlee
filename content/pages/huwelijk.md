@@ -1,4 +1,5 @@
 ---
+title: Huwelijk
 blocks:
   - tagline: "Proficiat,\_u hebt ervoor gekozen elkaar het ja-woord te geven en dat moet gevierd worden!"
     headline: ''

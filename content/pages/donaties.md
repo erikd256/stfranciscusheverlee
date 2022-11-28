@@ -1,4 +1,5 @@
 ---
+title: Donaties
 blocks:
   - tagline: Parochiewerking kost handen vol geld.
     headline: Ook jij kan je steentje bijdragen.

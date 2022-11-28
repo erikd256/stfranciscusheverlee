@@ -1,4 +1,5 @@
 ---
+title: Verenigingen
 blocks:
   - items:
       - icon:
@@ -25,5 +26,4 @@ blocks:
           filler text.
     _template: features
 ---
-
 

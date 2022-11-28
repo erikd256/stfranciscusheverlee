@@ -1,4 +1,5 @@
 ---
+title: Uitvaart
 blocks:
   - tagline: Iemand is u onlangs ontvallen en u kiest voor een Christelijke uitvaart.
     headline: 'Uitvaart '

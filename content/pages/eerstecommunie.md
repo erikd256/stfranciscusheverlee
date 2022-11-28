@@ -1,4 +1,5 @@
 ---
+title: Eerste Communie
 blocks:
   - tagline: Uw kind wordt volgend jaar 8 en kan zijn/haar Eerste Communie vieren.
     headline: Eerste Communie

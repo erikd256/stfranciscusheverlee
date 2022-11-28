@@ -1,4 +1,5 @@
 ---
+title: Fotoalbums
 blocks:
   - tagline: impressies vanuit onze parochie
     headline: Hier vinden jullie links naar diverse fotoalbums
@@ -16,5 +17,4 @@ blocks:
           https://photos.google.com/share/AF1QipNy71jtQuRnEYsudYZV3OJZH7fgk5kPjhON2sqRgg2bseIVpwMTbOIO2pgJM0MNdQ?key=OGx0SzZaaFhyTmFXdzFkbGtEaVZBdWV6ZlJSU3RR
     _template: hero
 ---
-
 

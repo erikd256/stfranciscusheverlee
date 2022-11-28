@@ -1,4 +1,5 @@
 ---
+title: Links
 blocks:
   - tagline: Here's some text above the other text
     headline: links

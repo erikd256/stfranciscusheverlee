@@ -1,4 +1,5 @@
 ---
+title: Parochiaal Centrum
 blocks:
   - tagline: Welkom!
     headline: Parochiaal Centrum
@@ -16,5 +17,4 @@ blocks:
       src: /uploads/Zaaltje.png
     _template: hero
 ---
-
 

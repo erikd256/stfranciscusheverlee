@@ -1,4 +1,5 @@
 ---
+title: Contact
 blocks:
   - body: >
       # **We helpen je graag verder!**

@@ -1,4 +1,5 @@
 ---
+title: Parochieblad
 blocks:
   - titleText: werkjaar 2022 - 23
     textsize: text-4xl

@@ -1,4 +1,5 @@
 ---
+title: Doopsel
 blocks:
   - tagline: 'Proficiat, u wil uw kind of uzelf in onze gemeenschap laten opnemen!'
     headline: Doopsel

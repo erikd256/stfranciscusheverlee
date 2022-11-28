@@ -1,5 +1,5 @@
 ---
-title: test
+title: Start
 blocks:
   - bannerURL: /post/vernieuwde-website
     bannertext: Onze vernieuwde website

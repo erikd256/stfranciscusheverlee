@@ -1,4 +1,5 @@
 ---
+title: Videos
 blocks:
   - body: |
       # **2021 - 22**
@@ -23,5 +24,4 @@ blocks:
     title: Hemelvaart 2020
     _template: video
 ---
-
 

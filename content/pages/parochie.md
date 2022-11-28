@@ -1,4 +1,5 @@
 ---
+title: Organisatie Parochie
 blocks:
   - items:
       - icon:
@@ -41,6 +42,4 @@ blocks:
     color: ''
     _template: features
 ---
-
-
 
