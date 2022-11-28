@@ -1,7 +1,5 @@
 ---
 blocks:
-  - title: Videos
-    _template: header
   - body: |
       # **2021 - 22**
     _template: content

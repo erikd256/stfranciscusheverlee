@@ -384,6 +384,21 @@ schema: {
       format: "md",
       fields: [
         {
+          type: "string",
+          name: "title",
+          label: "Paginatitel"
+        },
+        {
+          type: "string",
+          name: "desc",
+          label: "Samenvatting"
+        },
+        {
+          type: "string",
+          name: "keywords",
+          label: "Kernwoorden"
+        },
+        {
           type: "object",
           list: true,
           name: "blocks",
@@ -392,7 +407,6 @@ schema: {
             visualSelector: true,
           },
           templates: [
-            headerBlockSchema,
             heroBlockSchema,
             featureBlockSchema,
             weeknieuwsBlockSchema,

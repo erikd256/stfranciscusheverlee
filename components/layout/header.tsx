@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-export const Header = ({ data }) => {
+export const Header = ({ data, props }) => {
   // If we're on an admin path, other links should also link to their admin paths
   const [prefix, setPrefix] = React.useState("");
   const [windowUrl, setUrl] = React.useState("");
@@ -48,17 +48,17 @@ export const Header = ({ data }) => {
       setPrefix("/admin");
     }
   });
-  React.useEffect(() => {
-    document.getElementById("title").innerText = document.title;
-  });
   return (
     <>
       <Head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="icon" href="/favicon.ico"/>
+        <title>{props.title}</title>
+        <meta name="description" content={props.desc}/>
+        <meta name="keywords" content={props.keywords}/>
       </Head>
       <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
-        <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title"></span>
+        <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title">{props.title}</span>
         <form method="get" className="smo:absolute smo:right-[50px] text-sm clear-both" action="https://www.google.com/search">
           <input name="q" className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left placeholder-basiskleur" placeholder="Zoeken"/>
           <input name="q" value="site:www.stfranciscus-heverlee.org" type="hidden"/>

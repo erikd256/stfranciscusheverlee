@@ -6,7 +6,7 @@ import { Footer } from "./footer";
 import layoutData from "../../content/global/index.json";
 import { Theme } from "./theme";
 
-export const Layout = ({ rawData = {}, data = layoutData, children }) => {
+export const Layout = ({ rawData = {}, headerData = {}, data = layoutData, children }) => {
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ export const Layout = ({ rawData = {}, data = layoutData, children }) => {
         <div
           className={`min-h-screen flex flex-col`}
         >
-          <Header data={data?.header} />
+          <Header data={data?.header} props={headerData} />
           <div className="flex-1 w-full bg-vijfdekleur flex flex-col">
             {children}
           </div>

@@ -1,7 +1,5 @@
 ---
 blocks:
-  - title: Familievieringen
-    _template: header
   - tagline: Noteer deze data alvast in uw agenda
     headline: >-
       Hieronder kan u de vieringen vinden die extra aandacht geven aan de

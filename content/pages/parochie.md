@@ -1,7 +1,5 @@
 ---
 blocks:
-  - title: Organisatie v.d. Parochie
-    _template: header
   - items:
       - icon:
           color: ''

@@ -1,7 +1,5 @@
 ---
 blocks:
-  - title: Verenigingen
-    _template: header
   - items:
       - icon:
           color: ''

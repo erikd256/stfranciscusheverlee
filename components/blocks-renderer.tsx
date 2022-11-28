@@ -7,7 +7,6 @@ import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
 import { Image } from "./blocks/image";
 import {Form} from "./blocks/form";
-import { Header } from "./blocks/header";
 import { Video } from "./blocks/video";
 import { Heading } from "./blocks/heading";
 import { Audio } from "./blocks/audio";
@@ -72,10 +71,6 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                   >
                     <Banner data={block} parentField={`blocks.${i}`} />
                   </div>
-                );
-                case "PageBlocksHeader":
-                return (
-                    <Header data={block} />
                 );
                 case "PageBlocksImage":
                 return (

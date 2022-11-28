@@ -17,12 +17,6 @@ blocks:
       of naar
       [webservices@stfranciscus-heverlee.org](mailto:webservices@stfranciscus-heverlee.org).
     _template: content
-  - title: Contact
-    pagedesc: >-
-      Contacteer ons asap als je een vraag of aarzeling hebt. Hier vind je alle
-      belangrijke contactgegevens
-    pagekeywords: 'contact,email,privacy,parochiesecretariaat'
-    _template: header
   - airformTitle: Contacteer ons
     NetlifyId: forms@stfranciscus-heverlee.org
     items:

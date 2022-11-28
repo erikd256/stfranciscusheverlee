@@ -1,7 +1,5 @@
 ---
 blocks:
-  - title: Ziekenzalving
-    _template: header
   - tagline: >-
       Door de zalving ervaart een zieke persoon weer kracht om het leven met
       hernieuwde moed aan te vatten.

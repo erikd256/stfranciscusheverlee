@@ -1,15 +1,10 @@
 ---
+title: test
 blocks:
   - bannerURL: /post/vernieuwde-website
     bannertext: Onze vernieuwde website
     vervaldatum: '2023-01-31T22:00:00.000Z'
     _template: banner
-  - title: Start
-    pagedesc: >-
-      De vernieuwde webpagina van de Sint Franciscusparochie Heverlee. Wij
-      bieden je hier alle nieuwigheden en informaties uit onze gemeenschap aan.
-    pagekeywords: 'Start,Franciscusparochie,Heverlee,Sint,Franciscus'
-    _template: header
   - tagline: >-
       We staan graag voor u ter beschikking en willen met u de droom van een
       rijk van vrede, liefde en rechtvaardigheid in de geest van Jezus helpen
