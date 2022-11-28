@@ -1,8 +1,8 @@
 ---
 blocks:
-  - bannerURL: /post/parochiefeest-2-oktober
-    bannertext: Parochiefeest 2 oktober!
-    vervaldatum: '2022-10-01T22:00:00.000Z'
+  - bannerURL: /post/vernieuwde-website
+    bannertext: Onze vernieuwde website
+    vervaldatum: '2023-01-31T22:00:00.000Z'
     _template: banner
   - title: Start
     pagedesc: >-
