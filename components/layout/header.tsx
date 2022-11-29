@@ -51,7 +51,6 @@ export const Header = ({ data, props }) => {
   return (
     <>
       <Head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="icon" href="/favicon.ico"/>
         <title>{props.title} @ Sint-Franciscusparochie</title>
         <meta name="description" content={props.desc}/>
