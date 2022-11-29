@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 export const Header = ({ data, props }) => {
   // If we're on an admin path, other links should also link to their admin paths
@@ -53,7 +54,7 @@ export const Header = ({ data, props }) => {
       <Head>
         <link rel="icon" href="/favicon.ico"/>
         <title>{props.title} @ Sint-Franciscusparochie</title>
-        <meta name="description" content={props.desc}/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <meta name="keywords" content={props.keywords}/>
       </Head>
       <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
@@ -134,6 +135,6 @@ export const Header = ({ data, props }) => {
       <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact" className="no-underline">Contact</a></button>
       <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/links" className="no-underline">Links</a></button>
     </div>
-    <a href="/donaties" className="fixed p-[15px] w-[70px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><span className="w-full text-center material-symbols-outlined">volunteer_activism</span></a>    </>
+    <a href="/donaties" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>    </>
   );
 };
