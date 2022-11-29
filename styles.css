@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Nunito";
+  src: url("public/fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
 @layer base {
   a {
      @apply underline;
@@ -18,7 +22,7 @@
     @apply text-base font-bold md:text-lg;
   }
   body {
-    @apply text-sm text-basiskleur md:text-base;
+    @apply text-sm text-basiskleur md:text-base font-nunito;
   }
 }
 

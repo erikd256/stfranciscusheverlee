@@ -108,9 +108,7 @@ module.exports = {
         "-1": "-1",
       },
       fontFamily: {
-        nunito: ["Nunito", ...defaultTheme.fontFamily.sans],
-        lato: ["Lato", ...defaultTheme.fontFamily.sans],
-        "404": ['Splash'],
+        nunito: ["Nunito"],
       },
       typography: (theme) => ({
         DEFAULT: {
