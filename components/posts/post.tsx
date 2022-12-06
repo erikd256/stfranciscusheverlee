@@ -86,7 +86,7 @@ export const Post = (props) => {
   return (
     <>
     <Head>
-          <title>{`${props.title} @ Sint-Franciscusparochie Heverlee`}</title>
+          <title>{props.title} @ Sint-Franciscusparochie Heverlee</title>
           <meta name="keywords" content={props.keywords}/>
           <meta name="description" content={props.desc}/>
           <script
