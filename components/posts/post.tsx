@@ -102,7 +102,7 @@ export const Post = (props) => {
         }}></script>
     </Head>
     <Section className="flex-1">
-      <span className="absolute left-[10px] top-[10px] p-[5px] bg-basiskleur text-vijfdekleur rounded-md text-sm"><a href="/posts">Nieuws</a> / {props.title}</span>
+      <span className="fixed left-[10px] top-[90px] p-[5px] bg-basiskleur text-vijfdekleur rounded-md text-sm"><a href="/posts">Nieuws</a> / {props.title}</span>
       <Container className={`flex-1 max-w-full pb-2`} size="large">
         <h2
           data-tinafield="title"
