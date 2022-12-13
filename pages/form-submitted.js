@@ -10,10 +10,10 @@ export default function FormSubmitted() {
       </Head>
       <span className='text-2xl relative mt-[40px] w-1/2 left-1/4'>Formulier verzonden!</span>
       <br></br>
-      <span className='text-lg relative left-1/4 w-3/4 mb-[100px]'>We proberen je antwoorden zo snel mogelijk te verwerken.</span>
+      <span className='text-lg relative left-1/4 w-1/2 mb-[100px]'>We proberen je antwoorden zo snel mogelijk te verwerken.</span>
       <br></br>
       <br></br>
-      <button  className={`mb-[40px] py-[5px] relative left-1/4 rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-1/2`} type="submit">Ga terug!</button>
+      <button  className={`mb-[40px] py-[5px] relative left-1/4 rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-1/2`} onClick={`history.back()`}>Ga terug!</button>
     </Layout>
   );
 }
