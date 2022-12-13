@@ -1,6 +1,7 @@
 import { Section } from "../util/section";
 import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -32,7 +33,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
-          <button type="submit" title="Versturen" placeholder="Versturen" className="p-[4px] my-[15px] rounded-[5px] border-[2px] border-basiskleur bg-liturgischekleur w-full">Versturen</button>
+          <HCaptcha sitekey={process.env.HCAPTCHA_SITEKEY}/>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
           </form>
       </Container>
