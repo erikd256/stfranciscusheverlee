@@ -1,7 +1,6 @@
 import { Section } from "../util/section";
 import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
-import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export const Question = ({ data, tinaField }) => {
   return (
