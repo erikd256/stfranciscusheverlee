@@ -13,7 +13,7 @@ export default function FormSubmitted() {
       <span className='text-lg relative left-1/4 w-3/4 mb-[100px]'>We proberen je antwoorden zo snel mogelijk te verwerken.</span>
       <br></br>
       <br></br>
-      <button  className={`mb-[40px] relative left-1/4 rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-3/4`} type="submit">Ga terug!</button>
+      <button  className={`mb-[40px] py-[5px] relative left-1/4 rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-3/4`} type="submit">Ga terug!</button>
     </Layout>
   );
 }
