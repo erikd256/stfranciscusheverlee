@@ -13,6 +13,9 @@ export const Header = ({ data, props }) => {
   const [popup3, setPopup3] = React.useState(false);
   const [popup4, setPopup4] = React.useState(false);
   const [menuExpanded, setMenuExpanded] = React.useState(false);
+  React.useEffect(() => {
+    document.getElementById("title").innerText = document.title;
+  });
   function toggle1(){
     setPopup1(!popup1);
     setPopup2(false);
@@ -57,7 +60,7 @@ export const Header = ({ data, props }) => {
         <meta name="keywords" content={props.keywords}/>
       </Head>
       <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
-        <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/>{props.title !== undefined && <span id="title">{props.title} @ St.-Franciscusparochie</span>}
+        <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title">{props.title} @ St.-Franciscusparochie</span>
         <form method="get" className="smo:absolute smo:right-[50px] text-sm clear-both" action="https://www.google.com/search">
           <input name="q" className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left placeholder-basiskleur" placeholder="Zoeken"/>
           <input name="q" value="site:www.stfranciscus-heverlee.org" type="hidden"/>
