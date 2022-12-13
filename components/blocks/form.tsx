@@ -34,6 +34,7 @@ export const Form = ({ data, parentField }) => {
           })}
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
           <HCaptcha sitekey={process.env.HCAPTCHA_SITEKEY}/>
+          <button type="submit">Versuren</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
           </form>
       </Container>
