@@ -11,6 +11,9 @@ export default function FormSubmitted() {
       <span className='text-2xl relative mt-[40px] w-1/2 left-1/4'>Formulier verzonden!</span>
       <br></br>
       <span className='text-lg relative left-1/4 w-3/4 mb-[100px]'>We proberen je antwoorden zo snel mogelijk te verwerken.</span>
+      <br></br>
+      <br></br>
+      <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full`} type="submit">Ga terug!</button>
     </Layout>
   );
 }
