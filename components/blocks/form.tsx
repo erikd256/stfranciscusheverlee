@@ -26,7 +26,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form method="POST" action="/api/form">
+        <form method="POST" action={data.FormEndpoint}>
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -69,6 +69,11 @@ export const formBlockSchema: TinaTemplate = {
       type: "string",
       label: "Formulier titel",
       name: "airformTitle",
+    },
+    {
+      type: "string",
+      label: "Formulier Endpoint",
+      name: "FormEndpoint",
     },
     {
       type: "string",
