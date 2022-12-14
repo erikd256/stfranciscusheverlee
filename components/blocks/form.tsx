@@ -14,6 +14,10 @@ export const Question = ({ data, tinaField }) => {
   );
 };
 
+const captcha = true;
+function setCaptchaSolved(){
+  let captcha = false;
+}
 export const Form = ({ data, parentField }) => {
   return (
     <Section>
@@ -34,8 +38,9 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
-          <HCaptcha sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}/>
-          <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full`} type="submit">Versturen</button>
+          <HCaptcha sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY} onVerify={token => setCaptchaSolved()}/>
+          <span className="text-red-500 font-bold" style={{display: captcha ? "inline-block":"none"}}>Vul eerst de CAPTCHA in.</span>
+          <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit" disabled={captcha}>Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
           </form>
       </Container>
