@@ -19,6 +19,7 @@ blocks:
       [webservices@stfranciscus-heverlee.org](mailto:webservices@stfranciscus-heverlee.org).
     _template: content
   - airformTitle: Contacteer ons
+    FormEndpoint: 'https://forms.stfranciscus-heverlee.org/contact'
     NetlifyId: forms@stfranciscus-heverlee.org
     items:
       - type: text
@@ -42,4 +43,5 @@ blocks:
         placeholder: ''
     _template: form
 ---
+
 
