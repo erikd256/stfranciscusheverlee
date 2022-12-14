@@ -19,6 +19,10 @@ export const Form = ({ data, parentField }) => {
   function setSolved(){
     setCaptcha(!captcha);
   }
+  var hostname;
+  if (typeof window !== 'undefined') {
+    let hostname = window.location.hostname;
+ };
   return (
     <Section>
       <Container
@@ -43,7 +47,7 @@ export const Form = ({ data, parentField }) => {
           <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit" disabled={!captcha}>Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
           <input hidden type={"text"} name="sendToEmail" value={data.NetlifyId} />
-          <input hidden type={"text"} name="sendToEmail" value={`${window.location.origin.toString()}/path/another.html`} />
+          <input hidden type={"text"} name="sendToEmail" value={hostname} />
           </form>
       </Container>
     </Section>
