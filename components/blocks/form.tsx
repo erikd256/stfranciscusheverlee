@@ -18,7 +18,7 @@ export const Form = ({ data, parentField }) => {
   const [captcha, setCaptcha] = React.useState(false);
   function setSolved(){
     setCaptcha(!captcha);
-  };
+  }
   return (
     <Section>
       <Container
