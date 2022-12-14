@@ -1,7 +1,7 @@
 import { Section } from "../util/section";
 import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export const Question = ({ data, tinaField }) => {
@@ -14,7 +14,7 @@ export const Question = ({ data, tinaField }) => {
   );
 };
 
-const [captcha, setCaptcha] = React.useState(false);
+const [captcha, setCaptcha] = useState(false);
 function setSolved(){
   setCaptcha(!captcha);
 };
