@@ -14,9 +14,9 @@ export const Question = ({ data, tinaField }) => {
   );
 };
 
-const captcha = true;
+let captcha = true;
 function setCaptchaSolved(){
-  let captcha = false;
+  captcha = false;
 }
 export const Form = ({ data, parentField }) => {
   return (
