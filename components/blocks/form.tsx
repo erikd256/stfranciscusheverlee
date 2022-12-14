@@ -22,7 +22,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form method="POST" action={`https://airform.io/${data.NetlifyId}`}>
+        <form method="POST" action="/api/form">
         {data.items &&
           data.items.map(function (block, i) {
             return (
