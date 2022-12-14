@@ -24,9 +24,7 @@ export const Banner = ({ data, parentField }) => {
 export const bannerBlockSchema: TinaTemplate = {
   name: "banner",
   label: "Banner",
-  ui: {
-    previewSrc: "/blocks/features.png",
-  },
+  
   fields: [
     {
       type: "string",

@@ -83,7 +83,6 @@ export const featureBlockSchema: TinaTemplate = {
   name: "features",
   label: "Features",
   ui: {
-    previewSrc: "/blocks/features.png",
     defaultItem: {
       items: [defaultFeature, defaultFeature, defaultFeature],
     },

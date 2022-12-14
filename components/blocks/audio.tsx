@@ -23,9 +23,7 @@ export const Audio = ({ data, parentField = "" }) => {
 export const audioBlockSchema: TinaTemplate = {
   name: "audio",
   label: "Audioplayer",
-  ui: {
-    previewSrc: "/blocks/content.png",
-  },
+  
   fields: [
     {
       type: "string",

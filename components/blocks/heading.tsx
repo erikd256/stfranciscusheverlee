@@ -20,9 +20,7 @@ export const Heading = ({ data, parentField = "" }) => {
 export const headingBlockSchema: TinaTemplate = {
   name: "heading",
   label: "Titel",
-  ui: {
-    previewSrc: "/blocks/content.png",
-  },
+  
   fields: [
     {
       type: "string",

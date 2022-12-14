@@ -75,7 +75,6 @@ export const heroBlockSchema: TinaTemplate = {
   name: "hero",
   label: "Hero",
   ui: {
-    previewSrc: "/blocks/hero.png",
     defaultItem: {
       tagline: "Here's some text above the other text",
       headline: "This Big Text is Totally Awesome",

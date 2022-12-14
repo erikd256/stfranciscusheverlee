@@ -26,9 +26,7 @@ export const Video = ({ data, parentField = "" }) => {
 export const videoBlockSchema: TinaTemplate = {
   name: "video",
   label: "Video",
-  ui: {
-    previewSrc: "/blocks/content.png",
-  },
+  
   fields: [
     {
       type: "string",

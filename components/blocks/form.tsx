@@ -54,7 +54,6 @@ export const formBlockSchema: TinaTemplate = {
   name: "form",
   label: "Formulier",
   ui: {
-    previewSrc: "/blocks/features.png",
     defaultItem: {
       items: [defaultQuestion],
     },

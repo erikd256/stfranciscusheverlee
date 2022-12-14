@@ -52,7 +52,6 @@ export const testimonialBlockSchema: TinaTemplate = {
   name: "testimonial",
   label: "Testimonial",
   ui: {
-    previewSrc: "/blocks/testimonial.png",
     defaultItem: {
       quote:
         "There are only two hard things in Computer Science: cache invalidation and naming things.",

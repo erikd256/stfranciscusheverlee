@@ -22,9 +22,7 @@ export const Image = ({ data, parentField = "" }) => {
 export const imageBlockSchema: TinaTemplate = {
   name: "image",
   label: "Afbeelding",
-  ui: {
-    previewSrc: "/blocks/content.png",
-  },
+  
   fields: [
     {
       type: "image",

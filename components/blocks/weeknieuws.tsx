@@ -31,9 +31,7 @@ export const Weeknieuws = ({ data, parentField = "" }) => {
 export const weeknieuwsBlockSchema: TinaTemplate = {
   name: "weeknieuws",
   label: "PDF",
-  ui: {
-    previewSrc: "/blocks/features.png",
-  },
+  
   fields: [
     {
       type: "string",
