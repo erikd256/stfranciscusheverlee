@@ -42,6 +42,7 @@ export const Form = ({ data, parentField }) => {
           <span className="text-red-500 text-sm font-bold" style={{display: !captcha ? "inline-block":"none"}}>Ben je toch een robot? Klik op het vak hierboven...</span>
           <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit" disabled={!captcha}>Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
+          <input hidden type={"text"} name="sendToEmail" value={data.NetlifyId} />
           </form>
       </Container>
     </Section>
@@ -71,7 +72,7 @@ export const formBlockSchema: TinaTemplate = {
     },
     {
       type: "string",
-      label: "Email for answers",
+      label: "Emailaddres voor antwoorden",
       name: "NetlifyId",
     },
     {
