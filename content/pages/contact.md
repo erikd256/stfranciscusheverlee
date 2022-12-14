@@ -21,6 +21,10 @@ blocks:
   - airformTitle: Contacteer ons
     NetlifyId: forms@stfranciscus-heverlee.org
     items:
+      - type: text
+        questiontitle: Naam
+        questionid: personName
+        placeholder: Jouw naam
       - type: textarea
         questiontitle: Mijn vraag
         questionrequired: true
@@ -33,6 +37,7 @@ blocks:
         placeholder: ''
       - type: tel
         questiontitle: Mijn telefoonnummer
+        questionrequired: false
         questionid: phone
         placeholder: ''
     _template: form
