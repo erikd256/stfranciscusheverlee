@@ -16,7 +16,7 @@ export const Question = ({ data, tinaField }) => {
 
 const [captcha, setCaptcha] = React.useState(false);
 function setSolved(){
-  setCaptcha(true);
+  setCaptcha(!captcha);
 };
 
 export const Form = ({ data, parentField }) => {
