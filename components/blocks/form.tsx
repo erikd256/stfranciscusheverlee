@@ -14,9 +14,9 @@ export const Question = ({ data, tinaField }) => {
   );
 };
 
-let captcha = true;
-function setCaptchaSolved(){
-  captcha = false;
+const [captcha, setCaptcha] = React.useState(false);
+function setSolved(){
+  setCaptcha(!captcha);
 }
 export const Form = ({ data, parentField }) => {
   return (
@@ -38,7 +38,7 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
-          <HCaptcha sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY} onVerify={token => setCaptchaSolved()}/>
+          <HCaptcha sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY} onVerify={token => setSolved()}/>
           <span className="text-red-500 text-sm font-bold" style={{display: captcha ? "inline-block":"none"}}>Ben je toch een robot? Klik op het vak hierboven...</span>
           <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit" disabled={captcha}>Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
