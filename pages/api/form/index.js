@@ -1,6 +1,8 @@
 let nodemailer = require("nodemailer");
 export default function (req, res) {
-  const transporter = nodemailer.createTransport({
+  var host = req.hostname;
+  if(host=="www.stfranciscus-heverlee.org"){
+    const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
@@ -8,6 +10,10 @@ export default function (req, res) {
       pass: process.env.password,
     },
     secure: true,
-  })
-  res.redirect("/form-submitted");
+    })
+    res.redirect("/form-submitted");
+  }
+  else{
+    res.status(401).redirect('/')
+  }
 }
