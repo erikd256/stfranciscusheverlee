@@ -8,8 +8,8 @@ export const Question = ({ data, tinaField }) => {
   return (
     <>
       {data.questiontitle} <span className="text-red-500" style={{display: data.questionrequired ? "inline-block":"none"}}>*</span>
-      {data.type!="textarea"&&<input type={data.type} name={data.questionid} ref={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.questionrequired}/>}
-      {data.type=="textarea"&&<textarea name={data.questionid} ref={data.questionid} className={`my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} rows={7} required={data.questionrequired}></textarea>}
+      {data.type!="textarea"&&<input type={data.type} name={data.questionid}  className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.questionrequired}/>}
+      {data.type=="textarea"&&<textarea name={data.questionid}  className={`my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} rows={7} required={data.questionrequired}></textarea>}
     </>
   );
 };
