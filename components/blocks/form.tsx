@@ -26,7 +26,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form action={data.FormEndpoint} method="post">
+        <form action={data.FormEndpoint}>
         {data.items &&
           data.items.map(function (block, i) {
             return (
