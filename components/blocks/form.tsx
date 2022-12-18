@@ -3,7 +3,6 @@ import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
 import React from 'react';
 import HCaptcha from "@hcaptcha/react-hcaptcha";
-import axios from "axios";
 
 export const Question = ({ data, tinaField }) => {
   return (
