@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import SearchIcon from '@mui/icons-material/Search';
 
 export const Header = ({ data, props }) => {
   // If we're on an admin path, other links should also link to their admin paths
@@ -64,7 +65,7 @@ export const Header = ({ data, props }) => {
         <form method="get" className="smo:absolute smo:right-[50px] text-sm clear-both" action="https://www.google.com/search">
           <input name="q" className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left placeholder-basiskleur" placeholder="Zoeken"/>
           <input name="q" value="site:www.stfranciscus-heverlee.org" type="hidden"/>
-          <button type="submit" className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl"><span className="material-symbols-outlined">search</span></button>
+          <button type="submit" className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl"><span className="material-symbols-outlined"><SearchIcon/></span></button>
         </form>
       </div>
       <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
