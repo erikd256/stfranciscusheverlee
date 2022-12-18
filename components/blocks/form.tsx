@@ -3,22 +3,20 @@ import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
 import React from 'react';
 import HCaptcha from "@hcaptcha/react-hcaptcha";
+import axios from "axios";
 
 export const Question = ({ data, tinaField }) => {
   return (
     <>
       {data.questiontitle} <span className="text-red-500" style={{display: data.questionrequired ? "inline-block":"none"}}>*</span>
-      {data.type!="textarea"&&<input type={data.type} name={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.questionrequired}/>}
-      {data.type=="textarea"&&<textarea name={data.questionid} className={`my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} rows={7} required={data.questionrequired}></textarea>}
+      {data.type!="textarea"&&<input type={data.type} name={data.questionid} ref={data.questionid} className={`relative left-0 my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} required={data.questionrequired}/>}
+      {data.type=="textarea"&&<textarea name={data.questionid} ref={data.questionid} className={`my-[10px] rounded-[5px] border-basiskleur border-[2px] w-full`} rows={7} required={data.questionrequired}></textarea>}
     </>
   );
 };
 
 export const Form = ({ data, parentField }) => {
-  const [captcha, setCaptcha] = React.useState(false);
-  function setSolved(){
-    setCaptcha(!captcha);
-  }
+
   return (
     <Section>
       <Container
@@ -26,7 +24,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form action={data.FormEndpoint} method="post">
+        <form action={data.FormEndpoint} method="POST">
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -38,9 +36,8 @@ export const Form = ({ data, parentField }) => {
             );
           })}
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
-          <HCaptcha sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY} onVerify={token => setSolved()}/>
-          <span className="text-red-500 text-sm font-bold" style={{display: !captcha ? "inline-block":"none"}}>Ben je toch een robot? Klik op het vak hierboven...</span>
-          <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit" disabled={!captcha}>Versturen</button>
+          <HCaptcha sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}/>
+          <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit">Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
           <input hidden type={"text"} name="sendToEmail" value={data.NetlifyId} />
           </form>
