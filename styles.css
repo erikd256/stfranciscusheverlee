@@ -5,6 +5,10 @@
   font-family: "Nunito";
   src: url("public/fonts/Nunito/Nunito-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url("public/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
 @layer base {
   a {
      @apply underline;
