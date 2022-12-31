@@ -17,10 +17,10 @@ const config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   token: process.env.TINATOKEN!,
   media: {
-        loadCustomStore: async () => {
-            const pack = await import("next-tinacms-cloudinary");
-            return pack.TinaCloudCloudinaryMediaStore;
-        },
+    tina: {
+      publicFolder: 'public',
+      mediaRoot: 'uploads',
+    },
   },
 build: {
   publicFolder: "public", // The public asset folder for your framework
