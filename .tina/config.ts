@@ -11,13 +11,17 @@ import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
 import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
-import { WebDAVMediaStore } from 'tinacms-webdav-mediastore'
 
 const config = defineStaticConfig({
   branch: "main",
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   token: process.env.TINATOKEN!,
-  media: new WebDAVMediaStore(),
+  media: {
+    tina: {
+      publicFolder: 'public',
+      mediaRoot: 'uploads',
+    },
+  },
 build: {
   publicFolder: "public", // The public asset folder for your framework
   outputFolder: "admin", // within the public folder
