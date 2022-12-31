@@ -3593,7 +3593,7 @@ array.prototype.reduce@^1.0.5:
     es-array-method-boxes-properly "^1.0.0"
     is-string "^1.0.7"
 
-asap@~2.0.3, asap@~2.0.6:
+asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==
@@ -3673,15 +3673,6 @@ axios@^0.27.2:
   dependencies:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
-
-axios@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.2.1.tgz#44cf04a3c9f0c2252ebd85975361c026cb9f864a"
-  integrity sha512-I88cFiGu9ryt/tfVEi4kX2SITsvDddTajXTOFmt2uK1ZVA8LytjtdeyefdQWEf5PU8w+4SSJDoYnggflB5tW4A==
-  dependencies:
-    follow-redirects "^1.15.0"
-    form-data "^4.0.0"
-    proxy-from-env "^1.1.0"
 
 babel-jest@^26.6.3:
   version "26.6.3"
@@ -5696,7 +5687,7 @@ flatted@^3.1.0, flatted@^3.2.7:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-follow-redirects@^1.14.0, follow-redirects@^1.14.9, follow-redirects@^1.15.0:
+follow-redirects@^1.14.0, follow-redirects@^1.14.9:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
@@ -8531,11 +8522,6 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-owncloud-sdk@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/owncloud-sdk/-/owncloud-sdk-3.0.0.tgz#7f0b1717457cb8e87c20c72fada252b0b5b7d37b"
-  integrity sha512-/WPNIrOpH+Yzk8kT7lJSlTzZ1Ut8/rJRX5HB0fMiDicGIw7PyDQdAOs4TCD+v1Xydzo10S4mLxVLDUyELZ+w0g==
-
 p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
@@ -8929,13 +8915,6 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-promise@^8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/promise/-/promise-8.3.0.tgz#8cb333d1edeb61ef23869fbb8a4ea0279ab60e0a"
-  integrity sha512-rZPNPKTOYVNEEKFaq1HqTgOwZD+4/YHS5ukLzQCypkj+OkYx7iv0mA91lJlpPPZ8vMau3IIGj5Qlwrx+8iiSmg==
-  dependencies:
-    asap "~2.0.6"
-
 prompts@^2.4.1:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/prompts/-/prompts-2.4.2.tgz#7b57e73b3a48029ad10ebd44f74b01722a4cb069"
@@ -9006,7 +8985,7 @@ proxy-compare@2.3.0:
   resolved "https://registry.yarnpkg.com/proxy-compare/-/proxy-compare-2.3.0.tgz#ac9633ae52918ff9c9fcc54dfe6316c7a02d20ee"
   integrity sha512-c3L2CcAi7f7pvlD0D7xsF+2CQIW8C3HaYx2Pfgq8eA4HAl3GAH6/dVYsyBbYF/0XJs2ziGLrzmz5fmzPm6A0pQ==
 
-proxy-from-env@^1.0.0, proxy-from-env@^1.1.0:
+proxy-from-env@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
@@ -9039,7 +9018,7 @@ q@^1.1.2, q@^1.5.1:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==
 
-qs@6.11.0, qs@^6.11.0:
+qs@6.11.0:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
@@ -10511,23 +10490,15 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-tinacms-webdav-mediastore@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/tinacms-webdav-mediastore/-/tinacms-webdav-mediastore-1.0.0.tgz#beb17d3e7844691467fb6cff6a76fb2c8680c8ac"
-  integrity sha512-+CNK3kQQGDFhGgblw9dkJp28c9pSnD5IhrJ4rsyBsvXQlTealSEU+c6IF64LAF6s4NwB0wc1TDd2xfmGNHByXA==
+tinacms-webdav-mediastore@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tinacms-webdav-mediastore/-/tinacms-webdav-mediastore-1.1.0.tgz#777a6c18756a994e023d2878992f89402fef9f99"
+  integrity sha512-A2+R8z3c/akpkD01DfjUkl54wXMqT3zqowlFX9zbbaZxZ0bWmPJulUrOtsF4RP652LZw5PoGQQCNBFS20BqhhQ==
   dependencies:
     "@tinacms/core" "^0.43.0"
     "@tinacms/toolkit" "^1.1.0"
     "@types/node" "^18.11.10"
-    axios "^1.2.1"
-    cross-fetch "^3.1.5"
-    owncloud-sdk "^3.0.0"
-    promise "^8.3.0"
-    qs "^6.11.0"
-    utf8 "^3.0.0"
-    uuid "^9.0.0"
     webdav "^4.11.2"
-    xml-js "^1.6.11"
 
 tinacms@^1.1.0:
   version "1.1.0"
@@ -11065,11 +11036,6 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
-utf8@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
-  integrity sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==
-
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -11089,11 +11055,6 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
-
-uuid@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
-  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 uvu@^0.5.0:
   version "0.5.6"
