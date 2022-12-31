@@ -16,12 +16,12 @@ const config = defineStaticConfig({
   branch: "main",
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   token: process.env.TINATOKEN!,
-  media: {
-    tina: {
-      publicFolder: 'public',
-      mediaRoot: 'uploads',
+   media: {
+      tina: {
+        publicFolder: "public",
+        mediaRoot: "assets",
+      },
     },
-  },
 build: {
   publicFolder: "public", // The public asset folder for your framework
   outputFolder: "admin", // within the public folder
