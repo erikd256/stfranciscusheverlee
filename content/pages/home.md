@@ -1,7 +1,7 @@
 ---
 title: Start
 blocks:
-  - bannerURL: /post/vernieuwde-website
+  - bannerURL: 'https://www.stfranciscus-heverlee.org/post/hemelvaart'
     bannertext: Onze vernieuwde website
     vervaldatum: '2023-01-31T22:00:00.000Z'
     _template: banner
@@ -24,4 +24,5 @@ blocks:
       src: /uploads/MauritzAndries-removebg-preview.png
     _template: hero
 ---
+
 
