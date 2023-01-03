@@ -11,17 +11,12 @@ import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
 import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
-
+import { NextCloudMediaStore } from "tinacms-nextcloud-mediastore";
 const config = defineStaticConfig({
   branch: "main",
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   token: process.env.TINATOKEN!,
-  media: {
-    tina: {
-      publicFolder: 'public',
-      mediaRoot: 'uploads',
-    },
-  },
+  media: new NextCloudMediaStore(),
 build: {
   publicFolder: "public", // The public asset folder for your framework
   outputFolder: "admin", // within the public folder
