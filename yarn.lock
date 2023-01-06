@@ -10868,10 +10868,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-tinacms-nextcloud-mediastore@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/tinacms-nextcloud-mediastore/-/tinacms-nextcloud-mediastore-3.0.6.tgz#ef0f70f7fd3d6948bcc0516e90c5b4a1ecb4f41b"
-  integrity sha512-xEK8EEOIFehPFg7cbxFscqNy8ntBMsdbzPQydX4tHDJWsHPUR5T4rgQqs5m6wb1afo1O+c2EpaeKkVBTWCn8uA==
+tinacms-nextcloud-mediastore@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/tinacms-nextcloud-mediastore/-/tinacms-nextcloud-mediastore-3.0.7.tgz#36326e2bde82d9c37d70029121748d7153138d4f"
+  integrity sha512-yyiHosfueceC66x3Q3uSkWcMAfbK0O8e8jtLGeqlTBcI27SK0+LPlKfifx7vMkZD6WyIuZDAfeYjRsbWzzWcbg==
   dependencies:
     "@tinacms/core" "^0.43.0"
     nextcloud-node-client "^1.8.1"
