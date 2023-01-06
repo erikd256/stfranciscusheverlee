@@ -16,7 +16,7 @@ const config = defineStaticConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   token: process.env.TINATOKEN!,
   media: {loadCustomStore: async () => {
-            const pack = await import("tinacms-nextcloud-mediastore/dist/index.es");
+            const pack = await import("tinacms-nextcloud-mediastore");
             return pack.WebDAVMediaStore;
            },},
 build: {
