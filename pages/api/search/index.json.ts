@@ -8,7 +8,10 @@ export default async (req, res) => {
     PageData.push({
         keywords: x.node.keywords,
         title: x.node.title,
-        filename: x.node._sys.filename
+        author: x.node.author,
+        excerpt: x.node.excerpt,
+        filename: x.node._sys.filename,
+        date: x.node.date
       });
   })
   res.status(200).json(PageData);
