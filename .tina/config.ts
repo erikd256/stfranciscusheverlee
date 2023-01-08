@@ -15,10 +15,6 @@ const config = defineStaticConfig({
   branch: "main",
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   token: process.env.TINATOKEN!,
-  media: {loadCustomStore: async () => {
-            const pack = await import("tinacms-nextcloud-mediastore");
-            return pack.WebDAVMediaStore;
-           },},
 build: {
   publicFolder: "public", // The public asset folder for your framework
   outputFolder: "admin", // within the public folder
