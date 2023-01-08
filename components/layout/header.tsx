@@ -32,7 +32,6 @@ export const Header = ({ data, props }) => {
     keys: ['title','keywords','filename','author','excerpt','date']
   };
   const fuse = new Fuse(documents, options);
-  console.log(fuse.search(query.current.value))
   }
   function toggle1(){
     setPopup1(!popup1);
