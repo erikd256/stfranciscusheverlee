@@ -2,6 +2,8 @@ import Head from "next/head";
 import React from "react";
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import SearchIcon from '@mui/icons-material/Search';
+import axios from "axios"
+import Fuse from 'fuse.js'
 
 export const Header = ({ data, props }) => {
   // If we're on an admin path, other links should also link to their admin paths
@@ -14,9 +16,22 @@ export const Header = ({ data, props }) => {
   const [popup3, setPopup3] = React.useState(false);
   const [popup4, setPopup4] = React.useState(false);
   const [menuExpanded, setMenuExpanded] = React.useState(false);
+  const [documents, setdocuments] = React.useState([]);
   React.useEffect(() => {
     document.getElementById("title").innerText = document.title;
   });
+  function search(keyword){
+    axios
+    .get("/api/search/index.json")
+    .then((res) => setdocuments(res.data))
+  const options = {
+    includeScore: true,
+    useExtendedSearch: true,
+    
+    keys: ['title','keywords','filename']
+  };
+  const fuse = new Fuse(documents, options);
+  }
   function toggle1(){
     setPopup1(!popup1);
     setPopup2(false);
