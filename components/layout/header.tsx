@@ -20,7 +20,7 @@ export const Header = ({ data, props }) => {
   const [popup4, setPopup4] = React.useState(false);
   const [menuExpanded, setMenuExpanded] = React.useState(false);
   const query = React.useRef(null);
-  var [searchResults, setSearchResults] = React.useState([]);
+  const [searchResults, setSearchResults] = React.useState([]);
   
   React.useEffect(() => {
     document.getElementById("title").innerText = document.title;
