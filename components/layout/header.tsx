@@ -38,7 +38,7 @@ export const Header = ({ data, props }) => {
         setSearchResults(results)
       }
     )
-    };
+    }
   function toggle1(){
     setPopup1(!popup1);
     setPopup2(false);
