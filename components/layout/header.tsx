@@ -31,7 +31,7 @@ export const Header = ({ data, props }) => {
       useExtendedSearch: true,
       keys: ['title','keywords','filename','author','excerpt','date']
     }
-    axios.get("api/search/index.json").then((res)=>{
+    axios.get("/api/search/index.json").then((res)=>{
         const fuse = new Fuse(res.data, options)
         const results = fuse.search(query.current.value)
         toggle5()
