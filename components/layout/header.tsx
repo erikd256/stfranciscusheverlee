@@ -4,6 +4,8 @@ import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import SearchIcon from '@mui/icons-material/Search';
 import axios from "axios"
 import Fuse from 'fuse.js'
+import Link from "next/link";
+import { CloseIcon } from "tinacms";
 
 export const Header = ({ data, props }) => {
   // If we're on an admin path, other links should also link to their admin paths
@@ -13,11 +15,13 @@ export const Header = ({ data, props }) => {
   const hasUrl = isBrowser ? window.location.href : "";
   const [popup1, setPopup1] = React.useState(false);
   const [popup2, setPopup2] = React.useState(false);
+  const [resultsPopUp, setResultsPopup] = React.useState(false);
   const [popup3, setPopup3] = React.useState(false);
   const [popup4, setPopup4] = React.useState(false);
   const [menuExpanded, setMenuExpanded] = React.useState(false);
   const [documents, setdocuments] = React.useState([]);
   const query = React.useRef(null);
+  var [searchResults, setSearchResults] = React.useState([]);
   React.useEffect(() => {
     document.getElementById("title").innerText = document.title;
   });
@@ -31,8 +35,12 @@ export const Header = ({ data, props }) => {
     
     keys: ['title','keywords','filename','author','excerpt','date']
   };
+  if(query.current.value){
   const fuse = new Fuse(documents, options);
-  }
+  const results = fuse.search(query.current.value);
+  toggle5();
+  setSearchResults(results);
+  }}
   function toggle1(){
     setPopup1(!popup1);
     setPopup2(false);
@@ -56,6 +64,9 @@ export const Header = ({ data, props }) => {
     setPopup2(false);
     setPopup3(false);
     setPopup4(!popup4);
+  }
+  function toggle5(){
+    setResultsPopup(!resultsPopUp);
   }
   function menuExpand(){
     setMenuExpanded(!menuExpanded);
@@ -152,6 +163,9 @@ export const Header = ({ data, props }) => {
       <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/kerkenleven" className="no-underline">Parochieblad</a></button>
       <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact" className="no-underline">Contact</a></button>
       <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/links" className="no-underline">Links</a></button>
+    </div>
+    <div style={{display: resultsPopUp?"block":"none"}} className="fixed text-liturgischekleur text-center p-2 w-3/4 h-3/4 z-[6000] bg-basiskleur border-liturgischekleur border-2 rounded-md top-[12.5%] left-[12.5%]">
+      <button className="absolute right-[20px]" onClick={toggle5}>&#10006;</button>
     </div>
     <a href="/donaties" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>    </>
   );
