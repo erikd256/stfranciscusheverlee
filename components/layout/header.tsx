@@ -168,7 +168,7 @@ export const Header = ({ data, props }) => {
       <div className="overflow-auto">
       {searchResults.map((data)=>{
         return(
-          <div className="relative rounded-md w-3/4 left-[12.5%] bg-liturgischekleur text-basiskleur text-xl my-[10px] p-[5px]">{data.item.title}<hr className="bg-basiskleur border-basiskleur"></hr><div className="w-full p-[5px] relative h-auto text-lg text-left">{data.item.excerpt}<br></br><a className="text-md" href={data.item.filename}>Lees meer...</a></div></div>
+          <div className="relative rounded-md w-3/4 left-[12.5%] bg-liturgischekleur text-basiskleur text-xl my-[10px] p-[5px]">{data.item.title}<hr className="bg-basiskleur border-basiskleur"></hr><div className="w-full p-[5px] relative h-auto text-lg text-left">{data.item.excerpt}<br></br><a className="text-sm mt-[20px]" href={data.item.filename}>Lees meer...</a></div></div>
         )
       })}
       </div>
