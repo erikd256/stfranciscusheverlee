@@ -9,8 +9,8 @@ export default async (req, res) => {
         keywords: x.node.keywords,
         title: x.node.title,
         author: x.node.author,
-        excerpt: x.node.excerpt,
-        filename: x.node._sys.filename,
+        excerpt: x.node.desc,
+        filename: "/post/"+x.node._sys.filename,
         date: x.node.date
       });
   })

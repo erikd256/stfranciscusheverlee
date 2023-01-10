@@ -19,28 +19,26 @@ export const Header = ({ data, props }) => {
   const [popup3, setPopup3] = React.useState(false);
   const [popup4, setPopup4] = React.useState(false);
   const [menuExpanded, setMenuExpanded] = React.useState(false);
-  const [documents, setdocuments] = React.useState([]);
   const query = React.useRef(null);
   var [searchResults, setSearchResults] = React.useState([]);
+  
   React.useEffect(() => {
     document.getElementById("title").innerText = document.title;
   });
   function search(){
-    axios
-    .get("/api/search/index.json")
-    .then((res) => setdocuments(res.data))
-  const options = {
-    includeScore: true,
-    useExtendedSearch: true,
-    
-    keys: ['title','keywords','filename','author','excerpt','date']
-  };
-  if(query.current.value){
-  const fuse = new Fuse(documents, options);
-  const results = fuse.search(query.current.value);
-  toggle5();
-  setSearchResults(results);
-  }}
+    const options = {
+      includeScore: true,
+      useExtendedSearch: true,
+      keys: ['title','keywords','filename','author','excerpt','date']
+    }
+    axios.get("api/search/index.json").then((res)=>{
+        const fuse = new Fuse(res.data, options)
+        const results = fuse.search(query.current.value)
+        toggle5()
+        setSearchResults(results)
+      }
+    )
+    };
   function toggle1(){
     setPopup1(!popup1);
     setPopup2(false);
@@ -166,6 +164,14 @@ export const Header = ({ data, props }) => {
     </div>
     <div style={{display: resultsPopUp?"block":"none"}} className="fixed text-liturgischekleur text-center p-2 w-3/4 h-3/4 z-[6000] bg-basiskleur border-liturgischekleur border-2 rounded-md top-[12.5%] left-[12.5%]">
       <button className="absolute right-[20px]" onClick={toggle5}>&#10006;</button>
+      <h3>Zoekresultaten:</h3><hr className="bg-liturgischekleur border-liturgischekleur"></hr><br></br>
+      <div className="overflow-y-auto">
+      {searchResults.map((data)=>{
+        return(
+          <div className="relative rounded-md w-3/4 left-[12.5%] bg-liturgischekleur text-basiskleur text-xl my-[10px] p-[5px]">{data.item.title}<hr className="bg-basiskleur border-basiskleur"></hr><div className="w-full p-[5px] relative h-auto text-lg text-left">{data.item.excerpt}<br></br><a className="text-md" href={data.item.filename}>Lees meer...</a></div></div>
+        )
+      })}
+      </div>
     </div>
     <a href="/donaties" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>    </>
   );
