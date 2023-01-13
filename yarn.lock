@@ -10761,11 +10761,6 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-tinacms-placecage@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/tinacms-placecage/-/tinacms-placecage-1.0.0.tgz#9117f8ac4498e6bff7ba57b888f6f11a904e0267"
-  integrity sha512-64BKsBnBZRhlul0zUE6ZQEBzgDrdzp3i8xXTe3tsXCuJawhag/xPF8Pwqi3xc/TWozjEBXgSe1s5QOyC7fPU/g==
-
 tinacms@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-1.1.2.tgz#d5d404cecc00160fdf7c092676c67e0ce717f548"
