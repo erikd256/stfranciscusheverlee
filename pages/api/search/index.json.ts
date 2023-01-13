@@ -10,8 +10,7 @@ export default async (req, res) => {
         title: x.node.title,
         author: x.node.author,
         excerpt: x.node.desc,
-        filename: "/post/"+x.node._sys.filename,
-        date: x.node.date
+        filename: "/post/"+x.node._sys.filename
       });
   })
   res.status(200).json(PageData);
