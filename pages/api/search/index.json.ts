@@ -1,5 +1,4 @@
 import { client } from "../../../.tina/__generated__/client";
-import { Blocks } from "../../../components/blocks-renderer";
 
 export default async (req, res) => {
   const PageData = [];
