@@ -72,7 +72,7 @@ export const Posts = ({ data }) => {
               </div>
             </a>
           </Link>
-        );
+        )
       })}
       <Head>
         <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>
