@@ -1505,6 +1505,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@iarna/toml@^2.2.5":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
+  integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
+
 "@icons/material@^0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
@@ -2441,10 +2446,10 @@
     traverse "^0.6.6"
     unified "^6.1.6"
 
-"@tinacms/app@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tinacms/app/-/app-1.0.4.tgz#c1c26224588f28cabe37c9c54f68226e1316a9fd"
-  integrity sha512-r8tnwIIqQd0nwjo3WPGN5xxT+BkKZ8w0DLiLfiXO9qw3iLATaYB45n4WJ1Ez3v5u42Ly7M5FbM2X1ksABI9NZA==
+"@tinacms/app@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@tinacms/app/-/app-1.0.5.tgz#d98fb32db0fde884710fb2018867798dc3964171"
+  integrity sha512-f0/EywBHBgdeuOJmcHdSofsdupfDGLsY7SJ/AmNWRSGVJQ49AjGbR2zmQQAArRk/8XE3ph6A8M3KI5cnw86ceQ==
   dependencies:
     "@headlessui/react" "1.6.6"
     "@heroicons/react" "1.0.6"
@@ -2477,10 +2482,10 @@
   resolved "https://registry.yarnpkg.com/@tinacms/auth/-/auth-0.50.5.tgz#50950c8c5384dd6cdab4bcadd061815642c736fb"
   integrity sha512-cXOLV3crifB4+qNO3XNWqpNOYjLwrfa1VVGbRYA67AvRrOrfS7qai0JhMjHzFbTlJW3Fdm46POlepOEStjn5mw==
 
-"@tinacms/cli@^1.0.3":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-1.0.5.tgz#8a47514f0c34ce2572c6333a8d9e1f6750db3aad"
-  integrity sha512-AwJaT5HRoIe1LyZ7nUmQs3PGMGYYgCwKT2rfhKbdKj5vFvyEWxcvDI/A3gXQn9Deo+O7aMQe/YldE1X/kJdKwQ==
+"@tinacms/cli@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-1.0.7.tgz#e8a9e13c9708f4d2fc100e5301001527ab33b089"
+  integrity sha512-Y91U1ImSj4uKlpqf9MInSdnK+3S+mQC/xUztcfB2/AtwX5ZflBL4M/Bxy04/uTP8Ew7KF9wjP1Dw8o3ehAEx7g==
   dependencies:
     "@graphql-codegen/core" "^2.1.0"
     "@graphql-codegen/plugin-helpers" latest
@@ -2490,12 +2495,11 @@
     "@graphql-codegen/visitor-plugin-common" "^2.4.0"
     "@graphql-tools/graphql-file-loader" "^7.2.0"
     "@graphql-tools/load" "^7.3.2"
-    "@tinacms/app" "1.0.4"
-    "@tinacms/datalayer" "1.0.0"
-    "@tinacms/graphql" "1.0.4"
+    "@tinacms/app" "1.0.5"
+    "@tinacms/datalayer" "1.0.1"
+    "@tinacms/graphql" "1.1.0"
     "@tinacms/metrics" "1.0.1"
-    "@tinacms/schema-tools" "1.1.0"
-    add "^2.0.6"
+    "@tinacms/schema-tools" "1.2.1"
     ajv "^6.12.3"
     altair-express-middleware "4.0.6"
     auto-bind "^4.0.0"
@@ -2517,6 +2521,7 @@
     lodash "^4.17.19"
     lodash.get "^4.4.2"
     log4js "^6.4.0"
+    minimatch "^5.1.2"
     multer "1.4.5-lts.1"
     normalize-path "^3.0.0"
     prettier "^2.2.1"
@@ -2527,10 +2532,10 @@
     yup "^0.32.9"
     zod "^3.14.3"
 
-"@tinacms/datalayer@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tinacms/datalayer/-/datalayer-1.0.0.tgz#5c6a0069354db72a2381ac834b24ed454bdaebff"
-  integrity sha512-pRKVUZ0UPkX8PROUATFR2TFtf5oBtHpmK3l+l5mod+jYBf1pgP4EHoqkyTa5RCT43AWTnSwNTfQ2sYOnQi/giQ==
+"@tinacms/datalayer@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@tinacms/datalayer/-/datalayer-1.0.1.tgz#5b8a957939741f417c91767f555e7f9a16fda58e"
+  integrity sha512-zQ2ZkdGSbNxHhOHbEaDLuCUbR467DjoUkIAXuRoqqy0Jc44dr5F1YKZ6J4+5o1UhSWmJNHk+vA0wu00dAvmdtg==
   dependencies:
     "@octokit/auth-app" "^2.6.0"
     "@octokit/graphql" "^4.5.6"
@@ -2553,15 +2558,16 @@
     prettier "^2.2.1"
     yup "^0.32.9"
 
-"@tinacms/graphql@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-1.0.4.tgz#41cf606be05f89a95f3c810b3607973ddae71443"
-  integrity sha512-zzh8lXMtpWosss+WCAA+g0KUlc3xgkbvTtgdMp7TJY/qP6SWrxT+bOacgZuWFigU5lRcP+sSpwSvVdG3bwiP8A==
+"@tinacms/graphql@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-1.1.0.tgz#0cfa9c19413f5030f678de02527c5aaf7454c11f"
+  integrity sha512-98u9TnIbYUZizsYy9XeM9AzcxY1LHfUMCOD2aCaHDur8KKc8PxRmGGbO/m0gbFuNCJhNNSMurLw1eZ8uGaHOyA==
   dependencies:
     "@graphql-tools/relay-operation-optimizer" "^6.4.1"
-    "@tinacms/datalayer" "1.0.0"
-    "@tinacms/mdx" "1.0.4"
-    "@tinacms/schema-tools" "1.1.0"
+    "@iarna/toml" "^2.2.5"
+    "@tinacms/datalayer" "1.0.1"
+    "@tinacms/mdx" "1.1.1"
+    "@tinacms/schema-tools" "1.2.1"
     body-parser "^1.19.0"
     cors "^2.8.5"
     dataloader "^2.0.0"
@@ -2576,7 +2582,7 @@
     graphql "15.8.0"
     graphql-type-json "^0.3.2"
     gray-matter "^4.0.2"
-    js-yaml "^3.14.0"
+    js-yaml "^3.14.1"
     leveldown "^6.1.0"
     lodash "^4.17.20"
     mdast "^3.0.0"
@@ -2603,12 +2609,12 @@
     ws "^7.3.1"
     yup "^0.32.9"
 
-"@tinacms/mdx@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.0.4.tgz#213e2dfeb13574fd7a3701037037a4ffd7e18f11"
-  integrity sha512-Sxn0UNZoqOEBRljbmMIb55UsXdkDbPTVm8CPX6aqtAEmeIYVZnujsSI7FtBwhmZj6FMAFpNqYEb0GlrjZQHxOw==
+"@tinacms/mdx@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@tinacms/mdx/-/mdx-1.1.1.tgz#4f22f39d99084eb29e0a1568710a52c25accad72"
+  integrity sha512-B60SvoT6Gjop300dVKXw9auAP7C4O4TTxymsjeKnOvLMh1jq+jZOk84vDzGp2OK2G66BJ6+IRHuvsFNXFEEbYg==
   dependencies:
-    "@tinacms/schema-tools" "1.1.0"
+    "@tinacms/schema-tools" "1.2.1"
     acorn "^8.7.1"
     concat-md "^0.5.0"
     lodash-es "^4.17.21"
@@ -2633,6 +2639,13 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-1.1.0.tgz#84abb7e9fefd5f76b7cc91608aa3225959c56f7d"
   integrity sha512-Tg/vS8Of1qQbKEm2OujEgjDzLVAh8Olhyyuvz89aLCINm5LPK+O4oedc6JI1fPduItxvva18B5CmuP1CKDHH9A==
+  dependencies:
+    zod "^3.14.3"
+
+"@tinacms/schema-tools@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-1.2.1.tgz#6c94f85f73b03d392cb31ff529e48830d57288f8"
+  integrity sha512-/41AzYgUuGdq6RRc7V2jCKZzfHG7SXkW6ADgYeolh08cks22YC3/vXx1osBrcRjUX5IeGnEZLY6ku/qM+PAnlQ==
   dependencies:
     zod "^3.14.3"
 
@@ -3449,11 +3462,6 @@ acorn@^8.0.0, acorn@^8.7.0, acorn@^8.7.1, acorn@^8.8.0:
   version "8.8.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.1.tgz#0a3f9cbecc4ec3bea6f0a80b66ae8dd2da250b73"
   integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
-
-add@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
-  integrity sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==
 
 agent-base@6, agent-base@^6.0.0, agent-base@^6.0.2:
   version "6.0.2"
@@ -6945,7 +6953,7 @@ js-sdsl@^4.1.4:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@^3.13.1, js-yaml@^3.14.0:
+js-yaml@^3.13.1, js-yaml@^3.14.0, js-yaml@^3.14.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
@@ -8259,10 +8267,10 @@ minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^5.1.1:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.2.tgz#0939d7d6f0898acbd1508abe534d1929368a8fff"
-  integrity sha512-bNH9mmM9qsJ2X4r2Nat1B//1dJVcn3+iBLa3IgqJ7EbGaDNepL9QSHOxN4ng33s52VMMhhIfgCYDk3C4ZmlDAg==
+minimatch@^5.1.1, minimatch@^5.1.2:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.6.tgz#1cfcb8cf5522ea69952cd2af95ae09477f122a96"
+  integrity sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==
   dependencies:
     brace-expansion "^2.0.1"
 
