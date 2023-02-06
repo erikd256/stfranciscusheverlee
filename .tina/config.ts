@@ -21,7 +21,7 @@ build: {
 },  media: {
 
     loadCustomStore: async () => {
-      const pack = await import("next-tinacms-owncloud");
+      const pack = await import("next-tinacms-owncloud/dist/index.es");
       return pack.TinaCloudOwnCloudMediaStore;
     },
   },

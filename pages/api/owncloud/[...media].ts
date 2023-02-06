@@ -1,8 +1,11 @@
 import {
   createMediaHandler,
-} from 'next-tinacms-owncloud/dist/handlers'
+  mediaHandlerConfig
+} from 'next-tinacms-owncloud/dist/index.es'
 
 import { isAuthorized } from '@tinacms/auth'
+
+export const config = mediaHandlerConfig
 
 export default createMediaHandler({
   authorized: async (req, _res) => {
