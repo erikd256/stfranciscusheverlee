@@ -5,9 +5,6 @@ import {
 import { isAuthorized } from '@tinacms/auth'
 
 export default createMediaHandler({
-  server: process.env.OWNCLOUD_SERVER,
-  api_key: process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
   authorized: async (req, _res) => {
     try {
       if (process.env.NODE_ENV == 'development') {
