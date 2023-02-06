@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:c0f5420fbd5de66f43239af344a8daf372264b8aebd64372bac9ad3ab57e7dc134ddf9107f3a13f46f126cda01fd5b47f92fa78f511dbc0b18d2657764c41af6#npm:12.3.4"],\
             ["next-svgr", "npm:0.0.2"],\
             ["next-tinacms-cloudinary", "npm:3.5.35"],\
-            ["next-tinacms-owncloud", "npm:4.1.1"],\
+            ["next-tinacms-owncloud", "npm:4.1.2"],\
             ["nodemailer", "npm:6.8.0"],\
             ["postcss", "npm:8.4.20"],\
             ["postcss-import", "virtual:dec681766e8ac6d77e6baf50c48219fd86c7a4b19a02523817f55a5070bfd410960ae5e78596805b75be9651985c55c39f8081a6b77b0b539c5203df7656a098#npm:14.1.0"],\
@@ -6264,7 +6264,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:c0f5420fbd5de66f43239af344a8daf372264b8aebd64372bac9ad3ab57e7dc134ddf9107f3a13f46f126cda01fd5b47f92fa78f511dbc0b18d2657764c41af6#npm:12.3.4"],\
             ["next-svgr", "npm:0.0.2"],\
             ["next-tinacms-cloudinary", "npm:3.5.35"],\
-            ["next-tinacms-owncloud", "npm:4.1.1"],\
+            ["next-tinacms-owncloud", "npm:4.1.2"],\
             ["nodemailer", "npm:6.8.0"],\
             ["postcss", "npm:8.4.20"],\
             ["postcss-import", "virtual:dec681766e8ac6d77e6baf50c48219fd86c7a4b19a02523817f55a5070bfd410960ae5e78596805b75be9651985c55c39f8081a6b77b0b539c5203df7656a098#npm:14.1.0"],\
@@ -16723,14 +16723,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["next-tinacms-owncloud", [\
-        ["npm:4.1.1", {\
-          "packageLocation": "./.yarn/cache/next-tinacms-owncloud-npm-4.1.1-98837d1004-16e12383e1.zip/node_modules/next-tinacms-owncloud/",\
+        ["npm:4.1.2", {\
+          "packageLocation": "./.yarn/cache/next-tinacms-owncloud-npm-4.1.2-5ee0b721e5-78ed2d1740.zip/node_modules/next-tinacms-owncloud/",\
           "packageDependencies": [\
-            ["next-tinacms-owncloud", "npm:4.1.1"],\
+            ["next-tinacms-owncloud", "npm:4.1.2"],\
             ["axios", "npm:1.3.2"],\
             ["cross-fetch", "npm:3.1.5"],\
             ["multer", "npm:1.4.5-lts.1"],\
-            ["owncloud-sdk", "virtual:98837d1004445bfd637a43dd9836da2c5e538314dad9a858daade4b64570d7eaf1b8ef6ddd1aa4eb0840a44b2212bc4119e016484377d608e8a850b88b77d859#npm:3.1.0-alpha.3"],\
+            ["owncloud-sdk", "virtual:5ee0b721e5f8a96d371e5b0ef21b57621d761c17108da74fbbda564e1ad05c318bb2c694e8998aba69545e4a27868bc14fa90440beef003bea0cebd1d4c20f9a#npm:3.1.0-alpha.3"],\
             ["promise", "npm:8.3.0"],\
             ["qs", "npm:6.11.0"],\
             ["utf8", "npm:3.0.0"],\
@@ -17135,10 +17135,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:98837d1004445bfd637a43dd9836da2c5e538314dad9a858daade4b64570d7eaf1b8ef6ddd1aa4eb0840a44b2212bc4119e016484377d608e8a850b88b77d859#npm:3.1.0-alpha.3", {\
-          "packageLocation": "./.yarn/__virtual__/owncloud-sdk-virtual-08538cd36e/0/cache/owncloud-sdk-npm-3.1.0-alpha.3-9815874b1f-9b2331ba15.zip/node_modules/owncloud-sdk/",\
+        ["virtual:5ee0b721e5f8a96d371e5b0ef21b57621d761c17108da74fbbda564e1ad05c318bb2c694e8998aba69545e4a27868bc14fa90440beef003bea0cebd1d4c20f9a#npm:3.1.0-alpha.3", {\
+          "packageLocation": "./.yarn/__virtual__/owncloud-sdk-virtual-f0736c8e51/0/cache/owncloud-sdk-npm-3.1.0-alpha.3-9815874b1f-9b2331ba15.zip/node_modules/owncloud-sdk/",\
           "packageDependencies": [\
-            ["owncloud-sdk", "virtual:98837d1004445bfd637a43dd9836da2c5e538314dad9a858daade4b64570d7eaf1b8ef6ddd1aa4eb0840a44b2212bc4119e016484377d608e8a850b88b77d859#npm:3.1.0-alpha.3"],\
+            ["owncloud-sdk", "virtual:5ee0b721e5f8a96d371e5b0ef21b57621d761c17108da74fbbda564e1ad05c318bb2c694e8998aba69545e4a27868bc14fa90440beef003bea0cebd1d4c20f9a#npm:3.1.0-alpha.3"],\
             ["@types/axios", null],\
             ["@types/cross-fetch", null],\
             ["@types/promise", null],\

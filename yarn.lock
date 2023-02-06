@@ -3731,7 +3731,7 @@ __metadata:
     next: ^12.3.1
     next-svgr: ^0.0.2
     next-tinacms-cloudinary: ^3.5.34
-    next-tinacms-owncloud: ^4.1.1
+    next-tinacms-owncloud: ^4.1.2
     nodemailer: ^6.8.0
     postcss: ^8.3.11
     postcss-import: ^14.0.2
@@ -12020,9 +12020,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-tinacms-owncloud@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "next-tinacms-owncloud@npm:4.1.1"
+"next-tinacms-owncloud@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "next-tinacms-owncloud@npm:4.1.2"
   dependencies:
     axios: ^1.2.2
     cross-fetch: ^3.1.5
@@ -12034,7 +12034,7 @@ __metadata:
     uuid: ^9.0.0
     webdav: ^4.11.2
     xml-js: ^1.6.11
-  checksum: 16e12383e145b52c8c03457e29c54a9334ef49fd4ed017fe6e4f94a5dc20454dd72242532d5aa1d42b8e90037c39389faa181d495da1d83955d7aca0fd5de12b
+  checksum: 78ed2d17409166b3bc68de7e2090d33ca6c424d2ed151a061fa9aa1ae9e2d6e206330b18f8230d2c3e201502444c1fe9f25b7e4db4a722d13d7d0df4d77f514e
   languageName: node
   linkType: hard
 
