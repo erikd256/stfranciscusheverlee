@@ -3,7 +3,7 @@
 import {
   mediaHandlerConfig,
   createMediaHandler,
-} from 'next-tinacms-owncloud/dist/handlers'
+} from 'next-tinacms-owncloud/dist/handlers.d'
 
 import { isAuthorized } from '@tinacms/auth'
 
