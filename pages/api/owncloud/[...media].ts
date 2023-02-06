@@ -1,13 +1,8 @@
-// pages/api/cloudinary/[...media].ts
-
 import {
-  mediaHandlerConfig,
   createMediaHandler,
-} from 'next-tinacms-owncloud/dist/handlers.d'
+} from 'next-tinacms-owncloud/dist/handlers'
 
 import { isAuthorized } from '@tinacms/auth'
-
-export const config = mediaHandlerConfig
 
 export default createMediaHandler({
   server: process.env.OWNCLOUD_SERVER,
