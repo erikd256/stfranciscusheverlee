@@ -8574,10 +8574,10 @@ next-tinacms-cloudinary@^3.5.34:
     cloudinary "^1.25.2"
     multer "1.4.5-lts.1"
 
-next-tinacms-owncloud@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/next-tinacms-owncloud/-/next-tinacms-owncloud-4.2.1.tgz#32b6348a8c01e8add67529cf7a4c10c70e0d4493"
-  integrity sha512-tQCikolT33XsPzOTDiY9z4GZYimZs3rkSf0gagw+/cyWYddczyoRj0J9aGVeW4LpIh+UIK8nQjmINSVlyACu0g==
+next-tinacms-owncloud@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/next-tinacms-owncloud/-/next-tinacms-owncloud-4.2.3.tgz#796a7f94338b4907eebcb2f3f7f293bf0bf9d39b"
+  integrity sha512-wi5lM13QYPR/dVbZNzXs0IYs+NNuC+G7WowZ6DOvuOTQPE8kZsTb5d1h3dmGK2kc0Xb4593L72yrt48KIAGnxA==
   dependencies:
     axios "^1.2.2"
     cross-fetch "^3.1.5"
