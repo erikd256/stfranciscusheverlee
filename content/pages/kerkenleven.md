@@ -1,13 +1,13 @@
 ---
 title: Parochieblad
 blocks:
+  - titleText: werkjaar 2022 - 23
+    textsize: text-4xl
+    _template: heading
   - LinkTitle: week 46
     file: >-
       https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679129067/Frando22-46_poekpc.pdf
     _template: weeknieuws
-  - titleText: werkjaar 2022 - 23
-    textsize: text-4xl
-    _template: heading
   - LinkTitle: week 40
     file: >-
       https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128226/dummy_kthf9o.pdf
@@ -44,6 +44,7 @@ blocks:
       ![](/uploads/2232-4.jpg)
     _template: content
 ---
+
 
 
 
