@@ -1,8 +1,6 @@
 import type { TinaTemplate } from "tinacms";
 import React from "react";
 import {useState} from 'react';
-import { Container } from "../util/container";
-import { Section } from "../util/section";
 
 export const Weeknieuws = ({ data, parentField = "" }) => {
   const [isShown, setIsShown] = useState(false);  
@@ -17,7 +15,7 @@ export const Weeknieuws = ({ data, parentField = "" }) => {
         <>
           <div className="fixed w-full z-[5000] h-[calc(100%-70px)] p-0 top-[70px] left-0 bg-vijfdekleur">
             <button onClick={handleClick} className="absolute text-vierdekleur right-[10px] h-[20px] w-[20px] top-[40px]">&#x2715;</button>
-            <iframe src={`https://viewer.stfranciscus-heverlee.org/web/viewer.html?file=${data.file}`} className="w-full h-full m-0"></iframe>
+            <iframe src={data.file} className="w-full h-full m-0"/> 
           </div>
         </>
       )}
