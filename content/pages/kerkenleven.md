@@ -15,7 +15,7 @@ blocks:
     _template: heading
   - LinkTitle: week 33
     file: >-
-      https://res.cloudinary.com/stfranciscusheverlee/image/upload/w_75,h_75,c_fill,q_auto/v1667158495/Frando22-33_yjeno3.pdf
+      https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128801/Frando22-33_jk9kqu.pdf
     _template: weeknieuws
   - body: |
       ### week 34 - 24 augustus 2022
@@ -40,5 +40,6 @@ blocks:
       ![](/uploads/2232-4.jpg)
     _template: content
 ---
+
 
 
