@@ -15,7 +15,7 @@ function addPageJson(page) {
   const path = page.replace('pages', '').replace('content/', '').replace('.js', '').replace('posts', '/post').replace('.mdx', '').replace('.md', '').replace('/post.tsx', 'posts').replace('/home', '/')
   const route = path === '/index' ? '' : path
 
-  return `"${`https://stfranciscus-heverlee.org${route}`}"`
+  return `"${`${route}`}"`
 }
 
 async function generateSitemap() {
