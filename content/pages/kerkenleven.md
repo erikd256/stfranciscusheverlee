@@ -19,6 +19,9 @@ blocks:
   - LinkTitle: week 8
     file: /uploads/Parochieblad/Frando23-08.pdf
     _template: weeknieuws
+  - LinkTitle: week 2
+    file: /uploads/Frando23-02.pdf
+    _template: weeknieuws
   - LinkTitle: week 1
     file: /uploads/Frando23-01.pdf
     _template: weeknieuws
@@ -89,6 +92,7 @@ blocks:
     file: /uploads/Parochieblad/Frando22-32.pdf
     _template: weeknieuws
 ---
+
 
 
 
