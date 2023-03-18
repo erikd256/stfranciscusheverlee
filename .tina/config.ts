@@ -18,11 +18,11 @@ const config = defineStaticConfig({
   build: {
     publicFolder: "public", // The public asset folder for your framework
     outputFolder: "admin", // within the public folder
-  },  media: {
-    loadCustomStore: async () => {
-          const pack = await import("next-tinacms-cloudinary");
-          return pack.TinaCloudCloudinaryMediaStore;
-        },
+  }, media: {
+    tina: {
+      publicFolder: 'public',
+      mediaRoot: 'uploads',
+    },
   },
 schema: {
   collections: [
