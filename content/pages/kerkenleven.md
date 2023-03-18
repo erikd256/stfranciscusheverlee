@@ -7,6 +7,9 @@ blocks:
   - LinkTitle: week 12
     file: /uploads/Frando23-12.pdf
     _template: weeknieuws
+  - LinkTitle: week 11
+    file: /uploads/Frando23-11.pdf
+    _template: weeknieuws
   - LinkTitle: week 10
     file: /uploads/Frando23-10.pdf
     _template: weeknieuws
@@ -65,6 +68,7 @@ blocks:
     file: /uploads/Frando22-32.pdf
     _template: weeknieuws
 ---
+
 
 
 
