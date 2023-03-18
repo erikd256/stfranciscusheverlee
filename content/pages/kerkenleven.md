@@ -5,7 +5,7 @@ blocks:
     textsize: text-4xl
     _template: heading
   - LinkTitle: week 46
-    file: /uploads/dummy.pdf
+    file: /uploads/Frando22-46.pdf
     _template: weeknieuws
   - LinkTitle: week 40
     file: >-
@@ -43,6 +43,7 @@ blocks:
       ![](/uploads/2232-4.jpg)
     _template: content
 ---
+
 
 
 
