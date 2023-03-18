@@ -23,8 +23,7 @@ blocks:
     file: /uploads/Frando22-41.pdf
     _template: weeknieuws
   - LinkTitle: week 40
-    file: >-
-      /uploadshttps://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128226/dummy_kthf9o.pdf
+    file: /uploads/Frando22-40.pdf
     _template: weeknieuws
   - LinkTitle: week 39
     file: /uploads/Frando22-39.pdf
@@ -39,6 +38,7 @@ blocks:
     file: /uploads/Frando22-33.pdf
     _template: weeknieuws
 ---
+
 
 
 
