@@ -5,6 +5,8 @@ blocks:
     textsize: text-4xl
     _template: heading
   - LinkTitle: week 40
+    file: >-
+      https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128226/dummy_kthf9o.pdf
     _template: weeknieuws
   - LinkTitle: week 39
     _template: weeknieuws
@@ -38,4 +40,5 @@ blocks:
       ![](/uploads/2232-4.jpg)
     _template: content
 ---
+
 
