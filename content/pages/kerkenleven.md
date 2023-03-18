@@ -12,6 +12,7 @@ blocks:
       /uploadshttps://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128226/dummy_kthf9o.pdf
     _template: weeknieuws
   - LinkTitle: week 39
+    file: /uploads/Frando22-39.pdf
     _template: weeknieuws
   - titleText: ' werkjaar 2021 - 22'
     textsize: text-4xl
@@ -23,6 +24,7 @@ blocks:
     file: /uploads/Frando22-33.pdf
     _template: weeknieuws
 ---
+
 
 
 
