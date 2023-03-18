@@ -9,15 +9,6 @@ function addPage(page) {
     <loc>${`https://stfranciscus-heverlee.org${route}`}</loc>
   </url>`
 }
-
-
-function addPageJson(page) {
-  const path = page.replace('pages', '').replace('content/', '').replace('.js', '').replace('posts', '/post').replace('.mdx', '').replace('.md', '').replace('/post.tsx', 'posts').replace('/home', '/')
-  const route = path === '/index' ? '' : path
-
-  return `"${`${route}`}"`
-}
-
 async function generateSitemap() {
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
   const pages = await globby([
@@ -36,9 +27,7 @@ async function generateSitemap() {
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(addPage).join('\n')}
 </urlset>`
-  const sitemapArray = `[${pages.map(addPageJson).join(',')}]`
 
-  fs.writeFileSync('public/sitemap.txt', sitemapArray)
   fs.writeFileSync('public/sitemap.xml', sitemap)
 }
 

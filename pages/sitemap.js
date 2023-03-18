@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function Sitemap() {
     const [result,setResult] = React.useState([]); 
-    axios.get(`/sitemap.txt`)
+    axios.get(`/api/search/index.json`)
       .then(res => {
         setResult(res.data)
     })
@@ -18,9 +18,8 @@ export default function Sitemap() {
         <span className="text-xl">Sitemap</span>
         <br></br>
         {result.map(element => {
-          return (<><span><a href={element}>{element}</a></span><br></br></>)
-        })
-        }
+          return (<><a href={element.filename}>{element.title} ({element.filename})</a><br></br></>)
+        })}
       </div>
     </Layout>
   );
