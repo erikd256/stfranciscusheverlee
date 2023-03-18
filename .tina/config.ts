@@ -15,15 +15,14 @@ const config = defineStaticConfig({
   branch: "main",
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
   token: process.env.TINATOKEN!,
-build: {
-  publicFolder: "public", // The public asset folder for your framework
-  outputFolder: "admin", // within the public folder
-},  media: {
-
+  build: {
+    publicFolder: "public", // The public asset folder for your framework
+    outputFolder: "admin", // within the public folder
+  },  media: {
     loadCustomStore: async () => {
-      const pack = await import("next-tinacms-owncloud");
-      return pack.TinaCloudOwnCloudMediaStore;
-    },
+          const pack = await import("next-tinacms-cloudinary");
+          return pack.TinaCloudCloudinaryMediaStore;
+        },
   },
 schema: {
   collections: [
