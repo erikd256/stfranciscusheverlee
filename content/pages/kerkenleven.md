@@ -5,11 +5,11 @@ blocks:
     textsize: text-4xl
     _template: heading
   - LinkTitle: week 46
-    file: 'https://assets.tina.io/3b903733-b9d0-4a6c-be20-9dc3e2081414/dummy.pdf'
+    file: /uploads/dummy.pdf
     _template: weeknieuws
   - LinkTitle: week 40
     file: >-
-      https://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128226/dummy_kthf9o.pdf
+      /uploadshttps://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128226/dummy_kthf9o.pdf
     _template: weeknieuws
   - LinkTitle: week 39
     _template: weeknieuws
@@ -18,7 +18,7 @@ blocks:
     _template: heading
   - LinkTitle: week 33
     file: >-
-      https://res.cloudinary.com/stfranciscusheverlee/image/upload/w_75,h_75,c_fill,q_auto/v1667158495/Frando22-33_yjeno3.pdf
+      /uploadshttps://res.cloudinary.com/stfranciscusheverlee/image/upload/w_75,h_75,c_fill,q_auto/v1667158495/Frando22-33_yjeno3.pdf
     _template: weeknieuws
   - body: |
       ### week 34 - 24 augustus 2022
@@ -43,6 +43,7 @@ blocks:
       ![](/uploads/2232-4.jpg)
     _template: content
 ---
+
 
 
 
