@@ -7,6 +7,9 @@ blocks:
   - LinkTitle: week 46
     file: /uploads/Frando22-46.pdf
     _template: weeknieuws
+  - LinkTitle: week 41
+    file: /uploads/Frando22-41.pdf
+    _template: weeknieuws
   - LinkTitle: week 40
     file: >-
       /uploadshttps://res.cloudinary.com/stfranciscusheverlee/image/upload/v1679128226/dummy_kthf9o.pdf
@@ -24,6 +27,7 @@ blocks:
     file: /uploads/Frando22-33.pdf
     _template: weeknieuws
 ---
+
 
 
 
