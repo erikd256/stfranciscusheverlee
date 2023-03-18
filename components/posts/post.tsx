@@ -88,17 +88,6 @@ export const Post = (props) => {
           <title>{props.title} @ Sint-Franciscusparochie Heverlee</title>
           <meta name="keywords" content={props.keywords}/>
           <meta name="description" content={props.desc}/>
-          <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          const remark_config = {
-            host: 'https://remark42.stfranciscus-heverlee.org',
-            site_id: 'stfranciscus-heverlee.org',
-            theme: 'dark',
-          };
-          window.remark_config = remark_config;
-                !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
-        }}></script>
     </Head>
     <Section className="flex-1">
       <span className="fixed left-[10px] top-[90px] p-[5px] bg-basiskleur text-vijfdekleur rounded-md text-sm"><a href="/posts">Nieuws</a> / {props.title}</span>
@@ -155,10 +144,7 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <div className="mo:w-2/3 w-[90%] bg-ghblack p-[15px] rounded-xl relative mo:left-[16.6666665%] left-[5%]">
-      <div id="remark42">{''}</div>
-      </div>
     </Section>
     </>
-  );
-};
+  )
+}
