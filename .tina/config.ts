@@ -112,8 +112,8 @@ schema: {
               ],
             },
             {
-              name: "NewsletterSignup",
-              label: "Newsletter Sign Up",
+              name: "Inschrijvingsformulier",
+              label: "Inschrijvingsformulier",
               fields: [
                 {
                   name: "children",
