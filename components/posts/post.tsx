@@ -28,12 +28,6 @@ const components: Components<{
   DateTime: {
     format?: string;
   };
-  Inschrijvingsformulier: {
-    placeholder: string;
-    buttonText: string;
-    children: TinaMarkdownContent;
-    disclaimer?: TinaMarkdownContent;
-  };
   }> = {
   BlockQuote: (props: {
     children: TinaMarkdownContent;
