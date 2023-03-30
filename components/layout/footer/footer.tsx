@@ -18,6 +18,8 @@ export const Footer = ({ data, icon, rawData}) => {
           
           <hr className="hidden mo:block border-liturgischekleur my-[10px] mt-[12px]"></hr>
           <span>
+            <a href="/dhj" className="no-underline">Vieringen</a>
+            <br></br>
             <a href="/contact" className="no-underline">Contact</a>
             <br></br>
             <a href="/donaties" className="no-underline">Donaties</a>
