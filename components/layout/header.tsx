@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SearchIcon from '@mui/icons-material/Search';
 import axios from "axios"
 import Fuse from 'fuse.js'
@@ -103,6 +104,7 @@ export const Header = ({ data, props }) => {
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/kerkenleven" className="no-underline">Parochieblad</a></button>
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact" className="no-underline">Contact</a></button>
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/links" className="no-underline">Links</a></button>
+      <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/donaties" className="no-underline">Doneren</a></button>
       <button className="block mo:hidden text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-5/6"><a onClick={menuExpand} className="no-underline">&#9776; Menu</a></button>
       </div>
       <div style={{display: popup1?"block":"none"}} className="overflow-x-hidden flex text-center items-center content-center place-content-center bg-derdekleur text-basiskleur w-full border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[2px] sticky top-[72px] z-[4999] hidden mo:block">
@@ -174,6 +176,8 @@ export const Header = ({ data, props }) => {
       })}
       </div>
     </div>
-    <a href="/donaties" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>    </>
+    <a href="/donaties" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>
+    <a href="/dhj" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-green-700 text-white bold bottom-[10px] z-[4001] right-[2.4%] inline-flex h-[50px]"><AccessTimeIcon/></a></>
+
   );
 };
