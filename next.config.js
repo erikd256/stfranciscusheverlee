@@ -1,6 +1,6 @@
 const withSvgr = require("next-svgr");
 const ContentSecurityPolicy = `
-default-src 'self' *.stfranciscus-heverlee.org assets.tina.io vitals.vercel-insights.com;
+default-src 'self' https://*.stfranciscus-heverlee.org https://assets.tina.io https://vitals.vercel-insights.com https://identity.tinajs.io https://fonts.googleapis.com/;
 script-src 'nonce-plausibleanalytics' 'unsafe-inline';
 child-src 'none';
 style-src 'self';
