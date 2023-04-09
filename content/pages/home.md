@@ -22,8 +22,10 @@ blocks:
       gedicht  uit.
     image:
       src: /uploads/MauritzAndries-removebg-preview.png
+      alt: Mauritz andries gedicht
     _template: hero
 ---
+
 
 
 
