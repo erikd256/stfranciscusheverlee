@@ -2,7 +2,7 @@ const withSvgr = require("next-svgr");
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' *.stfranciscus-heverlee.org;
-  child-src none;
+  child-src 'none';
   style-src 'self';
   font-src 'self';  
 `
