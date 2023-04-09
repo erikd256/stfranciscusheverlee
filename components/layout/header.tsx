@@ -82,6 +82,7 @@ export const Header = ({ data, props }) => {
   return (
     <>
       <Head>
+        <html lang="nl" />
         <link rel="icon" href="/favicon.ico"/>
         <script defer data-domain="stfranciscus-heverlee.org" src="https://plausible.stfranciscus-heverlee.org/js/script.js"></script>
         {props.title !== undefined && <title>{props.title} @ Sint-Franciscusparochie</title>}
