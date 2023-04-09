@@ -19,4 +19,8 @@ module.exports = withSvgr({
       },
     ];
   },
+  i18n: {
+    locales: ['nl'],
+    defaultLocale: 'nl',
+  },
 });
