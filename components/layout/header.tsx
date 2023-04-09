@@ -176,8 +176,8 @@ export const Header = ({ data, props }) => {
       })}
       </div>
     </div>
-    <a href="/donaties" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>
-    <a href="/dhj" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-green-700 text-white bold bottom-[10px] z-[4001] right-[2.4%] inline-flex h-[50px]"><AccessTimeIcon/></a></>
+    <a href="/donaties" aria-label="Doneren" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>
+    <a href="/dhj" aria-label="Vieringen" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-green-700 text-white bold bottom-[10px] z-[4001] right-[2.4%] inline-flex h-[50px]"><AccessTimeIcon/></a></>
 
   );
 };
