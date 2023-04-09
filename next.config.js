@@ -1,14 +1,5 @@
 const withSvgr = require("next-svgr");
-const ContentSecurityPolicy = `
-default-src 'self' https://*.stfranciscus-heverlee.org https://assets.tina.io https://vitals.vercel-insights.com https://identity.tinajs.io https://fonts.googleapis.com/;
-script-src 'nonce-plausibleanalytics' 'unsafe-inline';
-child-src 'none';
-style-src 'self';
-font-src 'self';
-object-src 'none';
-base-uri 'none';
-require-trusted-types-for 'script';
-`
+const ContentSecurityPolicy = "default-src 'self' https://*.stfranciscus-heverlee.org https://assets.tina.io https://vitals.vercel-insights.com https://identity.tinajs.io https://fonts.googleapis.com/; script-src 'nonce-plausibleanalytics' 'unsafe-inline'; child-src 'none'; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';"
 
 module.exports = withSvgr({
   webpack: (config, { isServer }) => {
