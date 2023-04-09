@@ -23,7 +23,7 @@ module.exports = withSvgr({
   async headers() {
     return [
         {
-          source: '/(.*)',
+          source: '/:path*',
           headers: [
             {
               key: 'X-Frame-Options',
