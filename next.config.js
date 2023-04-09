@@ -36,7 +36,7 @@ module.exports = withSvgr({
             {
               key: 'Content-Security-Policy',
               value:
-                "default-src 'self' https://*.stfranciscus-heverlee.org https://assets.tina.io https://vitals.vercel-insights.com https://identity.tinajs.io https://fonts.googleapis.com/; script-src 'nonce-plausibleanalytics' 'strict-dynamic'; child-src 'none'; style-src 'self' *.stfranciscus-heverlee.org https://fonts.googleapis.com/ 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';",
+                "default-src 'self' https://*.stfranciscus-heverlee.org https://assets.tina.io https://vitals.vercel-insights.com https://identity.tinajs.io https://fonts.googleapis.com/; script-src 'self' 'nonce-plausibleanalytics'; child-src 'none'; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';",
             },
             {
               key: 'X-Content-Type-Options',
@@ -53,9 +53,5 @@ module.exports = withSvgr({
           ],
         },
       ];
-  },
-  i18n: {
-    locales: ['nl'],
-    defaultLocale: 'nl',
-  },
+  }
 });
