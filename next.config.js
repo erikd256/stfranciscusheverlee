@@ -1,12 +1,13 @@
 const withSvgr = require("next-svgr");
 const ContentSecurityPolicy = `
-default-src 'self';
-script-src 'self' 'nonce-plausibleanalytics';
+default-src 'self' *.stfranciscus-heverlee.org assets.tina.io vitals.vercel-insights.com;
+script-src 'nonce-plausibleanalytics' 'unsafe-inline';
 child-src 'none';
 style-src 'self';
 font-src 'self';
 object-src 'none';
 base-uri 'none';
+require-trusted-types-for 'script';
 `
 
 module.exports = withSvgr({
