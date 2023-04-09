@@ -34,11 +34,6 @@ module.exports = withSvgr({
               value: 'nosniff',
             },
             {
-              key: 'Content-Security-Policy',
-              value:
-                "default-src 'self' *.stfranciscus-heverlee.org https://assets.tina.io https://vitals.vercel-insights.com https://identity.tinajs.io https://fonts.googleapis.com/; script-src 'self' 'nonce-plausibleanalytics'; child-src 'none'; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';",
-            },
-            {
               key: 'X-Content-Type-Options',
               value: 'nosniff',
             },
