@@ -38,7 +38,7 @@ module.exports = withSvgr({
         headers: [{
           key: 'Content-Security-Policy',
           value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
-        }],
+      }],
       },
     ]
   },
