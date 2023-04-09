@@ -8,7 +8,7 @@ export const Footer = ({ data, icon, rawData}) => {
     <>
     <footer className={`bg-basiskleur pb-[75px] min-h-[500px] relative pt-[20px]`}>
         <div className="grid w-full text-liturgischekleur gap-6 grid-cols-1 place-items-center pt-[20px] mo:pt-[80px]">
-          <img src="/icon.svg" width="75px"/>
+          <img src="/icon.svg" width="75px" alt="icon-footer"/>
           <p>&copy; 2022 - {(new Date().getFullYear())} <a href="https://github.com/erikd256" target="_blank">erikd256</a></p>
           <div className="w-full mo:w-1/3 mo: text-center place-content-center mo:absolute mo:top-[100px] mo:right-[0px]">
           
@@ -32,7 +32,7 @@ export const Footer = ({ data, icon, rawData}) => {
             <br></br>
             <a href="https://status.stfranciscus-heverlee.org/" className="no-underline">Status</a>
             <br></br>
-            <img src="https://vercelbadge.vercel.app/api/erikd256/stfranciscusheverlee" className="inline"/>
+            <img src="https://vercelbadge.vercel.app/api/erikd256/stfranciscusheverlee" alt="vercel badge" className="inline"/>
             </span>
           </div>
         </div>

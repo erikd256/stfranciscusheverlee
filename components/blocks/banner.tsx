@@ -16,7 +16,7 @@ export const Banner = ({ data, parentField }) => {
       checkDate();
     }, []);
   return (
-   <div style={{display: bannerHidden?"none":"block"}} className="bg-purple-400 fixed mo:top-[70px] z-[3999] w-[100%] h-[50px] left-[0%] top-[70px] text-white text-center"><a className="w-full underline h-full text-center leading-[50px]" href={`${data.bannerURL}?utm_campaign=banner&utm_source=banner&utm_content=${data.bannertext}`}>{data.bannertext}</a><a className="absolute right-[10px] no-underline text-white h-full leading-[50px] text-xl pr-[15px]" onClick={hideBanner}>&#x2715;</a></div>
+   <div style={{display: bannerHidden?"none":"block"}} className="bg-purple-400 fixed mo:top-[70px] z-[3999] w-[100%] h-[50px] left-[0%] top-[70px] text-white text-center"><a className="w-full underline h-full text-center leading-[50px]" href={`${data.bannerURL}?utm_campaign=banner&utm_source=banner&utm_content=${data.bannertext}`}>{data.bannertext}</a><span className="absolute right-[10px] no-underline text-white h-full leading-[50px] text-xl pr-[15px]" onClick={hideBanner}>&#x2715;</span></div>
   );
 };
 

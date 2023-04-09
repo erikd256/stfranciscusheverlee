@@ -88,7 +88,7 @@ export const Header = ({ data, props }) => {
         <meta name="keywords" content={props.keywords}/>
       </Head>
       <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
-        <img src="/icon-dark.svg" width="50px" className="mr-[10px] inline"/><span id="title">{props.title} @ St.-Franciscusparochie</span>
+        <img src="/icon-dark.svg" alt="header-icon" width="50px" className="mr-[10px] inline"/><span id="title">{props.title} @ St.-Franciscusparochie</span>
         <span className="smo:absolute smo:right-[50px] text-sm clear-both">
           <input ref={query} className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left placeholder-basiskleur" placeholder="Zoeken"/>
           <button onClick={search} className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl"><span className="material-symbols-outlined"><SearchIcon/></span></button>
@@ -96,16 +96,16 @@ export const Header = ({ data, props }) => {
       </div>
       <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
       <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/" className="no-underline">Start</a></button>
-      <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle1} className="no-underline">Vieringen</a></button>
-      <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle2} className="no-underline">Organisatie</a></button>
-      <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle3} className="no-underline">Multimedia</a></button>
-      <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle4} className="no-underline">Levensmomenten</a></button>
+      <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle1} className="no-underline">Vieringen</span></button>
+      <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle2} className="no-underline">Organisatie</span></button>
+      <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle3} className="no-underline">Multimedia</span></button>
+      <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle4} className="no-underline">Levensmomenten</span></button>
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/posts" className="no-underline">Nieuws</a></button>
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/kerkenleven" className="no-underline">Parochieblad</a></button>
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/contact" className="no-underline">Contact</a></button>
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/links" className="no-underline">Links</a></button>
       <button className="hidden mo:block text-center  ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/donaties" className="no-underline">Doneren</a></button>
-      <button className="block mo:hidden text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-5/6"><a onClick={menuExpand} className="no-underline">&#9776; Menu</a></button>
+      <button className="block mo:hidden text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-5/6"><span onClick={menuExpand} className="no-underline">&#9776; Menu</span></button>
       </div>
       <div style={{display: popup1?"block":"none"}} className="overflow-x-hidden flex text-center items-center content-center place-content-center bg-derdekleur text-basiskleur w-full border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[2px] sticky top-[72px] z-[4999] hidden mo:block">
         <button className="hidden mo:inline-block text-center ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/liturgie" className="no-underline">Liturgie</a></button>
@@ -131,27 +131,27 @@ export const Header = ({ data, props }) => {
         <button className="hidden mo:inline-block text-center ring ring-basiskleur ring-2 rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/uitvaart" className="no-underline">Uitvaart</a></button>
       </div>
       <div className="fixed w-full h-full z-[5000] bg-vierdekleur text-basiskleur border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[15px] top-0 text-center overflow-y-auto" style={{display: menuExpanded?"block":"none"}}>
-      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={menuExpand} className="no-underline">&#x2715; Sluiten</a></button>
+      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={menuExpand} className="no-underline">&#x2715; Sluiten</span></button>
       <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/" className="no-underline">Start</a></button>
-      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle1} className="no-underline">Vieringen</a></button>
+      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle1} className="no-underline">Vieringen</span></button>
       <div style={{display: popup1?"block":"none"}} className="text-center p-2 w-full">
         <button className="text-center  w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/liturgie" className="no-underline">Liturgie</a></button>
         <button className="text-center  w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/dhj" className="no-underline">Doorheen het jaar</a></button>
         <button className="text-center  w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/familievieringen" className="no-underline">Familievieringen</a></button>
       </div>
-      <button className="text-center w-5/6 mt-[15px] ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle2} className="no-underline">Organisatie</a></button>
+      <button className="text-center w-5/6 mt-[15px] ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle2} className="no-underline">Organisatie</span></button>
       <div style={{display: popup2?"block":"none"}} className="text-center p-2 w-full">
         <button className="text-center w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/vereniginen" className="no-underline">Verenigingen</a></button>
         <button className="text-center w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/parochie" className="no-underline">Organisatie parochie</a></button>
         <button className="text-center w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/parochiaalcentrum" className="no-underline">Agenda parochiaal centrum</a></button>
       </div>
-      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle3} className="no-underline">Multimedia</a></button>
+      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle3} className="no-underline">Multimedia</span></button>
       <div style={{display: popup3?"block":"none"}} className="text-center p-2 w-full">
         <button className="text-center  w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/fotos" className="no-underline">Fotoalbums</a></button>
         <button className="text-center w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/videos" className="no-underline">Videos</a></button>
         <button className="text-center  w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/audios" className="no-underline">Audios</a></button>
       </div>
-      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a onClick={toggle4} className="no-underline">Levensmomenten</a></button>
+      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={toggle4} className="no-underline">Levensmomenten</span></button>
       <div style={{display: popup4?"block":"none"}} className="text-center p-2 w-full">
         <button className="text-center w-4/6 ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/doop" className="no-underline">Doopsel</a></button>
         <button className="text-center w-4/6 ring ring-basiskleur ring-2 rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/eerstecommunie" className="no-underline">Eerste Communie</a></button>
