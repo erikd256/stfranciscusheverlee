@@ -5,7 +5,7 @@ import { Features } from "./blocks/features";
 import { Banner } from "./blocks/banner";
 import { Hero } from "./blocks/hero";
 import { Testimonial } from "./blocks/testimonial";
-import { Image } from "./blocks/image";
+import { Images } from "./blocks/image";
 import {Form} from "./blocks/form";
 import { Video } from "./blocks/video";
 import { Heading } from "./blocks/heading";
@@ -72,13 +72,13 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                     <Banner data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
-                case "PageBlocksImage":
+                case "PageBlocksImages":
                 return (
                   <div
                     data-tinafield={`blocks.${i}`}
                     key={i + block.__typename}
                   >
-                    <Image data={block} parentField={`blocks.${i}`} />
+                    <Images data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
                 case "PageBlocksVideo":

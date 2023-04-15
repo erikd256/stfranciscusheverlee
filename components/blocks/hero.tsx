@@ -5,6 +5,7 @@ import { Section } from "../util/section";
 import { useTheme } from "../layout";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaTemplate } from "tinacms";
+import Image from 'next/image'
 
 export const Hero = ({ data, parentField }) => {
   const theme = useTheme();
@@ -59,7 +60,7 @@ export const Hero = ({ data, parentField }) => {
             data-tinafield={`${parentField}.image`}
             className="row-start-2 flex justify-center"
           >
-            <img
+            <Image
               className="max-w-full"
               alt={data.image.alt}
               src={data.image.src}

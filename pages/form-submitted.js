@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Layout } from "../components/layout";
+import Image from 'next/image'
 
 export default function FormSubmitted() {
    return (
@@ -10,7 +11,7 @@ export default function FormSubmitted() {
       </Head>
       <span className='text-2xl relative mt-[40px] w-1/2 left-1/4'>Formulier verzonden!</span>
       <span className='text-lg relative left-1/4 w-1/2 mb-[20px]'>Je boodschap wordt overgedragen...</span>
-      <img src='https://media2.giphy.com/media/AAn1TeM1E9WVO/giphy.gif?cid=ecf05e470bm0iv94ld9vcaneetbb5gd3qxcumi82a3efz04w&rid=giphy.gif&ct=g' className='mb-[10px] rounded-md relative left-1/4 h-auto w-1/2'></img>
+      <Image src='https://media2.giphy.com/media/AAn1TeM1E9WVO/giphy.gif?cid=ecf05e470bm0iv94ld9vcaneetbb5gd3qxcumi82a3efz04w&rid=giphy.gif&ct=g' className='mb-[10px] rounded-md relative left-1/4 h-auto w-1/2'></Image>
       <button  className={`mb-[40px] py-[5px] relative left-1/4 rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-1/2`}><a className="no-underline" href='/'>Ga terug!</a></button>
     </Layout>
   );
