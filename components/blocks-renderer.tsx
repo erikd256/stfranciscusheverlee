@@ -72,7 +72,7 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                     <Banner data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
-                case "PageBlocksImages":
+                case "PageBlocksImage":
                 return (
                   <div
                     data-tinafield={`blocks.${i}`}

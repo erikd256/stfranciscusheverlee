@@ -89,7 +89,7 @@ export const Header = ({ data, props }) => {
         <meta name="keywords" content={props.keywords}/>
       </Head>
       <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
-        <Image src="/icon-dark.svg" alt="header-icon" width="50px" className="mr-[10px] inline"/><span id="title">{props.title} @ St.-Franciscusparochie</span>
+        <img src="/icon-dark.svg" alt="header-icon" width="50px" className="mr-[10px] inline"/><span id="title">{props.title} @ St.-Franciscusparochie</span>
         <span className="smo:absolute smo:right-[50px] text-sm clear-both">
           <input ref={query} className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left placeholder-basiskleur" placeholder="Zoeken"/>
           <button onClick={search} className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl" aria-label="Search"><span className="material-symbols-outlined"><SearchIcon/></span></button>

@@ -34,7 +34,7 @@ export const Posts = ({ data }) => {
               key={post.id}
               className="relative group block grid mb-8 last:mb-0 bg-liturgischekleur rounded-xl no-underline"
             >
-              <Image
+              <img
               src={post._values.heroImg}
               className="md:absolute md:h-full md:max-w-[25%] w-full h-auto object-cover rounded-xl md:rounded-r-xl shadow-sm place-self-end bottom-0"
               />
@@ -54,7 +54,7 @@ export const Posts = ({ data }) => {
               </div>
               <div className="flex items-center -mb-2">
                 <div className="flex-shrink-0 mr-2">
-                  <Image
+                  <img
                     className="h-10 w-10 object-cover rounded-full shadow-sm"
                     src={post?.author?.avatar}
                     alt={post?.author?.name}

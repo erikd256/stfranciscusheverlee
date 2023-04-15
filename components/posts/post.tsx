@@ -110,7 +110,7 @@ export const Post = (props) => {
           {props.author && (
             <>
               <div className="flex-shrink-0 mr-4">
-                <Image
+                <img
                   className="h-14 w-14 object-cover rounded-full shadow-sm"
                   src={props.author.avatar}
                   alt={props.author.name}
@@ -134,7 +134,7 @@ export const Post = (props) => {
       </Container>
       {props.heroImg && (
         <div data-tinafield="heroImg" className="">
-          <Image
+          <img
             src={props.heroImg}
             className="mb-14 block h-auto w-full mx-[0px]"
           />

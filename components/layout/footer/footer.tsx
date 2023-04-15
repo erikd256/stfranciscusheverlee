@@ -10,7 +10,7 @@ export const Footer = ({ data, icon, rawData}) => {
     <>
     <footer className={`bg-basiskleur pb-[75px] min-h-[500px] relative pt-[20px]`}>
         <div className="grid w-full text-liturgischekleur gap-6 grid-cols-1 place-items-center pt-[20px] mo:pt-[80px]">
-          <Image src="/icon.svg" width="75px" alt="icon-footer"/>
+          <img src="/icon.svg" width="75px" alt="icon-footer"/>
           <p>&copy; 2022 - {(new Date().getFullYear())} <a href="https://github.com/erikd256" target="_blank">erikd256</a></p>
           <div className="w-full mo:w-1/3 mo: text-center place-content-center mo:absolute mo:top-[100px] mo:right-[0px]">
           

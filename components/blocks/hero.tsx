@@ -60,7 +60,7 @@ export const Hero = ({ data, parentField }) => {
             data-tinafield={`${parentField}.image`}
             className="row-start-2 flex justify-center"
           >
-            <Image
+            <img
               className="max-w-full"
               alt={data.image.alt}
               src={data.image.src}

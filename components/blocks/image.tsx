@@ -13,7 +13,7 @@ export const Images = ({ data, parentField = "" }) => {
         size="large"
       >
         <div className="w-4/6 relative pt-[10px] text-justify border-b-2 border-liturgischekleur text-xl">{data.imageTitle}</div>
-        <Image src={data.fileRef} alt={data.alt} className="w-4/6 relative left-[12.5%]" />
+        <img src={data.fileRef} alt={data.alt} className="w-4/6 relative left-[12.5%]" />
         <div className="w-4/6 pb-[10px] text-justify border-b-2 border-liturgischekleur">{data.description}</div>
       </Container>
     </Section>
