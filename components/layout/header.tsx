@@ -118,6 +118,7 @@ export const Header = ({ data, props }) => {
         <button className="hidden mo:inline-block text-center ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/verenigingen" className="no-underline">Vereniginen</a></button>
         <button className="hidden mo:inline-block text-center ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/parochie" className="no-underline">Organisatie parochie</a></button>
         <button className="hidden mo:inline-block text-center ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/parochiaalcentrum" className="no-underline">Parochiaal centrum</a></button>
+        <button className="hidden mo:inline-block text-center ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/parochiaalcentrum" className="no-underline">Verhuren Kerk</a></button>
       </div>
       <div style={{display: popup3?"block":"none"}} className="overflow-x-hidden flex text-center items-center content-center place-content-center bg-derdekleur text-basiskleur w-full border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[2x] sticky top-[72px] z-[4999] hidden mo:block">
         <button className="hidden mo:inline-block text-center ring ring-basiskleur ring-2 rounded m-2 p-2 px-4 bg-liturgischekleur text-basiskleur"><a href="/fotos" className="no-underline">Fotoalbums</a></button>
