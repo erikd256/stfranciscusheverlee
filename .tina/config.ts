@@ -185,49 +185,6 @@ schema: {
             },
           ],
         },
-        {
-          type: "object",
-          label: "Footer",
-          name: "footer",
-          fields: [
-            {
-              type: "string",
-              label: "Color",
-              name: "color",
-              options: [
-                { label: "Default", value: "default" },
-                { label: "Primary", value: "primary" },
-              ],
-            },
-            {
-              type: "object",
-              label: "Social Links",
-              name: "social",
-              fields: [
-                {
-                  type: "string",
-                  label: "Facebook",
-                  name: "facebook",
-                },
-                {
-                  type: "string",
-                  label: "Twitter",
-                  name: "twitter",
-                },
-                {
-                  type: "string",
-                  label: "Instagram",
-                  name: "instagram",
-                },
-                {
-                  type: "string",
-                  label: "Github",
-                  name: "github",
-                },
-              ],
-            },
-          ],
-        },
       ],
     },
     {

@@ -11,6 +11,7 @@ import Image from "next/image";
 import { GlobalStyles } from "@mui/material";
 import globals from "../../content/global/index.json"
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import { HiDocumentSearch } from "react-icons/hi";
 
 
 export const Header = ({ data, props }) => {
@@ -48,6 +49,10 @@ export const Header = ({ data, props }) => {
     if(document.getElementById(ref).style.display == "block"){
       document.getElementById(ref).style.display = "none";
     }else{
+      let elements = document.querySelectorAll('.popup')
+        elements.forEach((item: any) => {
+      item.style.display = 'none'
+      })
       document.getElementById(ref).style.display = "block";
     }
   }
@@ -99,7 +104,7 @@ export const Header = ({ data, props }) => {
             )
           }else{
             return (
-              <div id={data.href} className="hidden overflow-x-hidden flex text-center items-center content-center place-content-center bg-derdekleur text-basiskleur w-full border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[2px] sticky top-[72px] z-[4999] hidden">
+              <div id={data.href} className="hidden overflow-x-hidden flex text-center items-center content-center place-content-center bg-derdekleur text-basiskleur w-full border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[2px] sticky top-[72px] z-[4999] hidden popup">
               {data.children.map((subnav) => {
               return (
                 <button className="inline-flex text-center ring ring-basiskleur ring-2 rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href={subnav.href} className="no-underline">{subnav.label}</a></button>
@@ -117,7 +122,7 @@ export const Header = ({ data, props }) => {
           }else{
             return (
               <><button className="mx-auto block text-center my-3 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[95%]" onClick={() => openPopup(data.href+data.type)}><a className="no-underline">{data.label}</a></button>
-              <div id={data.href+data.type} className="hidden my-[20px]">
+              <div id={data.href+data.type} className="hidden my-[20px] popup">
               {data.children.map((subnav) => {
                 return (
                   <button className="block text-center ring my-3 ring-basiskleur ring-2 rounded mx-auto m-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[85%]"><a href={subnav.href} className="no-underline">{subnav.label}</a></button>
