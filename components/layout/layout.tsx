@@ -22,7 +22,6 @@ export const Layout = ({ rawData = {}, headerData = {}, data = layoutData, child
           <Footer
             rawData={rawData}
             data={data?.footer}
-            icon={data?.header.icon}
           />
         </div>
     </>

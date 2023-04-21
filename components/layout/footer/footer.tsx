@@ -4,7 +4,7 @@ import { Container } from "../../util/container";
 import Image from 'next/image'
 
 
-export const Footer = ({ data, icon, rawData}) => {
+export const Footer = ({ data, rawData}) => {
   const socialIconClasses = "h-7 w-auto";
   return (
     <>
