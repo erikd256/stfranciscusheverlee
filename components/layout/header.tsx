@@ -107,21 +107,20 @@ export const Header = ({ data, props }) => {
           })}</div>)}
         })}
     <div className="fixed w-full h-full z-[5000] bg-vierdekleur text-basiskleur border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[15px] top-0 text-center overflow-y-auto" style={{display: menuExpanded?"block":"none"}}>
-      <button className="text-center mt-[15px] w-5/6 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={menuExpand} className="no-underline">&#x2715; Sluiten</span></button>
+      <button className="block text-center my-[20px] mx-auto w-[95%] ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={menuExpand} className="no-underline">&#x2715; Sluiten</span></button>
+      <hr className="border-basiskleur border-1"></hr>
       {globals.header.nav.map((data) => {
           if(data.type=="href"){
             return (
-              <button className="block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href={data.href} className="no-underline">{data.label}</a></button>
+              <button className="block my-3 text-center ring ring-basiskleur mx-auto ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[95%]"><a href={data.href} className="no-underline">{data.label}</a></button>
             )
           }else{
             return (
-              <><button className="block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur" onClick={() => openPopup(data.href+data.type)}><a className="no-underline">{data.label}</a></button>
-              <div id={data.href+data.type} className="hidden">
+              <><button className="mx-auto block text-center my-3 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[95%]" onClick={() => openPopup(data.href+data.type)}><a className="no-underline">{data.label}</a></button>
+              <div id={data.href+data.type} className="hidden my-[20px]">
               {data.children.map((subnav) => {
                 return (
-                  
-                  <button className="inline-flex text-center ring ring-basiskleur ring-2 rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href={subnav.href} className="no-underline">{subnav.label}</a></button>
-                  
+                  <button className="block text-center ring my-3 ring-basiskleur ring-2 rounded mx-auto m-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[85%]"><a href={subnav.href} className="no-underline">{subnav.label}</a></button>
                 )
               })}
               </div>
