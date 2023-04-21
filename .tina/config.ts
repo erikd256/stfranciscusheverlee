@@ -6,7 +6,6 @@ import { imageBlockSchema } from "../components/blocks/image";
 import { testimonialBlockSchema } from "../components/blocks/testimonial";
 import { bannerBlockSchema } from "../components/blocks/banner";
 import { formBlockSchema } from "../components/blocks/form";
-import { iconSchema } from "../components/util/icon";
 import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
