@@ -1,23 +1,37 @@
 {
   "header": {
-    "icon": {
-      "color": "orange",
-      "style": "float",
-      "name": "tina"
-    },
-    "color": "default",
     "nav": [
       {
         "href": "",
-        "label": "Home"
+        "label": "Home",
+        "type": "href"
       },
       {
         "href": "about",
-        "label": "About"
+        "label": "About",
+        "type": "href",
+        "children": [
+          {}
+        ]
       },
       {
         "href": "posts",
-        "label": "Blog"
+        "label": "Blog",
+        "type": "popup",
+        "children": [
+          {
+            "href": "/",
+            "label": "Go Home"
+          },
+          {
+            "href": "testt",
+            "label": "test"
+          },
+          {
+            "href": "link2",
+            "label": "test"
+          }
+        ]
       }
     ]
   },
