@@ -49,7 +49,7 @@ export const Header = ({ data, props }) => {
     if(document.getElementById(ref).style.display == "block"){
       document.getElementById(ref).style.display = "none";
     }else{
-      let elements = document.querySelectorAll('.popup')
+      const elements = document.querySelectorAll('.popup')
         elements.forEach((item: any) => {
       item.style.display = 'none'
       })
