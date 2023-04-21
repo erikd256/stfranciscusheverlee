@@ -2,36 +2,126 @@
   "header": {
     "nav": [
       {
-        "href": "",
-        "label": "Home",
+        "href": "/",
+        "label": "Start",
         "type": "href"
       },
       {
-        "href": "about",
-        "label": "About",
-        "type": "href",
-        "children": [
-          {}
-        ]
-      },
-      {
-        "href": "posts",
-        "label": "Blog",
+        "href": "vieringen",
+        "label": "Vieringen",
         "type": "popup",
         "children": [
           {
-            "href": "/",
-            "label": "Go Home"
+            "href": "/familievieringen",
+            "label": "Familievieringen"
           },
           {
-            "href": "testt",
-            "label": "test"
+            "href": "/liturgie",
+            "label": "Liturgie"
           },
           {
-            "href": "link2",
-            "label": "test"
+            "href": "/dhj",
+            "label": "Doorheen het jaar"
           }
         ]
+      },
+      {
+        "href": "organisatie",
+        "label": "Organisatie",
+        "type": "popup",
+        "children": [
+          {
+            "href": "/parochie",
+            "label": "Organisatie parochie"
+          },
+          {
+            "href": "/verenigingen",
+            "label": "Verenigingen"
+          },
+          {
+            "href": "parochiaalcentrum",
+            "label": "Parochiaal Centrum"
+          },
+          {
+            "href": "verhurenkerk",
+            "label": "Verhuren Kerk"
+          }
+        ]
+      },
+      {
+        "href": "multimedia",
+        "label": "Multimedia",
+        "type": "popup",
+        "children": [
+          {
+            "href": "/fotos",
+            "label": "Fotoalbums"
+          },
+          {
+            "href": "/videos",
+            "label": "Videos"
+          },
+          {
+            "href": "/audios",
+            "label": "Audios"
+          }
+        ]
+      },
+      {
+        "href": "levensmomenten",
+        "label": "Levensmomenten",
+        "type": "popup",
+        "children": [
+          {
+            "href": "/doop",
+            "label": "Doopsel"
+          },
+          {
+            "href": "/eerstecommunie",
+            "label": "Eerste communie"
+          },
+          {
+            "href": "/vormsel",
+            "label": "Vormsel"
+          },
+          {
+            "href": "/huwelijk",
+            "label": "Huwelijk"
+          },
+          {
+            "href": "/ziekenzalving",
+            "label": "Ziekenzalving"
+          },
+          {
+            "href": "/uitvaart",
+            "label": "Uitvaart"
+          }
+        ]
+      },
+      {
+        "href": "/kerkenleven",
+        "label": "Parochieblad",
+        "type": "href"
+      },
+      {
+        "href": "/posts",
+        "label": "Nieuws",
+        "type": "href"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact",
+        "type": "href"
+      },
+      {
+        "href": "/links",
+        "label": "Links",
+        "type": "href"
+      },
+      {
+        "href": "/donaties",
+        "label": "Doneren",
+        "type": "href"
       }
     ]
   },
