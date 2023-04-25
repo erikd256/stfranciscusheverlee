@@ -2,13 +2,10 @@ import * as React from "react";
 import { Actions } from "../util/actions";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
-import { useTheme } from "../layout";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import type { TinaTemplate } from "tinacms";
-import Image from 'next/image'
 
 export const Hero = ({ data, parentField }) => {
-  const theme = useTheme();
 
   return (
     <Section className="bg-vijfdekleur">

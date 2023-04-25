@@ -3,9 +3,8 @@ import React from "react";
 import type { TinaTemplate } from "tinacms";
 import { Container } from "../util/container";
 import { Section } from "../util/section";
-export const DonationBox = ({ data, parentField = "" }) => {
+export const Donationbox = ({ data, parentField = "" }) => {
   return (
-    
      <Section className="bg-vijfdekleur">
       <Container
         size="large"
@@ -14,16 +13,15 @@ export const DonationBox = ({ data, parentField = "" }) => {
       <Head>
         <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
       </Head>
-      <iframe src={data.donationURL} name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important"></iframe>
+      <iframe src={data.donationURL} name="donorbox" seamless="seamless" allowpaymentrequest="allowpaymentrequest" frameborder="0" scrolling="no" height="900px" width="100%"></iframe>
       </Container>
     </Section>
     );
 };
 
-export const donationBoxBlockSchema: TinaTemplate = {
+export const DonationBoxBlockSchema: TinaTemplate = {
   name: "donationbox",
   label: "Donaties",
-  
   fields: [
     {
       type: "string",
