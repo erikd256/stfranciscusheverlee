@@ -13,7 +13,7 @@ export const Donationbox = ({ data, parentField = "" }) => {
       <Head>
         <script src="https://donorbox.org/widget.js"></script>
       </Head>
-      <iframe src={data.donationURL} name="donorbox" seamless="seamless" allowpaymentrequest="allowpaymentrequest" frameborder="0" scrolling="no" height="900px" width="100%"></iframe>
+      <iframe src={data.donationURL} name="donorbox" allowpaymentrequest="allowpaymentrequest" frameborder="0" scrolling="no" height="900px" width="100%"></iframe>
       </Container>
     </Section>
     );
