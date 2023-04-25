@@ -11,9 +11,6 @@ export const Donationbox = ({ data, parentField = "" }) => {
         size="large"
         className="grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-8 items-center justify-center"
       >
-      <Head>
-      <div dangerouslySetInnerHTML={{ __html:"<script src='https://donorbox.org/widget.js' paypalExpress='false'></script>"}} />
-      </Head>
       <div dangerouslySetInnerHTML={{ __html:data.donationURL}} />
       </Container>
     </Section>
