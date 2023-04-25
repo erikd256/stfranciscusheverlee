@@ -10,6 +10,7 @@ import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
 import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
+import { donationBoxBlockSchema } from "../components/blocks/donationbox";
 const config = defineStaticConfig({
   branch: "main",
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -257,6 +258,7 @@ schema: {
             audioBlockSchema,
             contentBlockSchema,
             testimonialBlockSchema,
+            donationBoxBlockSchema,
           ],
         },
       ],

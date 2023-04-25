@@ -11,6 +11,7 @@ import { Video } from "./blocks/video";
 import { Heading } from "./blocks/heading";
 import { Audio } from "./blocks/audio";
 import { Weeknieuws } from "./blocks/weeknieuws";
+import { DonationBox } from "./blocks/donationbox";
 
 export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
   return (
@@ -115,6 +116,15 @@ export const Blocks = (props: Omit<Page, "id" | "_sys" | "_values">) => {
                     key={i + block.__typename}
                   >
                     <Weeknieuws data={block} parentField={`blocks.${i}`} />
+                  </div>
+                );
+                case "PageBlocksDonationBox":
+                return (
+                  <div
+                    data-tinafield={`blocks.${i}`}
+                    key={i + block.__typename}
+                  >
+                    <DonationBox data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
               default:
