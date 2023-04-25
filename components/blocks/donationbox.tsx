@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React from "react";
 import type { TinaTemplate } from "tinacms";
 import { Container } from "../util/container";
