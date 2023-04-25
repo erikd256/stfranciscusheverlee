@@ -11,7 +11,7 @@ export const Donationbox = ({ data, parentField = "" }) => {
         className="grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-8 items-center justify-center"
       >
       <Head>
-        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+        <script src="https://donorbox.org/widget.js"></script>
       </Head>
       <iframe src={data.donationURL} name="donorbox" seamless="seamless" allowpaymentrequest="allowpaymentrequest" frameborder="0" scrolling="no" height="900px" width="100%"></iframe>
       </Container>
