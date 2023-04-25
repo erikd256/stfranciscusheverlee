@@ -126,6 +126,11 @@ schema: {
       },
       fields: [
         {
+          type: "string",
+          name: "collectivename",
+          label: "Open Collective SLUG"
+        },
+        {
           type: "object",
           label: "Header",
           name: "header",

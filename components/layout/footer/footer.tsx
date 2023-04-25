@@ -1,8 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaGithub, FaYoutube } from "react-icons/fa";
 import { Container } from "../../util/container";
-import Image from 'next/image'
-
+import globals from "../../../content/global/index.json"
 
 export const Footer = ({ data, rawData}) => {
   const socialIconClasses = "h-7 w-auto";
@@ -44,6 +43,10 @@ export const Footer = ({ data, rawData}) => {
         Tiensesteenweg 190, 3001 Heverlee<br></br>
         tel. secretariaat +32 492 31 92 15<br></br>
         franciscusheverlee@gmail.com
+        </div>
+        <div className="overflow-scroll p-4 text-liturgischekleur w-5/6 mx-auto mt-[150px]">
+          <span className="absolute">Met dank aan onze sponsors:</span><br></br>
+          <object type="image/svg+xml" data={`https://opencollective.com/${globals.collectivename}/tiers/backers.svg`}></object>
         </div>
     </footer>
     </>
