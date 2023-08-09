@@ -12,12 +12,13 @@ blocks:
 
       Hiervoor neemt men contact met het parochiesecretariaat.
     actions:
-      - label: Samana
+      - label: secretariaat
         type: button
         icon: true
-        link: 'https://www.samana.be/'
+        link: 'https://www.stfranciscus-heverlee.org/contact'
     image:
       src: /uploads/ziekenzalving.jpg
     _template: hero
 ---
+
 
