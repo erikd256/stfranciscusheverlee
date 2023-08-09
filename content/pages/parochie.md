@@ -12,8 +12,7 @@ blocks:
           Thierry Van Craenem (voorzitter),
           Veronika Dallmeier,
           Gaston Eysermans,
-          Marion Van Wouwe,
-          Denise Meeus
+          Marion Van Wouwe
       - icon:
           color: ''
           style: float
@@ -42,4 +41,5 @@ blocks:
     color: ''
     _template: features
 ---
+
 
