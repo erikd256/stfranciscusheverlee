@@ -16,5 +16,9 @@ blocks:
         link: >-
           https://photos.google.com/share/AF1QipNy71jtQuRnEYsudYZV3OJZH7fgk5kPjhON2sqRgg2bseIVpwMTbOIO2pgJM0MNdQ?key=OGx0SzZaaFhyTmFXdzFkbGtEaVZBdWV6ZlJSU3RR
     _template: hero
+  - titleText: werkjaar 2022 -23
+    textsize: text-2xl
+    _template: heading
 ---
+
 
