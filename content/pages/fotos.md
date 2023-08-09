@@ -8,10 +8,6 @@ blocks:
   - titleText: werkjaar 2023 - 24
     textsize: text-2xl
     _template: heading
-  - bannerURL: >-
-      https://photos.google.com/share/AF1QipMuW4Ri-_reegKUth_T4MLI6T8enjkxW96dhh0qGkrkfI1-DtaQuZlLOhrCRHTpBg?key=cjdzbVhJSE4yc1FfdjFUZW5LdncxZ2ZnWXhacVB3
-    bannertext: slotviering 25 juni 2023
-    _template: banner
   - titleText: werkjaar 2022 -23
     textsize: text-2xl
     _template: heading
