@@ -7,7 +7,7 @@ blocks:
     actions:
       - label: pastorale zone KesseLinde
         type: button
-        icon: false
+        icon: true
         link: 'https://www.kerknet.be/organisatie/pastorale-zone-kessel-lo'
       - label: Don Bosco gemeenschap
         type: button
@@ -48,5 +48,6 @@ blocks:
         link: www.blijrondeel.be
     _template: hero
 ---
+
 
 
