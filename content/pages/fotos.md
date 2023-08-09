@@ -13,7 +13,7 @@ blocks:
         type: button
         icon: true
         link: >-
-          https://photos.google.com/share/AF1QipMuW4Ri-_reegKUth_T4MLI6T8enjkxW96dhh0qGkrkfI1-DtaQuZlLOhrCRHTpBg?key=cjdzbVhJSE4yc1FfdjFUZW5LdncxZ2ZnWXhacVB3
+          //photos.google.com/share/AF1QipMuW4Ri-_reegKUth_T4MLI6T8enjkxW96dhh0qGkrkfI1-DtaQuZlLOhrCRHTpBg?key=cjdzbVhJSE4yc1FfdjFUZW5LdncxZ2ZnWXhacVB3
     _template: hero
   - titleText: werkjaar 2023 - 24
     textsize: text-2xl
@@ -25,6 +25,7 @@ blocks:
     textsize: text-2xl
     _template: heading
 ---
+
 
 
 
