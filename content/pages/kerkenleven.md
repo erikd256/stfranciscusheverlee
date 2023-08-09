@@ -1,6 +1,9 @@
 ---
 title: Parochieblad
 blocks:
+  - LinkTitle: week 32
+    file: /uploads/Frando23-32.pdf
+    _template: weeknieuws
   - titleText: werkjaar 2022 - 23
     textsize: text-4xl
     _template: heading
