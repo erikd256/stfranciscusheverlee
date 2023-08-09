@@ -8,7 +8,7 @@ blocks:
   - titleText: werkjaar 2022 -23
     textsize: text-2xl
     _template: heading
-  - titleText: werkjaar 2021 22
+  - titleText: werkjaar 2021 - 22
     textsize: text-2xl
     _template: heading
 ---
