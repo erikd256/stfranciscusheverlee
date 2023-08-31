@@ -5,6 +5,7 @@ blocks:
     textsize: text-4xl
     _template: heading
   - LinkTitle: week 36
+    file: /uploads/Frando23-36.pdf
     _template: weeknieuws
   - titleText: werkjaar 2022 - 23
     textsize: text-4xl
@@ -166,6 +167,7 @@ blocks:
     file: /uploads/Parochieblad/Frando22-32.pdf
     _template: weeknieuws
 ---
+
 
 
 
