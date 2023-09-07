@@ -5,6 +5,7 @@ blocks:
     textsize: text-4xl
     _template: heading
   - LinkTitle: week 37
+    file: /uploads/Frando23-37.pdf
     _template: weeknieuws
   - LinkTitle: week 36
     file: /uploads/Frando23-36.pdf
@@ -169,6 +170,7 @@ blocks:
     file: /uploads/Parochieblad/Frando22-32.pdf
     _template: weeknieuws
 ---
+
 
 
 
