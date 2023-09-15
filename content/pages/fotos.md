@@ -104,8 +104,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipOGnOG5LncKd84YBHOpwjDOtGqNdqPpQEQylD5IVgrUaL-xntZGF-CVJZWmCAr07Q?key=WTgxZjZSVjd6bW9qdGdDWHBYRVBXMjBwQWQyc1Rn
+      - label: Parochiefeest
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: hero
 ---
+
 
 
 
