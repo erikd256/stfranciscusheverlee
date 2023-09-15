@@ -99,8 +99,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipOugo5IY6JYGZlIZKO4GIdUhbWQ2xU3dlBUBszy_VyNBygd0_coMbnQQE3hX3pkvg?key=ZFB4cEVMWWxlUl96bFRXR2tyQVBFTl9PMVMwYXR3
+      - label: Samana Viering
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipOGnOG5LncKd84YBHOpwjDOtGqNdqPpQEQylD5IVgrUaL-xntZGF-CVJZWmCAr07Q?key=WTgxZjZSVjd6bW9qdGdDWHBYRVBXMjBwQWQyc1Rn
     _template: hero
 ---
+
 
 
 
