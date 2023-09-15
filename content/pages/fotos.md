@@ -34,8 +34,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipMuW4Ri-_reegKUth_T4MLI6T8enjkxW96dhh0qGkrkfI1-DtaQuZlLOhrCRHTpBg?key=cjdzbVhJSE4yc1FfdjFUZW5LdncxZ2ZnWXhacVB3
+      - label: Pinksteren
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipNJkSHQZjenGAuEbvDVENq5etzjZdITtcg8y_4ZLSQnuPUUeI0GVSKpW8857RSFpQ?key=NmV0YVpFUmxfQ2Jjb0R3VDFMaklDVU41aGV1LWtB
     _template: hero
 ---
+
 
 
 
