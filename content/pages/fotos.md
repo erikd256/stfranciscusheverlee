@@ -11,7 +11,7 @@ blocks:
     actions:
       - label: startviering 10 september
         type: link
-        icon: true
+        icon: false
         link: >-
           https://photos.google.com/share/AF1QipN-hzsCt0LMtTY8eRGN8IrTObN3ENT3usIt6Lkexy1Y6XK1FjgcGraS7iMvQG6HKg?key=VlZfU3RDUncyaXhyRlhDY0tPTnpWci1sZGJWcmZ3
     _template: hero
@@ -111,6 +111,7 @@ blocks:
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: hero
 ---
+
 
 
 
