@@ -69,8 +69,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipMwz4YxG44OHL7nFQEQEhhCszhwT-2vT2X6hnkmHdNPuQHcfVeJnq93ffBLxRB32w?key=S3lrVjgyd0tWOXdSVFV6Wi00eDNoLV9xSE1ZclZR
+      - label: Naamopgave Vormsel
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipNBLsVAorbPSNhLzPuWaC_8UoagXXyee5YDNPt-r6pye1ROlBAohUBh3icr5cEdAg?key=T0tkUnlobHZQTWpRbWdzWVJqSDBXYzg2Z2xuY09B
     _template: hero
 ---
+
 
 
 
