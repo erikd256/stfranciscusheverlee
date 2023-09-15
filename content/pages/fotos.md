@@ -49,8 +49,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipM6BHmvVMkHpcv-AtlX08vT9a3_epu9qPXgERagYE3XKn3S_rgj30R5Noq9lGWatA?key=T0xkd2dxVXdYcTVLbVVrU1I1SnptVUMtYk5IZVdn
+      - label: Kruisoplegging Vormsel
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipOccDjgyjGB1HNDKUmSKTpMnZy8ZrpCnJiOlrz810PRs9meh3kNGNZttuAT88N2Gg?key=MkNqeTZOaGlvdTY2YjZwamF2MmVENnhUSFVGUFBn
     _template: hero
 ---
+
 
 
 
