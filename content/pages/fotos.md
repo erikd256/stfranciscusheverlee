@@ -74,8 +74,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipNBLsVAorbPSNhLzPuWaC_8UoagXXyee5YDNPt-r6pye1ROlBAohUBh3icr5cEdAg?key=T0tkUnlobHZQTWpRbWdzWVJqSDBXYzg2Z2xuY09B
+      - label: Concert Capella Conventi
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipNkl77m5D8b_VFWBbX-u_FuIRuwLNi2Ke0MilmswyNqeugqqZ3-nsOv-AecqFeACg?key=aGhWQTRva3lsNU9uNEx3anl5Q2otVzVFRy1HdmJR
     _template: hero
 ---
+
 
 
 
