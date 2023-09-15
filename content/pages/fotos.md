@@ -10,7 +10,7 @@ blocks:
     text: ''
     actions:
       - label: slotviering 25 juni 2023
-        type: button
+        type: link
         icon: true
         link: >-
           https://photos.google.com/share/AF1QipMuW4Ri-_reegKUth_T4MLI6T8enjkxW96dhh0qGkrkfI1-DtaQuZlLOhrCRHTpBg?key=cjdzbVhJSE4yc1FfdjFUZW5LdncxZ2ZnWXhacVB3
@@ -25,6 +25,7 @@ blocks:
     textsize: text-2xl
     _template: heading
 ---
+
 
 
 
