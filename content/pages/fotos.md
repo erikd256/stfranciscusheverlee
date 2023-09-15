@@ -5,6 +5,10 @@ blocks:
     headline: Hier vinden jullie links naar diverse fotoalbums
     text: ''
     _template: hero
+  - tagline: Here's some text above the other te
+    headline: This Big Text is Totally Aweso
+    text: ''
+    _template: hero
   - tagline: ''
     headline: werkjaar 2022 - 23
     text: ''
@@ -25,6 +29,7 @@ blocks:
     textsize: text-2xl
     _template: heading
 ---
+
 
 
 
