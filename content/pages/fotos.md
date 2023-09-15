@@ -84,8 +84,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipOsW0D-GA_IMf1UQjbT4EprkUkLNFjZfSkE4HF6xf2efEBFlNMkJ52MgzK-7EBWog?key=Z1FadmxWQTIycXk3RHZVd2JJMEZoODVYSU9GVXVn
+      - label: Christus Koning
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipN9XzROriCYw-hbl418G0P3uAPuMm0byXfIGpWwXiPASif8K5ce4j2bScVPorklOA?key=X0U4V1FxS0R6d1hxbzVmMVBHRXB2TVdFZlp3Yll3
     _template: hero
 ---
+
 
 
 
