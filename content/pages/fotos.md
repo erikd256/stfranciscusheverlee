@@ -19,6 +19,11 @@ blocks:
     headline: werkjaar 2022 - 23
     text: ''
     actions:
+      - label: Maria Hemelvaart
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipPAABKVp5BXnacJWnkT0-VOLu2uRPE4-A5XAYajOxLK2z8K6UppgFG00Ve9FjFJFg?key=U3U1cjQ4TDM5SXpBWjdqWkdFeVAxRlBkQnR2Ujln
       - label: viering met pater Ghislain Kasereka
         type: link
         icon: true
@@ -30,16 +35,8 @@ blocks:
         link: >-
           https://photos.google.com/share/AF1QipMuW4Ri-_reegKUth_T4MLI6T8enjkxW96dhh0qGkrkfI1-DtaQuZlLOhrCRHTpBg?key=cjdzbVhJSE4yc1FfdjFUZW5LdncxZ2ZnWXhacVB3
     _template: hero
-  - titleText: werkjaar 2023 - 24
-    textsize: text-2xl
-    _template: heading
-  - titleText: werkjaar 2022 -23
-    textsize: text-2xl
-    _template: heading
-  - titleText: werkjaar 2021 - 22
-    textsize: text-2xl
-    _template: heading
 ---
+
 
 
 
