@@ -94,8 +94,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipNDP36Fi7jY_ZFgW9tf9t3weKRhuSN1bIn22kfpj9HsQwQEKS7mAycWRDKdtiHBHw?key=OF9hQWhERGFyMTZXRnlib0pXNTFXeWxPMUNJbHFB
+      - label: Concert Gospelrats
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipOugo5IY6JYGZlIZKO4GIdUhbWQ2xU3dlBUBszy_VyNBygd0_coMbnQQE3hX3pkvg?key=ZFB4cEVMWWxlUl96bFRXR2tyQVBFTl9PMVMwYXR3
     _template: hero
 ---
+
 
 
 
