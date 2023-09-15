@@ -31,7 +31,7 @@ blocks:
           https://photos.google.com/share/AF1QipPrYmgdyw4PpFgD9sT37N7JbAZE2GWn-zLYvrbQZo9oQ5esA64usdatEyiFIjwEPg?key=RGFCRi10ZGQwek5LRHJ2X2xSZWlZZlE5WWNkaGNR
       - label: slotviering 25 juni 2023
         type: link
-        icon: true
+        icon: false
         link: >-
           https://photos.google.com/share/AF1QipMuW4Ri-_reegKUth_T4MLI6T8enjkxW96dhh0qGkrkfI1-DtaQuZlLOhrCRHTpBg?key=cjdzbVhJSE4yc1FfdjFUZW5LdncxZ2ZnWXhacVB3
     _template: hero
