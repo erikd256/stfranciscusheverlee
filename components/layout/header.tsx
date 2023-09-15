@@ -72,7 +72,6 @@ export const Header = ({ data, props }) => {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico"/>
-        <script defer data-domain="stfranciscus-heverlee.org" nonce="plausibleanalytics" src="https://plausible.stfranciscus-heverlee.org/js/script.js"></script>
         {props.title !== undefined && <title>{props.title} @ Sint-Franciscusparochie</title>}
         <meta name="keywords" content={props.keywords}/>
       </Head>
