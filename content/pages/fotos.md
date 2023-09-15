@@ -6,7 +6,7 @@ blocks:
     text: ''
     _template: hero
   - tagline: Here's some text above the other te
-    headline: This Big Text is Totally Aweso
+    headline: ''
     text: ''
     _template: hero
   - tagline: ''
@@ -29,6 +29,7 @@ blocks:
     textsize: text-2xl
     _template: heading
 ---
+
 
 
 
