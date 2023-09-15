@@ -44,8 +44,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipMRdtdyQgeNlAczJnfEf-xy2gw4ym-F1TwjnVceX6AYA294YSB6gUbjqr86sA8N8Q?key=RVJralYwOXJpRXpDemUxeUk5N21QQnlWZnNQUnhB
+      - label: Goede week
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipM6BHmvVMkHpcv-AtlX08vT9a3_epu9qPXgERagYE3XKn3S_rgj30R5Noq9lGWatA?key=T0xkd2dxVXdYcTVLbVVrU1I1SnptVUMtYk5IZVdn
     _template: hero
 ---
+
 
 
 
