@@ -19,6 +19,11 @@ blocks:
     headline: werkjaar 2022 - 23
     text: ''
     actions:
+      - label: viering met pater Ghislain Kasereka
+        type: link
+        icon: true
+        link: >-
+          https://photos.google.com/share/AF1QipPrYmgdyw4PpFgD9sT37N7JbAZE2GWn-zLYvrbQZo9oQ5esA64usdatEyiFIjwEPg?key=RGFCRi10ZGQwek5LRHJ2X2xSZWlZZlE5WWNkaGNR
       - label: slotviering 25 juni 2023
         type: link
         icon: true
@@ -35,6 +40,7 @@ blocks:
     textsize: text-2xl
     _template: heading
 ---
+
 
 
 
