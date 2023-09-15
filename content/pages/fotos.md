@@ -5,9 +5,15 @@ blocks:
     headline: Hier vinden jullie links naar diverse fotoalbums
     text: ''
     _template: hero
-  - tagline: Here's some text above the other te
-    headline: ''
+  - tagline: ''
+    headline: werkjaar 2023 - 24
     text: ''
+    actions:
+      - label: startviering 10 september
+        type: link
+        icon: true
+        link: >-
+          https://photos.google.com/share/AF1QipN-hzsCt0LMtTY8eRGN8IrTObN3ENT3usIt6Lkexy1Y6XK1FjgcGraS7iMvQG6HKg?key=VlZfU3RDUncyaXhyRlhDY0tPTnpWci1sZGJWcmZ3
     _template: hero
   - tagline: ''
     headline: werkjaar 2022 - 23
@@ -29,6 +35,7 @@ blocks:
     textsize: text-2xl
     _template: heading
 ---
+
 
 
 
