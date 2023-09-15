@@ -89,8 +89,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipN9XzROriCYw-hbl418G0P3uAPuMm0byXfIGpWwXiPASif8K5ce4j2bScVPorklOA?key=X0U4V1FxS0R6d1hxbzVmMVBHRXB2TVdFZlp3Yll3
+      - label: Allerheiligen-Allerzielen
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipNDP36Fi7jY_ZFgW9tf9t3weKRhuSN1bIn22kfpj9HsQwQEKS7mAycWRDKdtiHBHw?key=OF9hQWhERGFyMTZXRnlib0pXNTFXeWxPMUNJbHFB
     _template: hero
 ---
+
 
 
 
