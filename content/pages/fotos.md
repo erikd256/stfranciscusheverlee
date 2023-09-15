@@ -54,8 +54,14 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipOccDjgyjGB1HNDKUmSKTpMnZy8ZrpCnJiOlrz810PRs9meh3kNGNZttuAT88N2Gg?key=MkNqeTZOaGlvdTY2YjZwamF2MmVENnhUSFVGUFBn
+      - label: Naamopgave EC
+        type: link
+        icon: false
+        link: >-
+          https://photos.google.com/share/AF1QipMw6wDy12w_ScoTmZ_TgGSqnDjad_GOJdBr_ZFJxlTKfoX0KHKhL_e5sEIiPT1OVQ?key=ODE4Zlh1T1lDYm1xOWVsclJ6Rm1IY3dGVjdWcU5B
     _template: hero
 ---
+
 
 
 
