@@ -26,7 +26,7 @@ blocks:
           https://photos.google.com/share/AF1QipPAABKVp5BXnacJWnkT0-VOLu2uRPE4-A5XAYajOxLK2z8K6UppgFG00Ve9FjFJFg?key=U3U1cjQ4TDM5SXpBWjdqWkdFeVAxRlBkQnR2Ujln
       - label: viering met pater Ghislain Kasereka
         type: link
-        icon: true
+        icon: false
         link: >-
           https://photos.google.com/share/AF1QipPrYmgdyw4PpFgD9sT37N7JbAZE2GWn-zLYvrbQZo9oQ5esA64usdatEyiFIjwEPg?key=RGFCRi10ZGQwek5LRHJ2X2xSZWlZZlE5WWNkaGNR
       - label: slotviering 25 juni 2023
