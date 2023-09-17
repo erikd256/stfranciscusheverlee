@@ -2,10 +2,6 @@
 title: Start
 blocks:
   - bannerURL: /
-    bannertext: Concert
-    vervaldatum: '2023-10-30T23:00:00.000Z'
-    _template: banner
-  - bannerURL: /
     bannertext: 25/09 om 20u ouderavond vormsel
     vervaldatum: '2023-09-24T22:00:00.000Z'
     _template: banner
@@ -29,6 +25,7 @@ blocks:
       alt: Mauritz andries gedicht
     _template: hero
 ---
+
 
 
 
