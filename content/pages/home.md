@@ -1,7 +1,8 @@
 ---
 title: Start
 blocks:
-  - bannertext: 25/09 om 20u ouderavond vormsel
+  - bannerURL: /
+    bannertext: 25/09 om 20u ouderavond vormsel
     vervaldatum: '2023-09-24T22:00:00.000Z'
     _template: banner
   - tagline: >-
@@ -24,6 +25,7 @@ blocks:
       alt: Mauritz andries gedicht
     _template: hero
 ---
+
 
 
 
