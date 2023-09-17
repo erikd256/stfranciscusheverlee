@@ -1,9 +1,8 @@
 ---
 title: Start
 blocks:
-  - bannerURL: 'https://www.stfranciscus-heverlee.org/post/hemelvaart'
-    bannertext: Hemelvaart!
-    vervaldatum: '2023-01-31T22:00:00.000Z'
+  - bannertext: 25/09 om 20u ouderavond vormsel
+    vervaldatum: '2023-09-24T22:00:00.000Z'
     _template: banner
   - tagline: >-
       We staan graag voor u ter beschikking en willen met u de droom van een
@@ -25,6 +24,7 @@ blocks:
       alt: Mauritz andries gedicht
     _template: hero
 ---
+
 
 
 
