@@ -5,6 +5,7 @@ import format from "date-fns/format";
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from 'moment'
+import formatISO from "date-fns/formatISO"
 export const Parochiebladeren = ({ data }) => {
 
   const localizer = momentLocalizer(moment) // or globalizeLocalizer
@@ -12,9 +13,9 @@ export const Parochiebladeren = ({ data }) => {
   data.map((postData) => {
     const post = postData.node;
     const Event = {
-      title: "Parochieblad (Week: " + moment().week(post.date) + ")",
-      start: post.date,
-      end: post.date,
+      title: "Week: " + moment().week(post.date),
+      start: moment.utc(post.date),
+      end: moment.utc(post.date),
       allDay: true,
       resource: post.bestand,
     }
