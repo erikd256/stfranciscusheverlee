@@ -25,6 +25,21 @@ query contentQuery($relativePath: String!) {
   }
 }
 
+query weeknieuwsQuery {
+  ...LayoutQueryFragment
+  weeknieuwsConnection(sort: "date", last: -1) {
+    edges {
+      node {
+        id
+        _values
+        _sys {
+          filename
+        }
+      }
+    }
+  }
+}
+
 query blogPostQuery($relativePath: String!) {
   ...LayoutQueryFragment
   post(relativePath: $relativePath) {

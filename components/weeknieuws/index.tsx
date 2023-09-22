@@ -1,0 +1,1 @@
+export { Parochiebladeren } from "./parochiebladeren";

@@ -9,7 +9,6 @@ import { formBlockSchema } from "../components/blocks/form";
 import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
-import { weeknieuwsBlockSchema } from "../components/blocks/weeknieuws";
 import { DonationBoxBlockSchema } from "../components/blocks/donationbox";
 const config = defineStaticConfig({
   branch: "main",
@@ -115,6 +114,24 @@ schema: {
           isBody: true,
         },
       ],
+    },
+    {
+      label: "Parochieblad",
+      name: "weeknieuws",
+      path: "content/weeknieuws",
+      format: "mdx",
+      fields: [
+        {
+          type: "image",
+          label: "Bestand",
+          name: "bestand",
+        },
+        {
+          type: "datetime",
+          label: "Datum",
+          name: "date",
+        },
+      ]
     },
     {
       label: "Global",
@@ -254,7 +271,6 @@ schema: {
           templates: [
             heroBlockSchema,
             featureBlockSchema,
-            weeknieuwsBlockSchema,
             formBlockSchema,
             bannerBlockSchema,
             headingBlockSchema,
