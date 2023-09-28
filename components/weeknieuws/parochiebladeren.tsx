@@ -22,10 +22,13 @@ export const Parochiebladeren = ({ data }) => {
     }
     eventsList.push(Event)
   })
-  const handleSelectEvent= React.useCallback(() => {
-    (event) => setFilesrc(event.resource)
+  const handleSelectEvent= React.useCallback(
+    (event) => setFrame(event.resource), []
+   )
+   const setFrame = (fileSrc) => {
     setIframeHidden(false)
-}, [])
+    setFilesrc(fileSrc)
+    }
   const closeIFrame = () => setIframeHidden(true)
   return (
     <>
