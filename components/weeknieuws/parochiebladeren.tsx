@@ -38,7 +38,7 @@ export const Parochiebladeren = ({ data }) => {
     onSelectEvent={handleSelectEvent}
   /></div>
       <div className="">
-        <iframe className={`h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[9000] ${iframeHidden ? "none":"block" }`} src={`https://viewer.stfranciscus-heverlee.org/web/viewer.html?file=${filesrc}`}/>
+        <iframe className={`h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[9000] ${iframeHidden ? "none":"block" }`} src={`/pdfjs/web/viewer.html?file=${filesrc}`}/>
       </div>
       <Head>
         <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>
