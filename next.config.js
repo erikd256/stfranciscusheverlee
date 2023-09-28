@@ -43,7 +43,7 @@ module.exports = withSvgr({
             },
             {
               key: 'Access-Control-Allow-Origin',
-              value : 'assets.tina.io, *.stfranciscus-heverlee.org'
+              value : '*.tina.io, *.stfranciscus-heverlee.org'
             }
           ],
         },
