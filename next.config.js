@@ -40,6 +40,10 @@ module.exports = withSvgr({
             {
               key: 'Strict-Transport-Security',
               value: 'max-age=3571000; includeSubDomains; preload',
+            },
+            {
+              key: 'Access-Control-Allow-Origin',
+              value : 'assets.tina.io, *.stfranciscus-heverlee.org'
             }
           ],
         },
