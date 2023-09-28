@@ -26,6 +26,7 @@ export const Parochiebladeren = ({ data }) => {
     (event) => setFilesrc(event.resource)
     setIframeHidden(false)
 }, [])
+  const closeIFrame = () => setIframeHidden(true)
   return (
     <>
     <div className="h-[600px]">
@@ -39,7 +40,7 @@ export const Parochiebladeren = ({ data }) => {
   /></div>
       <div className="">
         <iframe className={`fixed h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[9000] ${iframeHidden ? "hidden":"block" }`} src={`/pdfjs/web/viewer.html?file=${filesrc}`}/>
-        <button className={`${iframeHidden ? "hidden":"block" }`}></button>
+        <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[75px] left-[15px] bg-liturgischekleur ${iframeHidden ? "hidden":"block" } z-[9999]`} onClick={closeIFrame}>Sluiten</button>
       </div>
       <Head>
         <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>
