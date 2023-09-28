@@ -1549,7 +1549,7 @@
   };
   exports.PDFViewerApplication = PDFViewerApplication;
   {
-    const HOSTED_VIEWER_ORIGINS = ["null", "https://viewer.stfranciscus-heverlee.org", "https://assets.tina.io"];
+    const HOSTED_VIEWER_ORIGINS = ["null", "https://www.stfranciscus-heverlee.org", "https://assets.tina.io"];
     var validateFileURL = function (file) {
       if (!file) {
         return;
