@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
+    "build": "npx browserslist@latest --update-db && tinacms build && next build ",
     "start": "tinacms server:start -c \"next start\"",
     "export": "npm run build && next export",
     "lint": "eslint . --ext .ts,.tsx"
