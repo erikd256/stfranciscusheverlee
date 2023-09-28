@@ -1549,7 +1549,7 @@ const PDFViewerApplication = {
 };
 exports.PDFViewerApplication = PDFViewerApplication;
 {
-  const HOSTED_VIEWER_ORIGINS = ["null", "https://www.stfranciscus-heverlee.org", "https://stfranciscus-heverlee.org", "https://assets.tina.io"];
+  const HOSTED_VIEWER_ORIGINS = ["null", "*", "https://www.stfranciscus-heverlee.org", "https://stfranciscus-heverlee.org", "https://assets.tina.io"];
   var validateFileURL = function (file) {
     if (!file) {
       return;
@@ -1560,6 +1560,9 @@ exports.PDFViewerApplication = PDFViewerApplication;
         return;
       }
       const fileOrigin = new URL(file, window.location.href).origin;
+      if (fileOrigin !== viewerOrigin || fileOrigin == "https://assets.tina.io") {
+        throw new Error("file origin does not match viewer's");
+      }
     } catch (ex) {
       PDFViewerApplication.l10n.get("loading_error").then(msg => {
         PDFViewerApplication._documentError(msg, {
