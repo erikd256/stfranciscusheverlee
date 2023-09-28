@@ -22,10 +22,10 @@ export const Parochiebladeren = ({ data }) => {
     }
     eventsList.push(Event)
   })
-  const handleSelectEvent = React.useCallback(
+  const handleSelectEvent= React.useCallback(() => {
     (event) => setFilesrc(event.resource)
-    , []
-  )
+    setIframeHidden(false)
+}, [])
   return (
     <>
     <div className="h-[600px]">
@@ -38,7 +38,8 @@ export const Parochiebladeren = ({ data }) => {
     onSelectEvent={handleSelectEvent}
   /></div>
       <div className="">
-        <iframe className={`h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[9000] ${iframeHidden ? "none":"block" }`} src={`/pdfjs/web/viewer.html?file=${filesrc}`}/>
+        <iframe className={`fixed h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[9000] ${iframeHidden ? "hidden":"block" }`} src={`/pdfjs/web/viewer.html?file=${filesrc}`}/>
+        <button className={`${iframeHidden ? "hidden":"block" }`}></button>
       </div>
       <Head>
         <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>

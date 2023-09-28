@@ -23,7 +23,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
-/* 0 */,
+/* 0 */
 /* 1 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -1549,7 +1549,7 @@ const PDFViewerApplication = {
 };
 exports.PDFViewerApplication = PDFViewerApplication;
 {
-  const HOSTED_VIEWER_ORIGINS = ["null", "https://viewer.stfranciscus-heverlee.org", "https://assets.tina.io"];
+  const HOSTED_VIEWER_ORIGINS = ["null", "https://www.stfranciscus-heverlee.org", "https://stfranciscus-heverlee.org", "https://assets.tina.io"];
   var validateFileURL = function (file) {
     if (!file) {
       return;
