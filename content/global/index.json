@@ -60,10 +60,6 @@
           {
             "href": "/videos",
             "label": "Videos"
-          },
-          {
-            "href": "/audios",
-            "label": "Audios"
           }
         ]
       },
