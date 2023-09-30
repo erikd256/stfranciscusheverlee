@@ -5,8 +5,10 @@ blocks:
       # **We helpen je graag verder!**
 
 
-      Voor algemene of specifieke vragen over de parochiewerking, contacteer ons
-      parochiesecretariaat via email, op
+      Het parochiesecretariaat is open op dinsdag voormiddag van 9u30 - 11u30.
+      Een afspraak voor een ander moment maak je liefst via het nummer [+32 492
+      31 92 15](tel:0032492319215). Voor algemene of specifieke vragen over de
+      parochiewerking, contacteer ons parochiesecretariaat via email, op
       [franciscusheverlee@gmail.com](mailto:franciscusheverlee@gmail.com) of 
       via telefoon op het nummer [+32 492 31 92 15](tel:0032492319215). Als je
       wilt kan je natuurlijk ook altijd het contactformulier beneden gebruiken.
@@ -43,5 +45,6 @@ blocks:
         placeholder: ''
     _template: form
 ---
+
 
 
