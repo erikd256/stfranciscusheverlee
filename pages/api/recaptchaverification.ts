@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 const verifyRecaptcha = async (token:string) => {
   const secretKey = process.env.RECAPTCHA_SECRET_KEY;
 
-  var verificationUrl =
+  const verificationUrl =
     "https://www.google.com/recaptcha/api/siteverify?secret=" +
     secretKey +
     "&response=" +
