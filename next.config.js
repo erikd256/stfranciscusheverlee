@@ -18,7 +18,11 @@ module.exports = withSvgr({
         source: '/admin',
         destination: '/admin/index.html',
       },
-    ];
+      {
+        source: "/stats/:match*",
+        destination: "https://analytics.stfranciscus-heverlee.org/:match*"
+      }
+    ]  
   },
   async headers() {
     return [
