@@ -10,7 +10,6 @@ export const Footer = ({ data, rawData}) => {
     <footer className={`bg-basiskleur pb-[75px] min-h-[500px] relative pt-[20px]`}>
         <div className="grid w-full text-liturgischekleur gap-6 grid-cols-1 place-items-center pt-[20px] mo:pt-[80px]">
           <img src="/icon.svg" width="75px" alt="icon-footer"/>
-          <p>&copy; 2022 - {(new Date().getFullYear())} <a href="https://github.com/erikd256" target="_blank">erikd256</a></p>
           <div className="w-full mo:w-1/3 mo: text-center place-content-center mo:absolute mo:top-[100px] mo:right-[0px]">
           
             <a className="mx-[0px] mt-[30px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" aria-label="Facebook" target="_blank" href="https://www.facebook.com/Franciscusgemeenschapheverlee"><FaFacebookF className={`${socialIconClasses}` }/></a>  
@@ -47,6 +46,11 @@ export const Footer = ({ data, rawData}) => {
         <div className="overflow-scroll p-4 text-liturgischekleur w-5/6 mx-auto mt-[150px]">
           <span className="absolute">Met dank aan onze sponsors:</span><br></br>
           <object type="image/svg+xml" data={`https://opencollective.com/${globals.collectivename}/tiers/backers.svg`}></object>
+        </div>
+        <hr className="border-liturgischekleur my-[10px]"></hr>
+        <div className="overflow-scroll text-liturgischekleur w-5/6 m-auto mt-[20px]">
+          <p className="left-[20%] absolute">&copy; 2022 - {(new Date().getFullYear())} <a href="https://github.com/erikd256" target="_blank">erikd256</a></p>
+          <img className="right-[20%] absolute" src="https://badgen.net/github/last-commit/erikd256/stfranciscusheverlee"/>
         </div>
     </footer>
     </>
