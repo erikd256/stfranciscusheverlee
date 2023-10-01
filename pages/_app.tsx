@@ -15,7 +15,6 @@ const App = ({ Component, pageProps }) => {useEffect(() => {
       scriptProps={{
         async: false,
         defer: false,
-        appendTo: "head",
         nonce: undefined,
       }}
       >
