@@ -15,7 +15,7 @@ const App = ({ Component, pageProps }) => {
       >
         <Head>
         <script data-goatcounter="/stats/count"
-        async src="//gc.zgo.at/count.js"></script>  
+        async src="/statscdn/count.js"></script>  
         </Head>
       <Component {...pageProps} />
     </GoogleReCaptchaProvider>
