@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }) => {useEffect(() => {
 }, []);
   return (
     <GoogleReCaptchaProvider
-      reCaptchaKey={process.env.RECAPTCHA_SITE_KEY}
+      reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
       scriptProps={{
         async: false,
         defer: false,
