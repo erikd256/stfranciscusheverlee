@@ -1,14 +1,9 @@
 import "../styles.css";
 import React, { useEffect } from "react";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import { init } from "@socialgouv/matomo-next";
+import Head from "next/head";
 
-const MATOMO_URL = process.env.NEXT_PUBLIC_MATOMO_URL;
-const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
-
-const App = ({ Component, pageProps }) => {useEffect(() => {
-  init({ url: MATOMO_URL, siteId: MATOMO_SITE_ID });
-}, []);
+const App = ({ Component, pageProps }) => {
   return (
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
@@ -18,6 +13,10 @@ const App = ({ Component, pageProps }) => {useEffect(() => {
         nonce: undefined,
       }}
       >
+        <Head>
+        <script data-goatcounter="/stats/count"
+        async src="//gc.zgo.at/count.js"></script>  
+        </Head>
       <Component {...pageProps} />
     </GoogleReCaptchaProvider>
   );
