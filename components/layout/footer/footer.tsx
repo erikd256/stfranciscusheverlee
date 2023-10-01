@@ -50,7 +50,7 @@ export const Footer = ({ data, rawData}) => {
         <hr className="border-liturgischekleur my-[10px]"></hr>
         <div className="overflow-scroll text-liturgischekleur w-5/6 m-auto mt-[20px]">
           <p className="left-[20%] absolute">&copy; 2022 - {(new Date().getFullYear())} <a href="https://github.com/erikd256" target="_blank">erikd256</a></p>
-          <img className="right-[20%] absolute" src="https://badgen.net/github/last-commit/erikd256/stfranciscusheverlee"/>
+          <a href="https://github.com/erikd256/stfranciscusheverlee/commits/main" target="_blank"><img className="right-[20%] absolute" src="https://badgen.net/github/last-commit/erikd256/stfranciscusheverlee"/></a>
         </div>
     </footer>
     </>
