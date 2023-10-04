@@ -9,6 +9,9 @@
   font-family: "Ubuntu";
   src: url("public/fonts/Ubuntu/Ubuntu-Regular.ttf");
 }
+.grecaptcha-badge { 
+  visibility: hidden; 
+}
 @layer base {
   a {
      @apply underline;
@@ -27,8 +30,5 @@
   }
   body {
     @apply text-sm text-basiskleur md:text-base font-nunito;
-  }
-  .grecaptcha-badge { 
-    visibility: hidden; 
   }
 }
