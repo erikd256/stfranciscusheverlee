@@ -36,10 +36,10 @@ export const Form = ({ data, parentField }) => {
           <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
           <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit">Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
-          <input hidden type={"text"} name="sendToEmail" value={data.NetlifyId} />
-          Dit formulier is beveiligd door reCAPTCHA en Google. Hun
-          <a href="https://policies.google.com/privacy">Privacy Policy</a> en
-          <a href="https://policies.google.com/terms">Terms of Service</a> zijn van toepassing.
+          <input hidden type={"text"} name="sendToEmail" value={data.NetlifyId} /><br></br><br></br>
+          <span className="text-sm">Dit formulier is beveiligd door reCAPTCHA en Google. Hun
+          <a href="https://policies.google.com/privacy"> Privacy Policy</a> en
+          <a href="https://policies.google.com/terms"> Terms of Service</a> zijn van toepassing.</span>
           </form>
       </Container>
     </Section>
