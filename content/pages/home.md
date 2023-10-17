@@ -1,6 +1,9 @@
 ---
 title: Start
 blocks:
+  - bannertext: 25/11 om 20u concert Blij Rondeel
+    vervaldatum: '2023-11-24T23:00:00.000Z'
+    _template: banner
   - bannerURL: /
     bannertext: 20/11 om 20u ouderavond Eerste Communie
     vervaldatum: '2023-11-19T23:00:00.000Z'
@@ -25,6 +28,7 @@ blocks:
       alt: Mauritz andries gedicht
     _template: hero
 ---
+
 
 
 
