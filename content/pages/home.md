@@ -1,7 +1,8 @@
 ---
 title: Start
 blocks:
-  - bannertext: 25/11 om 20u concert Blij Rondeel
+  - bannerURL: 'http://www.blijrondeel.be/'
+    bannertext: 25/11 om 20u concert Blij Rondeel
     vervaldatum: '2023-11-24T23:00:00.000Z'
     _template: banner
   - bannerURL: /
@@ -28,6 +29,7 @@ blocks:
       alt: Mauritz andries gedicht
     _template: hero
 ---
+
 
 
 
