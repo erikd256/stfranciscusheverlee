@@ -29,10 +29,8 @@ export const Form = ({ data, parentField }) => {
       } 
   })
     if (res.data.score > 0.5) {
-      console.log(res.data)
       return true
     } else {
-      console.log(res.data)
       return false
     }}
     
