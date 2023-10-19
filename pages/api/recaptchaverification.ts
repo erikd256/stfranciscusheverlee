@@ -41,6 +41,7 @@ export default async function handler(
       return res.json({
         status: "error",
         message: "Low score, please try again!!!",
+        response: response
       });
     }
   } catch (error) {
