@@ -25,7 +25,7 @@ export const Form = ({ data, parentField }) => {
       method: 'post',
       url:`/api/recaptchaverification`, 
       data: {
-        gRecaptchaToken: token, // This is the body part
+        gRecaptchaToken: token
       } 
   })
     if (res.data.score > 0.5) {
