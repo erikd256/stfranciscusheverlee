@@ -36,7 +36,7 @@ export default async function handler(
     //   }
     if (response.data.success && response.data.score >= 0.5) {
       return res.json({
-        score: response.data.score
+        response
       })
     } else {
       return res.json({
