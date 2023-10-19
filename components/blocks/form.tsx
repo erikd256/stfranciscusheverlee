@@ -28,7 +28,7 @@ export const Form = ({ data, parentField }) => {
         gRecaptchaToken: token
       } 
   })
-    if (res.data.score > 0.5) {
+    if (res.data > 0.5) {
       return true
     } else {
       return false

@@ -34,9 +34,8 @@ export default async function handler(
     //     "error-codes": [...]        // optional
     //   }
     if (response.data.success && response.data.score >= 0.5) {
-      res.json({
-        score: response.data.score
-      })
+      res.json(response.data.score
+      )
     } else {
       return res.json({
         status: "error",
