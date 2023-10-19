@@ -7,7 +7,7 @@ const verifyRecaptcha = async (token:string) => {
   const verificationUrl =
     "https://www.google.com/recaptcha/api/siteverify?secret=" +
     secretKey +
-    "&response=" + process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+    "&response=" + token;
 
   return await axios.post(verificationUrl);
 };
@@ -17,7 +17,7 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   try {
-   const token = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+   const token = req.body.gRecaptchaToken;
 
     // Recaptcha response
     const response = await verifyRecaptcha(token);

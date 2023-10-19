@@ -21,9 +21,13 @@ export const Form = ({ data, parentField }) => {
   const [buttonDisabled, setButtonDisabled] = React.useState(true)
   
   async function verifyCaptchaAction(token: string) {
-    const res = await axios.post(
-      `/api/recaptchaverification`
-    )
+    const res = await axios({
+      method: 'post',
+      url:`/api/recaptchaverification`, 
+      data: {
+        gRecaptchaToken: token, // This is the body part
+      } 
+  })
     if (res.data.score > 0.5) {
       console.log(res.data)
       return true
