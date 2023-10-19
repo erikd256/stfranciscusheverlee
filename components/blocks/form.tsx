@@ -63,7 +63,7 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p><br></br>
+          <p className="inline-flex"><label>Ik ga akkoord met de <a href="/privacy">privacyovereenkomst.</a></label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p><br></br>
           <p className="inline-flex"><label>Ik ben geen robot.</label><input onChange={onSubmit} required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
           
           <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} disabled={buttonDisabled} type="submit">Versturen</button>
