@@ -29,8 +29,10 @@ export const Form = ({ data, parentField }) => {
       } 
   })
     if (res.data > 0.5) {
+      console.debug(res.data)
       return true
     } else {
+      console.debug(res.data)
       return false
     }}
     
