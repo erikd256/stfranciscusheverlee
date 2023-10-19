@@ -7,7 +7,7 @@ const verifyRecaptcha = async (token:string) => {
   const verificationUrl =
     "https://www.google.com/recaptcha/api/siteverify?secret=" +
     secretKey +
-    "&response=6LfkyWgoAAAAABrHrP6MYOwf0zL2W754cHWqLeGZ";
+    "&response=" + token;
 
   return await axios.post(verificationUrl);
 };
@@ -34,7 +34,7 @@ export default async function handler(
     //     "error-codes": [...]        // optional
     //   }
     if (response.data.success && response.data.score >= 0.5) {
-      return res.json({
+      return ({
         response
       })
     } else {
