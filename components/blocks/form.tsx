@@ -2,7 +2,9 @@ import { Section } from "../util/section";
 import { Container } from "../util/container";
 import type { TinaTemplate } from "tinacms";
 import React from 'react';
-import HCaptcha from "@hcaptcha/react-hcaptcha";
+
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
+import axios from "axios"
 
 export const Question = ({ data, tinaField }) => {
   return (
@@ -15,6 +17,34 @@ export const Question = ({ data, tinaField }) => {
 };
 
 export const Form = ({ data, parentField }) => {
+  const { executeRecaptcha } = useGoogleReCaptcha()
+  const [buttonDisabled, setButtonDisabled] = React.useState(true)
+  
+  async function verifyCaptchaAction(token: string) {
+    const res = await axios.post(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`
+    )
+    if (res.data.score > 0.5) {
+      return true
+    } else {
+      return false
+    }}
+  async function onSubmit() {
+    // if the component is not mounted yet
+    if (!executeRecaptcha) {
+      console.error("component not yet mounted")
+      return
+    }
+    // receive a token
+    const token = await executeRecaptcha("onSubmit")
+    // validate the token via the server action we've created previously
+    const verified = await verifyCaptchaAction(token)
+
+    if (verified) {
+      setButtonDisabled(!buttonDisabled)
+    }
+    window.alert("Je bent toch een robot! Ik wist het!")
+  }
   return (
     <Section>
       <Container
@@ -22,7 +52,7 @@ export const Form = ({ data, parentField }) => {
         size="large"
       >
         <p className="text-2xl my-[10px]">{data.airformTitle}</p>
-        <form action={data.FormEndpoint}>
+        <form onSubmit={onSubmit} >
         {data.items &&
           data.items.map(function (block, i) {
             return (
@@ -33,8 +63,10 @@ export const Form = ({ data, parentField }) => {
               />
             );
           })}
-          <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
-          <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} type="submit">Versturen</button>
+          <p className="inline-flex"><label>Ik ga akkoord met de privacyovereenkomst.</label><input required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p><br></br>
+          <p className="inline-flex"><label>Ik ben geen robot.</label><input onChange={onSubmit} required type="checkbox" className="mx-[10px]"/><span className="text-red-500">*</span></p>          
+          
+          <button  className={`my-[10px] rounded-[5px] border-basiskleur bg-liturgischekleur border-[2px] w-full disabled:cursor-not-allowed`} disabled={buttonDisabled} type="submit">Versturen</button>
           <span className="text-red-500 text-sm">* Verplicht veld</span>
           <input hidden type={"text"} name="sendToEmail" value={data.NetlifyId} /><br></br><br></br>
           <span className="text-sm">Dit formulier is beveiligd door reCAPTCHA en Google. Hun
