@@ -35,7 +35,9 @@ export default async function handler(
     //     "error-codes": [...]        // optional
     //   }
     if (response.data.success && response.data.score >= 0.5) {
-      //INSERT API/LOGIC for saving data once the validation is complete
+      return res.json({
+        score: response.data.score
+      })
     } else {
       return res.json({
         status: "error",
