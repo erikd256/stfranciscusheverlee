@@ -40,7 +40,7 @@ export default async function handler(
     } else {
       return res.json({
         status: "error",
-        message: "Something went wrong, please try again!!!",
+        message: "Low score, please try again!!!",
       });
     }
   } catch (error) {
