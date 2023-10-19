@@ -17,7 +17,7 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   try {
-   const token = "6LfkyWgoAAAAABrHrP6MYOwf0zL2W754cHWqLeGZ";
+   const token = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
     // Recaptcha response
     const response = await verifyRecaptcha(token);
