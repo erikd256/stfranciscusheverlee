@@ -25,10 +25,13 @@ export const Form = ({ data, parentField }) => {
       `/api/recaptchaverification`
     )
     if (res.data.score > 0.5) {
+      console.log(res.data)
       return true
     } else {
+      console.log(res.data)
       return false
     }}
+    
   async function onSubmit() {
     // if the component is not mounted yet
     if (!executeRecaptcha) {
