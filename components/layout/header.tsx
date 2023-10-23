@@ -82,7 +82,7 @@ export const Header = ({ data, props }) => {
           <button onClick={search} className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl" aria-label="Search"><span className="material-symbols-outlined"><SearchIcon/></span></button>
         </span>
       </div>
-      <div className="bg-derdekleur w-full min-h-[50px] leading-[50px] text-center">Deze gemeenschap is lid van de pastorale zone KesseLinde. Ervaar meer <a href="https://www.kerknet.be/organisatie/pastorale-zone-kesselinde" target="_blank" aria-label="Website Pastorale Zone KesseLinde">hier</a>!</div>      <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
+      <div className="bg-derdekleur w-full min-h-[50px] leading-[50px] z-[4000] text-center">Deze gemeenschap is lid van de pastorale zone KesseLinde. Ervaar meer <a href="https://www.kerknet.be/organisatie/pastorale-zone-kesselinde" target="_blank" aria-label="Website Pastorale Zone KesseLinde">hier</a>!</div>      <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
         {globals.header.nav.map((data) => {
           if(data.type=="href"){
             return (
