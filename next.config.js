@@ -22,10 +22,6 @@ module.exports = withSvgr({
         source: "/stats/:match*",
         destination: "https://analytics.stfranciscus-heverlee.org/:match*"
       },
-      {
-        source: "/statscdn/:match*",
-        destination: "https://gc.zgo.at/:match*"
-      }
     ]  
   },
   async headers() {
