@@ -11,7 +11,7 @@ export const Gallery = ({ data, parentField = "" }) => {
   const [coverImage, setCoverImage] = React.useState("")
 
     axios({
-      method: 'get',
+      method: 'post',
       url:`/api/gallery`, 
       data: {
         photoAlbumID: data.sharingURL
