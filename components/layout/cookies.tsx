@@ -23,7 +23,7 @@ export const Cookies = () => {
           <p>-</p>
           <p>Wat betekent dit?</p>
           <ul className="list-disc px-[25px]">
-            <li>Wij gebruiken geen cookies, maar wel <a href="https://www.goatcounter.com/" target="_blank">Goatcounter</a> en <a href="https://vercel.com/docs/concepts/analytics/privacy" target="_blank">Vercel Web Vitals</a> om jullie de beste gebruikerservaring aan te kunnen bieden, genietend van de meest strikte privacy in het internet.</li>
+            <li>Wij gebruiken geen cookies, maar wel <a href="https://umami.is/docs/faq" target="_blank">Umami</a> en <a href="https://vercel.com/docs/concepts/analytics/privacy" target="_blank">Vercel Web Vitals</a> om jullie de beste gebruikerservaring aan te kunnen bieden, genietend van de meest strikte privacy in het internet.</li>
             <li>We verwijderen alle data na 31 dagen op onze servers</li>
             <li>Wij kunnen jullie de hoogste kwaliteit leveren gebaseerd op alleen opensource en privacy-vriendelijke tools zoals bv. NextJS en TinaCMS</li>
             <li>Jullie kunnen de volledige broncode van deze website inzien in ons <a href="https://github.com/erikd256/stfranciscusheverlee" target="_blank" className="underline">repository</a></li>
