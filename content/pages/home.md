@@ -1,9 +1,6 @@
 ---
 title: Start
 blocks:
-  - sharingURL: >-
-      https://photos.google.com/share/AF1QipOugo5IY6JYGZlIZKO4GIdUhbWQ2xU3dlBUBszy_VyNBygd0_coMbnQQE3hX3pkvg?key=ZFB4cEVMWWxlUl96bFRXR2tyQVBFTl9PMVMwYXR3
-    _template: gallery
   - bannerURL: 'http://www.blijrondeel.be/'
     bannertext: 25/11 om 20u concert Blij Rondeel
     vervaldatum: '2023-11-24T23:00:00.000Z'

@@ -11,7 +11,7 @@ export default function handler(
         const links = new Set(r.data.match(regex))
         const titleString1 = r.data.match(regexTitle).toString().replaceAll("<title>", "")
         const titleString2 = titleString1.replaceAll(" - Google Photos","")
-        return {images: Array.from(links), title: titleString2, coverImage: links[0]}
+        res.json({images: Array.from(links), title: titleString2, coverImage: links[0]})
       }).catch((error) => {
         console.log(error)
         res.end()
