@@ -5,13 +5,12 @@ import type { TinaTemplate } from "tinacms";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import axios from "axios"
 
-export const Gallery = ({ data, parentField = "" }) => {
+export const GalleryItem = ({ data, tinaField }) => {
   const [srcArray, setSrcArray] = React.useState([])
   const [galleryTitle, setGalleryTitle] = React.useState("")
   const [coverImage, setCoverImage] = React.useState("")
   const [galleryHidden, setGalleryHidden] = React.useState(true)
   const [titleHidden, setTitleHidden] = React.useState(true)
-  const [imageSrc, setImageSrc] = React.useState("")
   const [imageNumber, setImageNumber] = React.useState(0)
 
   function getGallery(){
@@ -53,8 +52,8 @@ export const Gallery = ({ data, parentField = "" }) => {
     }
   }
   return (
-    <>
-      <div className="p-[50px] container w-1/4 h-[260px] relative m-[50px]" onMouseEnter={toggleTitle} onMouseLeave={toggleTitle}>
+    <div className="flex flex-col">
+      <div className="p-[50px] container w-full h-[260px] relative m-[50px]" onMouseEnter={toggleTitle} onMouseLeave={toggleTitle}>
         <img className="absolute object-cover w-full border-4 border-basiskleur top-0 left-0 rounded-md h-full" src={coverImage} onClick={hideGallery}></img>
         <span onClick={hideGallery} className={`text-xl w-full h-full absolute top-0 left-0 z-[2000] ${titleHidden ? "hidden":"inline-block"} pt-[25%] bg-liturgischekleur text-center rounded-md border-2 border-basiskleur`}>{galleryTitle}</span>  
       </div>
@@ -66,19 +65,77 @@ export const Gallery = ({ data, parentField = "" }) => {
         <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[13%] left-[27%] bg-liturgischekleur ${galleryHidden ? "hidden":"block" } z-[9999]`} onClick={hideGallery}>Sluiten</button>
         
       </div>
-    </>
+    </div>
   );
 };
 
-export const galleryBlockSchema: TinaTemplate = {
-  name: "gallery",
-  label: "Google Photos",
+export const Gallery = ({ data, parentField }) => {
+  return (
+    <Section color={data.color}>
+      <Container
+        className={`flex flex-wrap gap-x-10 gap-y-8 text-justify`}
+        size="large"
+      >
+        <h1>{data.title}</h1>
+        {data.items &&
+          data.items.map(function (block, i) {
+            return (
+              <GalleryItem
+                data={block}
+                tinaField={`${parentField}.items.${i}`}  
+                key={i}
+              />
+            );
+          })}
+      </Container>
+    </Section>
+  );
+};
+
+export const defaultGallery: TinaTemplate = {
+  name: "GalleryItem",
+  label: "Fotoalbum",
   
   fields: [
     {
       type: "string",
       label: "Fotoalbum URL",
       name: "sharingURL",
+    },
+  ],
+};
+
+export const galleryBlockSchema: TinaTemplate = {
+  name: "gallery",
+  label: "Fotoalbums",
+  ui: {
+    defaultItem: {
+      items: [defaultGallery],
+    },
+  },
+  fields: [
+    {
+      type: "string",
+      name: "title",
+      label: "Titel"
+    },
+    {
+      type: "object",
+      label: "Galerijen",
+      name: "items",
+      list: true,
+      ui: {
+        defaultItem: {
+          ...defaultGallery,
+        },
+      },
+      fields: [
+        {
+          type: "string",
+          label: "Fotoalbum URL",
+          name: "sharingURL",
+        },
+      ]
     },
   ],
 };

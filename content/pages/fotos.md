@@ -1,35 +1,22 @@
 ---
 title: Fotoalbums
 blocks:
-  - tagline: impressies vanuit onze parochie
-    headline: Hier vinden jullie links naar diverse fotoalbums
-    text: ''
-    _template: hero
-  - tagline: ''
-    headline: werkjaar 2023 - 24
-    text: ''
-    actions:
-      - label: Parochiefeest 1 oktober
-        type: link
-        icon: false
-        link: >-
+  - items:
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipP48KzEwKIuxhItmlJ9_ByN4gAZJrDWqZwgARgvu3dQg_WzN3oRzVpg7euZP2r57w?key=aGlGT0dVNmVfS2lvdUN3Wml6OUQxcUxXbWNLZzJR
-      - label: Viering met het Sint-Ceciliakoor Vremde
-        type: link
-        icon: false
-        link: >-
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipOryy03QSj8oNW5uRBi_0-U2_j_iIXRySmo6xTAUsJoteiTa1KrFz56UXeVT2onLw?key=Q0NqQ0xILXVDdV9Odm9jOFdaS3dxRWRkSEc4VmFR
-      - label: Uitvaart pastoor Jef Bulckens
-        type: link
-        icon: false
-        link: >-
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipMWLnm3spklKiTMEzLdTb6yOEd8KXR2kPAkGr2Lr84-zfUzn6aJcjyoGgjzaaoq5A?key=OHVpVXNRdVJQSUJVdGVLMVNPUXVVN1podlFHNWFR
-      - label: startviering 10 september
-        type: link
-        icon: false
-        link: >-
-          https://photos.google.com/share/AF1QipN-hzsCt0LMtTY8eRGN8IrTObN3ENT3usIt6Lkexy1Y6XK1FjgcGraS7iMvQG6HKg?key=VlZfU3RDUncyaXhyRlhDY0tPTnpWci1sZGJWcmZ3
-    _template: hero
+      - sharingURL: ' https://photos.google.com/share/AF1QipN-hzsCt0LMtTY8eRGN8IrTObN3ENT3usIt6Lkexy1Y6XK1FjgcGraS7iMvQG6HKg?key=VlZfU3RDUncyaXhyRlhDY0tPTnpWci1sZGJWcmZ3'
+    _template: gallery
+  - titleText: Werkjaar 2023 - 24
+    textsize: text-4xl
+    _template: heading
+  - _template: gallery
+  - _template: gallery
+  - _template: gallery
+  - _template: gallery
   - tagline: ''
     headline: werkjaar 2022 - 23
     text: ''
@@ -126,6 +113,8 @@ blocks:
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: hero
 ---
+
+
 
 
 
