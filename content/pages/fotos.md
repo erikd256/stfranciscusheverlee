@@ -10,13 +10,6 @@ blocks:
           https://photos.google.com/share/AF1QipMWLnm3spklKiTMEzLdTb6yOEd8KXR2kPAkGr2Lr84-zfUzn6aJcjyoGgjzaaoq5A?key=OHVpVXNRdVJQSUJVdGVLMVNPUXVVN1podlFHNWFR
       - sharingURL: ' https://photos.google.com/share/AF1QipN-hzsCt0LMtTY8eRGN8IrTObN3ENT3usIt6Lkexy1Y6XK1FjgcGraS7iMvQG6HKg?key=VlZfU3RDUncyaXhyRlhDY0tPTnpWci1sZGJWcmZ3'
     _template: gallery
-  - titleText: Werkjaar 2023 - 24
-    textsize: text-4xl
-    _template: heading
-  - _template: gallery
-  - _template: gallery
-  - _template: gallery
-  - _template: gallery
   - tagline: ''
     headline: werkjaar 2022 - 23
     text: ''
@@ -152,10 +145,3 @@ blocks:
 
 
 
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> f0edfe9a32af1f6ece0b10e3b542d57dcacd0876
