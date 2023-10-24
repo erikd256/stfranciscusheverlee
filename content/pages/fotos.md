@@ -29,6 +29,9 @@ blocks:
   - sharingURL: >-
       https://photos.google.com/share/AF1QipOryy03QSj8oNW5uRBi_0-U2_j_iIXRySmo6xTAUsJoteiTa1KrFz56UXeVT2onLw?key=Q0NqQ0xILXVDdV9Odm9jOFdaS3dxRWRkSEc4VmFR
     _template: gallery
+  - sharingURL: >-
+      https://photos.google.com/share/AF1QipMWLnm3spklKiTMEzLdTb6yOEd8KXR2kPAkGr2Lr84-zfUzn6aJcjyoGgjzaaoq5A?key=OHVpVXNRdVJQSUJVdGVLMVNPUXVVN1podlFHNWFR
+    _template: gallery
   - tagline: ''
     headline: werkjaar 2022 - 23
     text: ''
@@ -125,6 +128,7 @@ blocks:
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: hero
 ---
+
 
 
 
