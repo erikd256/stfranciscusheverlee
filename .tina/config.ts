@@ -9,6 +9,7 @@ import { formBlockSchema } from "../components/blocks/form";
 import { videoBlockSchema } from "../components/blocks/video";
 import { headingBlockSchema } from "../components/blocks/heading";
 import { audioBlockSchema } from "../components/blocks/audio";
+import { galleryBlockSchema } from "../components/blocks/gallery";
 import { DonationBoxBlockSchema } from "../components/blocks/donationbox";
 const config = defineStaticConfig({
   branch: "main",
@@ -280,6 +281,7 @@ schema: {
             contentBlockSchema,
             testimonialBlockSchema,
             DonationBoxBlockSchema,
+            galleryBlockSchema
           ],
         },
       ],

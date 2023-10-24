@@ -4,7 +4,6 @@ import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 export const Audio = ({ data, parentField = "" }) => {
-  console.log(data.audioURL)
   return (
     <Section className="bg-vijfdekleur w-full">
       <Container
