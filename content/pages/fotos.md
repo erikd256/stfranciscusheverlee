@@ -9,11 +9,6 @@ blocks:
     headline: werkjaar 2023 - 24
     text: ''
     actions:
-      - label: Uitvaart pastoor Jef Bulckens
-        type: link
-        icon: false
-        link: >-
-          https://photos.google.com/share/AF1QipMWLnm3spklKiTMEzLdTb6yOEd8KXR2kPAkGr2Lr84-zfUzn6aJcjyoGgjzaaoq5A?key=OHVpVXNRdVJQSUJVdGVLMVNPUXVVN1podlFHNWFR
       - label: startviering 10 september
         type: link
         icon: false
