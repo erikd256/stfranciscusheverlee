@@ -73,10 +73,10 @@ export const Gallery = ({ data, parentField }) => {
   return (
     <Section color={data.color}>
       <Container
-        className={`flex flex-wrap gap-x-10 gap-y-8 text-justify`}
+        className={`flex flex-wrap gap-x-10 gap-y-2 text-justify`}
         size="large"
       >
-        <h1>{data.title}</h1>
+        <p className="w-full"><h1>{data.title}</h1></p>
         {data.items &&
           data.items.map(function (block, i) {
             return (

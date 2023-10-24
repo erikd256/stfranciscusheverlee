@@ -1,7 +1,8 @@
 ---
 title: Fotoalbums
 blocks:
-  - items:
+  - title: Werkjaar 2023 - 24
+    items:
       - sharingURL: >-
           https://photos.google.com/share/AF1QipP48KzEwKIuxhItmlJ9_ByN4gAZJrDWqZwgARgvu3dQg_WzN3oRzVpg7euZP2r57w?key=aGlGT0dVNmVfS2lvdUN3Wml6OUQxcUxXbWNLZzJR
       - sharingURL: >-
@@ -106,6 +107,7 @@ blocks:
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: hero
 ---
+
 
 
 
