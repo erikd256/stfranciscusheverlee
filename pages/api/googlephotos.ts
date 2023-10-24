@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-const { Curl } = require('node-libcurl');
+import * as Curl from 'node-libcurl';
 const curl = new Curl();
 
 export default async function handler(
