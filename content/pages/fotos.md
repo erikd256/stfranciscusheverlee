@@ -97,25 +97,18 @@ blocks:
         icon: false
         link: >-
           https://photos.google.com/share/AF1QipOugo5IY6JYGZlIZKO4GIdUhbWQ2xU3dlBUBszy_VyNBygd0_coMbnQQE3hX3pkvg?key=ZFB4cEVMWWxlUl96bFRXR2tyQVBFTl9PMVMwYXR3
-      - label: Samana Viering
-        type: link
-        icon: false
-        link: >-
-          https://photos.google.com/share/AF1QipOGnOG5LncKd84YBHOpwjDOtGqNdqPpQEQylD5IVgrUaL-xntZGF-CVJZWmCAr07Q?key=WTgxZjZSVjd6bW9qdGdDWHBYRVBXMjBwQWQyc1Rn
-      - label: Parochiefeest
-        type: link
-        icon: false
-        link: >-
-          https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: hero
   - title: Werkjaar 2022 - 33
     items:
+      - sharingURL: >-
+          https://photos.google.com/share/AF1QipOugo5IY6JYGZlIZKO4GIdUhbWQ2xU3dlBUBszy_VyNBygd0_coMbnQQE3hX3pkvg?key=ZFB4cEVMWWxlUl96bFRXR2tyQVBFTl9PMVMwYXR3
       - sharingURL: >-
           https://photos.google.com/share/AF1QipOGnOG5LncKd84YBHOpwjDOtGqNdqPpQEQylD5IVgrUaL-xntZGF-CVJZWmCAr07Q?key=WTgxZjZSVjd6bW9qdGdDWHBYRVBXMjBwQWQyc1Rn
       - sharingURL: >-
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: gallery
 ---
+
 
 
 
