@@ -108,7 +108,7 @@ blocks:
         link: >-
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: hero
-  - title: werkjaar 202233
+  - title: Werkjaar 2022 - 33
     items:
       - sharingURL: >-
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
