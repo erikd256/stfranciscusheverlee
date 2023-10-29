@@ -13,8 +13,8 @@ export const GalleryItem = ({ data, tinaField }) => {
   const [titleHidden, setTitleHidden] = React.useState(true)
   const [imageNumber, setImageNumber] = React.useState(0)
 
-  async function getGallery(){
-    await axios({
+  function getGallery(){
+    axios({
       method: 'post',
       url:`/api/gallery`, 
       data: {
