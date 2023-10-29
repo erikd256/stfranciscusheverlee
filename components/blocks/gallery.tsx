@@ -30,7 +30,7 @@ export const GalleryItem = ({ data, tinaField }) => {
 
   React.useEffect(()=>{
     getGallery()
-  })
+  }, [])
   function hideGallery(){
     setGalleryHidden(!galleryHidden)
   }
