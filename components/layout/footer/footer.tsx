@@ -43,12 +43,12 @@ export const Footer = ({ data, rawData}) => {
         tel. secretariaat +32 492 31 92 15<br></br>
         franciscusheverlee@gmail.com
         </div>
-        <div className="overflow-scroll p-4 text-liturgischekleur w-5/6 mx-auto mt-[150px]">
+        <div className="overflow-auto p-4 text-liturgischekleur w-5/6 mx-auto mt-[150px]">
           <span className="absolute">Met dank aan onze sponsors:</span><br></br>
           <object type="image/svg+xml" data={`https://opencollective.com/${globals.collectivename}/tiers/backers.svg`}></object>
         </div>
         <hr className="border-liturgischekleur my-[10px]"></hr>
-        <div className="overflow-scroll text-center text-liturgischekleur w-5/6 m-auto mt-[20px]">
+        <div className="overflow-auto text-center text-liturgischekleur w-5/6 m-auto mt-[20px]">
           <p className="mo:left-[20%] mo:absolute">&copy; 2022 - {(new Date().getFullYear())} <a href="https://github.com/erikd256" target="_blank">erikd256</a></p>
           <a href="https://github.com/erikd256/stfranciscusheverlee/commits/main" target="_blank"><img className="mx-auto mt-2 mo:right-[20%] mo:absolute" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge&logo=git"/></a>
         </div>
