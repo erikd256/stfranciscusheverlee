@@ -9,7 +9,7 @@ export const Footer = ({ data, rawData}) => {
     <>
     <footer className={`bg-basiskleur pb-[75px] min-h-[500px] relative pt-[20px]`}>
         <div className="grid w-full text-liturgischekleur gap-6 grid-cols-1 place-items-center pt-[20px] mo:pt-[80px]">
-          <img src="/icon.svg" width="75px" alt="icon-footer"/>
+          <a href="/"><img src="/icon.svg" width="75px" alt="icon-footer"/></a>
           <div className="w-full mo:w-1/3 mo: text-center place-content-center mo:absolute mo:top-[100px] mo:right-[0px]">
           
             <a className="mx-[0px] mt-[30px] inline-block opacity-80 hover:opacity-100 transition ease-out duration-150" aria-label="Facebook" target="_blank" href="https://www.facebook.com/Franciscusgemeenschapheverlee"><FaFacebookF className={`${socialIconClasses}` }/></a>  

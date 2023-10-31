@@ -30,8 +30,8 @@ export const Header = ({ data, props }) => {
   });
   function search(){
     const options = {
-      includeScore: true,
-      useExtendedSearch: true,
+      includeScore: false,
+      useExtendedSearch: false,
       keys: ['title','keywords','filename','author','excerpt','date']
     }
     axios.get("/api/search/index.json").then((res)=>{
