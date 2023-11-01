@@ -284,7 +284,7 @@ schema: {
 },
 search: {
   tina: {
-    indexerToken: process.env.SEARCHTOKEN!,
+    indexerToken: process.env.SEARCHTOKEN,
     stopwordLanguages: ['eng']
   },
   indexBatchSize: 100,
