@@ -1,5 +1,6 @@
 // .tina/config.ts
 import { defineStaticConfig } from "tinacms";
+import { seoPageProps } from "@pcode-at/tinacms-seo";
 
 // components/blocks/content.tsx
 import React9 from "react";
@@ -843,6 +844,7 @@ var config = defineStaticConfig({
           }
         },
         fields: [
+          seoPageProps,
           {
             type: "string",
             label: "Title",
@@ -1052,20 +1054,11 @@ var config = defineStaticConfig({
         },
         format: "md",
         fields: [
+          seoPageProps,
           {
             type: "string",
             name: "title",
             label: "Paginatitel"
-          },
-          {
-            type: "string",
-            name: "desc",
-            label: "Samenvatting"
-          },
-          {
-            type: "string",
-            name: "keywords",
-            label: "Kernwoorden"
           },
           {
             type: "object",
