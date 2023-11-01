@@ -28,20 +28,6 @@ export const Header = ({ data, props }) => {
   React.useEffect(() => {
     document.getElementById("title").innerText = document.title;
   });
-  function search(){
-    const options = {
-      includeScore: false,
-      useExtendedSearch: false,
-      keys: ['title','keywords','filename','author','excerpt','date']
-    }
-    axios.get("/api/search/index.json").then((res)=>{
-        const fuse = new Fuse(res.data, options)
-        const results = fuse.search(query.current.value)
-        toggle5()
-        setSearchResults(results)
-      }
-    )
-    }
   function toggle5(){
     setResultsPopup(!resultsPopUp);
   }
@@ -78,7 +64,7 @@ export const Header = ({ data, props }) => {
         <a href="/" className="no-underline"><img src="/icon-dark.svg" alt="header-icon" width="50px" className="mr-[10px] inline"/><span id="title">{props.title} @ St.-Franciscusparochie</span></a>
         <span className="smo:absolute smo:right-[50px] text-sm clear-both">
           <input ref={query} className="p-[5px] h-[30px] bg-vijfdekleur border-2 border-basiskleur rounded-l-xl clear-left placeholder-basiskleur" placeholder="Zoeken"/>
-          <button onClick={search} className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl" aria-label="Search"><span className="material-symbols-outlined"><SearchIcon/></span></button>
+          <button className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl" aria-label="Search"><span className="material-symbols-outlined"><SearchIcon/></span></button>
         </span>
       </div>
       <div className="bg-derdekleur w-full min-h-[50px] leading-[50px] z-[4000] text-center">Deze gemeenschap is lid van de pastorale zone KesseLinde. Ervaar meer <a href="https://www.kerknet.be/organisatie/pastorale-zone-kesselinde" target="_blank" aria-label="Website Pastorale Zone KesseLinde">hier</a>!</div>      <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
