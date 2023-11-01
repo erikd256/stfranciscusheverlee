@@ -1,7 +1,7 @@
 import { Container } from "../components/util/container";
 import { Section } from "../components/util/section";
 import { Parochiebladeren } from "../components/weeknieuws";
-import { client } from "../.tina/__generated__/client";
+import { client } from "../tina/__generated__/client";
 import { Layout } from "../components/layout";
 
 export default function HomePage(
