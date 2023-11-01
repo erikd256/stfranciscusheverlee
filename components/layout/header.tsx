@@ -73,7 +73,6 @@ export const Header = ({ data, props }) => {
       <Head>
         <link rel="icon" href="/favicon.ico"/>
         {props.title !== undefined && <title>{props.title} @ Sint-Franciscusparochie</title>}
-        <meta name="keywords" content={props.keywords}/>
       </Head>
       <div className="overflow-x-hidden flex flex-col smo:flex-row items-center text-xl font-weight-700 bg-liturgischekleur p-[15px] z-[5000]">
         <a href="/" className="no-underline"><img src="/icon-dark.svg" alt="header-icon" width="50px" className="mr-[10px] inline"/><span id="title">{props.title} @ St.-Franciscusparochie</span></a>

@@ -1,4 +1,5 @@
 import { defineStaticConfig } from "tinacms";
+import { seoPageProps } from "@pcode-at/tinacms-seo";
 import { contentBlockSchema } from "../components/blocks/content";
 import { featureBlockSchema } from "../components/blocks/features";
 import { heroBlockSchema } from "../components/blocks/hero";
@@ -37,6 +38,7 @@ schema: {
         },
       },
       fields: [
+        seoPageProps,
         {
           type: "string",
           label: "Title",
@@ -246,21 +248,13 @@ schema: {
       },
       format: "md",
       fields: [
+        seoPageProps,
         {
           type: "string",
           name: "title",
           label: "Paginatitel"
         },
-        {
-          type: "string",
-          name: "desc",
-          label: "Samenvatting"
-        },
-        {
-          type: "string",
-          name: "keywords",
-          label: "Kernwoorden"
-        },
+      
         {
           type: "object",
           list: true,
