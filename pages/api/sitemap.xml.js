@@ -1,5 +1,4 @@
 import { globby } from "globby"
-import React from "react";
 
 export default async (req, res) => {
   res.writeHead(404, {
