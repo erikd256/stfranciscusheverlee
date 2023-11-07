@@ -4,6 +4,8 @@ blocks:
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
+          https://photos.google.com/share/AF1QipN_RKUISn1D6mmxHSZ1v3wgbuAhotPKjAkZA5l1z_jC6sYPvT92PiMX4AdfIqqHDw?key=YXVrNm1yampQNGNtTC1KandwWU51QjlVcUFBaUZn
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipNdY3cesE2ypxjBhA-2IFGJ5BT8H4ScVlB47LRRBMg4b7wawD8lWlBoVKeM7oowmA?key=SGNTbU1LQnZMcy01SmtYSE42YXVIRXA1VFk3Zm1n
       - sharingURL: >-
           https://photos.google.com/share/AF1QipP48KzEwKIuxhItmlJ9_ByN4gAZJrDWqZwgARgvu3dQg_WzN3oRzVpg7euZP2r57w?key=aGlGT0dVNmVfS2lvdUN3Wml6OUQxcUxXbWNLZzJR
@@ -51,61 +53,4 @@ blocks:
           https://photos.google.com/share/AF1QipO9KpGa7oVFQwoQW3JqtsuPl72TSLqQW8lOzV0UaX2H6IlI9ddpYxpRxLA8orIRWw?key=VzRycExrQlZycXBaNUxFc3p5WEtwVk93Z1BVckN3
     _template: gallery
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
