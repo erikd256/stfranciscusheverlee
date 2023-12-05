@@ -3,6 +3,8 @@ title: Fotoalbums
 blocks:
   - title: Werkjaar 2023 - 24
     items:
+      - sharingURL: >-
+          https://photos.google.com/share/AF1QipOePUT_089hUBIkmf9qEn13eg9w4ax5KclvjoSBss8yrgdceE9TbHc9UDfMi2DA9A?key=MHA5ZWFOcGgxeXJzZHhWRHVoZDJhRXZ0NzVTQm9R
       - {}
       - sharingURL: >-
           https://photos.google.com/share/AF1QipNHWMSeXFjy_pNtRVx12xNdmonVvz76uy_khWKHladIlInETCJMyIZ_w2MqxvaMPA?key=SFFkaHF2cnY3VGo3NEt0ZTVQbEpselBoVUtzbmpn
@@ -19,8 +21,6 @@ blocks:
           https://photos.google.com/share/AF1QipP48KzEwKIuxhItmlJ9_ByN4gAZJrDWqZwgARgvu3dQg_WzN3oRzVpg7euZP2r57w?key=aGlGT0dVNmVfS2lvdUN3Wml6OUQxcUxXbWNLZzJR
       - sharingURL: >-
           https://photos.google.com/share/AF1QipOryy03QSj8oNW5uRBi_0-U2_j_iIXRySmo6xTAUsJoteiTa1KrFz56UXeVT2onLw?key=Q0NqQ0xILXVDdV9Odm9jOFdaS3dxRWRkSEc4VmFR
-      - sharingURL: >-
-          https://photos.google.com/share/AF1QipOePUT_089hUBIkmf9qEn13eg9w4ax5KclvjoSBss8yrgdceE9TbHc9UDfMi2DA9A?key=MHA5ZWFOcGgxeXJzZHhWRHVoZDJhRXZ0NzVTQm9R
     _template: gallery
   - title: Werkjaar 2022 - 33
     items:
