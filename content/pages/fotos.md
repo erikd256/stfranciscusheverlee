@@ -5,7 +5,6 @@ blocks:
     items:
       - sharingURL: >-
           https://photos.google.com/share/AF1QipOePUT_089hUBIkmf9qEn13eg9w4ax5KclvjoSBss8yrgdceE9TbHc9UDfMi2DA9A?key=MHA5ZWFOcGgxeXJzZHhWRHVoZDJhRXZ0NzVTQm9R
-      - {}
       - sharingURL: >-
           https://photos.google.com/share/AF1QipNHWMSeXFjy_pNtRVx12xNdmonVvz76uy_khWKHladIlInETCJMyIZ_w2MqxvaMPA?key=SFFkaHF2cnY3VGo3NEt0ZTVQbEpselBoVUtzbmpn
       - {}
