@@ -20,7 +20,8 @@ blocks:
           https://photos.google.com/share/AF1QipMWLnm3spklKiTMEzLdTb6yOEd8KXR2kPAkGr2Lr84-zfUzn6aJcjyoGgjzaaoq5A?key=OHVpVXNRdVJQSUJVdGVLMVNPUXVVN1podlFHNWFR
       - sharingURL: >-
           https://photos.google.com/share/AF1QipP48KzEwKIuxhItmlJ9_ByN4gAZJrDWqZwgARgvu3dQg_WzN3oRzVpg7euZP2r57w?key=aGlGT0dVNmVfS2lvdUN3Wml6OUQxcUxXbWNLZzJR
-      - {}
+      - sharingURL: >-
+          https://photos.google.com/share/AF1QipN-hzsCt0LMtTY8eRGN8IrTObN3ENT3usIt6Lkexy1Y6XK1FjgcGraS7iMvQG6HKg?key=VlZfU3RDUncyaXhyRlhDY0tPTnpWci1sZGJWcmZ3
     _template: gallery
   - title: Werkjaar 2022 - 33
     items:
