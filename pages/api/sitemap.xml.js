@@ -25,11 +25,12 @@ export default async (req, res) => {
       .replace("pages", "")
       .replace("data", "")
       .replace(".js", "")
+      .replace(".mdx", "")
       .replace (".md", "")
       .replace (".md", "")
       .replace(".tsx", "")
-      .replace("content/posts", "/post")
-      .replace(".mdx", "");
+      .replace("content/posts", "/post");
+      
       return `
       <url>
           <loc>${`https://www.stfranciscus-heverlee.org${route}`}</loc>
