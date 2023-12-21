@@ -4,7 +4,7 @@ import { Section } from "../util/section";
 import type { TinaTemplate } from "tinacms";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import axios from "axios"
-import {Spinner} from '@primer/react'
+import { ThreeDots } from 'react-loader-spinner'
 
 export const GalleryItem = ({ data, tinaField }) => {
   const [srcArray, setSrcArray] = React.useState([])
@@ -56,7 +56,9 @@ export const GalleryItem = ({ data, tinaField }) => {
   return (
     <div className="flex flex-col">
       <div className="p-[50px] container w-full h-[260px] relative m-[50px]"  onMouseEnter={toggleTitle} onMouseLeave={toggleTitle}>
-        <div className={`w-full h-full bg-basiskleur ${loadingState}  absolute top-0 left-0 z-[2001] rounded-md text-liturgischekleur text-xl baseline-[180px]`}><span className="w-full text-center absolute top-[40%]"><Spinner className="mx-auto"/>Laden</span></div>
+        <div className={`w-full h-full bg-basiskleur ${loadingState}  absolute top-0 left-0 z-[2001] rounded-md text-liturgischekleur text-xl baseline-[180px]`}>
+          <span className="w-full text-center absolute top-[45%] left-[35%] inline-flex leading-[60px]"><ThreeDots visible={true} height="60" width="60" color="#CB904D" radius="9" ariaLabel="three-dots-loading" wrapperStyle={{}} wrapperClass=""/></span>
+        </div>
         <img className="absolute object-cover w-full border-4 border-basiskleur top-0 left-0 rounded-md h-full" src={coverImage} onClick={hideGallery}></img>
         <span onClick={hideGallery} className={`text-xl w-full h-full absolute top-0 left-0 z-[2000] ${titleHidden ? "hidden":"inline-block"} pt-[25%] bg-liturgischekleur text-center rounded-md border-2 border-basiskleur`}>{galleryTitle}</span>  
       </div>
@@ -130,12 +132,23 @@ export const galleryBlockSchema: TinaTemplate = {
         defaultItem: {
           ...defaultGallery,
         },
+        
+        itemProps: (item) => {
+          // Field values are accessed by item?.<Field name>
+          return { label: item?.title };
+        },
+        
       },
       fields: [
         {
           type: "string",
           label: "Fotoalbum URL",
           name: "sharingURL",
+        },
+        {
+          type: "string",
+          label: "Titel",
+          name: "title",
         },
       ]
     },
