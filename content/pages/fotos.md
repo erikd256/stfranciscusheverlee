@@ -5,24 +5,34 @@ blocks:
     items:
       - sharingURL: >-
           https://photos.google.com/share/AF1QipOePUT_089hUBIkmf9qEn13eg9w4ax5KclvjoSBss8yrgdceE9TbHc9UDfMi2DA9A?key=MHA5ZWFOcGgxeXJzZHhWRHVoZDJhRXZ0NzVTQm9R
+        title: Advent - Kersttijd 2023
       - sharingURL: >-
           https://photos.google.com/share/AF1QipNHWMSeXFjy_pNtRVx12xNdmonVvz76uy_khWKHladIlInETCJMyIZ_w2MqxvaMPA?key=SFFkaHF2cnY3VGo3NEt0ZTVQbEpselBoVUtzbmpn
+        title: 26-11-2023 Christus Koning - OKRA
       - sharingURL: >-
           https://photos.google.com/share/AF1QipNmX1KrL3K2N8R6ODJSXp3BnloEe4u96dVo5WuNMjTY5vyxdM2yUFlRCxpgGUkdyA?key=QnZ0WmRGb3U3aVJCWW9xN0p0QVhZZGNYUkdrOE9R
+        title: 19-11-2023 Naamopgave Vormsel
       - sharingURL: >-
           https://photos.google.com/share/AF1QipMY59gSI3NkHEOg-zjxhnFL2RBh18NzfR57CrPTE-nksIXTon_kCPkMCJydvLYMiQ?key=dVFjamdkeHVmaFZBVlRILXFRU1JVUG5GVEFNbnpR
+        title: 1-11-2023 Allerheiligen
       - sharingURL: >-
           https://photos.google.com/share/AF1QipN_RKUISn1D6mmxHSZ1v3wgbuAhotPKjAkZA5l1z_jC6sYPvT92PiMX4AdfIqqHDw?key=YXVrNm1yampQNGNtTC1KandwWU51QjlVcUFBaUZn
+        title: Zaterdag 21-10-2023 Zangnamiddag Linden met Jos Bielen
       - sharingURL: >-
           https://photos.google.com/share/AF1QipNdY3cesE2ypxjBhA-2IFGJ5BT8H4ScVlB47LRRBMg4b7wawD8lWlBoVKeM7oowmA?key=SGNTbU1LQnZMcy01SmtYSE42YXVIRXA1VFk3Zm1n
+        title: 15-10-2023 Welkom deken Patrick
       - sharingURL: >-
           https://photos.google.com/share/AF1QipP48KzEwKIuxhItmlJ9_ByN4gAZJrDWqZwgARgvu3dQg_WzN3oRzVpg7euZP2r57w?key=aGlGT0dVNmVfS2lvdUN3Wml6OUQxcUxXbWNLZzJR
+        title: Parochiefeest 1-10-2023
       - sharingURL: >-
           https://photos.google.com/share/AF1QipOryy03QSj8oNW5uRBi_0-U2_j_iIXRySmo6xTAUsJoteiTa1KrFz56UXeVT2onLw?key=Q0NqQ0xILXVDdV9Odm9jOFdaS3dxRWRkSEc4VmFR
+        title: 17-9-2023 Viering met het Sint-Ceciliakoor Vremde
       - sharingURL: >-
           https://photos.google.com/share/AF1QipMWLnm3spklKiTMEzLdTb6yOEd8KXR2kPAkGr2Lr84-zfUzn6aJcjyoGgjzaaoq5A?key=OHVpVXNRdVJQSUJVdGVLMVNPUXVVN1podlFHNWFR
+        title: Vrijdag 15-9-2023 Uitvaart pastor Jef Bulckens
       - sharingURL: >-
           https://photos.google.com/share/AF1QipN-hzsCt0LMtTY8eRGN8IrTObN3ENT3usIt6Lkexy1Y6XK1FjgcGraS7iMvQG6HKg?key=VlZfU3RDUncyaXhyRlhDY0tPTnpWci1sZGJWcmZ3
+        title: 10-9-2023 Startviering nieuw werkjaar
     _template: gallery
   - title: Werkjaar 2022 - 33
     items:
