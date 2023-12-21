@@ -33,6 +33,7 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.0",
     "@pcode-at/tinacms-seo": "^2.0.0",
+    "@primer/react": "^36.4.0",
     "@tailwindcss/typography": "^0.5.10",
     "@tinacms/auth": "^1.0.2",
     "@types/react-helmet": "^6.1.5",
