@@ -62,12 +62,12 @@ export const GalleryItem = ({ data, tinaField }) => {
         <img className="absolute object-cover w-full border-4 border-basiskleur top-0 left-0 rounded-md h-full" src={coverImage} onClick={hideGallery}></img>
         <span onClick={hideGallery} className={`text-xl w-full h-full absolute top-0 left-0 z-[2000] ${titleHidden ? "hidden":"inline-block"} pt-[25%] bg-liturgischekleur text-center rounded-md border-2 border-basiskleur`}>{data.title || galleryTitle}</span>  
       </div>
-      <div className={`fixed p-0 z-[5000] h-[50%] w-[50%] bg-basiskleur top-[10%] left-[25%] border-2 border-derdekleur rounded-md object-contain ${galleryHidden ? "hidden":"block" }`}>
+      <div className={`fixed p-0 z-[5000] h-[100%] w-[100%] bg-basiskleur top-[0%] left-[0%] ${galleryHidden ? "hidden":"block" }`}>
         <span className="absolute top-[10px] text-lg w-full text-center text-liturgischekleur"><b>{data.title || galleryTitle}</b></span>
-        <img className="mx-auto self-center relative top-[50px] max-w-full rounded-xl object-contain" src={srcArray[imageNumber]}></img>
+        <img className="mx-auto self-center relative top-[50px] max-w-full rounded-xl" src={srcArray[imageNumber]}></img>
         <span className="absolute bottom-[10px] w-full text-sm text-center text-liturgischekleur"><button onClick={decreaseImageNumber} className="text-4xl mr-4">&#9756;</button>
         <span>{imageNumber+1}/{srcArray.length}</span><button className="pt-4 text-4xl ml-4" onClick={increaseImageNumber}>&#9758;</button></span>
-        <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[13%] left-[27%] bg-liturgischekleur ${galleryHidden ? "hidden":"block" } z-[9999]`} onClick={hideGallery}>Sluiten</button>
+        <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[5px] left-[5px] bg-liturgischekleur ${galleryHidden ? "hidden":"block" } z-[9999]`} onClick={hideGallery}>&#10006;Sluiten</button>
         
       </div>
     </div>
