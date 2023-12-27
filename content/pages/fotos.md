@@ -44,6 +44,7 @@ blocks:
         title: slotviering in de Ark
       - sharingURL: >-
           https://photos.google.com/share/AF1QipNJkSHQZjenGAuEbvDVENq5etzjZdITtcg8y_4ZLSQnuPUUeI0GVSKpW8857RSFpQ?key=NmV0YVpFUmxfQ2Jjb0R3VDFMaklDVU41aGV1LWtB
+        title: Pinksteren
       - sharingURL: >-
           https://photos.google.com/share/AF1QipMRdtdyQgeNlAczJnfEf-xy2gw4ym-F1TwjnVceX6AYA294YSB6gUbjqr86sA8N8Q?key=RVJralYwOXJpRXpDemUxeUk5N21QQnlWZnNQUnhB
       - sharingURL: >-
