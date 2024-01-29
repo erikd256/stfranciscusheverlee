@@ -4,6 +4,9 @@ blocks:
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
+          https://photos.google.com/share/AF1QipNmizMQeSWjtj5FNV7Qefp1m3FkjSWfiV2sxSBYkT2n5pjW7iE8albIaM_0j-O6Kw?key=MUIzc3NLZGVwUDNwNnhtQ0R5M3FKMGpvU0RZOGV3
+        title: Jona en deken Patrick
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipOePUT_089hUBIkmf9qEn13eg9w4ax5KclvjoSBss8yrgdceE9TbHc9UDfMi2DA9A?key=MHA5ZWFOcGgxeXJzZHhWRHVoZDJhRXZ0NzVTQm9R
         title: Advent - Kersttijd 2023
       - sharingURL: >-
