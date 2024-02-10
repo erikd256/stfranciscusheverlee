@@ -4,6 +4,9 @@ blocks:
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
+          https://photos.google.com/share/AF1QipP9XTwjnlBUPN5drTwGoyL92Liyf7FDV2M6SYwSLPYh3faEVvJjMv2IUgncbxQCrQ?key=Q1RpMUhGblUxQ2RZdHdxY2c1Z0FnN19DbkNYcEtB
+        title: Naamopgave eerste communie
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipNmizMQeSWjtj5FNV7Qefp1m3FkjSWfiV2sxSBYkT2n5pjW7iE8albIaM_0j-O6Kw?key=MUIzc3NLZGVwUDNwNnhtQ0R5M3FKMGpvU0RZOGV3
         title: Jona en deken Patrick
       - sharingURL: >-
