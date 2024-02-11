@@ -1,7 +1,7 @@
 import { globby } from "globby"
 
 export default async (req, res) => {
-  res.writeHead(404, {
+  res.writeHead(200, {
     "Content-Type": "text/xml"
   });
     res.status(200)
