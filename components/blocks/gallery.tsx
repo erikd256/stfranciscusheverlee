@@ -15,13 +15,7 @@ export const GalleryItem = ({ data, tinaField }) => {
   const [galleryTitle, setGalleryTitle] = React.useState("")
   const [loadingState, setLoading] = React.useState("block");
   function getGallery(){
-    axios({
-      method: 'post',
-      url:`/api/gallery`, 
-      data: {
-        photoAlbumID: data.sharingURL
-      } 
-  }).then((result) => {
+    axios(`/pictures/?r=${data.sharingURL}`).then((result) => {
     setSrcArray(result.data.images)
     setCoverImage(result.data.coverImage)
     setGalleryTitle(result.data.title)
