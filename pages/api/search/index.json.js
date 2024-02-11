@@ -29,11 +29,11 @@ export default async (req, res) => {
       .replace (".md", "")
       .replace (".md", "")
       .replace(".tsx", "")
-      .replace("content/posts", "/post");
+      .replace("content/posts", "post");
       
       return `
       <url>
-          <loc>${`https://www.stfranciscus-heverlee.org${route}`}</loc>
+          <loc>${`https://www.stfranciscus-heverlee.org/${route}`}</loc>
           <lastmod>${new Date()}</lastmod>
       </url>
     `
