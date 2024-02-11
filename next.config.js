@@ -4,7 +4,9 @@ module.exports = withSvgr({
   webpack: (config, { isServer }) => {
     return config
   },
-  
+  compiler: {
+    removeConsole: true,
+  },
   async rewrites() {
     return [
       {
