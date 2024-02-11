@@ -2,14 +2,14 @@ const withSvgr = require("next-svgr");
 
 const cspHeader = `
 default-src 'self' "https://*.tina.io";
-script-src 'self' 'unsafe-inline' 'https://www.google.com' 'https://www.gstatic.com' 'https://www.youtube.com';
+script-src 'self' 'unsafe-inline' 'https://www.google.com' 'https://www.gstatic.com' 'https://www.youtube.com' 'https://www.stfranciscus-heverlee.org';
 style-src 'self' 'unsafe-inline';
 object-src 'none' 'https://opencollective.com';
 base-uri 'self';
-connect-src 'self' ;
-font-src 'self' 'https://www.stfranciscus-heverlee.org';
+connect-src 'self' 'https://content.tinajs.io' 'https://identity.tinajs.io';
+font-src 'self' 'unsafe-inline' 'https://www.stfranciscus-heverlee.org';
 frame-src 'self' 'https://www.google.com' 'https://www.youtube.com';
-img-src 'self' 'https://*.googleusercontent.com' "https://opencollective.com" 'https://img.shields.io';
+img-src 'self' 'https://*.googleusercontent.com' "https://opencollective.com" 'https://img.shields.io' 'https://*.tina.io';
 manifest-src 'self';
 media-src 'self';
 worker-src 'none';
