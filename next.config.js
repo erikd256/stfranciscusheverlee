@@ -2,7 +2,7 @@ const withSvgr = require("next-svgr");
 
 const cspHeader = `
 default-src 'self' "https://*.tina.io";
-script-src 'self' 'unsafe-inline' 'https://www.google.com' 'https://www.gstatic.com' 'https://www.youtube.com';
+script-src 'self' 'inline' 'https://www.google.com' 'https://www.gstatic.com' 'https://www.youtube.com';
 style-src 'self' 'unsafe-inline';
 object-src 'none' 'https://opencollective.com';
 base-uri 'self';
