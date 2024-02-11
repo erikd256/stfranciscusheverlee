@@ -4,3 +4,4 @@ Disallow: /admin
 Disallow: /form-submitted
 Disallow: /api
 Disallow: /api/
+Disallow: /pictures
