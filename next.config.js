@@ -4,6 +4,9 @@ module.exports = withSvgr({
   webpack: (config, { isServer }) => {
     return config
   },
+  compiler: {
+    removeConsole: true,
+  },
   async rewrites() {
     return [
       {
@@ -27,9 +30,6 @@ module.exports = withSvgr({
         destination: "https://photos.stfranciscus-heverlee.org/"
       },
     ]  
-  },
-  compiler: {
-    removeConsole: true,
   },
   async headers() {
     return [
