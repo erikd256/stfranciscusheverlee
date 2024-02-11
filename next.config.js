@@ -1,5 +1,21 @@
 const withSvgr = require("next-svgr");
 
+const cspHeader = `
+default-src 'self';
+script-src 'self';
+style-src 'self';
+object-src 'none';
+base-uri 'self';
+connect-src 'self';
+font-src 'self';
+frame-src 'self';
+img-src 'self';
+manifest-src 'self';
+media-src 'self';
+worker-src 'none';
+`
+ 
+
 module.exports = withSvgr({
   webpack: (config, { isServer }) => {
     return config
@@ -51,6 +67,10 @@ module.exports = withSvgr({
             {
               key: 'Strict-Transport-Security',
               value: 'max-age=3571000; includeSubDomains; preload',
+            },
+            {
+              key: 'Content-Security-Policy',
+              value: cspHeader.replace(/\n/g, ''),
             }
           ],
         },
