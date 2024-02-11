@@ -34,7 +34,7 @@ export default async (req, res) => {
       return `
       <url>
           <loc>${`https://www.stfranciscus-heverlee.org${route}`}</loc>
-          <lastmod>${new Date().toISOString()}</lastmod>
+          <lastmod>${new Date()}</lastmod>
       </url>
     `
     }).join('')}</urlset>`
