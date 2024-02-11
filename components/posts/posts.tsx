@@ -29,6 +29,7 @@ export const Posts = ({ data }) => {
             key={post._sys.filename}
             href={`/post/` + post._sys.filename}
             passHref
+            legacyBehavior
           >
             <a
               key={post.id}
