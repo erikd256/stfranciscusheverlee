@@ -4,7 +4,7 @@ const cspHeader = `
 default-src 'self' "https://*.tina.io";
 script-src 'self' 'unsafe-inline' 'https://www.google.com' 'https://www.gstatic.com' 'https://www.youtube.com' 'https://www.stfranciscus-heverlee.org';
 style-src 'self' 'unsafe-inline';
-object-src 'none' 'https://opencollective.com';
+object-src 'https://opencollective.com';
 base-uri 'self';
 connect-src 'self' 'https://content.tinajs.io' 'https://identity.tinajs.io';
 font-src 'self' 'unsafe-inline' 'https://www.stfranciscus-heverlee.org' data:;
