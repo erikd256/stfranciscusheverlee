@@ -4,8 +4,11 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
 
 const App = ({ Component, pageProps }) => {
-  if (process.env.NODE_ENV !== "development")
-    console.log = () => {};
+  if (process.env.NODE_ENV === "production"){
+  console.log = function no_console() {};
+  console.error = function no_console() {};
+  console.debug = function no_console() {};
+  console.assert = function no_console() {};}
   return (
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
