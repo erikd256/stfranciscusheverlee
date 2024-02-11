@@ -7,7 +7,7 @@ style-src 'self' 'unsafe-inline';
 object-src 'none' 'https://opencollective.com';
 base-uri 'self';
 connect-src 'self' 'https://content.tinajs.io' 'https://identity.tinajs.io';
-font-src 'self' 'unsafe-inline' 'https://www.stfranciscus-heverlee.org';
+font-src 'self' 'unsafe-inline' 'https://www.stfranciscus-heverlee.org' data:;
 frame-src 'self' 'https://www.google.com' 'https://www.youtube.com';
 img-src 'self' 'https://*.googleusercontent.com' "https://opencollective.com" 'https://img.shields.io' 'https://*.tina.io';
 manifest-src 'self';
