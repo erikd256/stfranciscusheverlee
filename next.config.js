@@ -1,15 +1,15 @@
 const withSvgr = require("next-svgr");
 
 const cspHeader = `
-default-src 'self';
-script-src 'self';
-style-src 'self';
+default-src 'self' "https://*.tina.io";
+script-src 'self' 'https://www.google.com' 'https://www.gstatic.com';
+style-src 'self' ;
 object-src 'none';
 base-uri 'self';
-connect-src 'self';
-font-src 'self';
-frame-src 'self';
-img-src 'self';
+connect-src 'self' ;
+font-src 'self' https://www.stfranciscus-heverlee.org;
+frame-src 'self'https://www.google.com';
+img-src 'self' 'https://*.googleusercontent.com' "https://opencollective.com";
 manifest-src 'self';
 media-src 'self';
 worker-src 'none';
@@ -18,10 +18,10 @@ worker-src 'none';
 
 module.exports = withSvgr({
   webpack: (config, { isServer }) => {
+    config.module.rules.push({
+      stats: "none"
+    });
     return config
-  },
-  compiler: {
-    removeConsole: true,
   },
   async rewrites() {
     return [
