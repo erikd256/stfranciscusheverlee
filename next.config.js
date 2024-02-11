@@ -28,6 +28,9 @@ module.exports = withSvgr({
       },
     ]  
   },
+  compiler: {
+    removeConsole: true,
+  },
   async headers() {
     return [
         {
