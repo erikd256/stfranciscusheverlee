@@ -1,7 +1,12 @@
 import "../styles.css";
 import React, { useEffect } from "react";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 import Head from "next/head";
+
+if (process.env.NODE_ENV === 'production') {
+  disableReactDevTools();
+}
 
 const App = ({ Component, pageProps }) => {
   return (
