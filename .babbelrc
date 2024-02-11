@@ -1,12 +1,8 @@
 {
-    "presets": [
-        "next/babel"
-    ],
     "env": {
-        "production": {
-            "plugins": [
-                "transform-remove-console"
-            ]
-        }
+      "production": {
+        "plugins": ["transform-remove-console"]
+      }
     }
-}
+  }
+  
