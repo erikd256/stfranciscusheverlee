@@ -1,9 +1,10 @@
 {
-  "env": {
-    "production": {
-      "presets": ["next/babel"],
-      "plugins": ["transform-remove-console"]
+    "presets": ["next/babel"],
+  
+    "env": {
+      "production": {
+        "plugins": ["transform-remove-console"]
+      }
     }
   }
-}
   
