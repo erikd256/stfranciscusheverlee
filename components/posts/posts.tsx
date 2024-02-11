@@ -4,7 +4,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { BsArrowRight } from "react-icons/bs";
 import { useTheme } from "../layout";
 import Head from 'next/head';
-import format from "date-fns/format";
+import format from "date-fns";
 import Image from 'next/image'
 
 export const Posts = ({ data }) => {
