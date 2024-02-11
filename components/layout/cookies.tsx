@@ -1,4 +1,4 @@
-import set from "date-fns/esm/fp/set/index.js";
+import set from "date-fns";
 import React from "react";
 
 export const Cookies = () => {
