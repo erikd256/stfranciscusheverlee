@@ -50,7 +50,7 @@ export const Footer = ({ data, rawData}) => {
         <hr className="border-liturgischekleur my-[10px]"></hr>
         <div className="overflow-auto text-center text-liturgischekleur w-5/6 m-auto mt-[20px]">
           <p className="mo:left-[20%] mo:absolute">&copy; 2022 - {(new Date().getFullYear())} <a href="https://github.com/erikd256" target="_blank">erikd256</a></p>
-          <a href="https://github.com/erikd256/stfranciscusheverlee/commits/main" target="_blank"><img className="mx-auto mt-2 mo:right-[20%] mo:absolute" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=for-the-badge&logo=git"/></a>
+          <a href="https://github.com/erikd256/stfranciscusheverlee/commits/main" target="_blank"><img className="mx-auto mt-2 mo:right-[20%] mo:absolute" src="https://img.shields.io/github/last-commit/erikd256/stfranciscusheverlee?style=social&logo=vercel&label=Laatste%20wijziging"/></a>
         </div>
     </footer>
     </>
