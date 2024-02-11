@@ -24,7 +24,7 @@ module.exports = withSvgr({
       },
       {
         source: "/pictures",
-        destination: "https://photos.stfranciscus-heverlee.org"
+        destination: "https://photos.stfranciscus-heverlee.org/"
       },
     ]  
   },
