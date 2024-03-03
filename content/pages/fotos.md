@@ -4,6 +4,9 @@ blocks:
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
+          https://photos.google.com/share/AF1QipNijqd74bjckwknGqXA79iok03pSyhZVgOCPBsdkS_9M0liyEWbybfj75MZSK3BgQ?key=VUF5X3dvb2hZZ25IdnM2Z2luM0R0cXpJM1JBOUJR
+        title: Van Aswoensdag op naar Pasen
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipP9XTwjnlBUPN5drTwGoyL92Liyf7FDV2M6SYwSLPYh3faEVvJjMv2IUgncbxQCrQ?key=Q1RpMUhGblUxQ2RZdHdxY2c1Z0FnN19DbkNYcEtB
         title: Naamopgave eerste communie
       - sharingURL: >-
