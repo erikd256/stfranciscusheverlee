@@ -7,7 +7,8 @@ export const Footer = ({ data, rawData}) => {
   const socialIconClasses = "h-7 w-auto";
   return (
     <>
-    <footer className={`bg-basiskleur pb-[75px] min-h-[500px] relative pt-[20px]`}>
+    <footer className={`bg-basiskleur pb-[75px] min-h-[500px] relative pt-[0px]`}>
+        <div className="bg-derdekleur w-full min-h-[50px] leading-[50px] z-[4000] text-center">Deze gemeenschap is lid van de pastorale zone KesseLinde. Ervaar meer <a href="https://www.kerknet.be/organisatie/pastorale-zone-kesselinde" target="_blank" aria-label="Website Pastorale Zone KesseLinde">hier</a>!</div>      
         <div className="grid w-full text-liturgischekleur gap-6 grid-cols-1 place-items-center pt-[20px] mo:pt-[80px]">
           <a href="/"><img src="/icon.svg" width="75px" alt="icon-footer"/></a>
           <div className="w-full mo:w-1/3 mo: text-center place-content-center mo:absolute mo:top-[100px] mo:right-[0px]">

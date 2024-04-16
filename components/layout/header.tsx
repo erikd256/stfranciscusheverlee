@@ -69,19 +69,20 @@ export const Header = ({ data, props }) => {
           <button onClick={search} className="leading-[30px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-xl" aria-label="Search"><span className="material-symbols-outlined"><SearchIcon/></span></button>
         </span>
       </div>
-      <div className="bg-derdekleur w-full min-h-[50px] leading-[50px] z-[4000] text-center">Deze gemeenschap is lid van de pastorale zone KesseLinde. Ervaar meer <a href="https://www.kerknet.be/organisatie/pastorale-zone-kesselinde" target="_blank" aria-label="Website Pastorale Zone KesseLinde">hier</a>!</div>      <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center bg-vierdekleur text-basiskleur w-full lex-1 mr-2 p-[15px] sticky top-0 z-[5000]`}>
+      <hr className="border-basiskleur bg-basiskleur"></hr>
+      <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center text-basiskleur w-full sticky top-0 z-[5000] text-lg`}>
         {globals.header.nav.map((data) => {
           if(data.type=="href"){
             return (
-              <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href={data.href} className="no-underline">{data.label}</a></button>
+              <button className="duration-200 grow hidden mo:block text-center border-b-4 border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold py-2 px-4 bg-liturgischekleur text-basiskleur"><a href={data.href} className="no-underline">{data.label}</a></button>
             )
           }else{
             return (
-              <button className="hidden mo:block text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur" onClick={() => openPopup(data.href)}><a className="no-underline">{data.label}</a></button>
+              <button className="duration-200 grow hidden mo:block text-center border-b-4 border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold py-2 px-4 bg-liturgischekleur text-basiskleur" onClick={() => openPopup(data.href)}><a className="no-underline">{data.label}</a></button>
             )
           }
         })}
-        <button className="block mo:hidden text-center ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-5/6"><span onClick={menuExpand} className="no-underline">&#9776; Menu</span></button>
+        <button className="duration-200 block mo:hidden text-center ring ring-basiskleur border-b-4 border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold py-2 px-4 bg-liturgischekleur text-basiskleur w-5/6"><span onClick={menuExpand} className="no-underline">&#9776; Menu</span></button>
       </div>
       {globals.header.nav.map((data) => {
           if(data.type=="href"){
@@ -90,12 +91,12 @@ export const Header = ({ data, props }) => {
             )
           }else{
             return (
-              <div id={data.href} className="hidden overflow-x-hidden flex text-center items-center content-center place-content-center bg-derdekleur text-basiskleur w-full border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[2px] sticky top-[72px] z-[4999] hidden popup">
+              <div id={data.href} className="hidden w-full overflow-x-hidden flex text-center bg-derdekleur text-basiskleur w-full mr-2 sticky top-[50px] z-[4999] hidden popup"><ul className="flex">
               {data.children.map((subnav) => {
               return (
-                <button className="inline-flex text-center ring ring-basiskleur ring-2 rounded m-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><a href={subnav.href} className="no-underline">{subnav.label}</a></button>
+                <li className="grow"><button className={`w-full text-center mx-auto border-b-2 py-[5px] border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold bg-derdekleur text-basiskleur no-underline`}><a className="no-underline" href={subnav.href}>{subnav.label}</a></button></li>
               )
-          })}</div>)}
+          })}</ul></div>)}
         })}
     <div className="fixed w-full h-full z-[5000] bg-vierdekleur text-basiskleur border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[15px] top-0 text-center overflow-y-auto" style={{display: menuExpanded?"block":"none"}}>
       <button className="block text-center my-[20px] mx-auto w-[95%] ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={menuExpand} className="no-underline">&#x2715; Sluiten</span></button>
@@ -130,8 +131,8 @@ export const Header = ({ data, props }) => {
       })}
       </div>
     </div>
-    <a href="/donaties" aria-label="Doneren" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>
-    <a href="/dhj" aria-label="Vieringen" className="fixed p-[15px] w-[55px] no-underline rounded-md text-center bg-green-700 text-white bold bottom-[10px] z-[4001] right-[2.4%] inline-flex h-[50px]"><AccessTimeIcon/></a></>
+    <a href="/donaties" aria-label="Doneren" className="fixed p-[15px] w-[55px] rounded-[2px] no-underline text-center bg-red-700 text-white bold bottom-[10px] z-[4001] left-[2.4%] inline-flex h-[50px]"><VolunteerActivismIcon/></a>
+    <a href="/dhj" aria-label="Vieringen" className="fixed p-[15px] w-[55px] rounded-[2px] no-underline text-center bg-green-700 text-white bold bottom-[10px] z-[4001] right-[2.4%] inline-flex h-[50px]"><AccessTimeIcon/></a></>
 
   );
 };
