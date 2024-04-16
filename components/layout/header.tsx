@@ -82,7 +82,7 @@ export const Header = ({ data, props }) => {
             )
           }
         })}
-        <button className="duration-200 block mo:hidden text-center ring ring-basiskleur border-b-4 border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold py-2 px-4 bg-liturgischekleur text-basiskleur w-5/6"><span onClick={menuExpand} className="no-underline">&#9776; Menu</span></button>
+        <button className="duration-200 block mo:hidden text-center border-b-4 border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold py-2 px-4 bg-liturgischekleur text-basiskleur w-full"><span onClick={menuExpand} className="no-underline w-full inline-block">&#9776; Menu</span></button>
       </div>
       {globals.header.nav.map((data) => {
           if(data.type=="href"){
@@ -98,21 +98,21 @@ export const Header = ({ data, props }) => {
               )
           })}</ul></div>)}
         })}
-    <div className="fixed w-full h-full z-[5000] bg-vierdekleur text-basiskleur border-solid border-b-2 border-basiskleur flex-1 mr-2 p-[15px] top-0 text-center overflow-y-auto" style={{display: menuExpanded?"block":"none"}}>
-      <button className="block text-center my-[20px] mx-auto w-[95%] ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur"><span onClick={menuExpand} className="no-underline">&#x2715; Sluiten</span></button>
-      <hr className="border-basiskleur border-1"></hr>
+    <div className="fixed w-full h-full z-[5000] bg-vijfdekleur text-basiskleur border-solid border-b-2 border-basiskleur flex-1 mr-2 top-0 text-center overflow-y-auto text-lg" style={{display: menuExpanded?"block":"none"}}>
+      <button className="block text-center mx-auto w-full py-2 px-4 bg-liturgischekleur text-basiskleur text-xl"><span onClick={menuExpand} className="no-underline w-full inline-block">&#x2715; Sluiten</span></button>
+      <hr className="border-basiskleur border-2"></hr>
       {globals.header.nav.map((data) => {
           if(data.type=="href"){
             return (
-              <button className="block my-3 text-center ring ring-basiskleur mx-auto ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[95%]"><a href={data.href} className="no-underline">{data.label}</a></button>
+              <button className="block my-3 text-center mx-auto mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[95%]"><a href={data.href} className="no-underline w-full inline-block">{data.label}</a></button>
             )
           }else{
             return (
-              <><button className="mx-auto block text-center my-3 ring ring-basiskleur ring-2 rounded mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[95%]" onClick={() => openPopup(data.href+data.type)}><a className="no-underline">{data.label}</a></button>
+              <><button className="mx-auto block text-center my-3 mr-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[95%]" onClick={() => openPopup(data.href+data.type)}><a className="no-underline w-full inline-block">{data.label}</a></button>
               <div id={data.href+data.type} className="hidden my-[20px] popup">
               {data.children.map((subnav) => {
                 return (
-                  <button className="block text-center ring my-3 ring-basiskleur ring-2 rounded mx-auto m-2 py-2 px-4 bg-liturgischekleur text-basiskleur w-[85%]"><a href={subnav.href} className="no-underline">{subnav.label}</a></button>
+                  <button className="block text-center my-3 mx-auto m-2 py-2 px-4 bg-basiskleur text-vierdekleur w-[95%]"><a href={subnav.href} className="no-underline w-full inline-block">{subnav.label}</a></button>
                 )
               })}
               </div>
