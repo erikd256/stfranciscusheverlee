@@ -68,5 +68,4 @@
     "utf8": "^3.0.0",
     "uuid": "^9.0.1"
   },
-  "packageManager": "yarn@4.0.1"
 }
