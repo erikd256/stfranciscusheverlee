@@ -1,7 +1,7 @@
 import { globby } from "globby"
 
 export default async (req, res) => {
-  res.writeHead(200, {
+  res.writeHead(404, {
     "Content-Type": "text/xml"
   });
     res.status(200)
@@ -29,12 +29,12 @@ export default async (req, res) => {
       .replace (".md", "")
       .replace (".md", "")
       .replace(".tsx", "")
-      .replace("content/posts", "post");
+      .replace("content/posts", "/post");
       
       return `
       <url>
-          <loc>${`https://www.stfranciscus-heverlee.org/${route}`}</loc>
-          <lastmod>${new Date()}</lastmod>
+          <loc>${`https://www.stfranciscus-heverlee.org${route}`}</loc>
+          <lastmod>${new Date().toISOString()}</lastmod>
       </url>
     `
     }).join('')}</urlset>`
