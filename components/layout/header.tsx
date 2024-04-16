@@ -69,7 +69,7 @@ export const Header = ({ data, props }) => {
           <button onClick={search} className="leading-[20px] h-[30px] border-2 smo:w-[40px] clear-right absolute smo:right-[-38px] border-basiskleur rounded-r-full" aria-label="Search"><span className="material-symbols-outlined"><SearchIcon/></span></button>
         </span>
       </div>
-      <hr className="border-basiskleur bg-basiskleur"></hr>
+      <hr className="border-basiskleur bg-basiskleur mx-0"></hr>
       <div className={`overflow-x-hidden flex text-center items-center content-center place-content-center text-basiskleur w-full sticky top-0 z-[5000] text-lg`}>
         {globals.header.nav.map((data) => {
           if(data.type=="href"){
