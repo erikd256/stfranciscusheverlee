@@ -74,7 +74,7 @@ export const Header = ({ data, props }) => {
         {globals.header.nav.map((data) => {
           if(data.type=="href"){
             return (
-              <button className="duration-200 grow hidden mo:block text-center border-b-4 border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold py-2 px-4 bg-liturgischekleur text-basiskleur"><a href={data.href} className="no-underline">{data.label}</a></button>
+              <button className="duration-200 grow hidden mo:block text-center border-b-4 border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold py-2 bg-liturgischekleur text-basiskleur"><a href={data.href} className="no-underline w-full inline-block">{data.label}</a></button>
             )
           }else{
             return (
@@ -94,7 +94,7 @@ export const Header = ({ data, props }) => {
               <div id={data.href} className="hidden w-full overflow-x-hidden flex text-center bg-derdekleur text-basiskleur w-full mr-2 sticky top-[50px] z-[4999] hidden popup"><ul className="flex">
               {data.children.map((subnav) => {
               return (
-                <li className="grow"><button className={`w-full text-center mx-auto border-b-2 py-[5px] border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold bg-derdekleur text-basiskleur no-underline`}><a className="no-underline" href={subnav.href}>{subnav.label}</a></button></li>
+                <li className="grow"><button className={`w-full text-center mx-auto border-b-2 py-[5px] border-basiskleur hover:border-vierdekleur hover:bg-basiskleur hover:text-vierdekleur hover:font-bold bg-derdekleur text-basiskleur no-underline`}><a className="no-underline  w-full inline-block" href={subnav.href}>{subnav.label}</a></button></li>
               )
           })}</ul></div>)}
         })}
