@@ -33,20 +33,6 @@ export const GalleryItem = ({ data, tinaField }) => {
   function toggleTitle(){
     setTitleHidden(!titleHidden)
   }
-  function increaseImageNumber(){
-    if(imageNumber < (srcArray.length-1)){
-      setImageNumber(imageNumber+1)
-    }else{
-      setImageNumber(0)
-    }
-  }
-  function decreaseImageNumber(){
-    if(imageNumber > 0){
-      setImageNumber(imageNumber-1)
-    }else{
-      setImageNumber((srcArray.length-1))
-    }
-  }
   return (
     <div className="flex flex-col">
       <div className="p-[50px] container w-full h-[260px] relative m-[50px]"  onMouseEnter={toggleTitle} onMouseLeave={toggleTitle}>
@@ -56,13 +42,9 @@ export const GalleryItem = ({ data, tinaField }) => {
         <img className="absolute object-cover w-full border-4 border-basiskleur top-0 left-0 rounded-md h-full" src={coverImage} onClick={hideGallery}></img>
         <span onClick={hideGallery} className={`text-xl w-full h-full absolute top-0 left-0 z-[2000] ${titleHidden ? "hidden":"inline-block"} pt-[25%] bg-liturgischekleur text-center rounded-md border-2 border-basiskleur`}>{data.title || galleryTitle}</span>  
       </div>
-      <div className={`fixed p-0 z-[5000] h-[100%] w-[100%] bg-basiskleur top-[0%] left-[0%] ${galleryHidden ? "hidden":"block" }`}>
-        <span className="absolute top-[10px] text-lg w-full text-center text-liturgischekleur"><b>{data.title || galleryTitle}</b></span>
-        <img className="mx-auto self-center relative top-[50px] max-w-full rounded-xl" src={srcArray[imageNumber]}></img>
-        <span className="absolute bottom-[10px] w-full text-sm text-center text-liturgischekleur"><button onClick={decreaseImageNumber} className="text-4xl mr-4">&#9756;</button>
-        <span>{imageNumber+1}/{srcArray.length}</span><button className="pt-4 text-4xl ml-4" onClick={increaseImageNumber}>&#9758;</button></span>
-        <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[5px] left-[5px] bg-liturgischekleur ${galleryHidden ? "hidden":"block" } z-[9999]`} onClick={hideGallery}>&#10006;Sluiten</button>
-        
+      <div className={`fixed p-0 z-[5000] h-[100%] w-[100%] bg-basiskleur top-[0%] left-[0%] ${galleryHidden ? "hidden":"block" } overflow-hidden overflow-x-scroll`}>
+        <span className="fixed top-[10px] text-2xl w-full text-center text-liturgischekleur"><b>{data.title || galleryTitle}</b></span>
+        <span className="relative left-1/4 top-1/4 flex flex-nowrap h-full py-1/4 pr-[25px]">{srcArray.map((url) => { return <img className="inline-block mx-[15px] h-[50%] w-fit rounded-xl" src={url}></img>})}<button className="inline-block h-1/2 text-liturgischekleur text-xl text-center pr-[50px]" onClick={hideGallery}>&#x2715; Sluiten</button></span>
       </div>
     </div>
   );
