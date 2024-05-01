@@ -44,7 +44,7 @@ export const GalleryItem = ({ data, tinaField }) => {
       </div>
       <div className={`fixed p-0 z-[5000] h-[100%] w-[100%] bg-basiskleur top-[0%] left-[0%] ${galleryHidden ? "hidden":"block" } overflow-hidden overflow-x-scroll`}>
         <span className="fixed top-[10px] text-2xl w-full text-center text-liturgischekleur"><b>{data.title || galleryTitle}</b></span>
-        <span className="relative left-1/4 top-1/4 flex flex-nowrap h-full py-1/4 pr-[25px]">{srcArray.map((url) => { return <img className="inline-block mx-[15px] h-[50%] w-fit rounded-xl" src={url}></img>})}<button className="inline-block h-1/2 text-liturgischekleur text-xl text-center pr-[50px]" onClick={hideGallery}>&#x2715; Sluiten</button></span>
+        <span className="relative left-1/4 top-1/4 flex flex-nowrap h-full py-1/4 pr-[25px]">{srcArray.map((url) => { return <img className="inline-block border-2 border-liturgischekleur mx-[15px] h-[50%] w-fit rounded-xl" src={url}></img>})}<button className="inline-block h-1/2 text-liturgischekleur text-xl text-center pr-[50px]" onClick={hideGallery}>&#x2715; Sluiten</button></span>
       </div>
     </div>
   );
