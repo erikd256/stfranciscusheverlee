@@ -2,8 +2,15 @@ import React from "react";
 import { FaFacebookF, FaGithub, FaYoutube } from "react-icons/fa";
 import { Container } from "../../util/container";
 import globals from "../../../content/global/index.json"
+import axios from "axios";
 
 export const Footer = ({ data, rawData}) => {
+  const [bibleVerse, setBibleVerse] = React.useState("")
+  const [bibleVerseSlug, setBibleVerseSlug] = React.useState("")
+  axios.get("/api/bibleverseoftheday").then((response) => {
+    setBibleVerse(response.data.verse)
+    setBibleVerseSlug(response.data.slug)
+  })
   const socialIconClasses = "h-7 w-auto";
   return (
     <>
@@ -44,8 +51,8 @@ export const Footer = ({ data, rawData}) => {
         tel. secretariaat +32 492 31 92 15<br></br>
         franciscusheverlee@gmail.com
         </div>
-        <div className="overflow-auto p-4 text-liturgischekleur w-5/6 mx-auto mt-[150px]">
-          <span className="absolute">Met dank aan onze sponsors:</span>
+        <div className="overflow-auto p-4 text-liturgischekleur text-center w-5/6 mx-auto mt-[150px]">
+          <span className="italic">{bibleVerse}<br></br>- {bibleVerseSlug}</span>
         </div>
         <hr className="border-liturgischekleur my-[10px]"></hr>
         <div className="overflow-auto text-center text-liturgischekleur w-5/6 m-auto mt-[20px]">
