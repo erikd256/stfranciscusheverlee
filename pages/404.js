@@ -9,7 +9,7 @@ export default function FourOhFour() {
       setWindowWidth(window.innerWidth);
       setWindowHeight(window.innerHeight);
     }
-  });
+  },[]);
   return (
   <>
     <title>Error 404</title>
