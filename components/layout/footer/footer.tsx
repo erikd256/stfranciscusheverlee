@@ -45,8 +45,7 @@ export const Footer = ({ data, rawData}) => {
         franciscusheverlee@gmail.com
         </div>
         <div className="overflow-auto p-4 text-liturgischekleur w-5/6 mx-auto mt-[150px]">
-          <span className="absolute">Met dank aan onze sponsors:</span><br></br>
-          <object type="image/svg+xml" data={`https://opencollective.com/${globals.collectivename}/tiers/backers.svg`}></object>
+          <span className="absolute">Met dank aan onze sponsors:</span>
         </div>
         <hr className="border-liturgischekleur my-[10px]"></hr>
         <div className="overflow-auto text-center text-liturgischekleur w-5/6 m-auto mt-[20px]">
