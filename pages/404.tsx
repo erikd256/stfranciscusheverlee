@@ -1,15 +1,15 @@
 import React from "react";
 
 export default function FourOhFour() {
-  const [windowWidth,setWindowWidth] = React.useState(""); 
-  const [windowHeight,setWindowHeight] = React.useState(""); 
+  const [windowWidth,setWindowWidth] = React.useState(10); 
+  const [windowHeight,setWindowHeight] = React.useState(10); 
 
-  React.useEffect({
-    if(window){
+  React.useEffect(() => {
+    if(typeof window !== 'undefined'){
       setWindowWidth(window.innerWidth);
       setWindowHeight(window.innerHeight);
-    }
-  },[]);
+    };
+  });
   return (
   <>
     <title>Error 404</title>
