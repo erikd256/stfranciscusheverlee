@@ -13,7 +13,7 @@ export default function FourOhFour() {
   return (
   <>
     <title>Error 404</title>
-    <img src={`https://picsum.photos/${windowWidth}/${windowHeight}`} className="z-[-1] fixed w-full h-full"/>
+    <img src={`https://loremflickr.com/${windowWidth}/${windowHeight}`} className="z-[-1] fixed w-full h-full"/>
     <div className="fixed w-1/2 h-1/2 border-2 border-white bg-black top-1/4 left-1/4 text-white text-center py-[20px] opacity-70 leading-[50px]">
      
       <p className="text-4xl">Deze Pagina is helaas niet meer te vinden.</p>
