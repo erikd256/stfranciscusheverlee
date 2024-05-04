@@ -14,11 +14,12 @@ blocks:
       wilt kan je natuurlijk ook altijd het contactformulier beneden gebruiken.
 
 
-      Voor vragen over privacy over  onze vernieuwde website, stuur graag een
-      email naar respectievelijk
+      Heb je vragen over privacy of over  onze vernieuwde website? Stuur dan
+      graag een email naar respectievelijk
       [privacy@stfrancicus-heverlee.org](mailto:privacy@stfrancicus-heverlee.org)
       of naar
-      [webservices@stfranciscus-heverlee.org](mailto:webservices@stfranciscus-heverlee.org).
+      [webservices@stfranciscus-heverlee.org](mailto:webservices@stfranciscus-heverlee.org)
+      !
     _template: content
   - airformTitle: Contacteer ons
     FormEndpoint: 'https://forms.stfranciscus-heverlee.org/contact'
@@ -45,6 +46,4 @@ blocks:
         placeholder: ''
     _template: form
 ---
-
-
 
