@@ -4,6 +4,9 @@ blocks:
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
+          https://photos.google.com/share/AF1QipPHpqQdetfc1odfkGroy9gHjzMe-8t_k8740vwb0dQAkI407c-2DJB-tcJfbIc-bw?key=a1h5Vzcxc19HQXh2S0J1V1QxLVhfdk0tNDlad053
+        title: Vormsel in Sint Antonius
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipP8XY29iZJMs-nBij0a9X5rlwmFSEoqJkCUTq6U7h5P2gOGisKifQ6zhVYgrAP-hg?key=N3BoQ3hxTmNaaWlrTFA4WHlZM09KSVI2Vkg2Znl3
         title: Damiaanprijs
       - sharingURL: >-
