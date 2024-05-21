@@ -4,6 +4,9 @@ blocks:
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
+          https://photos.google.com/share/AF1QipP8XY29iZJMs-nBij0a9X5rlwmFSEoqJkCUTq6U7h5P2gOGisKifQ6zhVYgrAP-hg?key=N3BoQ3hxTmNaaWlrTFA4WHlZM09KSVI2Vkg2Znl3
+        title: Damiaanprijs
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipPvM4E2shSSB1S2Ba-PgRtj5tz3_ysseGSkkn9tj-Z1RuISPhjug7aPRqHLa1jK9g?key=UUdDc2hKcExyX2oxT2VORHBDbEdwaXlMWllWOUNB
         title: Familieviering eerste communie
       - sharingURL: >-
