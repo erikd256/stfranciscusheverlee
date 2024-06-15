@@ -10,7 +10,6 @@ blocks:
         text: |
           Lieven Dries (Pastoraal werker),
           Thierry Van Craenem (voorzitter),
-          Veronika Dallmeier,
           Gaston Eysermans,
           Marion Van Wouwe
       - icon:
@@ -41,5 +40,4 @@ blocks:
     color: ''
     _template: features
 ---
-
 
