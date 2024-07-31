@@ -14,7 +14,7 @@ const App = ({ Component, pageProps }) => {
       }}
       >
         <Head>
-        <script async src="/stats/script.js" data-website-id="90de28f6-12b0-4057-8f78-c3f802bc1c16"></script> 
+        <script async src="/stats/script.js" data-website-id="bceb8dd7-4f73-4545-8bb8-74397861dce1"></script> 
         </Head>
       <Component {...pageProps} />
     </GoogleReCaptchaProvider>
