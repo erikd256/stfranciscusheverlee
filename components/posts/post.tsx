@@ -173,6 +173,7 @@ export const Post = (props) => {
               </span>
             </>
           )}
+          <div className="w-full text-center content-center"><Button data-umami-event="Signup button" onClick={like} disabled={liked} className="border-2 border-basiskleur rounded-xl w-[100px] h-[50px] baseline-[50px] text-xl text-center"><HiHeart className="inline-flex"></HiHeart> {likes}</Button></div>
           <p
             data-tinafield="date"
             className="font-bold text-liturgischekleur "
@@ -194,7 +195,6 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
-      <div className="w-full text-center content-center"><Button onClick={like} disabled={liked} className="border-2 border-basiskleur rounded-xl w-[100px] h-[50px] baseline-[50px] text-xl text-center"><HiHeart className="inline-flex"></HiHeart> {likes}</Button></div>
     </Section>
     </>
   )
