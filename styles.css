@@ -31,4 +31,7 @@
   body {
     @apply text-sm text-basiskleur md:text-base font-nunito;
   }
+  button:disabled {
+    @apply bg-red-600 text-white border-2 border-red-600;
+  }
 }

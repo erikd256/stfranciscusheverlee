@@ -26,6 +26,10 @@ module.exports = withSvgr({
         source: "/pictures",
         destination: "https://photos.stfranciscus-heverlee.org/"
       },
+      {
+        source: "/likes",
+        destination: "https://firestore-likes-engine.vercel.app/"
+      },
     ]  
   },
   async headers() {

@@ -17,9 +17,14 @@ import { Section } from "../util/section";
 import { useTheme } from "../layout";
 import { format } from "date-fns";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import { HiHeart } from "react-icons/hi2";
 import type { TinaMarkdownContent, Components } from "tinacms/dist/rich-text";
 import Head from 'next/head';
 import Image from 'next/image'
+import axios from "axios"
+import { usePathname } from "next/navigation";
+import { Button } from "@headlessui/react";
+
 
 const components: Components<{
   BlockQuote: {
@@ -61,7 +66,11 @@ const components: Components<{
   }
 };
 
+
 export const Post = (props) => {
+  const [likes, setLikes] = React.useState("1");
+  const [liked, setLiked] = React.useState(false);
+
   const theme = useTheme();
   const titleColorClasses = {
     blue: "from-blue-400 to-blue-600 dark:from-blue-300 dark:to-blue-500",
@@ -76,13 +85,39 @@ export const Post = (props) => {
     yellow:
       "from-yellow-400 to-yellow-500 dark:from-yellow-300 dark:to-yellow-500",
   };
-
+  const pageName = usePathname().split("post/")[1]
   const date = new Date(props.date);
   let formattedDate = "";
   if (!isNaN(date.getTime())) {
     formattedDate = format(date, "MMM dd, yyyy");
   }
-
+  async function getLikes(){
+    await axios({url: `/likes/?r=${pageName}`, method: "get"}).then((result) => {
+      setLikes(result.data)
+  }).catch((error) => {
+    console.error(error)
+  })}
+  async function like() {
+    await axios({url: `/likes/?r=${pageName}&a=addlike`, method: "get"}).then((result) => {
+      setLikes(result.data)
+      setLiked(true)
+  }).catch((error) => {
+    console.error(error)
+  })
+  }
+  React.useEffect(()=>{
+    getLikes()
+  }, [])
+  React.useEffect(() => {
+    localStorage.setItem("liked", "true");
+    localStorage.setItem("likedName", pageName)
+  }, [liked])
+  React.useEffect(() => {
+    console.log(localStorage.getItem("liked"))
+    if(localStorage.getItem("liked") == "true" && localStorage.getItem("likedName") !== pageName){
+      setLiked(true)
+    };
+  }, [])
   return (
     <>
     <Head>
@@ -145,6 +180,7 @@ export const Post = (props) => {
           <TinaMarkdown components={components} content={props._body} />
         </div>
       </Container>
+      <div className="w-full text-center content-center"><Button onClick={like} disabled={liked} className="border-2 border-basiskleur rounded-xl w-[100px] h-[50px] baseline-[50px] text-xl text-center"><HiHeart className="inline-flex"></HiHeart> {likes}</Button></div>
     </Section>
     </>
   )
