@@ -28,7 +28,7 @@ module.exports = withSvgr({
       },
       {
         source: "/likes",
-        destination: "https://firestore-likes-engine.vercel.app/"
+        destination: "https://likes.stfranciscus-heverlee.org/"
       },
     ]  
   },
