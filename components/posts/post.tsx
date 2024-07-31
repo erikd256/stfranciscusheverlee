@@ -68,7 +68,7 @@ const components: Components<{
 
 
 export const Post = (props) => {
-  const [likes, setLikes] = React.useState("1");
+  const [likes, setLikes] = React.useState("");
   const [liked, setLiked] = React.useState(false);
 
   const theme = useTheme();
