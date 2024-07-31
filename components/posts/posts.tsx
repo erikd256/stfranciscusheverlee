@@ -6,7 +6,8 @@ import { useTheme } from "../layout";
 import Head from 'next/head';
 import { format } from "date-fns";
 import Image from 'next/image'
-
+import axios from "axios";
+import { HiHeart } from "react-icons/hi";
 export const Posts = ({ data }) => {
   const theme = useTheme();
   const titleColorClasses = {
@@ -24,6 +25,16 @@ export const Posts = ({ data }) => {
     <>
       {data.map((postData) => {
         const post = postData.node;
+        const [likes, setLikes] = React.useState("0");
+        async function getLikes(){
+          await axios({url: `/likes/?r=${post._sys.filename}`, method: "get"}).then((result) => {
+            setLikes(result.data)
+        }).catch((error) => {
+          console.error(error)
+        })}
+        React.useEffect(()=>{
+          getLikes()
+        }, [post])
         return (
           <Link
             key={post._sys.filename}
@@ -67,9 +78,13 @@ export const Posts = ({ data }) => {
                 <span className="font-bold text-basiskleur dark:text-basiskleur mx-2">
                   —
                 </span>
-                <p className="text-sm text-basiskleur group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-gray-150">
+                <p className="text-sm text-basiskleur group-hover:text-basiskleur dark:text-basiskleur dark:group-hover:text-gray-150 mr-2">
                   {format(new Date(post._values.date), "MMM dd, yyyy")}
                 </p>
+                  —
+                <span className="ml-2 font-bold text-white bg-red-600 p-2 rounded-md mx-2 inline-flex leading-[100%]">
+                  <HiHeart className="mr-1"></HiHeart>{likes}
+                </span>
               </div>
               </div>
             </a>
