@@ -106,6 +106,32 @@ export const Post = (props) => {
     console.error(error)
   })
   }
+  React.useEffect(()=>{
+    getLikes()
+  }, [])
+  React.useEffect(()=>{
+    if(localStorage.getItem("likedName") && liked){
+      const oldArray = Array.from(JSON.parse(localStorage.getItem("likedName")))
+      if(oldArray.includes(pageName)){
+        // do nothing
+      }else{
+      oldArray.push(pageName);
+      localStorage.setItem("likedName", JSON.stringify(oldArray))}
+    }
+    if(!localStorage.getItem("likedName") && liked){
+      var likedArray = [];
+      likedArray.push(pageName)
+      localStorage.setItem("likedName", JSON.stringify(likedArray))
+    }
+  }, [liked])
+  React.useEffect(()=>{
+    if(localStorage.getItem("likedName")){
+      const oldArray = Array.from(JSON.parse(localStorage.getItem("likedName")))
+      if(oldArray.includes(pageName)){
+        setLiked(true)
+      }
+    }
+  },[])
   return (
     <>
     <Head>
