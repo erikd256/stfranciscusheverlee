@@ -101,23 +101,11 @@ export const Post = (props) => {
     await axios({url: `/likes/?r=${pageName}&a=addlike`, method: "get"}).then((result) => {
       setLikes(result.data)
       setLiked(true)
-  }).catch((error) => {
+      
+    }).catch((error) => {
     console.error(error)
   })
   }
-  React.useEffect(()=>{
-    getLikes()
-  }, [])
-  React.useEffect(() => {
-    localStorage.setItem("liked", "true");
-    localStorage.setItem("likedName", pageName)
-  }, [liked])
-  React.useEffect(() => {
-    console.log(localStorage.getItem("liked"))
-    if(localStorage.getItem("liked") == "true" && localStorage.getItem("likedName") !== pageName){
-      setLiked(true)
-    };
-  }, [])
   return (
     <>
     <Head>
