@@ -1,6 +1,6 @@
 ---
 seo:
-  description: test
+  description: ''
 title: Start
 blocks:
   - tagline: >-
