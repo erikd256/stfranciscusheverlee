@@ -1,4 +1,6 @@
 ---
+seo:
+  description: test
 title: Start
 blocks:
   - tagline: >-
