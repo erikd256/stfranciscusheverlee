@@ -65,7 +65,7 @@
     "remark-gfm": "^4.0.0",
     "styled-components": "^6.1.8",
     "styled-jsx": "^5.1.2",
-    "tinacms": "^2.1.0",
+    "tinacms": "^2.1.1",
     "typescript": "^5.3.3",
     "utf8": "^3.0.0",
     "uuid": "^10.0.0"
