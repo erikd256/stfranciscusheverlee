@@ -8899,10 +8899,10 @@ pirates@^4.0.1:
   resolved "https://registry.yarnpkg.com/pirates/-/pirates-4.0.6.tgz#3018ae32ecfcff6c29ba2267cbf21166ac1f36b9"
   integrity sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==
 
-pnpm@^9.0.6:
-  version "9.6.0"
-  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-9.6.0.tgz#65cd48c20dd329b7f455088b6dd17d4d5b6d02e3"
-  integrity sha512-ONxvuo26NbOTQLlwARLC/h4S8QsXE0cVpKqYzPe7A152/Zgc8Ls4TfqY+NavVIHCvvL0Jmokv6IMNOtxR84LXg==
+pnpm@^9.7.0:
+  version "9.7.0"
+  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-9.7.0.tgz#8f12c476122faede7aed9a2126ef551c0dc65d7e"
+  integrity sha512-3AlDAVa0J/Xs/HmIiJnhw50taQ8AS+cOBSMLcssXPZaDlYdUXQlCm1WsPEKcgBtNw8DgAvZTgwpCD6LdTjz5zw==
 
 popmotion@11.0.3:
   version "11.0.3"
