@@ -52,7 +52,7 @@
     "nodemailer": "^6.9.9",
     "pnpm": "^9.7.1",
     "promise": "^8.3.0",
-    "qs": "^6.11.2",
+    "qs": "^6.13.0",
     "react": "^18.2.0",
     "react-big-calendar": "^1.10.0",
     "react-dom": "^18.2.0",
