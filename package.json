@@ -18,7 +18,7 @@
     "@types/styled-components": "^5.1.34",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.20",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "eslint": "^9.8.0",
     "postcss": "^8.4.41",
