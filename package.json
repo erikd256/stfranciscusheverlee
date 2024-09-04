@@ -63,7 +63,7 @@
     "react-markdown": "^9.0.1",
     "react-player": "^2.14.1",
     "remark-gfm": "^4.0.0",
-    "styled-components": "^6.1.8",
+    "styled-components": "^6.1.13",
     "styled-jsx": "^5.1.2",
     "tinacms": "^2.1.0",
     "typescript": "^5.3.3",
