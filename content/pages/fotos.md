@@ -4,6 +4,9 @@ blocks:
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
+          https://photos.google.com/share/AF1QipOHjh73QV5zBN8owyNJRqi4-OoU0wBIH_xRxYcBigukaQPl8jWTdPaygPdcWrFcsg?key=RVc1QnFEUEZQOURERDE0cnZkVGI1cnZJek9ZN19R
+        title: Slotviering 23 juni 2024
+      - sharingURL: >-
           https://photos.google.com/share/AF1QipMAbWW33WE0ReSORxVNHLyBjMqAThRv3O2FlDChkLri-Cz1fvhlJgzhTWoZFdFjKQ?key=TWhKbWxhUmxsNFByU2lCZ1JPejg2VTlNTVd3cEd3
         title: Franciscus en Clara
       - sharingURL: >-
