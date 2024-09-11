@@ -1,6 +1,12 @@
 ---
 title: Fotoalbums
 blocks:
+  - title: Werkjaar 2024 - 25
+    items:
+      - sharingURL: >-
+          https://photos.google.com/share/AF1QipMcqMra8hO5PFZxs3icD0oD_yc4qltgkV-kv68uMZ61Ez-vdurm96DqzuLgP1fEBQ?key=eE9CWEtrYzVJYjB6NXdINlA0UGsxNkJfOWhINGx3
+        title: 15 augustus 2024 OLV Hemelvaart
+    _template: gallery
   - title: Werkjaar 2023 - 24
     items:
       - sharingURL: >-
