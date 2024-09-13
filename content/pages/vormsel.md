@@ -12,7 +12,8 @@ blocks:
         type: button
         icon: true
         link: >-
-          https://docs.google.com/document/d/1LCpo6zKHkm_0Z7ZWfFGA706E6Gym_3KP/edit?usp=sharing&ouid=100654212265476798682&rtpof=true&sd=true
+          https://assets.tina.io/3b903733-b9d0-4a6c-be20-9dc3e2081414/Infobrief
+          vormsel 2025.pdf
       - label: Inschrijvingsformulier Vormsel
         type: button
         icon: true
