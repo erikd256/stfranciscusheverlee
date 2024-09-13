@@ -13,11 +13,12 @@ blocks:
         icon: true
         link: >-
           https://docs.google.com/document/d/1LCpo6zKHkm_0Z7ZWfFGA706E6Gym_3KP/edit?usp=sharing&ouid=100654212265476798682&rtpof=true&sd=true
-      - label: Inschrijvingsformulier
+      - label: Inschrijvingsformulier Vormsel
         type: button
         icon: true
         link: >-
-          https://docs.google.com/document/d/1eHLQ4_TU_jPsJLYHzsoeAvQganYF5yQS/edit?usp=sharing&ouid=100654212265476798682&rtpof=true&sd=true
+          https://assets.tina.io/3b903733-b9d0-4a6c-be20-9dc3e2081414/Aanvraagformulier
+          E.C. 2025.FRANDO.pdf
     image:
       src: /uploads/dove-g55cfac917_1920.jpg
     _template: hero
