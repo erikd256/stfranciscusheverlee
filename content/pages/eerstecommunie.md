@@ -9,7 +9,8 @@ blocks:
         type: button
         icon: true
         link: >-
-          https://docs.google.com/document/d/1KI1p7O1yavEp7SJG68U4Uw4F059ntDNY/edit?usp=sharing&ouid=100654212265476798682&rtpof=true&sd=true
+          https://assets.tina.io/3b903733-b9d0-4a6c-be20-9dc3e2081414/Infobrief
+          eerste communie 2025.pdf
       - label: Inschrijvingsformulier Eerste Communie
         type: button
         icon: true
