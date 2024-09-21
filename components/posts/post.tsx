@@ -191,7 +191,7 @@ export const Post = (props) => {
       )}
       <Container className={`flex-1 max-w-4xl pt-4`} size="large">
         <div className="prose dark:prose-dark w-full max-w-none text-justify text-basiskleur">
-          <TinaMarkdown components={components} content={props._body} /><br></br><Button data-umami-event="Signup button" onClick={like} disabled={liked} className="border-2 border-basiskleur rounded-xl w-[100px] h-[50px] baseline-[50px] text-xl text-center"><HiHeart className="inline-flex"></HiHeart> {likes} - Like</Button>
+          <TinaMarkdown components={components} content={props._body} /><br></br><Button data-umami-event="Signup button" onClick={like} disabled={liked} className="border-2 border-basiskleur rounded-xl w-[200px] h-[50px] baseline-[50px] text-xl text-center"><HiHeart className="inline-flex"></HiHeart> {likes} - Like</Button>
         </div>
       </Container>
     </Section>
