@@ -20,6 +20,7 @@ const App = ({ Component, pageProps }) => {
         <script async src="/stats/script.js" data-website-id="bceb8dd7-4f73-4545-8bb8-74397861dce1"></script> 
         </Head>
       <Component {...pageProps} />
+      <SpeedInsights />
     </GoogleReCaptchaProvider>
   );
 };
