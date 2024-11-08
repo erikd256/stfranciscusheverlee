@@ -30,6 +30,10 @@ module.exports = withSvgr({
         source: "/likes",
         destination: "https://likes.stfranciscus-heverlee.org/"
       },
+      {
+        source: "/viewer",
+        destination: "https://viewer.stfranciscus-heverlee.org/web/viewer.html"
+      },
     ]  
   },
   async headers() {

@@ -42,7 +42,7 @@ export const Parochiebladeren = ({ data }) => {
     onSelectEvent={handleSelectEvent}
   /></div>
       <div className="">
-        <embed className={`fixed h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[50002] ${iframeHidden ? "hidden":"block" }`} src={`${filesrc}`}/>
+        <embed className={`fixed h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[50002] ${iframeHidden ? "hidden":"block" }`} src={`/viewer/?file=${filesrc}`}/>
         <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[75px] left-[15px] bg-liturgischekleur ${iframeHidden ? "hidden":"block" } z-[21474836491]`} onClick={closeIFrame}>Sluiten</button>
       </div>
       <Head>
