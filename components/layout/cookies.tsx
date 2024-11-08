@@ -24,7 +24,7 @@ export const Cookies = () => {
           <p>Wat betekent dit?</p>
           <ul className="list-disc px-[25px]">
             <li>Wij gebruiken geen cookies die niet echt nodig zijn, bv. om deze website tegen spam te beschermen</li>
-            <li>Om jullie gebruikerservaring constant te verbeteren gebruiken we <a href="https://umami.is/docs/faq" target="_blank">Umami</a> en <a href="https://vercel.com/docs/concepts/analytics/privacy" target="_blank">Vercel Web Vitals</a>.</li>
+            <li>Om jullie gebruikerservaring constant te verbeteren gebruiken we <a href="https://umami.is/docs/faq" target="_blank">Umami</a> en <a href="https://vercel.com/docs/speed-insights/privacy-policy" target="_blank">Vercel Speed Insights</a>.</li>
             <li>We verwijderen alle data na 31 dagen op onze servers</li>
             <li>Wij kunnen jullie de hoogste kwaliteit leveren gebaseerd op alleen opensource en privacy-vriendelijke tools zoals bv. NextJS en TinaCMS</li>
             <li>Jullie kunnen de volledige broncode van deze website inzien in ons <a href="https://github.com/erikd256/stfranciscusheverlee" target="_blank" className="underline">repository</a></li>

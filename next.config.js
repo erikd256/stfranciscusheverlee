@@ -32,7 +32,7 @@ module.exports = withSvgr({
       },
       {
         source: "/viewer",
-        destination: "https://viewer.stfranciscus-heverlee.org/web/viewer.html"
+        destination: "https://viewer.stfranciscus-heverlee.org/"
       },
     ]  
   },
