@@ -1,6 +1,7 @@
 import "../styles.css";
 import React, { useEffect } from "react";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Head from "next/head";
 
