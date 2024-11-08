@@ -119,7 +119,7 @@ export const Post = (props) => {
       localStorage.setItem("likedName", JSON.stringify(oldArray))}
     }
     if(!localStorage.getItem("likedName") && liked){
-      var likedArray = [];
+      let likedArray = [];
       likedArray.push(pageName)
       localStorage.setItem("likedName", JSON.stringify(likedArray))
     }
