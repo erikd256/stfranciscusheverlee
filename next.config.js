@@ -34,6 +34,10 @@ module.exports = withSvgr({
         source: "/viewer/:match*",
         destination: "https://viewer.stfranciscus-heverlee.org/:match*"
       },
+      {
+        source: "/assets/:match*",
+        destination: "https://assets.tina.io/:match*"
+      },
     ]  
   },
   async headers() {
@@ -44,14 +48,6 @@ module.exports = withSvgr({
             {
               key: 'X-Frame-Options',
               value: 'SAMEORIGIN',
-            },
-            {
-              key: 'X-Content-Type-Options',
-              value: 'nosniff',
-            },
-            {
-              key: 'Referrer-Policy',
-              value: 'origin-when-cross-origin',
             },
             {
               key: 'Strict-Transport-Security',
