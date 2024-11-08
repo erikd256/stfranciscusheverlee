@@ -31,8 +31,8 @@ module.exports = withSvgr({
         destination: "https://likes.stfranciscus-heverlee.org/"
       },
       {
-        source: "/viewer",
-        destination: "https://viewer.stfranciscus-heverlee.org/"
+        source: "/viewer/:match*",
+        destination: "https://viewer.stfranciscus-heverlee.org/:match*"
       },
     ]  
   },
