@@ -1,16 +1,16 @@
 import React from "react";
-
 import Head from 'next/head';
-import { format } from "date-fns";
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from 'moment'
-import { formatISO } from "date-fns"
+import { Root, Viewport, Pages, Page } from "@fileforge/pdfreader";
+
 export const Parochiebladeren = ({ data }) => {
-  const [filesrc, setFilesrc] = React.useState("");
+  const [filesrc, setFilesrc] = React.useState("https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf");
   const [iframeHidden, setIframeHidden] = React.useState(true);
   const localizer = momentLocalizer(moment) // or globalizeLocalizer
   const eventsList = [];
+  const CanvasLayer = "";
   data.map((postData) => {
     const post = postData.node;
     const Event = {
@@ -41,9 +41,17 @@ export const Parochiebladeren = ({ data }) => {
     events={eventsList}
     onSelectEvent={handleSelectEvent}
   /></div>
-      <div className="">
-        <embed className={`fixed h-full w-full bg-basiskleur z-[90] top-0 left-0 border-0 z-[50002] ${iframeHidden ? "hidden":"block" }`} src={`/viewer/web/viewer.html/?file=${filesrc}`}/>
-        <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[75px] left-[15px] bg-liturgischekleur ${iframeHidden ? "hidden":"block" } z-[21474836491]`} onClick={closeIFrame}>Sluiten</button>
+      <div className={`fixed h-full w-full bg-basiskleur z-[10000] top-0 left-0 border-0 z-[50002] overflow-none ${iframeHidden ? "hidden":"block" }`}>
+      <Root className="h-full" fileURL={filesrc}>
+      <Viewport>
+        <Pages>
+          <Page>
+            <CanvasLayer />
+          </Page>
+        </Pages>
+      </Viewport>
+      </Root>
+        <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[75px] left-[15px] bg-liturgischekleur ${iframeHidden ? "hidden":"block" } z-[21474836491]`} onClick={closeIFrame}>&#10006; Sluiten</button>
       </div>
       <Head>
         <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>
