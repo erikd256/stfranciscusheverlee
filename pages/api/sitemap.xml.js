@@ -6,17 +6,17 @@ export default async (req, res) => {
   });
     res.status(200)
     const pages = await globby([
-      "pages/*.js",
-      "pages/*.tsx",
-      "content/**/*.mdx",
-      "content/**/*.md",
-      "!pages/form-submitted.js",
-      "!pages/api",
-      "!pages/404.js",
-      "!pages/_app.tsx",
-      "!pages/[filename].tsx",
-      "!content/authors",
-      "!content/weeknieuws"
+      "../../pages/*.js",
+      "../../pages/*.tsx",
+      "../../content/**/*.mdx",
+      "../../content/**/*.md",
+      "!../../pages/form-submitted.js",
+      "!../../pages/api",
+      "!../../pages/404.js",
+      "!../../pages/_app.tsx",
+      "!../../pages/[filename].tsx",
+      "!../../content/authors",
+      "!../../content/weeknieuws"
     ]);    
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
