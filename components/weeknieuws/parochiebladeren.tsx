@@ -5,7 +5,6 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from 'moment'
 import { Root, Viewport, Pages, Page } from "@fileforge/pdfreader";
 export const Parochiebladeren = ({ data }) => {
-  class CanvasLayer extends React.Component {}
   const [filesrc, setFilesrc] = React.useState("https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf");
   const [iframeHidden, setIframeHidden] = React.useState(true);
   const localizer = momentLocalizer(moment) // or globalizeLocalizer
@@ -45,7 +44,7 @@ export const Parochiebladeren = ({ data }) => {
       <Viewport>
         <Pages>
           <Page>
-            <CanvasLayer />
+            
           </Page>
         </Pages>
       </Viewport>
