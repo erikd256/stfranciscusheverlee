@@ -121,7 +121,12 @@ export const Post = (props) => {
               </p>
               <span className="font-bold text-liturgischekleur mx-2">
                 —
-              </span>
+              </span><Section className="flex-1">
+        <Container size="large">
+          <Parochiebladeren data={posts} />
+        </Container>
+      </Section>
+    </Layout>
             </>
           )}
           <p

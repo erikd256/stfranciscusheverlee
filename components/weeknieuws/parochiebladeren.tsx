@@ -40,8 +40,8 @@ export const Parochiebladeren = ({ data }) => {
     onSelectEvent={handleSelectEvent}
   /></div>
       <div className={`fixed h-full w-full bg-basiskleur z-[10000] top-0 left-0 border-0 z-[50002] overflow-none ${iframeHidden ? "hidden":"block" }`}>
-      <Root className="h-full" fileURL={filesrc}></Root>
         <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[75px] left-[15px] bg-liturgischekleur ${iframeHidden ? "hidden":"block" } z-[21474836491]`} onClick={closeIFrame}>&#10006; Sluiten</button>
+        <p className="absolute top-1/2 left-1/2"></p>
       </div>
       <Head>
         <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>
