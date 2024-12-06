@@ -37,6 +37,7 @@
     "@mui/icons-material": "^6.1.6",
     "@mui/material": "^6.1.6",
     "@pcode-at/tinacms-seo": "^2.0.0",
+    "@react-pdf-viewer/core": "3.12.0",
     "@tailwindcss/typography": "^0.5.15",
     "@tinacms/auth": "^1.0.8",
     "@types/react-helmet": "^6.1.11",

@@ -3,7 +3,9 @@ import Head from 'next/head';
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from 'moment'
-import { Root, Viewport, Pages, Page } from "@fileforge/pdfreader";
+import { Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import { Worker } from '@react-pdf-viewer/core';
 export const Parochiebladeren = ({ data }) => {
   const [filesrc, setFilesrc] = React.useState("https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf");
   const [iframeHidden, setIframeHidden] = React.useState(true);
@@ -41,7 +43,9 @@ export const Parochiebladeren = ({ data }) => {
   /></div>
       <div className={`fixed h-full w-full bg-basiskleur z-[10000] top-0 left-0 border-0 z-[50002] overflow-none ${iframeHidden ? "hidden":"block" }`}>
         <button className={`fixed rounded-md border-1 border-basiskleur p-[5px] top-[75px] left-[15px] bg-liturgischekleur ${iframeHidden ? "hidden":"block" } z-[21474836491]`} onClick={closeIFrame}>&#10006; Sluiten</button>
-        <p className="absolute top-1/2 left-1/2"></p>
+        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+          <Viewer fileUrl={filesrc} />
+        </Worker>
       </div>
       <Head>
         <title>Nieuws @ Sint-Franciscusparochie Heverlee</title>
