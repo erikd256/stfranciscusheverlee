@@ -3,6 +3,12 @@ seo:
   description: ''
 title: Start
 blocks:
+  - bannerURL: 'https://status.stfranciscus-heverlee.org'
+    bannertext: >-
+      Wij herwerken de "Parochieblad"-Pagina. Bekijk de status van de updates
+      hier!
+    vervaldatum: 2025-01-30T23:00:00.000Z
+    _template: banner
   - tagline: >-
       We staan graag voor u ter beschikking en willen met u de droom van een
       rijk van vrede, liefde en rechtvaardigheid in de geest van Jezus helpen
